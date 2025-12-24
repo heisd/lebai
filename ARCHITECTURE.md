@@ -71,7 +71,118 @@ lebai/
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 数据流架构
+### 数据流架构 (Mermaid)
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4a9eff', 'primaryTextColor': '#fff'}}}%%
+
+flowchart TB
+    subgraph HARDWARE["🔧 硬件层"]
+        ROBOT["🦾 LeBai LM3<br/>6-DOF 机械臂"]
+        GRIPPER["🤏 夹爪"]
+        CAM["📷 相机"]
+    end
+
+    subgraph DRIVER["lebai_driver 驱动层"]
+        ROBOT_STATE["robot_state_node<br/>状态监听"]
+        IO_SERVICE["io_service_node<br/>IO控制"]
+        MOTION["motion_node<br/>运动控制"]
+        SYSTEM["system_service_node<br/>系统控制"]
+    end
+
+    subgraph VISION["grab_demo 视觉层"]
+        CHARUCO["charuco_detect<br/>棋盘检测"]
+        ARUCO["aruco_detect<br/>标记检测"]
+        HSV["hsv_range<br/>颜色分割"]
+        HAND_EYE["hand_eye<br/>手眼标定"]
+    end
+
+    subgraph PLANNING["规划层"]
+        MOVEIT["MoveIt 2<br/>运动规划"]
+        TF2["TF2<br/>坐标变换"]
+    end
+
+    subgraph APPLICATION["应用层"]
+        GRAB["grab_service<br/>抓取服务"]
+        FK["fk_demo<br/>正向运动学"]
+        IK["ik_demo<br/>逆向运动学"]
+        NAV["nav_grab<br/>导航抓取"]
+    end
+
+    subgraph TOPICS["Topics"]
+        T1["/camera/image_raw"]
+        T2["/joint_states"]
+        T3["/robot_status"]
+        T4["/io_status"]
+        T5["/target/pose"]
+    end
+
+    subgraph SERVICES["Services"]
+        S1["/motion_service/move_joint"]
+        S2["/motion_service/move_line"]
+        S3["/io_service/set_gripper_*"]
+        S4["/system_service/enable"]
+    end
+
+    subgraph ACTION["Action"]
+        A1["/lebai_trajectory_controller<br/>FollowJointTrajectory"]
+    end
+
+    %% 硬件连接
+    ROBOT <--> ROBOT_STATE
+    ROBOT <--> MOTION
+    GRIPPER <--> IO_SERVICE
+    ROBOT <--> SYSTEM
+    CAM --> T1
+
+    %% 视觉数据流
+    T1 --> CHARUCO & ARUCO & HSV
+    CHARUCO --> HAND_EYE
+    ARUCO --> T5
+    HSV --> T5
+
+    %% TF和位姿
+    T5 --> TF2
+    HAND_EYE --> TF2
+    TF2 --> GRAB
+
+    %% 状态发布
+    ROBOT_STATE --> T2 & T3
+    IO_SERVICE --> T4
+
+    %% 规划和执行
+    GRAB --> MOVEIT
+    FK & IK --> MOVEIT
+    NAV --> MOVEIT
+    MOVEIT --> A1
+    A1 --> MOTION
+
+    %% 服务调用
+    S1 & S2 -.-> MOTION
+    S3 -.-> IO_SERVICE
+    S4 -.-> SYSTEM
+
+    %% 样式定义
+    classDef hw fill:#607d8b,stroke:#455a64,color:#fff
+    classDef driver fill:#4caf50,stroke:#388e3c,color:#fff
+    classDef vision fill:#9c27b0,stroke:#7b1fa2,color:#fff
+    classDef planning fill:#ff9800,stroke:#f57c00,color:#fff
+    classDef app fill:#2196f3,stroke:#1565c0,color:#fff
+    classDef topic fill:#00bcd4,stroke:#0097a7,color:#fff
+    classDef service fill:#ffc107,stroke:#ffa000,color:#000
+    classDef action fill:#e91e63,stroke:#c2185b,color:#fff
+
+    class ROBOT,GRIPPER,CAM hw
+    class ROBOT_STATE,IO_SERVICE,MOTION,SYSTEM driver
+    class CHARUCO,ARUCO,HSV,HAND_EYE vision
+    class MOVEIT,TF2 planning
+    class GRAB,FK,IK,NAV app
+    class T1,T2,T3,T4,T5 topic
+    class S1,S2,S3,S4 service
+    class A1 action
+```
+
+### 数据流架构 (ASCII)
 
 ```
 ┌───────────────┐        ┌─────────────────┐        ┌──────────────┐
