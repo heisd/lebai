@@ -1,0 +1,1213 @@
+[0.000000] (-) TimerEvent: {}
+[0.000300] (-) JobUnselected: {'identifier': 'arm_demo'}
+[0.000630] (-) JobUnselected: {'identifier': 'lebai_driver'}
+[0.001202] (-) JobUnselected: {'identifier': 'lebai_interfaces'}
+[0.001521] (-) JobUnselected: {'identifier': 'lebai_lm3_moveit_config'}
+[0.001820] (-) JobUnselected: {'identifier': 'lebai_lm3_support'}
+[0.001931] (-) JobUnselected: {'identifier': 'lebai_resources'}
+[0.002009] (-) JobUnselected: {'identifier': 'lebai_tutorials'}
+[0.002084] (grab_demo) JobQueued: {'identifier': 'grab_demo', 'dependencies': OrderedDict()}
+[0.002161] (grab_demo) JobStarted: {'identifier': 'grab_demo'}
+[0.031955] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'cmake'}
+[0.034266] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'build'}
+[0.035747] (grab_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', '--', '-j6', '-l6'], 'cwd': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/dxf'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.66 55755 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/5c17eb2968a37f66bc6662f48d6356a100b67be0/nls.messages.json","corruptMarkerFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/5c17eb2968a37f66bc6662f48d6356a100b67be0","_corruptedFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/serial/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-540e1153-c3c9-4bd3-a392-a29dd083c6e4.sock'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VSCODE_L10N_BUNDLE_LOCATION', 'vscode-local:/Users/liquanyan/.cursor/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.99.0-universal/translations/extensions/vscode.json-language-features.i18n.json'), ('COLCON_PREFIX_PATH', '/home/dxf/WHEELTEC_S300Pro_mini/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('FORCE_COLOR', '0'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'dumb'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('VSCODE_AGENT_FOLDER', '/home/dxf/.cursor-server'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CURSOR_AGENT', '1'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('VSCODE_SERVER_SHUTDOWN_TIMEOUT', '300'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'), ('SSH_CONNECTION', '192.168.0.66 55755 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/opencv410:/usr/local/opencv410:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble')]), 'shell': False}
+[0.099338] (-) TimerEvent: {}
+[0.199761] (-) TimerEvent: {}
+[0.283816] (grab_demo) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target charuco_dectet_node\n'}
+[0.295487] (grab_demo) StdoutLine: {'line': b'[  2%] Built target grab_demo__cpp\n'}
+[0.299941] (-) TimerEvent: {}
+[0.329060] (grab_demo) StdoutLine: {'line': b'[  8%] Built target grab_demo__rosidl_generator_c\n'}
+[0.335986] (grab_demo) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_copy_grab_demo\n'}
+[0.338518] (grab_demo) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target hand_eye\n'}
+[0.358713] (grab_demo) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o\n'}
+[0.379356] (grab_demo) StdoutLine: {'line': b'[ 14%] Built target hsv_range\n'}
+[0.380786] (grab_demo) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target aruco_dectet\n'}
+[0.400117] (-) TimerEvent: {}
+[0.435923] (grab_demo) StdoutLine: {'line': b'[ 23%] Built target grab_demo__rosidl_typesupport_cpp\n'}
+[0.436387] (grab_demo) StdoutLine: {'line': b'[ 23%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o\n'}
+[0.448852] (grab_demo) StdoutLine: {'line': b'[ 29%] Built target grab_demo__rosidl_typesupport_fastrtps_c\n'}
+[0.481402] (grab_demo) StdoutLine: {'line': b'[ 31%] Building CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o\n'}
+[0.500312] (-) TimerEvent: {}
+[0.502466] (grab_demo) StdoutLine: {'line': b'[ 36%] Built target camera_info_node\n'}
+[0.574744] (grab_demo) StdoutLine: {'line': b'[ 42%] Built target grab_demo__rosidl_typesupport_introspection_c\n'}
+[0.584582] (grab_demo) StdoutLine: {'line': b'[ 48%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp\n'}
+[0.600488] (-) TimerEvent: {}
+[0.631165] (grab_demo) StdoutLine: {'line': b'[ 55%] Built target grab_demo__rosidl_typesupport_c\n'}
+[0.700639] (-) TimerEvent: {}
+[0.750190] (grab_demo) StdoutLine: {'line': b'[ 61%] Built target grab_demo__rosidl_typesupport_introspection_cpp\n'}
+[0.800808] (-) TimerEvent: {}
+[0.875179] (grab_demo) StdoutLine: {'line': b'[ 65%] Built target grab_service_node\n'}
+[0.901003] (-) TimerEvent: {}
+[1.001407] (-) TimerEvent: {}
+[1.061645] (grab_demo) StdoutLine: {'line': b'[ 70%] Built target start_grab\n'}
+[1.101579] (-) TimerEvent: {}
+[1.167541] (grab_demo) StdoutLine: {'line': b'[ 74%] Built target nav_grab\n'}
+[1.187660] (grab_demo) StdoutLine: {'line': b'[ 74%] Built target grab_demo\n'}
+[1.202348] (-) TimerEvent: {}
+[1.263387] (grab_demo) StdoutLine: {'line': b'[ 76%] Built target grab_demo__py\n'}
+[1.302520] (-) TimerEvent: {}
+[1.402954] (-) TimerEvent: {}
+[1.403542] (grab_demo) StdoutLine: {'line': b'[ 80%] Built target grab_demo__rosidl_generator_py\n'}
+[1.480133] (grab_demo) StdoutLine: {'line': b'[ 85%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext\n'}
+[1.503186] (-) TimerEvent: {}
+[1.505496] (grab_demo) StdoutLine: {'line': b'running egg_info\n'}
+[1.507364] (grab_demo) StdoutLine: {'line': b'writing grab_demo.egg-info/PKG-INFO\n'}
+[1.507923] (grab_demo) StdoutLine: {'line': b'writing dependency_links to grab_demo.egg-info/dependency_links.txt\n'}
+[1.508620] (grab_demo) StdoutLine: {'line': b'writing top-level names to grab_demo.egg-info/top_level.txt\n'}
+[1.516138] (grab_demo) StdoutLine: {'line': b"reading manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[1.517858] (grab_demo) StdoutLine: {'line': b"writing manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[1.545520] (grab_demo) StdoutLine: {'line': b'[ 89%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.586146] (grab_demo) StdoutLine: {'line': b'[ 93%] Built target grab_demo__rosidl_typesupport_c__pyext\n'}
+[1.603379] (-) TimerEvent: {}
+[1.622048] (grab_demo) StdoutLine: {'line': b'[ 93%] Built target ament_cmake_python_build_grab_demo_egg\n'}
+[1.703537] (-) TimerEvent: {}
+[1.803996] (-) TimerEvent: {}
+[1.904494] (-) TimerEvent: {}
+[2.004927] (-) TimerEvent: {}
+[2.105353] (-) TimerEvent: {}
+[2.205776] (-) TimerEvent: {}
+[2.307179] (-) TimerEvent: {}
+[2.407614] (-) TimerEvent: {}
+[2.514563] (-) TimerEvent: {}
+[2.619236] (-) TimerEvent: {}
+[2.719691] (-) TimerEvent: {}
+[2.827345] (-) TimerEvent: {}
+[2.927785] (-) TimerEvent: {}
+[3.028262] (-) TimerEvent: {}
+[3.128728] (-) TimerEvent: {}
+[3.229191] (-) TimerEvent: {}
+[3.331713] (-) TimerEvent: {}
+[3.432182] (-) TimerEvent: {}
+[3.532646] (-) TimerEvent: {}
+[3.633100] (-) TimerEvent: {}
+[3.733582] (-) TimerEvent: {}
+[3.834073] (-) TimerEvent: {}
+[3.934548] (-) TimerEvent: {}
+[4.035014] (-) TimerEvent: {}
+[4.135575] (-) TimerEvent: {}
+[4.236034] (-) TimerEvent: {}
+[4.343221] (-) TimerEvent: {}
+[4.443672] (-) TimerEvent: {}
+[4.544114] (-) TimerEvent: {}
+[4.644579] (-) TimerEvent: {}
+[4.745018] (-) TimerEvent: {}
+[4.845453] (-) TimerEvent: {}
+[4.945894] (-) TimerEvent: {}
+[5.046330] (-) TimerEvent: {}
+[5.146773] (-) TimerEvent: {}
+[5.247212] (-) TimerEvent: {}
+[5.347661] (-) TimerEvent: {}
+[5.448117] (-) TimerEvent: {}
+[5.548538] (-) TimerEvent: {}
+[5.648931] (-) TimerEvent: {}
+[5.749337] (-) TimerEvent: {}
+[5.849773] (-) TimerEvent: {}
+[5.950254] (-) TimerEvent: {}
+[6.050705] (-) TimerEvent: {}
+[6.151145] (-) TimerEvent: {}
+[6.255504] (-) TimerEvent: {}
+[6.356477] (-) TimerEvent: {}
+[6.456888] (-) TimerEvent: {}
+[6.557322] (-) TimerEvent: {}
+[6.659231] (-) TimerEvent: {}
+[6.759674] (-) TimerEvent: {}
+[6.860121] (-) TimerEvent: {}
+[6.960556] (-) TimerEvent: {}
+[7.060993] (-) TimerEvent: {}
+[7.161432] (-) TimerEvent: {}
+[7.261902] (-) TimerEvent: {}
+[7.362354] (-) TimerEvent: {}
+[7.462821] (-) TimerEvent: {}
+[7.563270] (-) TimerEvent: {}
+[7.663726] (-) TimerEvent: {}
+[7.764166] (-) TimerEvent: {}
+[7.864606] (-) TimerEvent: {}
+[7.965028] (-) TimerEvent: {}
+[8.065473] (-) TimerEvent: {}
+[8.165939] (-) TimerEvent: {}
+[8.266374] (-) TimerEvent: {}
+[8.366817] (-) TimerEvent: {}
+[8.467286] (-) TimerEvent: {}
+[8.567743] (-) TimerEvent: {}
+[8.668209] (-) TimerEvent: {}
+[8.768679] (-) TimerEvent: {}
+[8.869128] (-) TimerEvent: {}
+[8.969591] (-) TimerEvent: {}
+[9.070063] (-) TimerEvent: {}
+[9.170541] (-) TimerEvent: {}
+[9.271019] (-) TimerEvent: {}
+[9.371514] (-) TimerEvent: {}
+[9.471950] (-) TimerEvent: {}
+[9.572406] (-) TimerEvent: {}
+[9.672862] (-) TimerEvent: {}
+[9.773327] (-) TimerEvent: {}
+[9.874028] (-) TimerEvent: {}
+[9.974488] (-) TimerEvent: {}
+[10.074950] (-) TimerEvent: {}
+[10.175427] (-) TimerEvent: {}
+[10.275873] (-) TimerEvent: {}
+[10.376311] (-) TimerEvent: {}
+[10.476740] (-) TimerEvent: {}
+[10.577183] (-) TimerEvent: {}
+[10.677640] (-) TimerEvent: {}
+[10.778107] (-) TimerEvent: {}
+[10.878569] (-) TimerEvent: {}
+[10.979053] (-) TimerEvent: {}
+[11.079497] (-) TimerEvent: {}
+[11.179952] (-) TimerEvent: {}
+[11.280405] (-) TimerEvent: {}
+[11.380859] (-) TimerEvent: {}
+[11.481317] (-) TimerEvent: {}
+[11.581766] (-) TimerEvent: {}
+[11.682239] (-) TimerEvent: {}
+[11.782934] (-) TimerEvent: {}
+[11.883399] (-) TimerEvent: {}
+[11.983851] (-) TimerEvent: {}
+[12.084323] (-) TimerEvent: {}
+[12.184772] (-) TimerEvent: {}
+[12.285216] (-) TimerEvent: {}
+[12.385838] (-) TimerEvent: {}
+[12.480633] (grab_demo) StderrLine: {'line': b'In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.498033] (-) TimerEvent: {}
+[12.498252] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp: In constructor \xe2\x80\x98charuco_dectet::charuco_dectet()\xe2\x80\x99:\n'}
+[12.498948] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:111:70: error: no match for \xe2\x80\x98operator=\xe2\x80\x99 (operand types are \xe2\x80\x98cv::Ptr<cv::aruco::Dictionary>\xe2\x80\x99 and \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99)\n'}
+[12.499941] (grab_demo) StderrLine: {'line': b'  111 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[12.500185] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[12.500360] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[12.500549] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[12.500739] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[12.500875] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[12.501004] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,\n'}
+[12.501299] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.501482] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note: candidate: \xe2\x80\x98template<class Y> cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = Y; T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[12.502092] (grab_demo) StderrLine: {'line': b'  122 |     template<typename Y> inline Ptr& operator=(const Ptr<Y>& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.502243] (grab_demo) StderrLine: {'line': b'      |                                      ^~~~~~~~\n'}
+[12.502375] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note:   template argument deduction/substitution failed:\n'}
+[12.502504] (grab_demo) StderrLine: {'line': b'In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.502627] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:111:70: note:   \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 is not derived from \xe2\x80\x98const cv::Ptr<_Tp>\xe2\x80\x99\n'}
+[12.502753] (grab_demo) StderrLine: {'line': b'  111 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[12.502875] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[12.502996] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[12.503201] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[12.503365] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[12.503494] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[12.503666] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,\n'}
+[12.503799] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.503920] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:10: note: candidate: \xe2\x80\x98cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[12.504227] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.504362] (grab_demo) StderrLine: {'line': b'      |          ^~~~~~~~\n'}
+[12.504487] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:31: note:   no known conversion for argument 1 from \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 to \xe2\x80\x98const cv::Ptr<cv::aruco::Dictionary>&\xe2\x80\x99\n'}
+[12.504682] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.504807] (grab_demo) StderrLine: {'line': b'      |                    ~~~~~~~~~~~^\n'}
+[12.505070] (grab_demo) StderrLine: {'line': b'In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.505202] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:119:28: error: \xe2\x80\x98class cv::aruco::CharucoBoard\xe2\x80\x99 has no member named \xe2\x80\x98draw\xe2\x80\x99\n'}
+[12.506026] (grab_demo) StderrLine: {'line': b'  119 |             charuco_board->draw(cv::Size(1080,720),board_img,10,1);\n'}
+[12.506449] (grab_demo) StderrLine: {'line': b'      |                            ^~~~\n'}
+[12.529747] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp: In member function \xe2\x80\x98void charuco_dectet::rgb_image_callback(const ConstSharedPtr&)\xe2\x80\x99:\n'}
+[12.530409] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:62:20: error: \xe2\x80\x98detectMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99; did you mean \xe2\x80\x98drawDetectedMarkers\xe2\x80\x99?\n'}
+[12.530687] (grab_demo) StderrLine: {'line': b'   62 |         cv::aruco::detectMarkers(image_rgb,dictionary,marker_corners,marker_ids,DetectorParameters,rejected_markers);\n'}
+[12.530880] (grab_demo) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~~\n'}
+[12.531103] (grab_demo) StderrLine: {'line': b'      |                    drawDetectedMarkers\n'}
+[12.531282] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:63:20: error: \xe2\x80\x98refineDetectedMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99; did you mean \xe2\x80\x98drawDetectedMarkers\xe2\x80\x99?\n'}
+[12.531424] (grab_demo) StderrLine: {'line': b'   63 |         cv::aruco::refineDetectedMarkers(image_rgb,charuco_board,marker_corners,marker_ids,rejected_markers,camera_matrix,camera_dis);\n'}
+[12.531586] (grab_demo) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~~~~~~~~~~\n'}
+[12.531742] (grab_demo) StderrLine: {'line': b'      |                    drawDetectedMarkers\n'}
+[12.534131] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:67:54: error: \xe2\x80\x98interpolateCornersCharuco\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99\n'}
+[12.534418] (grab_demo) StderrLine: {'line': b'   67 |                     interpolatedCorners = cv::aruco::interpolateCornersCharuco(marker_corners, marker_ids, image_rgb, charuco_board, charuco_corners, charuco_ids,\n'}
+[12.534612] (grab_demo) StderrLine: {'line': b'      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[12.538209] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:72:49: error: \xe2\x80\x98estimatePoseCharucoBoard\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99\n'}
+[12.538544] (grab_demo) StderrLine: {'line': b'   72 |                         valid_pose = cv::aruco::estimatePoseCharucoBoard(charuco_corners, charuco_ids, charuco_board, camera_matrix, camera_dis,\n'}
+[12.538702] (grab_demo) StderrLine: {'line': b'      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[12.598264] (-) TimerEvent: {}
+[12.698730] (-) TimerEvent: {}
+[12.799205] (-) TimerEvent: {}
+[12.899653] (-) TimerEvent: {}
+[13.001462] (-) TimerEvent: {}
+[13.055767] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In constructor \xe2\x80\x98aruco_dectet::aruco_dectet()\xe2\x80\x99:\n'}
+[13.058702] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:70: error: no match for \xe2\x80\x98operator=\xe2\x80\x99 (operand types are \xe2\x80\x98cv::Ptr<cv::aruco::Dictionary>\xe2\x80\x99 and \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99)\n'}
+[13.058969] (grab_demo) StderrLine: {'line': b'   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[13.060357] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[13.060581] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[13.060740] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[13.060902] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[13.061240] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[13.061503] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5:\n'}
+[13.061675] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note: candidate: \xe2\x80\x98template<class Y> cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = Y; T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[13.061847] (grab_demo) StderrLine: {'line': b'  122 |     template<typename Y> inline Ptr& operator=(const Ptr<Y>& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[13.061982] (grab_demo) StderrLine: {'line': b'      |                                      ^~~~~~~~\n'}
+[13.062108] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note:   template argument deduction/substitution failed:\n'}
+[13.062232] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:70: note:   \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 is not derived from \xe2\x80\x98const cv::Ptr<_Tp>\xe2\x80\x99\n'}
+[13.062356] (grab_demo) StderrLine: {'line': b'   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[13.062474] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[13.062597] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[13.062718] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[13.062838] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[13.062956] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[13.071106] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5:\n'}
+[13.071427] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:10: note: candidate: \xe2\x80\x98cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[13.071607] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[13.071748] (grab_demo) StderrLine: {'line': b'      |          ^~~~~~~~\n'}
+[13.071882] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:31: note:   no known conversion for argument 1 from \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 to \xe2\x80\x98const cv::Ptr<cv::aruco::Dictionary>&\xe2\x80\x99\n'}
+[13.072083] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[13.072539] (grab_demo) StderrLine: {'line': b'      |                    ~~~~~~~~~~~^\n'}
+[13.101667] (-) TimerEvent: {}
+[13.107528] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In member function \xe2\x80\x98void aruco_dectet::rgb_image_callback(const ConstSharedPtr&)\xe2\x80\x99:\n'}
+[13.108075] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:121:20: error: \xe2\x80\x98detectMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99; did you mean \xe2\x80\x98drawDetectedMarkers\xe2\x80\x99?\n'}
+[13.108302] (grab_demo) StderrLine: {'line': b'  121 |         cv::aruco::detectMarkers(image_rgb,dictionary,marker_corners,aruco_ids,DetectorParameters);\n'}
+[13.108686] (grab_demo) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~~\n'}
+[13.108855] (grab_demo) StderrLine: {'line': b'      |                    drawDetectedMarkers\n'}
+[13.112148] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:125:24: error: \xe2\x80\x98estimatePoseSingleMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99\n'}
+[13.112582] (grab_demo) StderrLine: {'line': b'  125 |             cv::aruco::estimatePoseSingleMarkers(marker_corners,markerLength,camera_matrix,camera_dis,rotation_matrix,pos_matrix);\n'}
+[13.112767] (grab_demo) StderrLine: {'line': b'      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[13.201856] (-) TimerEvent: {}
+[13.302335] (-) TimerEvent: {}
+[13.402810] (-) TimerEvent: {}
+[13.503649] (-) TimerEvent: {}
+[13.604164] (-) TimerEvent: {}
+[13.704635] (-) TimerEvent: {}
+[13.805163] (-) TimerEvent: {}
+[13.905820] (-) TimerEvent: {}
+[14.006775] (-) TimerEvent: {}
+[14.108164] (-) TimerEvent: {}
+[14.208714] (-) TimerEvent: {}
+[14.309280] (-) TimerEvent: {}
+[14.410158] (-) TimerEvent: {}
+[14.511024] (-) TimerEvent: {}
+[14.611636] (-) TimerEvent: {}
+[14.712418] (-) TimerEvent: {}
+[14.813120] (-) TimerEvent: {}
+[14.913823] (-) TimerEvent: {}
+[15.014628] (-) TimerEvent: {}
+[15.115418] (-) TimerEvent: {}
+[15.216014] (-) TimerEvent: {}
+[15.317071] (-) TimerEvent: {}
+[15.417746] (-) TimerEvent: {}
+[15.518222] (-) TimerEvent: {}
+[15.618772] (-) TimerEvent: {}
+[15.719462] (-) TimerEvent: {}
+[15.819943] (-) TimerEvent: {}
+[15.920707] (-) TimerEvent: {}
+[16.021221] (-) TimerEvent: {}
+[16.121770] (-) TimerEvent: {}
+[16.222219] (-) TimerEvent: {}
+[16.247256] (grab_demo) StderrLine: {'line': b'In file included from /usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33,\n'}
+[16.249245] (grab_demo) StderrLine: {'line': b'                 from /usr/include/c++/11/bits/allocator.h:46,\n'}
+[16.249427] (grab_demo) StderrLine: {'line': b'                 from /usr/include/c++/11/string:41,\n'}
+[16.249572] (grab_demo) StderrLine: {'line': b'                 from /usr/include/c++/11/bits/locale_classes.h:40,\n'}
+[16.249707] (grab_demo) StderrLine: {'line': b'                 from /usr/include/c++/11/bits/ios_base.h:41,\n'}
+[16.249838] (grab_demo) StderrLine: {'line': b'                 from /usr/include/c++/11/ios:42,\n'}
+[16.249963] (grab_demo) StderrLine: {'line': b'                 from /usr/include/c++/11/ostream:38,\n'}
+[16.250090] (grab_demo) StderrLine: {'line': b'                 from /usr/include/c++/11/iostream:39,\n'}
+[16.250218] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:3,\n'}
+[16.250343] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[16.250464] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = cv::aruco::CharucoBoard; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard]\xe2\x80\x99:\n'}
+[16.250633] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/bits/alloc_traits.h:516:17:   required from \xe2\x80\x98static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = cv::aruco::CharucoBoard; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<cv::aruco::CharucoBoard>]\xe2\x80\x99\n'}
+[16.250794] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr_base.h:519:39:   required from \xe2\x80\x98std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard; _Alloc = std::allocator<cv::aruco::CharucoBoard>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\xe2\x80\x99\n'}
+[16.250925] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr_base.h:650:16:   required from \xe2\x80\x98std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = cv::aruco::CharucoBoard; _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\xe2\x80\x99\n'}
+[16.251074] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:   required from \xe2\x80\x98std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\xe2\x80\x99\n'}
+[16.251213] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h:409:59:   required from \xe2\x80\x98std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard]\xe2\x80\x99\n'}
+[16.251361] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h:862:14:   required from \xe2\x80\x98std::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = cv::aruco::CharucoBoard; _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}]\xe2\x80\x99\n'}
+[16.251717] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h:878:39:   required from \xe2\x80\x98std::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = cv::aruco::CharucoBoard; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}]\xe2\x80\x99\n'}
+[16.251868] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:146:43:   required from \xe2\x80\x98cv::Ptr<_Tp> cv::makePtr(const A1& ...) [with _Tp = cv::aruco::CharucoBoard; A1 = {cv::Size_<int>, double, double, cv::Ptr<cv::aruco::Dictionary>}]\xe2\x80\x99\n'}
+[16.252002] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:113:65:   required from here\n'}
+[16.252127] (grab_demo) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h:162:11: error: no matching function for call to \xe2\x80\x98cv::aruco::CharucoBoard::CharucoBoard(const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&)\xe2\x80\x99\n'}
+[16.252253] (grab_demo) StderrLine: {'line': b'  162 |         { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }\n'}
+[16.252396] (grab_demo) StderrLine: {'line': b'      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[16.252517] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8,\n'}
+[16.252738] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48,\n'}
+[16.252881] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:80,\n'}
+[16.253005] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,\n'}
+[16.253130] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[16.253249] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:191:5: note: candidate: \xe2\x80\x98cv::aruco::CharucoBoard::CharucoBoard()\xe2\x80\x99\n'}
+[16.253371] (grab_demo) StderrLine: {'line': b'  191 |     CharucoBoard();\n'}
+[16.253488] (grab_demo) StderrLine: {'line': b'      |     ^~~~~~~~~~~~\n'}
+[16.253606] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:191:5: note:   candidate expects 0 arguments, 4 provided\n'}
+[16.253728] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:146:13: note: candidate: \xe2\x80\x98cv::aruco::CharucoBoard::CharucoBoard(const Size&, float, float, const cv::aruco::Dictionary&, cv::InputArray)\xe2\x80\x99\n'}
+[16.253980] (grab_demo) StderrLine: {'line': b'  146 |     CV_WRAP CharucoBoard(const Size& size, float squareLength, float markerLength,\n'}
+[16.254108] (grab_demo) StderrLine: {'line': b'      |             ^~~~~~~~~~~~\n'}
+[16.254227] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:147:44: note:   no known conversion for argument 4 from \xe2\x80\x98const cv::Ptr<cv::aruco::Dictionary>\xe2\x80\x99 to \xe2\x80\x98const cv::aruco::Dictionary&\xe2\x80\x99\n'}
+[16.254354] (grab_demo) StderrLine: {'line': b'  147 |                          const Dictionary &dictionary, InputArray ids = noArray());\n'}
+[16.254474] (grab_demo) StderrLine: {'line': b'      |                          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~\n'}
+[16.254592] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note: candidate: \xe2\x80\x98cv::aruco::CharucoBoard::CharucoBoard(const cv::aruco::CharucoBoard&)\xe2\x80\x99\n'}
+[16.254715] (grab_demo) StderrLine: {'line': b'  135 | class CV_EXPORTS_W_SIMPLE CharucoBoard : public Board {\n'}
+[16.254833] (grab_demo) StderrLine: {'line': b'      |                           ^~~~~~~~~~~~\n'}
+[16.254955] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note:   candidate expects 1 argument, 4 provided\n'}
+[16.255100] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note: candidate: \xe2\x80\x98cv::aruco::CharucoBoard::CharucoBoard(cv::aruco::CharucoBoard&&)\xe2\x80\x99\n'}
+[16.255225] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note:   candidate expects 1 argument, 4 provided\n'}
+[16.322418] (-) TimerEvent: {}
+[16.422868] (-) TimerEvent: {}
+[16.523363] (-) TimerEvent: {}
+[16.623858] (-) TimerEvent: {}
+[16.724298] (-) TimerEvent: {}
+[16.824746] (-) TimerEvent: {}
+[16.927222] (-) TimerEvent: {}
+[17.027684] (-) TimerEvent: {}
+[17.128141] (-) TimerEvent: {}
+[17.228601] (-) TimerEvent: {}
+[17.329053] (-) TimerEvent: {}
+[17.429490] (-) TimerEvent: {}
+[17.529941] (-) TimerEvent: {}
+[17.630399] (-) TimerEvent: {}
+[17.730857] (-) TimerEvent: {}
+[17.831340] (-) TimerEvent: {}
+[17.931804] (-) TimerEvent: {}
+[18.032235] (-) TimerEvent: {}
+[18.132680] (-) TimerEvent: {}
+[18.233129] (-) TimerEvent: {}
+[18.333567] (-) TimerEvent: {}
+[18.434000] (-) TimerEvent: {}
+[18.534455] (-) TimerEvent: {}
+[18.634896] (-) TimerEvent: {}
+[18.735581] (-) TimerEvent: {}
+[18.836245] (-) TimerEvent: {}
+[18.936685] (-) TimerEvent: {}
+[19.037129] (-) TimerEvent: {}
+[19.137688] (-) TimerEvent: {}
+[19.238225] (-) TimerEvent: {}
+[19.338685] (-) TimerEvent: {}
+[19.439165] (-) TimerEvent: {}
+[19.539609] (-) TimerEvent: {}
+[19.640056] (-) TimerEvent: {}
+[19.740499] (-) TimerEvent: {}
+[19.840934] (-) TimerEvent: {}
+[19.941358] (-) TimerEvent: {}
+[20.041784] (-) TimerEvent: {}
+[20.142222] (-) TimerEvent: {}
+[20.242663] (-) TimerEvent: {}
+[20.343133] (-) TimerEvent: {}
+[20.443718] (-) TimerEvent: {}
+[20.544272] (-) TimerEvent: {}
+[20.647237] (-) TimerEvent: {}
+[20.747682] (-) TimerEvent: {}
+[20.848107] (-) TimerEvent: {}
+[20.948534] (-) TimerEvent: {}
+[21.048968] (-) TimerEvent: {}
+[21.149418] (-) TimerEvent: {}
+[21.250134] (-) TimerEvent: {}
+[21.351246] (-) TimerEvent: {}
+[21.451693] (-) TimerEvent: {}
+[21.552135] (-) TimerEvent: {}
+[21.652557] (-) TimerEvent: {}
+[21.752979] (-) TimerEvent: {}
+[21.856844] (-) TimerEvent: {}
+[21.957427] (-) TimerEvent: {}
+[22.057857] (-) TimerEvent: {}
+[22.158489] (-) TimerEvent: {}
+[22.258929] (-) TimerEvent: {}
+[22.359410] (-) TimerEvent: {}
+[22.459829] (-) TimerEvent: {}
+[22.560413] (-) TimerEvent: {}
+[22.660860] (-) TimerEvent: {}
+[22.761321] (-) TimerEvent: {}
+[22.861767] (-) TimerEvent: {}
+[22.962192] (-) TimerEvent: {}
+[23.062627] (-) TimerEvent: {}
+[23.163090] (-) TimerEvent: {}
+[23.263517] (-) TimerEvent: {}
+[23.363940] (-) TimerEvent: {}
+[23.464368] (-) TimerEvent: {}
+[23.564798] (-) TimerEvent: {}
+[23.665374] (-) TimerEvent: {}
+[23.765820] (-) TimerEvent: {}
+[23.866262] (-) TimerEvent: {}
+[23.966718] (-) TimerEvent: {}
+[24.067271] (-) TimerEvent: {}
+[24.168067] (-) TimerEvent: {}
+[24.268532] (-) TimerEvent: {}
+[24.368968] (-) TimerEvent: {}
+[24.469392] (-) TimerEvent: {}
+[24.569994] (-) TimerEvent: {}
+[24.670774] (-) TimerEvent: {}
+[24.771317] (-) TimerEvent: {}
+[24.871786] (-) TimerEvent: {}
+[24.972617] (-) TimerEvent: {}
+[25.073344] (-) TimerEvent: {}
+[25.173752] (-) TimerEvent: {}
+[25.274176] (-) TimerEvent: {}
+[25.374620] (-) TimerEvent: {}
+[25.475083] (-) TimerEvent: {}
+[25.575691] (-) TimerEvent: {}
+[25.676129] (-) TimerEvent: {}
+[25.776569] (-) TimerEvent: {}
+[25.877020] (-) TimerEvent: {}
+[25.977492] (-) TimerEvent: {}
+[26.077948] (-) TimerEvent: {}
+[26.178362] (-) TimerEvent: {}
+[26.278857] (-) TimerEvent: {}
+[26.379311] (-) TimerEvent: {}
+[26.479747] (-) TimerEvent: {}
+[26.580350] (-) TimerEvent: {}
+[26.681080] (-) TimerEvent: {}
+[26.781842] (-) TimerEvent: {}
+[26.882548] (-) TimerEvent: {}
+[26.983008] (-) TimerEvent: {}
+[27.083857] (-) TimerEvent: {}
+[27.184479] (-) TimerEvent: {}
+[27.285292] (-) TimerEvent: {}
+[27.385917] (-) TimerEvent: {}
+[27.486502] (-) TimerEvent: {}
+[27.587525] (-) TimerEvent: {}
+[27.688392] (-) TimerEvent: {}
+[27.789096] (-) TimerEvent: {}
+[27.889947] (-) TimerEvent: {}
+[27.995200] (-) TimerEvent: {}
+[28.095685] (-) TimerEvent: {}
+[28.196293] (-) TimerEvent: {}
+[28.297021] (-) TimerEvent: {}
+[28.397882] (-) TimerEvent: {}
+[28.498650] (-) TimerEvent: {}
+[28.599214] (-) TimerEvent: {}
+[28.699654] (-) TimerEvent: {}
+[28.800258] (-) TimerEvent: {}
+[28.900842] (-) TimerEvent: {}
+[29.001259] (-) TimerEvent: {}
+[29.101690] (-) TimerEvent: {}
+[29.202268] (-) TimerEvent: {}
+[29.302942] (-) TimerEvent: {}
+[29.403406] (-) TimerEvent: {}
+[29.503866] (-) TimerEvent: {}
+[29.604331] (-) TimerEvent: {}
+[29.704774] (-) TimerEvent: {}
+[29.805225] (-) TimerEvent: {}
+[29.905736] (-) TimerEvent: {}
+[30.007069] (-) TimerEvent: {}
+[30.107836] (-) TimerEvent: {}
+[30.208867] (-) TimerEvent: {}
+[30.309621] (-) TimerEvent: {}
+[30.410320] (-) TimerEvent: {}
+[30.510931] (-) TimerEvent: {}
+[30.611453] (-) TimerEvent: {}
+[30.712032] (-) TimerEvent: {}
+[30.812625] (-) TimerEvent: {}
+[30.913088] (-) TimerEvent: {}
+[31.013657] (-) TimerEvent: {}
+[31.114224] (-) TimerEvent: {}
+[31.214721] (-) TimerEvent: {}
+[31.315401] (-) TimerEvent: {}
+[31.415832] (-) TimerEvent: {}
+[31.516267] (-) TimerEvent: {}
+[31.616728] (-) TimerEvent: {}
+[31.717177] (-) TimerEvent: {}
+[31.817647] (-) TimerEvent: {}
+[31.918143] (-) TimerEvent: {}
+[32.018591] (-) TimerEvent: {}
+[32.119063] (-) TimerEvent: {}
+[32.219498] (-) TimerEvent: {}
+[32.319941] (-) TimerEvent: {}
+[32.420379] (-) TimerEvent: {}
+[32.520807] (-) TimerEvent: {}
+[32.621232] (-) TimerEvent: {}
+[32.721654] (-) TimerEvent: {}
+[32.822090] (-) TimerEvent: {}
+[32.922535] (-) TimerEvent: {}
+[33.022965] (-) TimerEvent: {}
+[33.123433] (-) TimerEvent: {}
+[33.223891] (-) TimerEvent: {}
+[33.324343] (-) TimerEvent: {}
+[33.424779] (-) TimerEvent: {}
+[33.525229] (-) TimerEvent: {}
+[33.625713] (-) TimerEvent: {}
+[33.726201] (-) TimerEvent: {}
+[33.826672] (-) TimerEvent: {}
+[33.927149] (-) TimerEvent: {}
+[34.027602] (-) TimerEvent: {}
+[34.128088] (-) TimerEvent: {}
+[34.228631] (-) TimerEvent: {}
+[34.329075] (-) TimerEvent: {}
+[34.429535] (-) TimerEvent: {}
+[34.529990] (-) TimerEvent: {}
+[34.630599] (-) TimerEvent: {}
+[34.731219] (-) TimerEvent: {}
+[34.831807] (-) TimerEvent: {}
+[34.932491] (-) TimerEvent: {}
+[35.033253] (-) TimerEvent: {}
+[35.133876] (-) TimerEvent: {}
+[35.234592] (-) TimerEvent: {}
+[35.335189] (-) TimerEvent: {}
+[35.435706] (-) TimerEvent: {}
+[35.536168] (-) TimerEvent: {}
+[35.636666] (-) TimerEvent: {}
+[35.737139] (-) TimerEvent: {}
+[35.837590] (-) TimerEvent: {}
+[35.938228] (-) TimerEvent: {}
+[36.038679] (-) TimerEvent: {}
+[36.139152] (-) TimerEvent: {}
+[36.239737] (-) TimerEvent: {}
+[36.340186] (-) TimerEvent: {}
+[36.440643] (-) TimerEvent: {}
+[36.541120] (-) TimerEvent: {}
+[36.641587] (-) TimerEvent: {}
+[36.742021] (-) TimerEvent: {}
+[36.842465] (-) TimerEvent: {}
+[36.942908] (-) TimerEvent: {}
+[37.043362] (-) TimerEvent: {}
+[37.143779] (-) TimerEvent: {}
+[37.244233] (-) TimerEvent: {}
+[37.344697] (-) TimerEvent: {}
+[37.445127] (-) TimerEvent: {}
+[37.545596] (-) TimerEvent: {}
+[37.646040] (-) TimerEvent: {}
+[37.746484] (-) TimerEvent: {}
+[37.846914] (-) TimerEvent: {}
+[37.947584] (-) TimerEvent: {}
+[38.048096] (-) TimerEvent: {}
+[38.148564] (-) TimerEvent: {}
+[38.249205] (-) TimerEvent: {}
+[38.349702] (-) TimerEvent: {}
+[38.450176] (-) TimerEvent: {}
+[38.550635] (-) TimerEvent: {}
+[38.611496] (grab_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76\xef\xbc\x9aCMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[38.628920] (grab_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:684\xef\xbc\x9aCMakeFiles/aruco_dectet.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[38.629251] (grab_demo) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[38.650787] (-) TimerEvent: {}
+[38.751231] (-) TimerEvent: {}
+[38.851755] (-) TimerEvent: {}
+[38.952244] (-) TimerEvent: {}
+[39.052721] (-) TimerEvent: {}
+[39.153145] (-) TimerEvent: {}
+[39.253647] (-) TimerEvent: {}
+[39.354247] (-) TimerEvent: {}
+[39.454870] (-) TimerEvent: {}
+[39.555351] (-) TimerEvent: {}
+[39.655863] (-) TimerEvent: {}
+[39.756326] (-) TimerEvent: {}
+[39.856750] (-) TimerEvent: {}
+[39.958946] (grab_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[39.959582] (-) TimerEvent: {}
+[39.963693] (grab_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:606\xef\xbc\x9aCMakeFiles/charuco_dectet_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[40.059798] (-) TimerEvent: {}
+[40.160255] (-) TimerEvent: {}
+[40.260711] (-) TimerEvent: {}
+[40.361159] (-) TimerEvent: {}
+[40.461598] (-) TimerEvent: {}
+[40.562039] (-) TimerEvent: {}
+[40.662488] (-) TimerEvent: {}
+[40.762902] (-) TimerEvent: {}
+[40.863355] (-) TimerEvent: {}
+[40.963794] (-) TimerEvent: {}
+[41.064236] (-) TimerEvent: {}
+[41.164675] (-) TimerEvent: {}
+[41.265140] (-) TimerEvent: {}
+[41.365608] (-) TimerEvent: {}
+[41.466115] (-) TimerEvent: {}
+[41.566542] (-) TimerEvent: {}
+[41.666973] (-) TimerEvent: {}
+[41.767433] (-) TimerEvent: {}
+[41.867864] (-) TimerEvent: {}
+[41.968317] (-) TimerEvent: {}
+[42.068784] (-) TimerEvent: {}
+[42.169237] (-) TimerEvent: {}
+[42.269663] (-) TimerEvent: {}
+[42.370098] (-) TimerEvent: {}
+[42.470546] (-) TimerEvent: {}
+[42.570968] (-) TimerEvent: {}
+[42.671420] (-) TimerEvent: {}
+[42.771876] (-) TimerEvent: {}
+[42.872316] (-) TimerEvent: {}
+[42.972795] (-) TimerEvent: {}
+[43.073392] (-) TimerEvent: {}
+[43.174112] (-) TimerEvent: {}
+[43.274619] (-) TimerEvent: {}
+[43.375073] (-) TimerEvent: {}
+[43.475617] (-) TimerEvent: {}
+[43.576100] (-) TimerEvent: {}
+[43.676776] (-) TimerEvent: {}
+[43.777297] (-) TimerEvent: {}
+[43.877800] (-) TimerEvent: {}
+[43.978315] (-) TimerEvent: {}
+[44.078819] (-) TimerEvent: {}
+[44.157878] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:9:72: warning: \xe2\x80\x98geometry_msgs::msg::Pose_<std::allocator<void> >::ConstPtr\xe2\x80\x99 is deprecated [-Wdeprecated-declarations]\n'}
+[44.159282] (grab_demo) StderrLine: {'line': b'    9 | void charuco_pose_callback(const geometry_msgs::msg::Pose::ConstPtr msg)\n'}
+[44.159613] (grab_demo) StderrLine: {'line': b'      |                                                                        ^\n'}
+[44.163787] (grab_demo) StderrLine: {'line': b'In file included from /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:7,\n'}
+[44.164100] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:14,\n'}
+[44.164359] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1:\n'}
+[44.164608] (grab_demo) StderrLine: {'line': b'/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:115:5: note: declared here\n'}
+[44.164848] (grab_demo) StderrLine: {'line': b'  115 |     ConstPtr;\n'}
+[44.165083] (grab_demo) StderrLine: {'line': b'      |     ^~~~~~~~\n'}
+[44.178941] (-) TimerEvent: {}
+[44.279410] (-) TimerEvent: {}
+[44.371298] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp: In function \xe2\x80\x98int main(int, const char**)\xe2\x80\x99:\n'}
+[44.371964] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:63:11: warning: ISO C++ forbids variable length array \xe2\x80\x98data_cout\xe2\x80\x99 [-Wvla]\n'}
+[44.372281] (grab_demo) StderrLine: {'line': b'   63 |     float data_cout[hand_eye_cout][6];\n'}
+[44.372549] (grab_demo) StderrLine: {'line': b'      |           ^~~~~~~~~\n'}
+[44.379544] (-) TimerEvent: {}
+[44.479951] (-) TimerEvent: {}
+[44.580452] (-) TimerEvent: {}
+[44.680954] (-) TimerEvent: {}
+[44.781450] (-) TimerEvent: {}
+[44.881944] (-) TimerEvent: {}
+[44.982460] (-) TimerEvent: {}
+[45.082966] (-) TimerEvent: {}
+[45.183510] (-) TimerEvent: {}
+[45.284017] (-) TimerEvent: {}
+[45.384482] (-) TimerEvent: {}
+[45.484921] (-) TimerEvent: {}
+[45.585424] (-) TimerEvent: {}
+[45.685929] (-) TimerEvent: {}
+[45.786415] (-) TimerEvent: {}
+[45.886918] (-) TimerEvent: {}
+[45.987451] (-) TimerEvent: {}
+[46.087954] (-) TimerEvent: {}
+[46.188470] (-) TimerEvent: {}
+[46.288956] (-) TimerEvent: {}
+[46.389422] (-) TimerEvent: {}
+[46.490111] (-) TimerEvent: {}
+[46.590623] (-) TimerEvent: {}
+[46.691226] (-) TimerEvent: {}
+[46.791704] (-) TimerEvent: {}
+[46.892204] (-) TimerEvent: {}
+[46.992837] (-) TimerEvent: {}
+[47.093752] (-) TimerEvent: {}
+[47.194786] (-) TimerEvent: {}
+[47.295471] (-) TimerEvent: {}
+[47.396213] (-) TimerEvent: {}
+[47.496789] (-) TimerEvent: {}
+[47.597568] (-) TimerEvent: {}
+[47.698215] (-) TimerEvent: {}
+[47.798932] (-) TimerEvent: {}
+[47.899535] (-) TimerEvent: {}
+[48.000008] (-) TimerEvent: {}
+[48.100452] (-) TimerEvent: {}
+[48.200939] (-) TimerEvent: {}
+[48.302037] (-) TimerEvent: {}
+[48.402562] (-) TimerEvent: {}
+[48.503216] (-) TimerEvent: {}
+[48.603862] (-) TimerEvent: {}
+[48.704329] (-) TimerEvent: {}
+[48.804776] (-) TimerEvent: {}
+[48.905218] (-) TimerEvent: {}
+[49.005632] (-) TimerEvent: {}
+[49.106068] (-) TimerEvent: {}
+[49.206546] (-) TimerEvent: {}
+[49.306964] (-) TimerEvent: {}
+[49.407406] (-) TimerEvent: {}
+[49.507830] (-) TimerEvent: {}
+[49.608242] (-) TimerEvent: {}
+[49.708657] (-) TimerEvent: {}
+[49.809074] (-) TimerEvent: {}
+[49.909488] (-) TimerEvent: {}
+[50.009919] (-) TimerEvent: {}
+[50.110387] (-) TimerEvent: {}
+[50.210835] (-) TimerEvent: {}
+[50.311269] (-) TimerEvent: {}
+[50.411689] (-) TimerEvent: {}
+[50.512106] (-) TimerEvent: {}
+[50.612529] (-) TimerEvent: {}
+[50.712954] (-) TimerEvent: {}
+[50.813393] (-) TimerEvent: {}
+[50.913817] (-) TimerEvent: {}
+[51.014256] (-) TimerEvent: {}
+[51.114694] (-) TimerEvent: {}
+[51.215178] (-) TimerEvent: {}
+[51.315595] (-) TimerEvent: {}
+[51.416035] (-) TimerEvent: {}
+[51.516461] (-) TimerEvent: {}
+[51.616880] (-) TimerEvent: {}
+[51.718070] (-) TimerEvent: {}
+[51.818478] (-) TimerEvent: {}
+[51.918936] (-) TimerEvent: {}
+[52.019372] (-) TimerEvent: {}
+[52.119790] (-) TimerEvent: {}
+[52.220226] (-) TimerEvent: {}
+[52.320653] (-) TimerEvent: {}
+[52.423236] (-) TimerEvent: {}
+[52.523667] (-) TimerEvent: {}
+[52.624208] (-) TimerEvent: {}
+[52.724643] (-) TimerEvent: {}
+[52.825083] (-) TimerEvent: {}
+[52.925521] (-) TimerEvent: {}
+[53.025990] (-) TimerEvent: {}
+[53.127233] (-) TimerEvent: {}
+[53.230247] (-) TimerEvent: {}
+[53.330660] (-) TimerEvent: {}
+[53.431108] (-) TimerEvent: {}
+[53.531994] (-) TimerEvent: {}
+[53.632408] (-) TimerEvent: {}
+[53.732900] (-) TimerEvent: {}
+[53.833326] (-) TimerEvent: {}
+[53.933818] (-) TimerEvent: {}
+[54.034310] (-) TimerEvent: {}
+[54.134747] (-) TimerEvent: {}
+[54.235266] (-) TimerEvent: {}
+[54.335844] (-) TimerEvent: {}
+[54.436332] (-) TimerEvent: {}
+[54.536829] (-) TimerEvent: {}
+[54.637294] (-) TimerEvent: {}
+[54.737745] (-) TimerEvent: {}
+[54.838177] (-) TimerEvent: {}
+[54.938612] (-) TimerEvent: {}
+[55.039083] (-) TimerEvent: {}
+[55.139517] (-) TimerEvent: {}
+[55.239929] (-) TimerEvent: {}
+[55.340358] (-) TimerEvent: {}
+[55.440807] (-) TimerEvent: {}
+[55.541274] (-) TimerEvent: {}
+[55.641700] (-) TimerEvent: {}
+[55.742126] (-) TimerEvent: {}
+[55.842540] (-) TimerEvent: {}
+[55.942976] (-) TimerEvent: {}
+[56.043429] (-) TimerEvent: {}
+[56.143884] (-) TimerEvent: {}
+[56.244304] (-) TimerEvent: {}
+[56.344720] (-) TimerEvent: {}
+[56.445175] (-) TimerEvent: {}
+[56.545607] (-) TimerEvent: {}
+[56.646055] (-) TimerEvent: {}
+[56.746528] (-) TimerEvent: {}
+[56.846980] (-) TimerEvent: {}
+[56.947484] (-) TimerEvent: {}
+[57.047919] (-) TimerEvent: {}
+[57.148347] (-) TimerEvent: {}
+[57.248811] (-) TimerEvent: {}
+[57.349251] (-) TimerEvent: {}
+[57.449690] (-) TimerEvent: {}
+[57.550121] (-) TimerEvent: {}
+[57.650608] (-) TimerEvent: {}
+[57.751088] (-) TimerEvent: {}
+[57.851521] (-) TimerEvent: {}
+[57.951954] (-) TimerEvent: {}
+[58.052380] (-) TimerEvent: {}
+[58.152811] (-) TimerEvent: {}
+[58.253246] (-) TimerEvent: {}
+[58.353677] (-) TimerEvent: {}
+[58.454125] (-) TimerEvent: {}
+[58.554573] (-) TimerEvent: {}
+[58.655005] (-) TimerEvent: {}
+[58.755599] (-) TimerEvent: {}
+[58.855991] (-) TimerEvent: {}
+[58.956386] (-) TimerEvent: {}
+[59.056778] (-) TimerEvent: {}
+[59.157164] (-) TimerEvent: {}
+[59.257634] (-) TimerEvent: {}
+[59.358040] (-) TimerEvent: {}
+[59.458460] (-) TimerEvent: {}
+[59.558893] (-) TimerEvent: {}
+[59.659366] (-) TimerEvent: {}
+[59.759815] (-) TimerEvent: {}
+[59.860301] (-) TimerEvent: {}
+[59.960779] (-) TimerEvent: {}
+[60.061259] (-) TimerEvent: {}
+[60.161753] (-) TimerEvent: {}
+[60.262210] (-) TimerEvent: {}
+[60.362683] (-) TimerEvent: {}
+[60.463150] (-) TimerEvent: {}
+[60.563738] (-) TimerEvent: {}
+[60.664300] (-) TimerEvent: {}
+[60.764763] (-) TimerEvent: {}
+[60.865203] (-) TimerEvent: {}
+[60.965733] (-) TimerEvent: {}
+[61.066189] (-) TimerEvent: {}
+[61.166688] (-) TimerEvent: {}
+[61.267141] (-) TimerEvent: {}
+[61.367568] (-) TimerEvent: {}
+[61.468047] (-) TimerEvent: {}
+[61.568477] (-) TimerEvent: {}
+[61.668905] (-) TimerEvent: {}
+[61.769526] (-) TimerEvent: {}
+[61.869997] (-) TimerEvent: {}
+[61.970509] (-) TimerEvent: {}
+[62.070934] (-) TimerEvent: {}
+[62.171401] (-) TimerEvent: {}
+[62.271841] (-) TimerEvent: {}
+[62.372257] (-) TimerEvent: {}
+[62.472710] (-) TimerEvent: {}
+[62.573130] (-) TimerEvent: {}
+[62.673710] (-) TimerEvent: {}
+[62.774224] (-) TimerEvent: {}
+[62.874665] (-) TimerEvent: {}
+[62.975122] (-) TimerEvent: {}
+[63.075542] (-) TimerEvent: {}
+[63.175967] (-) TimerEvent: {}
+[63.276395] (-) TimerEvent: {}
+[63.376826] (-) TimerEvent: {}
+[63.477245] (-) TimerEvent: {}
+[63.577685] (-) TimerEvent: {}
+[63.678141] (-) TimerEvent: {}
+[63.778587] (-) TimerEvent: {}
+[63.879024] (-) TimerEvent: {}
+[63.979458] (-) TimerEvent: {}
+[64.079906] (-) TimerEvent: {}
+[64.180343] (-) TimerEvent: {}
+[64.280785] (-) TimerEvent: {}
+[64.381392] (-) TimerEvent: {}
+[64.481826] (-) TimerEvent: {}
+[64.582277] (-) TimerEvent: {}
+[64.682713] (-) TimerEvent: {}
+[64.783220] (-) TimerEvent: {}
+[64.883662] (-) TimerEvent: {}
+[64.984042] (-) TimerEvent: {}
+[65.084495] (-) TimerEvent: {}
+[65.184946] (-) TimerEvent: {}
+[65.285415] (-) TimerEvent: {}
+[65.385874] (-) TimerEvent: {}
+[65.486313] (-) TimerEvent: {}
+[65.586742] (-) TimerEvent: {}
+[65.687237] (-) TimerEvent: {}
+[65.787670] (-) TimerEvent: {}
+[65.888092] (-) TimerEvent: {}
+[65.988534] (-) TimerEvent: {}
+[66.088969] (-) TimerEvent: {}
+[66.189394] (-) TimerEvent: {}
+[66.289820] (-) TimerEvent: {}
+[66.390247] (-) TimerEvent: {}
+[66.490721] (-) TimerEvent: {}
+[66.591211] (-) TimerEvent: {}
+[66.691670] (-) TimerEvent: {}
+[66.792112] (-) TimerEvent: {}
+[66.892536] (-) TimerEvent: {}
+[66.998588] (-) TimerEvent: {}
+[67.099006] (-) TimerEvent: {}
+[67.199441] (-) TimerEvent: {}
+[67.299855] (-) TimerEvent: {}
+[67.400266] (-) TimerEvent: {}
+[67.500688] (-) TimerEvent: {}
+[67.601137] (-) TimerEvent: {}
+[67.701755] (-) TimerEvent: {}
+[67.802238] (-) TimerEvent: {}
+[67.902665] (-) TimerEvent: {}
+[68.003105] (-) TimerEvent: {}
+[68.103514] (-) TimerEvent: {}
+[68.203941] (-) TimerEvent: {}
+[68.304377] (-) TimerEvent: {}
+[68.404833] (-) TimerEvent: {}
+[68.505250] (-) TimerEvent: {}
+[68.605651] (-) TimerEvent: {}
+[68.706067] (-) TimerEvent: {}
+[68.806506] (-) TimerEvent: {}
+[68.906933] (-) TimerEvent: {}
+[69.007364] (-) TimerEvent: {}
+[69.107781] (-) TimerEvent: {}
+[69.208244] (-) TimerEvent: {}
+[69.308689] (-) TimerEvent: {}
+[69.409105] (-) TimerEvent: {}
+[69.509507] (-) TimerEvent: {}
+[69.609930] (-) TimerEvent: {}
+[69.710357] (-) TimerEvent: {}
+[69.810793] (-) TimerEvent: {}
+[69.911223] (-) TimerEvent: {}
+[70.011654] (-) TimerEvent: {}
+[70.112109] (-) TimerEvent: {}
+[70.212540] (-) TimerEvent: {}
+[70.312987] (-) TimerEvent: {}
+[70.413434] (-) TimerEvent: {}
+[70.513884] (-) TimerEvent: {}
+[70.614326] (-) TimerEvent: {}
+[70.714775] (-) TimerEvent: {}
+[70.815207] (-) TimerEvent: {}
+[70.915652] (-) TimerEvent: {}
+[71.016102] (-) TimerEvent: {}
+[71.116528] (-) TimerEvent: {}
+[71.216955] (-) TimerEvent: {}
+[71.317358] (-) TimerEvent: {}
+[71.417784] (-) TimerEvent: {}
+[71.518228] (-) TimerEvent: {}
+[71.618662] (-) TimerEvent: {}
+[71.719091] (-) TimerEvent: {}
+[71.819504] (-) TimerEvent: {}
+[71.919922] (-) TimerEvent: {}
+[72.020344] (-) TimerEvent: {}
+[72.120771] (-) TimerEvent: {}
+[72.221182] (-) TimerEvent: {}
+[72.321577] (-) TimerEvent: {}
+[72.422036] (-) TimerEvent: {}
+[72.522475] (-) TimerEvent: {}
+[72.622903] (-) TimerEvent: {}
+[72.723644] (-) TimerEvent: {}
+[72.824090] (-) TimerEvent: {}
+[72.924612] (-) TimerEvent: {}
+[73.025355] (-) TimerEvent: {}
+[73.125791] (-) TimerEvent: {}
+[73.226224] (-) TimerEvent: {}
+[73.326678] (-) TimerEvent: {}
+[73.427160] (-) TimerEvent: {}
+[73.527610] (-) TimerEvent: {}
+[73.628046] (-) TimerEvent: {}
+[73.728521] (-) TimerEvent: {}
+[73.828978] (-) TimerEvent: {}
+[73.929443] (-) TimerEvent: {}
+[74.029886] (-) TimerEvent: {}
+[74.130313] (-) TimerEvent: {}
+[74.230759] (-) TimerEvent: {}
+[74.331202] (-) TimerEvent: {}
+[74.431658] (-) TimerEvent: {}
+[74.532119] (-) TimerEvent: {}
+[74.632571] (-) TimerEvent: {}
+[74.733022] (-) TimerEvent: {}
+[74.833463] (-) TimerEvent: {}
+[74.933918] (-) TimerEvent: {}
+[75.034395] (-) TimerEvent: {}
+[75.134986] (-) TimerEvent: {}
+[75.235461] (-) TimerEvent: {}
+[75.336068] (-) TimerEvent: {}
+[75.436556] (-) TimerEvent: {}
+[75.537024] (-) TimerEvent: {}
+[75.637628] (-) TimerEvent: {}
+[75.738075] (-) TimerEvent: {}
+[75.838501] (-) TimerEvent: {}
+[75.938919] (-) TimerEvent: {}
+[76.039365] (-) TimerEvent: {}
+[76.139837] (-) TimerEvent: {}
+[76.240304] (-) TimerEvent: {}
+[76.340735] (-) TimerEvent: {}
+[76.441166] (-) TimerEvent: {}
+[76.541605] (-) TimerEvent: {}
+[76.642039] (-) TimerEvent: {}
+[76.742599] (-) TimerEvent: {}
+[76.843256] (-) TimerEvent: {}
+[76.943766] (-) TimerEvent: {}
+[77.044233] (-) TimerEvent: {}
+[77.144741] (-) TimerEvent: {}
+[77.245254] (-) TimerEvent: {}
+[77.345735] (-) TimerEvent: {}
+[77.446178] (-) TimerEvent: {}
+[77.546671] (-) TimerEvent: {}
+[77.647259] (-) TimerEvent: {}
+[77.747840] (-) TimerEvent: {}
+[77.848295] (-) TimerEvent: {}
+[77.948837] (-) TimerEvent: {}
+[78.049451] (-) TimerEvent: {}
+[78.150052] (-) TimerEvent: {}
+[78.250489] (-) TimerEvent: {}
+[78.350959] (-) TimerEvent: {}
+[78.451643] (-) TimerEvent: {}
+[78.552280] (-) TimerEvent: {}
+[78.652946] (-) TimerEvent: {}
+[78.753698] (-) TimerEvent: {}
+[78.854249] (-) TimerEvent: {}
+[78.954798] (-) TimerEvent: {}
+[79.055334] (-) TimerEvent: {}
+[79.155765] (-) TimerEvent: {}
+[79.256192] (-) TimerEvent: {}
+[79.356654] (-) TimerEvent: {}
+[79.457099] (-) TimerEvent: {}
+[79.557540] (-) TimerEvent: {}
+[79.658042] (-) TimerEvent: {}
+[79.758505] (-) TimerEvent: {}
+[79.858964] (-) TimerEvent: {}
+[79.959440] (-) TimerEvent: {}
+[80.059868] (-) TimerEvent: {}
+[80.160318] (-) TimerEvent: {}
+[80.260787] (-) TimerEvent: {}
+[80.361237] (-) TimerEvent: {}
+[80.461678] (-) TimerEvent: {}
+[80.562114] (-) TimerEvent: {}
+[80.662595] (-) TimerEvent: {}
+[80.763056] (-) TimerEvent: {}
+[80.863507] (-) TimerEvent: {}
+[80.963955] (-) TimerEvent: {}
+[81.064376] (-) TimerEvent: {}
+[81.164833] (-) TimerEvent: {}
+[81.265447] (-) TimerEvent: {}
+[81.365909] (-) TimerEvent: {}
+[81.466486] (-) TimerEvent: {}
+[81.566978] (-) TimerEvent: {}
+[81.667455] (-) TimerEvent: {}
+[81.767874] (-) TimerEvent: {}
+[81.868309] (-) TimerEvent: {}
+[81.968750] (-) TimerEvent: {}
+[82.069223] (-) TimerEvent: {}
+[82.169699] (-) TimerEvent: {}
+[82.270154] (-) TimerEvent: {}
+[82.370589] (-) TimerEvent: {}
+[82.471021] (-) TimerEvent: {}
+[82.571487] (-) TimerEvent: {}
+[82.671923] (-) TimerEvent: {}
+[82.772357] (-) TimerEvent: {}
+[82.872802] (-) TimerEvent: {}
+[82.973230] (-) TimerEvent: {}
+[83.073665] (-) TimerEvent: {}
+[83.174336] (-) TimerEvent: {}
+[83.274780] (-) TimerEvent: {}
+[83.375225] (-) TimerEvent: {}
+[83.475671] (-) TimerEvent: {}
+[83.577204] (-) TimerEvent: {}
+[83.678716] (-) TimerEvent: {}
+[83.779163] (-) TimerEvent: {}
+[83.879811] (-) TimerEvent: {}
+[83.980241] (-) TimerEvent: {}
+[84.080657] (-) TimerEvent: {}
+[84.181093] (-) TimerEvent: {}
+[84.281704] (-) TimerEvent: {}
+[84.382302] (-) TimerEvent: {}
+[84.482715] (-) TimerEvent: {}
+[84.583169] (-) TimerEvent: {}
+[84.683608] (-) TimerEvent: {}
+[84.784037] (-) TimerEvent: {}
+[84.884469] (-) TimerEvent: {}
+[84.984884] (-) TimerEvent: {}
+[85.085464] (-) TimerEvent: {}
+[85.185937] (-) TimerEvent: {}
+[85.286454] (-) TimerEvent: {}
+[85.386934] (-) TimerEvent: {}
+[85.487395] (-) TimerEvent: {}
+[85.587861] (-) TimerEvent: {}
+[85.688295] (-) TimerEvent: {}
+[85.788716] (-) TimerEvent: {}
+[85.889160] (-) TimerEvent: {}
+[85.989623] (-) TimerEvent: {}
+[86.090089] (-) TimerEvent: {}
+[86.190599] (-) TimerEvent: {}
+[86.291080] (-) TimerEvent: {}
+[86.391617] (-) TimerEvent: {}
+[86.492074] (-) TimerEvent: {}
+[86.592524] (-) TimerEvent: {}
+[86.693148] (-) TimerEvent: {}
+[86.793605] (-) TimerEvent: {}
+[86.894368] (-) TimerEvent: {}
+[86.994899] (-) TimerEvent: {}
+[87.095394] (-) TimerEvent: {}
+[87.195858] (-) TimerEvent: {}
+[87.296328] (-) TimerEvent: {}
+[87.396764] (-) TimerEvent: {}
+[87.497208] (-) TimerEvent: {}
+[87.597663] (-) TimerEvent: {}
+[87.698172] (-) TimerEvent: {}
+[87.798698] (-) TimerEvent: {}
+[87.899228] (-) TimerEvent: {}
+[87.999716] (-) TimerEvent: {}
+[88.100219] (-) TimerEvent: {}
+[88.200671] (-) TimerEvent: {}
+[88.301091] (-) TimerEvent: {}
+[88.401519] (-) TimerEvent: {}
+[88.501979] (-) TimerEvent: {}
+[88.602401] (-) TimerEvent: {}
+[88.702850] (-) TimerEvent: {}
+[88.803322] (-) TimerEvent: {}
+[88.904058] (-) TimerEvent: {}
+[89.004492] (-) TimerEvent: {}
+[89.104976] (-) TimerEvent: {}
+[89.205413] (-) TimerEvent: {}
+[89.305839] (-) TimerEvent: {}
+[89.406286] (-) TimerEvent: {}
+[89.506738] (-) TimerEvent: {}
+[89.607233] (-) TimerEvent: {}
+[89.707731] (-) TimerEvent: {}
+[89.808215] (-) TimerEvent: {}
+[89.908712] (-) TimerEvent: {}
+[90.009235] (-) TimerEvent: {}
+[90.109733] (-) TimerEvent: {}
+[90.210213] (-) TimerEvent: {}
+[90.310874] (-) TimerEvent: {}
+[90.411358] (-) TimerEvent: {}
+[90.511906] (-) TimerEvent: {}
+[90.612405] (-) TimerEvent: {}
+[90.712853] (-) TimerEvent: {}
+[90.813349] (-) TimerEvent: {}
+[90.913786] (-) TimerEvent: {}
+[91.014248] (-) TimerEvent: {}
+[91.114701] (-) TimerEvent: {}
+[91.215365] (-) TimerEvent: {}
+[91.315758] (-) TimerEvent: {}
+[91.416335] (-) TimerEvent: {}
+[91.516767] (-) TimerEvent: {}
+[91.617188] (-) TimerEvent: {}
+[91.717632] (-) TimerEvent: {}
+[91.818101] (-) TimerEvent: {}
+[91.918641] (-) TimerEvent: {}
+[92.019230] (-) TimerEvent: {}
+[92.120039] (-) TimerEvent: {}
+[92.220427] (-) TimerEvent: {}
+[92.320861] (-) TimerEvent: {}
+[92.421268] (-) TimerEvent: {}
+[92.521694] (-) TimerEvent: {}
+[92.622135] (-) TimerEvent: {}
+[92.722790] (-) TimerEvent: {}
+[92.823267] (-) TimerEvent: {}
+[92.923694] (-) TimerEvent: {}
+[93.024124] (-) TimerEvent: {}
+[93.124555] (-) TimerEvent: {}
+[93.224993] (-) TimerEvent: {}
+[93.325445] (-) TimerEvent: {}
+[93.425985] (-) TimerEvent: {}
+[93.526412] (-) TimerEvent: {}
+[93.626830] (-) TimerEvent: {}
+[93.727317] (-) TimerEvent: {}
+[93.827771] (-) TimerEvent: {}
+[93.928277] (-) TimerEvent: {}
+[94.028730] (-) TimerEvent: {}
+[94.129164] (-) TimerEvent: {}
+[94.229599] (-) TimerEvent: {}
+[94.330183] (-) TimerEvent: {}
+[94.430690] (-) TimerEvent: {}
+[94.531359] (-) TimerEvent: {}
+[94.632076] (-) TimerEvent: {}
+[94.732615] (-) TimerEvent: {}
+[94.833064] (-) TimerEvent: {}
+[94.933506] (-) TimerEvent: {}
+[95.033980] (-) TimerEvent: {}
+[95.134431] (-) TimerEvent: {}
+[95.234875] (-) TimerEvent: {}
+[95.335476] (-) TimerEvent: {}
+[95.435900] (-) TimerEvent: {}
+[95.536343] (-) TimerEvent: {}
+[95.636816] (-) TimerEvent: {}
+[95.737283] (-) TimerEvent: {}
+[95.837705] (-) TimerEvent: {}
+[95.938190] (-) TimerEvent: {}
+[96.038615] (-) TimerEvent: {}
+[96.139182] (-) TimerEvent: {}
+[96.239653] (-) TimerEvent: {}
+[96.340067] (-) TimerEvent: {}
+[96.440478] (-) TimerEvent: {}
+[96.540901] (-) TimerEvent: {}
+[96.641333] (-) TimerEvent: {}
+[96.741810] (-) TimerEvent: {}
+[96.842234] (-) TimerEvent: {}
+[96.942881] (-) TimerEvent: {}
+[97.043494] (-) TimerEvent: {}
+[97.143923] (-) TimerEvent: {}
+[97.244352] (-) TimerEvent: {}
+[97.344797] (-) TimerEvent: {}
+[97.445226] (-) TimerEvent: {}
+[97.545648] (-) TimerEvent: {}
+[97.646065] (-) TimerEvent: {}
+[97.746474] (-) TimerEvent: {}
+[97.846878] (-) TimerEvent: {}
+[97.947291] (-) TimerEvent: {}
+[98.047574] (-) TimerEvent: {}
+[98.147844] (-) TimerEvent: {}
+[98.248130] (-) TimerEvent: {}
+[98.348419] (-) TimerEvent: {}
+[98.448732] (-) TimerEvent: {}
+[98.549047] (-) TimerEvent: {}
+[98.649391] (-) TimerEvent: {}
+[98.749724] (-) TimerEvent: {}
+[98.849984] (-) TimerEvent: {}
+[98.950315] (-) TimerEvent: {}
+[99.050618] (-) TimerEvent: {}
+[99.150918] (-) TimerEvent: {}
+[99.251270] (-) TimerEvent: {}
+[99.351570] (-) TimerEvent: {}
+[99.451854] (-) TimerEvent: {}
+[99.552132] (-) TimerEvent: {}
+[99.652414] (-) TimerEvent: {}
+[99.752686] (-) TimerEvent: {}
+[99.852963] (-) TimerEvent: {}
+[99.953350] (-) TimerEvent: {}
+[100.053832] (-) TimerEvent: {}
+[100.154265] (-) TimerEvent: {}
+[100.254671] (-) TimerEvent: {}
+[100.355063] (-) TimerEvent: {}
+[100.455358] (-) TimerEvent: {}
+[100.500828] (grab_demo) StdoutLine: {'line': b'[ 95%] Linking CXX executable hand_eye\n'}
+[100.555485] (-) TimerEvent: {}
+[100.655823] (-) TimerEvent: {}
+[100.756236] (-) TimerEvent: {}
+[100.856641] (-) TimerEvent: {}
+[100.957072] (-) TimerEvent: {}
+[101.058290] (-) TimerEvent: {}
+[101.158774] (-) TimerEvent: {}
+[101.259230] (-) TimerEvent: {}
+[101.359655] (-) TimerEvent: {}
+[101.460138] (-) TimerEvent: {}
+[101.560595] (-) TimerEvent: {}
+[101.661044] (-) TimerEvent: {}
+[101.737755] (grab_demo) StdoutLine: {'line': b'[ 95%] Built target hand_eye\n'}
+[101.748649] (grab_demo) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[101.761326] (-) TimerEvent: {}
+[101.807302] (grab_demo) CommandEnded: {'returncode': 2}
+[101.866711] (-) TimerEvent: {}
+[101.972584] (-) TimerEvent: {}
+[101.989447] (grab_demo) JobEnded: {'identifier': 'grab_demo', 'rc': 2}
+[102.004016] (-) EventReactorShutdown: {}

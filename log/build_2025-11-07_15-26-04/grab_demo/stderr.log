@@ -1,0 +1,4 @@
+gmake[2]: *** 正在删除文件“hsv_range”
+gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:264: hsv_range] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:658: CMakeFiles/hsv_range.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

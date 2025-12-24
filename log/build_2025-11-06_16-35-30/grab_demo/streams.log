@@ -1,0 +1,178 @@
+[0.035s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.849s] [  6%] Built target grab_demo__rosidl_generator_c
+[0.898s] [  8%] Built target grab_demo__cpp
+[0.905s] [  8%] Built target ament_cmake_python_copy_grab_demo
+[0.915s] [ 12%] Built target charuco_dectet_node
+[0.931s] [ 14%] [32mBuilding CXX object CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o[0m
+[1.068s] [ 19%] Built target camera_info_node
+[1.163s] [ 25%] Built target aruco_dectet
+[1.166s] [ 27%] Built target hand_eye
+[1.177s] [ 34%] Built target grab_demo__rosidl_typesupport_cpp
+[1.303s] [ 40%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[1.433s] [ 46%] Built target grab_demo__rosidl_typesupport_c
+[1.451s] [ 53%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[1.467s] [ 59%] Built target grab_demo__rosidl_typesupport_introspection_c
+[1.483s] [ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[1.617s] [ 65%] Built target grab_demo
+[1.715s] [ 68%] [32mBuilding CXX object CMakeFiles/start_grab.dir/src/start_grab.cpp.o[0m
+[1.729s] [ 72%] Built target nav_grab
+[1.750s] [ 76%] Built target grab_service_node
+[1.772s] [ 78%] Built target grab_demo__py
+[1.969s] [ 82%] Built target grab_demo__rosidl_generator_py
+[2.103s] [ 87%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[2.174s] [ 91%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[2.223s] [ 95%] Built target grab_demo__rosidl_typesupport_c__pyext
+[3.536s] running egg_info
+[3.545s] writing grab_demo.egg-info/PKG-INFO
+[3.549s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[3.551s] writing top-level names to grab_demo.egg-info/top_level.txt
+[3.584s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[3.591s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[3.788s] [ 95%] Built target ament_cmake_python_build_grab_demo_egg
+[73.627s] [ 97%] [32m[1mLinking CXX executable start_grab[0m
+[74.695s] [ 97%] Built target start_grab
+[110.711s] [100%] [32m[1mLinking CXX executable hsv_range[0m
+[112.306s] [100%] Built target hsv_range
+[112.456s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[112.558s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo
+[112.584s] -- Install configuration: "Release"
+[112.586s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/rosidl_interfaces/grab_demo
+[112.587s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo
+[112.587s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg
+[112.588s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_generator_c__visibility_control.h
+[112.588s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv
+[112.588s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/grab_object.h
+[112.588s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail
+[112.589s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__struct.h
+[112.589s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.h
+[112.589s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__functions.c
+[112.589s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__functions.h
+[112.596s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/library_path.sh
+[112.597s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/library_path.dsv
+[112.599s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_generator_c.so
+[112.600s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo
+[112.601s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg
+[112.601s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[112.601s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv
+[112.602s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail
+[112.602s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_fastrtps_c.h
+[112.603s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_fastrtps_c.so
+[112.605s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo
+[112.605s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg
+[112.605s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_generator_cpp__visibility_control.hpp
+[112.606s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv
+[112.606s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail
+[112.606s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__traits.hpp
+[112.607s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.hpp
+[112.611s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__builder.hpp
+[112.611s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__struct.hpp
+[112.611s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/grab_object.hpp
+[112.611s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo
+[112.611s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg
+[112.611s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[112.612s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv
+[112.612s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail
+[112.612s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/dds_fastrtps
+[112.612s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_fastrtps_cpp.hpp
+[112.612s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_fastrtps_cpp.so
+[112.613s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo
+[112.614s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg
+[112.614s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[112.614s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv
+[112.615s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail
+[112.616s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.c
+[112.616s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_introspection_c.h
+[112.617s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_introspection_c.so
+[112.618s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_c.so
+[112.618s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo
+[112.619s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv
+[112.619s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail
+[112.620s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_introspection_cpp.hpp
+[112.620s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.cpp
+[112.621s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_introspection_cpp.so
+[112.622s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_cpp.so
+[112.623s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/pythonpath.sh
+[112.623s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/pythonpath.dsv
+[112.627s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info
+[112.628s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/dependency_links.txt
+[112.629s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/PKG-INFO
+[112.630s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/top_level.txt
+[112.631s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/SOURCES.txt
+[112.632s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo
+[112.633s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/libgrab_demo__rosidl_generator_py.so
+[112.633s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_c.c
+[112.633s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/__init__.py
+[112.633s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_introspection_c.c
+[112.634s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_fastrtps_c.c
+[112.634s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[112.634s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[112.634s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv
+[112.635s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/__init__.py
+[112.635s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/_grab_object.py
+[112.635s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/_grab_object_s.c
+[112.636s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[112.792s] Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo'...
+[112.792s] Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv'...
+[112.816s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[112.817s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[112.817s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[112.819s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_generator_py.so
+[112.820s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject.idl
+[112.820s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject.srv
+[112.821s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject_Request.msg
+[112.821s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject_Response.msg
+[112.832s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/charuco_dectet_node
+[112.836s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hand_eye
+[112.844s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hsv_range
+[112.861s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hsv_range" to ""
+[112.868s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/aruco_dectet
+[112.869s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/grab_service_node
+[112.871s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/start_grab
+[112.872s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/start_grab" to ""
+[112.880s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/camera_info_node
+[112.880s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/nav_grab
+[112.880s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch
+[112.880s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/start_grab.launch.py
+[112.880s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/hand_eye.launch.py
+[112.881s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/color_grab.launch.py
+[112.882s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/aruco_grab.launch.py
+[112.886s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/package_run_dependencies/grab_demo
+[112.887s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/parent_prefix_path/grab_demo
+[112.888s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/ament_prefix_path.sh
+[112.889s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/ament_prefix_path.dsv
+[112.889s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/path.sh
+[112.889s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/path.dsv
+[112.889s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.bash
+[112.889s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.sh
+[112.890s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.zsh
+[112.890s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.dsv
+[112.893s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/package.dsv
+[112.895s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/packages/grab_demo
+[112.897s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cExport.cmake
+[112.897s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cExport-release.cmake
+[112.897s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cExport.cmake
+[112.898s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cExport-release.cmake
+[112.898s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cppExport.cmake
+[112.899s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cppExport.cmake
+[112.899s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[112.900s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cExport.cmake
+[112.900s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cExport-release.cmake
+[112.901s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cExport.cmake
+[112.901s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cExport-release.cmake
+[112.903s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cppExport.cmake
+[112.903s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cppExport-release.cmake
+[112.904s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cppExport.cmake
+[112.904s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cppExport-release.cmake
+[112.905s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_pyExport.cmake
+[112.905s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_pyExport-release.cmake
+[112.906s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake-extras.cmake
+[112.906s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_include_directories-extras.cmake
+[112.907s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_libraries-extras.cmake
+[112.908s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_targets-extras.cmake
+[112.908s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[112.913s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_dependencies-extras.cmake
+[112.913s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[112.914s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demoConfig.cmake
+[112.914s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demoConfig-version.cmake
+[112.914s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/package.xml
+[112.937s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo

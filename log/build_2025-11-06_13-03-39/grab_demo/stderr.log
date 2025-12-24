@@ -1,0 +1,26 @@
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In constructor ‘[01m[Karuco_dectet::aruco_dectet()[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:96:121:[m[K [01;31m[Kerror: [m[K‘[01m[Krgb_info_callback[m[K’ is not a member of ‘[01m[Karuco_dectet[m[K’
+   96 |             camera_info_sub=create_subscription<sensor_msgs::msg::CameraInfo>(rgb_image_info,1,std::bind(&aruco_dectet::[01;31m[Krgb_info_callback[m[K,this,std::placeholders::_1));
+      |                                                                                                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K At global scope:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:113:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid aruco_dectet::rgb_image_callback(const ConstSharedPtr&)[m[K’
+  113 | void [01;31m[Karuco_dectet[m[K::rgb_image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg)
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:113:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid aruco_dectet::rgb_image_callback(const ConstSharedPtr&)[m[K’
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass aruco_dectet[m[K’ defined here
+   18 | class [01;36m[Karuco_dectet[m[K:public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:170:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid aruco_dectet::rgb_info_callback(const ConstSharedPtr&)[m[K’
+  170 | void [01;31m[Karuco_dectet[m[K::rgb_info_callback(const sensor_msgs::msg::CameraInfo::ConstSharedPtr &msg)
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:170:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid aruco_dectet::rgb_info_callback(const ConstSharedPtr&)[m[K’
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass aruco_dectet[m[K’ defined here
+   18 | class [01;36m[Karuco_dectet[m[K:public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In member function ‘[01m[Kvoid aruco_dectet::start_devtet()[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:219:94:[m[K [01;31m[Kerror: [m[K‘[01m[Krgb_image_callback[m[K’ is not a member of ‘[01m[Karuco_dectet[m[K’
+  219 |     image_sub=image_transport_ptr_sub->subscribe(rgb_image_topic,10,std::bind(&aruco_dectet::[01;31m[Krgb_image_callback[m[K,this,std::placeholders::_1));
+      |                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

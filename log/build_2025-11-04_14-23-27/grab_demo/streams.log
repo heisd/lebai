@@ -1,0 +1,50 @@
+[0.035s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.334s] [  2%] Built target grab_demo__cpp
+[0.334s] [  8%] Built target grab_demo__rosidl_generator_c
+[0.357s] Consolidate compiler generated dependencies of target charuco_dectet_node
+[0.386s] [ 12%] Built target hsv_range
+[0.401s] Consolidate compiler generated dependencies of target aruco_dectet
+[0.404s] [ 14%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o
+[0.410s] [ 14%] Built target ament_cmake_python_copy_grab_demo
+[0.415s] [ 19%] Built target hand_eye
+[0.420s] [ 23%] Built target camera_info_node
+[0.460s] [ 29%] Built target grab_demo__rosidl_typesupport_cpp
+[0.468s] [ 31%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o
+[0.476s] [ 38%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.480s] [ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.503s] [ 51%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.545s] [ 57%] Built target grab_demo__rosidl_typesupport_c
+[0.600s] [ 63%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.606s] [ 68%] Built target grab_service_node
+[0.653s] [ 72%] Built target start_grab
+[0.715s] [ 76%] Built target nav_grab
+[0.727s] [ 76%] Built target grab_demo
+[0.786s] [ 78%] Built target grab_demo__py
+[0.881s] [ 82%] Built target grab_demo__rosidl_generator_py
+[0.950s] [ 87%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[0.971s] [ 91%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[0.974s] [ 95%] Built target grab_demo__rosidl_typesupport_c__pyext
+[1.108s] running egg_info
+[1.110s] writing grab_demo.egg-info/PKG-INFO
+[1.111s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.112s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.125s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.125s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.204s] [ 95%] Built target ament_cmake_python_build_grab_demo_egg
+[1.416s] In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7:
+[1.416s] /usr/include/opencv4/opencv2/aruco.hpp:44:10: fatal error: opencv2/aruco/dictionary.hpp: 没有那个文件或目录
+[1.416s]    44 | #include "opencv2/aruco/dictionary.hpp"
+[1.416s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.417s] compilation terminated.
+[1.428s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[1.428s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[1.429s] gmake[1]: *** 正在等待未完成的任务....
+[1.992s] In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:2:
+[1.992s] /usr/include/opencv4/opencv2/aruco.hpp:44:10: fatal error: opencv2/aruco/dictionary.hpp: 没有那个文件或目录
+[1.992s]    44 | #include "opencv2/aruco/dictionary.hpp"
+[1.993s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.993s] compilation terminated.
+[2.010s] gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+[2.010s] gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+[2.011s] gmake: *** [Makefile:146：all] 错误 2
+[2.014s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

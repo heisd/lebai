@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:275: CMakeFiles/aruco_dectet.dir/depend] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:683: CMakeFiles/aruco_dectet.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

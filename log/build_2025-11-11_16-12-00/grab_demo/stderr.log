@@ -1,0 +1,17 @@
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::imageCallback(const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:141:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+  141 |             [01;31m[Kz[m[K += z_offset;
+      |             [01;31m[K^[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::updateDebugInfo(double, double, double, cv::Point, double, double, double)[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:171:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  171 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, [01;35m[Kdouble x_offset[m[K, double y_offset, double z_offset )
+      |                                                                           [01;35m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:171:99:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  171 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, double x_offset, [01;35m[Kdouble y_offset[m[K, double z_offset )
+      |                                                                                            [01;35m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:171:116:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kz_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  171 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, double x_offset, double y_offset, [01;35m[Kdouble z_offset[m[K )
+      |                                                                                                             [01;35m[K~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:76：CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:658：CMakeFiles/hsv_range.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

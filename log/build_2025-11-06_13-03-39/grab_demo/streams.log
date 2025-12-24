@@ -1,0 +1,58 @@
+[0.039s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.349s] [  2%] Built target grab_demo__cpp
+[0.392s] [  8%] Built target grab_demo__rosidl_generator_c
+[0.416s] [ 12%] Built target hsv_range
+[0.426s] [ 12%] Built target ament_cmake_python_copy_grab_demo
+[0.441s] [ 17%] Built target charuco_dectet_node
+[0.487s] [ 21%] Built target hand_eye
+[0.508s] [ 23%] [32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o[0m
+[0.541s] [ 29%] Built target grab_demo__rosidl_typesupport_cpp
+[0.544s] [ 34%] Built target camera_info_node
+[0.547s] [ 40%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.578s] [ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.578s] [ 53%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.646s] [ 59%] Built target grab_demo__rosidl_typesupport_c
+[0.661s] [ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.695s] [ 70%] Built target grab_service_node
+[0.703s] [ 74%] Built target start_grab
+[0.732s] [ 78%] Built target nav_grab
+[0.744s] [ 78%] Built target grab_demo
+[0.811s] [ 80%] Built target grab_demo__py
+[0.885s] [ 85%] Built target grab_demo__rosidl_generator_py
+[0.952s] [ 89%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[0.997s] [ 93%] Built target grab_demo__rosidl_typesupport_c__pyext
+[1.007s] [ 97%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[1.244s] running egg_info
+[1.247s] writing grab_demo.egg-info/PKG-INFO
+[1.250s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.251s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.259s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.261s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.355s] [ 97%] Built target ament_cmake_python_build_grab_demo_egg
+[10.932s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In constructor ‘[01m[Karuco_dectet::aruco_dectet()[m[K’:
+[10.933s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:96:121:[m[K [01;31m[Kerror: [m[K‘[01m[Krgb_info_callback[m[K’ is not a member of ‘[01m[Karuco_dectet[m[K’
+[10.933s]    96 |             camera_info_sub=create_subscription<sensor_msgs::msg::CameraInfo>(rgb_image_info,1,std::bind(&aruco_dectet::[01;31m[Krgb_info_callback[m[K,this,std::placeholders::_1));
+[10.934s]       |                                                                                                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[10.941s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K At global scope:
+[10.941s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:113:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid aruco_dectet::rgb_image_callback(const ConstSharedPtr&)[m[K’
+[10.941s]   113 | void [01;31m[Karuco_dectet[m[K::rgb_image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg)
+[10.941s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[10.941s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:113:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid aruco_dectet::rgb_image_callback(const ConstSharedPtr&)[m[K’
+[10.942s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass aruco_dectet[m[K’ defined here
+[10.942s]    18 | class [01;36m[Karuco_dectet[m[K:public rclcpp::Node
+[10.942s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[10.942s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:170:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid aruco_dectet::rgb_info_callback(const ConstSharedPtr&)[m[K’
+[10.942s]   170 | void [01;31m[Karuco_dectet[m[K::rgb_info_callback(const sensor_msgs::msg::CameraInfo::ConstSharedPtr &msg)
+[10.942s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[10.942s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:170:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid aruco_dectet::rgb_info_callback(const ConstSharedPtr&)[m[K’
+[10.943s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass aruco_dectet[m[K’ defined here
+[10.943s]    18 | class [01;36m[Karuco_dectet[m[K:public rclcpp::Node
+[10.943s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[10.943s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In member function ‘[01m[Kvoid aruco_dectet::start_devtet()[m[K’:
+[10.943s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:219:94:[m[K [01;31m[Kerror: [m[K‘[01m[Krgb_image_callback[m[K’ is not a member of ‘[01m[Karuco_dectet[m[K’
+[10.943s]   219 |     image_sub=image_transport_ptr_sub->subscribe(rgb_image_topic,10,std::bind(&aruco_dectet::[01;31m[Krgb_image_callback[m[K,this,std::placeholders::_1));
+[10.943s]       |                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[13.758s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[13.772s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[13.775s] gmake: *** [Makefile:146：all] 错误 2
+[13.848s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

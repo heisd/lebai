@@ -1,0 +1,11 @@
+[  2%] Built target grab_demo__cpp
+[  6%] Built target hsv_range
+[ 10%] Built target aruco_dectet
+[ 14%] Built target camera_info_node
+[ 21%] Built target grab_demo__rosidl_typesupport_cpp
+[ 27%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 34%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[ 38%] Built target grab_service_node
+[ 42%] Built target start_grab
+[ 46%] Built target nav_grab
+[ 48%] [32mBuilding CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o[0m

@@ -1,0 +1,779 @@
+[0.000000] (-) TimerEvent: {}
+[0.001326] (-) JobUnselected: {'identifier': 'arm_demo'}
+[0.001690] (-) JobUnselected: {'identifier': 'lebai_driver'}
+[0.001947] (-) JobUnselected: {'identifier': 'lebai_interfaces'}
+[0.002225] (-) JobUnselected: {'identifier': 'lebai_lm3_moveit_config'}
+[0.002502] (-) JobUnselected: {'identifier': 'lebai_lm3_support'}
+[0.002754] (-) JobUnselected: {'identifier': 'lebai_resources'}
+[0.003023] (-) JobUnselected: {'identifier': 'lebai_tutorials'}
+[0.003292] (grab_demo) JobQueued: {'identifier': 'grab_demo', 'dependencies': OrderedDict()}
+[0.003551] (grab_demo) JobStarted: {'identifier': 'grab_demo'}
+[0.040215] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'cmake'}
+[0.043076] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'build'}
+[0.044591] (grab_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', '--', '-j6', '-l6'], 'cwd': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('SERVER_SCRIPT_PRODUCT', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/product.json'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'aarch64'), ('SERVER_PACKAGE_NAME', 'Trae-linux-arm64-1076771596290_7.tar.gz'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.66 56655 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('DISTRO_COMMIT', '2a4783a6a3e8f6d2a97690ddc95858805c9d0be6'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/extensions/git/dist/askpass.sh'), ('SERVER_LISTEN_FLAG', '--port=0'), ('MANAGER_LOGS_DIR', '/home/dxf/.trae-server/manager-logs/1762913651731_589488'), ('SCRIPT_ID', 'fcfcd5c92e6ea621554d4aab'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/serial/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco/lib:/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('SERVER_APP_NAME', 'Trae'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5d0ab1fa-1546-4eab-9c1a-5f9fa34d1634.sock'), ('OS_RELEASE_ID', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('TRAE_RESOLVE_TYPE', 'ssh'), ('PAGER', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/extensions/git/dist/askpass-main.js'), ('SERVER_DOWNLOAD_PREFIX', 'https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/server/releases/stable/2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/linux/'), ('PS1', '\\n(TraeAI-6) \\w [$?] $'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/node'), ('TRAE_AI_SHELL_ID', '6'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/dxf/.trae-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('SERVER_DIR', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install:/home/dxf/WHEELTEC_S300Pro_mini/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('SAFE_RM_DENIED_PATH', '/home/dxf/.vscode:/home/dxf/.trae:/home/dxf/.git'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('TRAE_REMOTE_SKIP_REMOTE_CHECK', ''), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('DISTRO_VERSION', '1.104.3'), ('XDG_SESSION_ID', '5'), ('SERVER_INITIAL_EXTENSIONS', ''), ('EXTRACT_RETRY_COUNT', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('vscode_base_dir', '/home/dxf/.trae-server'), ('PATH', '/home/dxf/.trae-server/binaries/node/versions/24.11.0/bin:/home/dxf/.trae-server/sdks/workspaces/eb3ad3d2/versions/node/current:/home/dxf/.trae-server/sdks/versions/node/current:/usr/local/cuda-12.6/bin:/home/dxf/.trae-server/binaries/node/versions/24.11.0/bin:/home/dxf/.trae-server/sdks/workspaces/eb3ad3d2/versions/node/current:/home/dxf/.trae-server/sdks/versions/node/current:/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/dxf/.trae-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/scripts/noConfigScripts'), ('PLATFORM', 'linux'), ('DISTRO_QUALITY', 'stable'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SERVER_SCRIPT', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/index_trae.js'), ('FILESYSTEM_CASE_SENSITIVE', 'true'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/dxf/.trae-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bd968b4cc3c5ed84.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/dxf/.trae-server/data/User/workspaceStorage/eb3ad3d23312df18640cab87988a0128/ms-python.python/pythonrc.py'), ('SERVER_PIDFILE', '/home/dxf/.trae-server/.stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6.pid'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('SERVER_LOGS_DIR', '/home/dxf/.trae-server/logs'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DOWNLOAD_RETRY_COUNT', '0'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7da208c966.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_tutorials:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_resources:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('__trae_PS1', '\\n(TraeAI-6) \\w [$?] $'), ('SERVER_HOST', '127.0.0.1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SERVER_LOGFILE', '/home/dxf/.trae-server/.stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6.log'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('DISTRO_VSCODIUM_RELEASE', ''), ('TMP_DIR', '/run/user/1000'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('SERVER_TOKENFILE', '/home/dxf/.trae-server/.stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6.token'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', ''), ('TRAE_REMOTE_EXTENSION_REGION', 'cn'), ('SERVER_EXTENSIONS_DIR', '/home/dxf/.trae-server/extensions'), ('PWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'), ('SAFE_RM_ALLOWED_PATH', '/home/dxf'), ('SERVER_APP_VERSION', ''), ('TERM_PRODUCT', 'Trae'), ('SSH_CONNECTION', '192.168.0.66 56655 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('SERVER_ARCH', 'arm64'), ('PYTHONPATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('TRAE_DETECT_REGION', 'CN'), ('COLCON', '1'), ('SERVER_APP_QUALITY', 'dev'), ('SERVER_DATA_DIR', '/home/dxf/.trae-server'), ('REMOTE_VERSION', '1076771596290_7'), ('CMAKE_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_tutorials:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_resources:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/usr/local/opencv410:/usr/local/opencv410::/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble')]), 'shell': False}
+[0.098635] (-) TimerEvent: {}
+[0.199286] (-) TimerEvent: {}
+[0.300029] (-) TimerEvent: {}
+[0.400750] (-) TimerEvent: {}
+[0.439573] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hsv_range\x1b[0m\n'}
+[0.444818] (grab_demo) StdoutLine: {'line': b'[  2%] Built target grab_demo__cpp\n'}
+[0.500946] (-) TimerEvent: {}
+[0.514463] (grab_demo) StdoutLine: {'line': b'[  8%] Built target grab_demo__rosidl_generator_c\n'}
+[0.515848] (grab_demo) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_copy_grab_demo\n'}
+[0.570923] (grab_demo) StdoutLine: {'line': b'[ 12%] Built target aruco_dectet\n'}
+[0.594812] (grab_demo) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o\x1b[0m\n'}
+[0.601175] (-) TimerEvent: {}
+[0.648950] (grab_demo) StdoutLine: {'line': b'[ 19%] Built target charuco_dectet_node\n'}
+[0.658355] (grab_demo) StdoutLine: {'line': b'[ 23%] Built target camera_info_node\n'}
+[0.701566] (-) TimerEvent: {}
+[0.746124] (grab_demo) StdoutLine: {'line': b'[ 29%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp\n'}
+[0.771368] (grab_demo) StdoutLine: {'line': b'[ 36%] Built target grab_demo__rosidl_typesupport_fastrtps_c\n'}
+[0.777015] (grab_demo) StdoutLine: {'line': b'[ 40%] Built target hand_eye\n'}
+[0.800299] (grab_demo) StdoutLine: {'line': b'[ 46%] Built target grab_demo__rosidl_typesupport_cpp\n'}
+[0.802023] (-) TimerEvent: {}
+[0.835475] (grab_demo) StdoutLine: {'line': b'[ 53%] Built target grab_demo__rosidl_typesupport_introspection_c\n'}
+[0.877852] (grab_demo) StdoutLine: {'line': b'[ 59%] Built target grab_demo__rosidl_typesupport_c\n'}
+[0.902236] (-) TimerEvent: {}
+[0.967373] (grab_demo) StdoutLine: {'line': b'[ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp\n'}
+[1.002401] (-) TimerEvent: {}
+[1.071374] (grab_demo) StdoutLine: {'line': b'[ 70%] Built target start_grab\n'}
+[1.102571] (-) TimerEvent: {}
+[1.104242] (grab_demo) StdoutLine: {'line': b'[ 74%] Built target nav_grab\n'}
+[1.120218] (grab_demo) StdoutLine: {'line': b'[ 78%] Built target grab_service_node\n'}
+[1.154349] (grab_demo) StdoutLine: {'line': b'[ 78%] Built target grab_demo\n'}
+[1.202721] (-) TimerEvent: {}
+[1.250015] (grab_demo) StdoutLine: {'line': b'[ 80%] Built target grab_demo__py\n'}
+[1.302917] (-) TimerEvent: {}
+[1.377148] (grab_demo) StdoutLine: {'line': b'[ 85%] Built target grab_demo__rosidl_generator_py\n'}
+[1.403089] (-) TimerEvent: {}
+[1.503757] (-) TimerEvent: {}
+[1.604450] (-) TimerEvent: {}
+[1.618225] (grab_demo) StdoutLine: {'line': b'[ 89%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.628814] (grab_demo) StdoutLine: {'line': b'[ 93%] Built target grab_demo__rosidl_typesupport_c__pyext\n'}
+[1.634040] (grab_demo) StdoutLine: {'line': b'[ 97%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext\n'}
+[1.704599] (-) TimerEvent: {}
+[1.805279] (-) TimerEvent: {}
+[1.905903] (-) TimerEvent: {}
+[2.006584] (-) TimerEvent: {}
+[2.107669] (-) TimerEvent: {}
+[2.134145] (grab_demo) StdoutLine: {'line': b'running egg_info\n'}
+[2.136004] (grab_demo) StdoutLine: {'line': b'writing grab_demo.egg-info/PKG-INFO\n'}
+[2.136537] (grab_demo) StdoutLine: {'line': b'writing dependency_links to grab_demo.egg-info/dependency_links.txt\n'}
+[2.137144] (grab_demo) StdoutLine: {'line': b'writing top-level names to grab_demo.egg-info/top_level.txt\n'}
+[2.142909] (grab_demo) StdoutLine: {'line': b"reading manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[2.145934] (grab_demo) StdoutLine: {'line': b"writing manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[2.207825] (-) TimerEvent: {}
+[2.234318] (grab_demo) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_grab_demo_egg\n'}
+[2.308214] (-) TimerEvent: {}
+[2.409002] (-) TimerEvent: {}
+[2.510979] (-) TimerEvent: {}
+[2.611678] (-) TimerEvent: {}
+[2.712414] (-) TimerEvent: {}
+[2.813141] (-) TimerEvent: {}
+[2.913888] (-) TimerEvent: {}
+[3.014618] (-) TimerEvent: {}
+[3.115560] (-) TimerEvent: {}
+[3.216328] (-) TimerEvent: {}
+[3.317440] (-) TimerEvent: {}
+[3.418268] (-) TimerEvent: {}
+[3.519728] (-) TimerEvent: {}
+[3.620917] (-) TimerEvent: {}
+[3.722383] (-) TimerEvent: {}
+[3.823115] (-) TimerEvent: {}
+[3.924130] (-) TimerEvent: {}
+[4.024814] (-) TimerEvent: {}
+[4.125515] (-) TimerEvent: {}
+[4.226256] (-) TimerEvent: {}
+[4.327046] (-) TimerEvent: {}
+[4.427758] (-) TimerEvent: {}
+[4.528477] (-) TimerEvent: {}
+[4.629180] (-) TimerEvent: {}
+[4.729879] (-) TimerEvent: {}
+[4.830612] (-) TimerEvent: {}
+[4.931439] (-) TimerEvent: {}
+[5.032130] (-) TimerEvent: {}
+[5.132858] (-) TimerEvent: {}
+[5.233573] (-) TimerEvent: {}
+[5.334353] (-) TimerEvent: {}
+[5.435309] (-) TimerEvent: {}
+[5.536024] (-) TimerEvent: {}
+[5.636728] (-) TimerEvent: {}
+[5.737414] (-) TimerEvent: {}
+[5.838134] (-) TimerEvent: {}
+[5.938877] (-) TimerEvent: {}
+[6.039647] (-) TimerEvent: {}
+[6.140439] (-) TimerEvent: {}
+[6.241654] (-) TimerEvent: {}
+[6.342607] (-) TimerEvent: {}
+[6.444184] (-) TimerEvent: {}
+[6.545512] (-) TimerEvent: {}
+[6.647447] (-) TimerEvent: {}
+[6.750132] (-) TimerEvent: {}
+[6.851907] (-) TimerEvent: {}
+[6.954023] (-) TimerEvent: {}
+[7.054726] (-) TimerEvent: {}
+[7.156683] (-) TimerEvent: {}
+[7.259384] (-) TimerEvent: {}
+[7.360998] (-) TimerEvent: {}
+[7.462227] (-) TimerEvent: {}
+[7.562984] (-) TimerEvent: {}
+[7.663945] (-) TimerEvent: {}
+[7.766431] (-) TimerEvent: {}
+[7.867190] (-) TimerEvent: {}
+[7.968485] (-) TimerEvent: {}
+[8.069893] (-) TimerEvent: {}
+[8.171889] (-) TimerEvent: {}
+[8.273508] (-) TimerEvent: {}
+[8.375296] (-) TimerEvent: {}
+[8.476019] (-) TimerEvent: {}
+[8.577208] (-) TimerEvent: {}
+[8.678512] (-) TimerEvent: {}
+[8.780136] (-) TimerEvent: {}
+[8.881035] (-) TimerEvent: {}
+[8.981791] (-) TimerEvent: {}
+[9.082595] (-) TimerEvent: {}
+[9.183348] (-) TimerEvent: {}
+[9.284076] (-) TimerEvent: {}
+[9.384806] (-) TimerEvent: {}
+[9.485841] (-) TimerEvent: {}
+[9.586903] (-) TimerEvent: {}
+[9.688571] (-) TimerEvent: {}
+[9.792612] (-) TimerEvent: {}
+[9.893393] (-) TimerEvent: {}
+[9.994421] (-) TimerEvent: {}
+[10.096450] (-) TimerEvent: {}
+[10.197148] (-) TimerEvent: {}
+[10.297881] (-) TimerEvent: {}
+[10.398655] (-) TimerEvent: {}
+[10.500672] (-) TimerEvent: {}
+[10.601398] (-) TimerEvent: {}
+[10.702160] (-) TimerEvent: {}
+[10.802997] (-) TimerEvent: {}
+[10.903757] (-) TimerEvent: {}
+[11.005350] (-) TimerEvent: {}
+[11.106291] (-) TimerEvent: {}
+[11.207919] (-) TimerEvent: {}
+[11.309281] (-) TimerEvent: {}
+[11.410950] (-) TimerEvent: {}
+[11.511966] (-) TimerEvent: {}
+[11.612758] (-) TimerEvent: {}
+[11.713472] (-) TimerEvent: {}
+[11.814229] (-) TimerEvent: {}
+[11.914932] (-) TimerEvent: {}
+[12.015661] (-) TimerEvent: {}
+[12.116373] (-) TimerEvent: {}
+[12.217205] (-) TimerEvent: {}
+[12.318040] (-) TimerEvent: {}
+[12.418781] (-) TimerEvent: {}
+[12.520132] (-) TimerEvent: {}
+[12.621677] (-) TimerEvent: {}
+[12.722677] (-) TimerEvent: {}
+[12.823544] (-) TimerEvent: {}
+[12.924303] (-) TimerEvent: {}
+[13.025102] (-) TimerEvent: {}
+[13.125906] (-) TimerEvent: {}
+[13.227412] (-) TimerEvent: {}
+[13.328214] (-) TimerEvent: {}
+[13.429050] (-) TimerEvent: {}
+[13.530192] (-) TimerEvent: {}
+[13.631278] (-) TimerEvent: {}
+[13.732548] (-) TimerEvent: {}
+[13.834183] (-) TimerEvent: {}
+[13.935906] (-) TimerEvent: {}
+[14.037223] (-) TimerEvent: {}
+[14.137906] (-) TimerEvent: {}
+[14.238896] (-) TimerEvent: {}
+[14.340481] (-) TimerEvent: {}
+[14.442314] (-) TimerEvent: {}
+[14.543243] (-) TimerEvent: {}
+[14.644346] (-) TimerEvent: {}
+[14.745721] (-) TimerEvent: {}
+[14.846456] (-) TimerEvent: {}
+[14.948234] (-) TimerEvent: {}
+[15.050431] (-) TimerEvent: {}
+[15.151513] (-) TimerEvent: {}
+[15.252572] (-) TimerEvent: {}
+[15.353335] (-) TimerEvent: {}
+[15.454063] (-) TimerEvent: {}
+[15.554852] (-) TimerEvent: {}
+[15.655574] (-) TimerEvent: {}
+[15.756358] (-) TimerEvent: {}
+[15.857143] (-) TimerEvent: {}
+[15.957879] (-) TimerEvent: {}
+[16.058650] (-) TimerEvent: {}
+[16.159380] (-) TimerEvent: {}
+[16.260083] (-) TimerEvent: {}
+[16.360804] (-) TimerEvent: {}
+[16.461496] (-) TimerEvent: {}
+[16.562165] (-) TimerEvent: {}
+[16.662879] (-) TimerEvent: {}
+[16.763587] (-) TimerEvent: {}
+[16.864315] (-) TimerEvent: {}
+[16.965030] (-) TimerEvent: {}
+[17.065732] (-) TimerEvent: {}
+[17.166417] (-) TimerEvent: {}
+[17.267138] (-) TimerEvent: {}
+[17.367837] (-) TimerEvent: {}
+[17.468539] (-) TimerEvent: {}
+[17.569247] (-) TimerEvent: {}
+[17.670001] (-) TimerEvent: {}
+[17.770984] (-) TimerEvent: {}
+[17.871694] (-) TimerEvent: {}
+[17.972691] (-) TimerEvent: {}
+[18.073513] (-) TimerEvent: {}
+[18.174637] (-) TimerEvent: {}
+[18.275510] (-) TimerEvent: {}
+[18.376696] (-) TimerEvent: {}
+[18.477608] (-) TimerEvent: {}
+[18.579082] (-) TimerEvent: {}
+[18.681200] (-) TimerEvent: {}
+[18.782245] (-) TimerEvent: {}
+[18.886111] (-) TimerEvent: {}
+[18.989185] (-) TimerEvent: {}
+[19.090172] (-) TimerEvent: {}
+[19.190892] (-) TimerEvent: {}
+[19.291529] (-) TimerEvent: {}
+[19.393247] (-) TimerEvent: {}
+[19.493842] (-) TimerEvent: {}
+[19.594576] (-) TimerEvent: {}
+[19.696708] (-) TimerEvent: {}
+[19.798198] (-) TimerEvent: {}
+[19.898878] (-) TimerEvent: {}
+[19.999506] (-) TimerEvent: {}
+[20.100550] (-) TimerEvent: {}
+[20.201182] (-) TimerEvent: {}
+[20.302148] (-) TimerEvent: {}
+[20.404558] (-) TimerEvent: {}
+[20.506351] (-) TimerEvent: {}
+[20.609432] (-) TimerEvent: {}
+[20.712002] (-) TimerEvent: {}
+[20.813233] (-) TimerEvent: {}
+[20.914905] (-) TimerEvent: {}
+[21.016367] (-) TimerEvent: {}
+[21.117135] (-) TimerEvent: {}
+[21.217968] (-) TimerEvent: {}
+[21.318930] (-) TimerEvent: {}
+[21.420458] (-) TimerEvent: {}
+[21.521205] (-) TimerEvent: {}
+[21.622300] (-) TimerEvent: {}
+[21.723489] (-) TimerEvent: {}
+[21.824217] (-) TimerEvent: {}
+[21.925129] (-) TimerEvent: {}
+[22.026355] (-) TimerEvent: {}
+[22.127858] (-) TimerEvent: {}
+[22.229772] (-) TimerEvent: {}
+[22.331342] (-) TimerEvent: {}
+[22.432103] (-) TimerEvent: {}
+[22.533326] (-) TimerEvent: {}
+[22.634679] (-) TimerEvent: {}
+[22.736264] (-) TimerEvent: {}
+[22.840832] (-) TimerEvent: {}
+[22.943994] (-) TimerEvent: {}
+[23.045815] (-) TimerEvent: {}
+[23.148783] (-) TimerEvent: {}
+[23.251997] (-) TimerEvent: {}
+[23.353827] (-) TimerEvent: {}
+[23.455074] (-) TimerEvent: {}
+[23.556874] (-) TimerEvent: {}
+[23.657622] (-) TimerEvent: {}
+[23.764899] (-) TimerEvent: {}
+[23.873505] (-) TimerEvent: {}
+[23.975164] (-) TimerEvent: {}
+[24.076326] (-) TimerEvent: {}
+[24.177472] (-) TimerEvent: {}
+[24.278973] (-) TimerEvent: {}
+[24.379690] (-) TimerEvent: {}
+[24.480459] (-) TimerEvent: {}
+[24.581188] (-) TimerEvent: {}
+[24.681882] (-) TimerEvent: {}
+[24.782631] (-) TimerEvent: {}
+[24.883476] (-) TimerEvent: {}
+[24.984192] (-) TimerEvent: {}
+[25.085644] (-) TimerEvent: {}
+[25.186655] (-) TimerEvent: {}
+[25.288187] (-) TimerEvent: {}
+[25.388960] (-) TimerEvent: {}
+[25.489985] (-) TimerEvent: {}
+[25.590713] (-) TimerEvent: {}
+[25.692113] (-) TimerEvent: {}
+[25.794209] (-) TimerEvent: {}
+[25.896769] (-) TimerEvent: {}
+[26.001946] (-) TimerEvent: {}
+[26.102722] (-) TimerEvent: {}
+[26.203872] (-) TimerEvent: {}
+[26.304628] (-) TimerEvent: {}
+[26.405377] (-) TimerEvent: {}
+[26.506898] (-) TimerEvent: {}
+[26.607976] (-) TimerEvent: {}
+[26.709781] (-) TimerEvent: {}
+[26.810682] (-) TimerEvent: {}
+[26.911383] (-) TimerEvent: {}
+[27.012581] (-) TimerEvent: {}
+[27.113804] (-) TimerEvent: {}
+[27.214606] (-) TimerEvent: {}
+[27.315745] (-) TimerEvent: {}
+[27.417401] (-) TimerEvent: {}
+[27.518100] (-) TimerEvent: {}
+[27.621423] (-) TimerEvent: {}
+[27.724892] (-) TimerEvent: {}
+[27.826361] (-) TimerEvent: {}
+[27.928436] (-) TimerEvent: {}
+[28.030171] (-) TimerEvent: {}
+[28.130895] (-) TimerEvent: {}
+[28.231653] (-) TimerEvent: {}
+[28.332399] (-) TimerEvent: {}
+[28.433248] (-) TimerEvent: {}
+[28.533972] (-) TimerEvent: {}
+[28.635047] (-) TimerEvent: {}
+[28.737802] (-) TimerEvent: {}
+[28.840945] (-) TimerEvent: {}
+[28.942730] (-) TimerEvent: {}
+[29.043739] (-) TimerEvent: {}
+[29.147744] (-) TimerEvent: {}
+[29.248559] (-) TimerEvent: {}
+[29.349383] (-) TimerEvent: {}
+[29.450109] (-) TimerEvent: {}
+[29.550907] (-) TimerEvent: {}
+[29.651937] (-) TimerEvent: {}
+[29.754187] (-) TimerEvent: {}
+[29.855737] (-) TimerEvent: {}
+[29.956466] (-) TimerEvent: {}
+[30.057179] (-) TimerEvent: {}
+[30.157991] (-) TimerEvent: {}
+[30.259373] (-) TimerEvent: {}
+[30.360743] (-) TimerEvent: {}
+[30.464847] (-) TimerEvent: {}
+[30.565763] (-) TimerEvent: {}
+[30.666690] (-) TimerEvent: {}
+[30.767508] (-) TimerEvent: {}
+[30.868287] (-) TimerEvent: {}
+[30.969590] (-) TimerEvent: {}
+[31.070318] (-) TimerEvent: {}
+[31.171140] (-) TimerEvent: {}
+[31.271876] (-) TimerEvent: {}
+[31.372543] (-) TimerEvent: {}
+[31.473667] (-) TimerEvent: {}
+[31.574423] (-) TimerEvent: {}
+[31.675410] (-) TimerEvent: {}
+[31.776435] (-) TimerEvent: {}
+[31.877469] (-) TimerEvent: {}
+[31.978386] (-) TimerEvent: {}
+[32.079510] (-) TimerEvent: {}
+[32.180642] (-) TimerEvent: {}
+[32.281370] (-) TimerEvent: {}
+[32.382075] (-) TimerEvent: {}
+[32.482828] (-) TimerEvent: {}
+[32.583554] (-) TimerEvent: {}
+[32.684322] (-) TimerEvent: {}
+[32.785267] (-) TimerEvent: {}
+[32.886008] (-) TimerEvent: {}
+[32.986728] (-) TimerEvent: {}
+[33.087703] (-) TimerEvent: {}
+[33.189766] (-) TimerEvent: {}
+[33.290504] (-) TimerEvent: {}
+[33.392804] (-) TimerEvent: {}
+[33.493511] (-) TimerEvent: {}
+[33.594235] (-) TimerEvent: {}
+[33.694962] (-) TimerEvent: {}
+[33.795778] (-) TimerEvent: {}
+[33.896627] (-) TimerEvent: {}
+[33.997369] (-) TimerEvent: {}
+[34.098101] (-) TimerEvent: {}
+[34.198874] (-) TimerEvent: {}
+[34.299620] (-) TimerEvent: {}
+[34.400419] (-) TimerEvent: {}
+[34.501129] (-) TimerEvent: {}
+[34.601921] (-) TimerEvent: {}
+[34.702617] (-) TimerEvent: {}
+[34.803355] (-) TimerEvent: {}
+[34.904020] (-) TimerEvent: {}
+[35.004653] (-) TimerEvent: {}
+[35.105373] (-) TimerEvent: {}
+[35.206206] (-) TimerEvent: {}
+[35.307240] (-) TimerEvent: {}
+[35.408039] (-) TimerEvent: {}
+[35.508798] (-) TimerEvent: {}
+[35.609641] (-) TimerEvent: {}
+[35.710565] (-) TimerEvent: {}
+[35.811442] (-) TimerEvent: {}
+[35.912151] (-) TimerEvent: {}
+[36.013023] (-) TimerEvent: {}
+[36.113805] (-) TimerEvent: {}
+[36.214518] (-) TimerEvent: {}
+[36.315214] (-) TimerEvent: {}
+[36.415872] (-) TimerEvent: {}
+[36.516778] (-) TimerEvent: {}
+[36.627050] (-) TimerEvent: {}
+[36.727725] (-) TimerEvent: {}
+[36.828405] (-) TimerEvent: {}
+[36.930979] (-) TimerEvent: {}
+[37.031670] (-) TimerEvent: {}
+[37.132360] (-) TimerEvent: {}
+[37.233061] (-) TimerEvent: {}
+[37.333760] (-) TimerEvent: {}
+[37.434539] (-) TimerEvent: {}
+[37.535726] (-) TimerEvent: {}
+[37.636402] (-) TimerEvent: {}
+[37.737108] (-) TimerEvent: {}
+[37.838188] (-) TimerEvent: {}
+[37.939254] (-) TimerEvent: {}
+[38.040847] (-) TimerEvent: {}
+[38.141654] (-) TimerEvent: {}
+[38.242703] (-) TimerEvent: {}
+[38.343902] (-) TimerEvent: {}
+[38.444596] (-) TimerEvent: {}
+[38.545465] (-) TimerEvent: {}
+[38.646155] (-) TimerEvent: {}
+[38.746897] (-) TimerEvent: {}
+[38.847629] (-) TimerEvent: {}
+[38.948516] (-) TimerEvent: {}
+[39.049189] (-) TimerEvent: {}
+[39.151143] (-) TimerEvent: {}
+[39.252996] (-) TimerEvent: {}
+[39.353684] (-) TimerEvent: {}
+[39.454359] (-) TimerEvent: {}
+[39.555059] (-) TimerEvent: {}
+[39.655846] (-) TimerEvent: {}
+[39.756577] (-) TimerEvent: {}
+[39.857279] (-) TimerEvent: {}
+[39.958295] (-) TimerEvent: {}
+[40.058997] (-) TimerEvent: {}
+[40.159675] (-) TimerEvent: {}
+[40.260524] (-) TimerEvent: {}
+[40.363059] (-) TimerEvent: {}
+[40.464840] (-) TimerEvent: {}
+[40.566371] (-) TimerEvent: {}
+[40.667818] (-) TimerEvent: {}
+[40.768759] (-) TimerEvent: {}
+[40.869488] (-) TimerEvent: {}
+[40.970254] (-) TimerEvent: {}
+[41.070979] (-) TimerEvent: {}
+[41.172161] (-) TimerEvent: {}
+[41.272986] (-) TimerEvent: {}
+[41.373623] (-) TimerEvent: {}
+[41.474310] (-) TimerEvent: {}
+[41.575063] (-) TimerEvent: {}
+[41.675718] (-) TimerEvent: {}
+[41.776318] (-) TimerEvent: {}
+[41.877020] (-) TimerEvent: {}
+[41.977745] (-) TimerEvent: {}
+[42.078431] (-) TimerEvent: {}
+[42.179791] (-) TimerEvent: {}
+[42.280468] (-) TimerEvent: {}
+[42.381154] (-) TimerEvent: {}
+[42.481896] (-) TimerEvent: {}
+[42.582667] (-) TimerEvent: {}
+[42.683650] (-) TimerEvent: {}
+[42.784355] (-) TimerEvent: {}
+[42.885479] (-) TimerEvent: {}
+[42.986160] (-) TimerEvent: {}
+[43.086896] (-) TimerEvent: {}
+[43.187671] (-) TimerEvent: {}
+[43.288566] (-) TimerEvent: {}
+[43.390406] (-) TimerEvent: {}
+[43.491325] (-) TimerEvent: {}
+[43.592072] (-) TimerEvent: {}
+[43.693447] (-) TimerEvent: {}
+[43.798589] (-) TimerEvent: {}
+[43.902130] (-) TimerEvent: {}
+[44.002912] (-) TimerEvent: {}
+[44.104295] (-) TimerEvent: {}
+[44.205399] (-) TimerEvent: {}
+[44.306092] (-) TimerEvent: {}
+[44.406931] (-) TimerEvent: {}
+[44.507606] (-) TimerEvent: {}
+[44.608275] (-) TimerEvent: {}
+[44.708979] (-) TimerEvent: {}
+[44.809685] (-) TimerEvent: {}
+[44.910400] (-) TimerEvent: {}
+[45.011160] (-) TimerEvent: {}
+[45.111898] (-) TimerEvent: {}
+[45.213955] (-) TimerEvent: {}
+[45.314779] (-) TimerEvent: {}
+[45.415704] (-) TimerEvent: {}
+[45.517517] (-) TimerEvent: {}
+[45.618245] (-) TimerEvent: {}
+[45.718990] (-) TimerEvent: {}
+[45.819754] (-) TimerEvent: {}
+[45.920480] (-) TimerEvent: {}
+[46.021170] (-) TimerEvent: {}
+[46.122111] (-) TimerEvent: {}
+[46.222972] (-) TimerEvent: {}
+[46.323955] (-) TimerEvent: {}
+[46.424651] (-) TimerEvent: {}
+[46.526370] (-) TimerEvent: {}
+[46.627094] (-) TimerEvent: {}
+[46.727820] (-) TimerEvent: {}
+[46.828654] (-) TimerEvent: {}
+[46.929389] (-) TimerEvent: {}
+[47.030057] (-) TimerEvent: {}
+[47.130769] (-) TimerEvent: {}
+[47.231864] (-) TimerEvent: {}
+[47.332565] (-) TimerEvent: {}
+[47.433235] (-) TimerEvent: {}
+[47.534234] (-) TimerEvent: {}
+[47.635221] (-) TimerEvent: {}
+[47.736031] (-) TimerEvent: {}
+[47.837912] (-) TimerEvent: {}
+[47.938600] (-) TimerEvent: {}
+[48.039311] (-) TimerEvent: {}
+[48.139990] (-) TimerEvent: {}
+[48.240673] (-) TimerEvent: {}
+[48.341378] (-) TimerEvent: {}
+[48.442134] (-) TimerEvent: {}
+[48.543039] (-) TimerEvent: {}
+[48.643964] (-) TimerEvent: {}
+[48.745294] (-) TimerEvent: {}
+[48.846428] (-) TimerEvent: {}
+[48.947175] (-) TimerEvent: {}
+[49.047923] (-) TimerEvent: {}
+[49.148696] (-) TimerEvent: {}
+[49.249515] (-) TimerEvent: {}
+[49.350388] (-) TimerEvent: {}
+[49.453150] (-) TimerEvent: {}
+[49.554030] (-) TimerEvent: {}
+[49.655850] (-) TimerEvent: {}
+[49.757340] (-) TimerEvent: {}
+[49.858025] (-) TimerEvent: {}
+[49.958728] (-) TimerEvent: {}
+[50.059599] (-) TimerEvent: {}
+[50.160352] (-) TimerEvent: {}
+[50.261038] (-) TimerEvent: {}
+[50.361764] (-) TimerEvent: {}
+[50.462427] (-) TimerEvent: {}
+[50.563183] (-) TimerEvent: {}
+[50.663892] (-) TimerEvent: {}
+[50.764629] (-) TimerEvent: {}
+[50.865329] (-) TimerEvent: {}
+[50.966000] (-) TimerEvent: {}
+[51.066643] (-) TimerEvent: {}
+[51.167370] (-) TimerEvent: {}
+[51.268860] (-) TimerEvent: {}
+[51.370182] (-) TimerEvent: {}
+[51.471518] (-) TimerEvent: {}
+[51.572763] (-) TimerEvent: {}
+[51.674161] (-) TimerEvent: {}
+[51.775778] (-) TimerEvent: {}
+[51.877089] (-) TimerEvent: {}
+[51.977832] (-) TimerEvent: {}
+[52.078648] (-) TimerEvent: {}
+[52.179352] (-) TimerEvent: {}
+[52.280033] (-) TimerEvent: {}
+[52.380767] (-) TimerEvent: {}
+[52.481768] (-) TimerEvent: {}
+[52.582978] (-) TimerEvent: {}
+[52.683742] (-) TimerEvent: {}
+[52.784596] (-) TimerEvent: {}
+[52.886185] (-) TimerEvent: {}
+[52.987672] (-) TimerEvent: {}
+[53.088567] (-) TimerEvent: {}
+[53.189456] (-) TimerEvent: {}
+[53.290332] (-) TimerEvent: {}
+[53.391340] (-) TimerEvent: {}
+[53.492478] (-) TimerEvent: {}
+[53.593367] (-) TimerEvent: {}
+[53.694711] (-) TimerEvent: {}
+[53.795446] (-) TimerEvent: {}
+[53.896256] (-) TimerEvent: {}
+[53.997085] (-) TimerEvent: {}
+[54.098529] (-) TimerEvent: {}
+[54.200125] (-) TimerEvent: {}
+[54.300961] (-) TimerEvent: {}
+[54.401765] (-) TimerEvent: {}
+[54.502530] (-) TimerEvent: {}
+[54.603582] (-) TimerEvent: {}
+[54.704482] (-) TimerEvent: {}
+[54.805830] (-) TimerEvent: {}
+[54.907981] (-) TimerEvent: {}
+[55.013794] (grab_demo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hsv_range\x1b[0m\n'}
+[55.030663] (-) TimerEvent: {}
+[55.132376] (-) TimerEvent: {}
+[55.233367] (-) TimerEvent: {}
+[55.334977] (-) TimerEvent: {}
+[55.435711] (-) TimerEvent: {}
+[55.536966] (-) TimerEvent: {}
+[55.639056] (-) TimerEvent: {}
+[55.741818] (-) TimerEvent: {}
+[55.845070] (-) TimerEvent: {}
+[55.946683] (-) TimerEvent: {}
+[56.047503] (-) TimerEvent: {}
+[56.148657] (-) TimerEvent: {}
+[56.250094] (-) TimerEvent: {}
+[56.351207] (-) TimerEvent: {}
+[56.452579] (-) TimerEvent: {}
+[56.553971] (-) TimerEvent: {}
+[56.656818] (-) TimerEvent: {}
+[56.758104] (-) TimerEvent: {}
+[56.858879] (-) TimerEvent: {}
+[56.959624] (-) TimerEvent: {}
+[57.060343] (-) TimerEvent: {}
+[57.161035] (-) TimerEvent: {}
+[57.261923] (-) TimerEvent: {}
+[57.362908] (-) TimerEvent: {}
+[57.465050] (-) TimerEvent: {}
+[57.567286] (-) TimerEvent: {}
+[57.667990] (-) TimerEvent: {}
+[57.768836] (-) TimerEvent: {}
+[57.869621] (-) TimerEvent: {}
+[57.970348] (-) TimerEvent: {}
+[58.070985] (-) TimerEvent: {}
+[58.172176] (-) TimerEvent: {}
+[58.272881] (-) TimerEvent: {}
+[58.373699] (-) TimerEvent: {}
+[58.413325] (grab_demo) StdoutLine: {'line': b'[100%] Built target hsv_range\n'}
+[58.474042] (-) TimerEvent: {}
+[58.531996] (grab_demo) CommandEnded: {'returncode': 0}
+[58.580967] (-) TimerEvent: {}
+[58.593691] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'install'}
+[58.642814] (grab_demo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'], 'cwd': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('SERVER_SCRIPT_PRODUCT', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/product.json'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'aarch64'), ('SERVER_PACKAGE_NAME', 'Trae-linux-arm64-1076771596290_7.tar.gz'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.66 56655 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('DISTRO_COMMIT', '2a4783a6a3e8f6d2a97690ddc95858805c9d0be6'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/extensions/git/dist/askpass.sh'), ('SERVER_LISTEN_FLAG', '--port=0'), ('MANAGER_LOGS_DIR', '/home/dxf/.trae-server/manager-logs/1762913651731_589488'), ('SCRIPT_ID', 'fcfcd5c92e6ea621554d4aab'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/serial/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco/lib:/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('TERM_PROGRAM_VERSION', '1.104.3'), ('SERVER_APP_NAME', 'Trae'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5d0ab1fa-1546-4eab-9c1a-5f9fa34d1634.sock'), ('OS_RELEASE_ID', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('TRAE_RESOLVE_TYPE', 'ssh'), ('PAGER', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/extensions/git/dist/askpass-main.js'), ('SERVER_DOWNLOAD_PREFIX', 'https://lf-cdn.trae.com.cn/obj/trae-com-cn/pkg/server/releases/stable/2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/linux/'), ('PS1', '\\n(TraeAI-6) \\w [$?] $'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/node'), ('TRAE_AI_SHELL_ID', '6'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/dxf/.trae-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('SERVER_DIR', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install:/home/dxf/WHEELTEC_S300Pro_mini/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('SAFE_RM_DENIED_PATH', '/home/dxf/.vscode:/home/dxf/.trae:/home/dxf/.git'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('TRAE_REMOTE_SKIP_REMOTE_CHECK', ''), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('DISTRO_VERSION', '1.104.3'), ('XDG_SESSION_ID', '5'), ('SERVER_INITIAL_EXTENSIONS', ''), ('EXTRACT_RETRY_COUNT', '0'), ('ROS_LOCALHOST_ONLY', '0'), ('vscode_base_dir', '/home/dxf/.trae-server'), ('PATH', '/home/dxf/.trae-server/binaries/node/versions/24.11.0/bin:/home/dxf/.trae-server/sdks/workspaces/eb3ad3d2/versions/node/current:/home/dxf/.trae-server/sdks/versions/node/current:/usr/local/cuda-12.6/bin:/home/dxf/.trae-server/binaries/node/versions/24.11.0/bin:/home/dxf/.trae-server/sdks/workspaces/eb3ad3d2/versions/node/current:/home/dxf/.trae-server/sdks/versions/node/current:/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/dxf/.trae-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/scripts/noConfigScripts'), ('PLATFORM', 'linux'), ('DISTRO_QUALITY', 'stable'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SERVER_SCRIPT', '/home/dxf/.trae-server/bin/stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6/index_trae.js'), ('FILESYSTEM_CASE_SENSITIVE', 'true'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/dxf/.trae-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-bd968b4cc3c5ed84.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/dxf/.trae-server/data/User/workspaceStorage/eb3ad3d23312df18640cab87988a0128/ms-python.python/pythonrc.py'), ('SERVER_PIDFILE', '/home/dxf/.trae-server/.stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6.pid'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('SERVER_LOGS_DIR', '/home/dxf/.trae-server/logs'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('DOWNLOAD_RETRY_COUNT', '0'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7da208c966.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_tutorials:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_resources:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('__trae_PS1', '\\n(TraeAI-6) \\w [$?] $'), ('SERVER_HOST', '127.0.0.1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('SERVER_LOGFILE', '/home/dxf/.trae-server/.stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6.log'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('DISTRO_VSCODIUM_RELEASE', ''), ('TMP_DIR', '/run/user/1000'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('SERVER_TOKENFILE', '/home/dxf/.trae-server/.stable-2a4783a6a3e8f6d2a97690ddc95858805c9d0be6.token'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', ''), ('TRAE_REMOTE_EXTENSION_REGION', 'cn'), ('SERVER_EXTENSIONS_DIR', '/home/dxf/.trae-server/extensions'), ('PWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'), ('SAFE_RM_ALLOWED_PATH', '/home/dxf'), ('SERVER_APP_VERSION', ''), ('TERM_PRODUCT', 'Trae'), ('SSH_CONNECTION', '192.168.0.66 56655 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('SERVER_ARCH', 'arm64'), ('PYTHONPATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('TRAE_DETECT_REGION', 'CN'), ('COLCON', '1'), ('SERVER_APP_QUALITY', 'dev'), ('SERVER_DATA_DIR', '/home/dxf/.trae-server'), ('REMOTE_VERSION', '1076771596290_7'), ('CMAKE_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_tutorials:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_resources:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/usr/local/opencv410:/usr/local/opencv410::/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble')]), 'shell': False}
+[58.681166] (-) TimerEvent: {}
+[58.691302] (grab_demo) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[58.694574] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/rosidl_interfaces/grab_demo\n'}
+[58.695323] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[58.695830] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[58.696934] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_generator_c__visibility_control.h\n'}
+[58.697920] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[58.698216] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/grab_object.h\n'}
+[58.698413] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[58.698588] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__struct.h\n'}
+[58.698756] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.h\n'}
+[58.699044] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__functions.c\n'}
+[58.699226] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__functions.h\n'}
+[58.699781] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/library_path.sh\n'}
+[58.699950] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/library_path.dsv\n'}
+[58.700552] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_generator_c.so\n'}
+[58.701096] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[58.701278] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[58.701791] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[58.702071] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[58.702346] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[58.702579] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_fastrtps_c.h\n'}
+[58.703446] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_fastrtps_c.so\n'}
+[58.703986] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[58.704216] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[58.705337] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[58.705526] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[58.706029] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[58.706259] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__traits.hpp\n'}
+[58.706422] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.hpp\n'}
+[58.706584] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__builder.hpp\n'}
+[58.707462] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__struct.hpp\n'}
+[58.707866] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/grab_object.hpp\n'}
+[58.708046] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[58.708317] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[58.708465] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[58.708596] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[58.708721] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[58.708846] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/dds_fastrtps\n'}
+[58.708972] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[58.709439] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_fastrtps_cpp.so\n'}
+[58.710075] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[58.710338] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[58.710615] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[58.710843] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[58.711187] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[58.711448] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.c\n'}
+[58.711610] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_introspection_c.h\n'}
+[58.712021] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_introspection_c.so\n'}
+[58.712772] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_c.so\n'}
+[58.713247] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[58.713440] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[58.713679] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[58.714122] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_introspection_cpp.hpp\n'}
+[58.714388] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.cpp\n'}
+[58.715004] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_introspection_cpp.so\n'}
+[58.716187] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_cpp.so\n'}
+[58.716584] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/pythonpath.sh\n'}
+[58.716761] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/pythonpath.dsv\n'}
+[58.717260] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info\n'}
+[58.717572] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[58.718458] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[58.719081] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[58.719368] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[58.720455] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo\n'}
+[58.721395] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/libgrab_demo__rosidl_generator_py.so\n'}
+[58.721922] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_c.c\n'}
+[58.722328] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/__init__.py\n'}
+[58.723225] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[58.723410] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[58.723574] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[58.723823] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[58.723985] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv\n'}
+[58.724126] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/__init__.py\n'}
+[58.724265] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/_grab_object.py\n'}
+[58.724404] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/_grab_object_s.c\n'}
+[58.724898] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[58.781312] (-) TimerEvent: {}
+[58.882384] (-) TimerEvent: {}
+[58.911912] (grab_demo) StdoutLine: {'line': b"Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo'...\n"}
+[58.912424] (grab_demo) StdoutLine: {'line': b"Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv'...\n"}
+[58.929111] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[58.930068] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[58.931470] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[58.934074] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_generator_py.so\n'}
+[58.935219] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject.idl\n'}
+[58.935624] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject.srv\n'}
+[58.935941] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject_Request.msg\n'}
+[58.936680] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject_Response.msg\n'}
+[58.937528] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/charuco_dectet_node\n'}
+[58.939191] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hand_eye\n'}
+[58.940437] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hsv_range\n'}
+[58.982629] (-) TimerEvent: {}
+[59.013845] (grab_demo) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hsv_range" to ""\n'}
+[59.014890] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/aruco_dectet\n'}
+[59.016061] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/grab_service_node\n'}
+[59.019308] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/start_grab\n'}
+[59.029965] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/camera_info_node\n'}
+[59.032398] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/nav_grab\n'}
+[59.033014] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch\n'}
+[59.033307] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/__pycache__\n'}
+[59.034711] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/__pycache__/start_grab.launch.cpython-310.pyc\n'}
+[59.035238] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/start_grab.launch.py\n'}
+[59.035745] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/hand_eye.launch.py\n'}
+[59.035992] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/color_grab.launch.py\n'}
+[59.036158] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/aruco_grab.launch.py\n'}
+[59.036304] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/package_run_dependencies/grab_demo\n'}
+[59.036527] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/parent_prefix_path/grab_demo\n'}
+[59.037329] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/ament_prefix_path.sh\n'}
+[59.037598] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/ament_prefix_path.dsv\n'}
+[59.037769] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/path.sh\n'}
+[59.037975] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/path.dsv\n'}
+[59.038129] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.bash\n'}
+[59.038373] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.sh\n'}
+[59.038527] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.zsh\n'}
+[59.038673] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.dsv\n'}
+[59.038886] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/package.dsv\n'}
+[59.039680] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/packages/grab_demo\n'}
+[59.041037] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cExport.cmake\n'}
+[59.041313] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cExport-debug.cmake\n'}
+[59.041758] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[59.042070] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cExport-debug.cmake\n'}
+[59.042655] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cppExport.cmake\n'}
+[59.043266] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[59.043541] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cppExport-debug.cmake\n'}
+[59.043968] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cExport.cmake\n'}
+[59.044229] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cExport-debug.cmake\n'}
+[59.044743] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cExport.cmake\n'}
+[59.044992] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cExport-debug.cmake\n'}
+[59.045414] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[59.045629] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cppExport-debug.cmake\n'}
+[59.047474] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cppExport.cmake\n'}
+[59.047746] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cppExport-debug.cmake\n'}
+[59.048347] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_pyExport.cmake\n'}
+[59.048660] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_pyExport-debug.cmake\n'}
+[59.048816] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake-extras.cmake\n'}
+[59.049453] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[59.049807] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[59.050232] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[59.050560] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[59.051403] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[59.051563] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[59.051702] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demoConfig.cmake\n'}
+[59.051834] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demoConfig-version.cmake\n'}
+[59.051963] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/package.xml\n'}
+[59.071374] (grab_demo) CommandEnded: {'returncode': 0}
+[59.086758] (-) TimerEvent: {}
+[59.189857] (-) TimerEvent: {}
+[59.283429] (grab_demo) JobEnded: {'identifier': 'grab_demo', 'rc': 0}
+[59.399423] (-) TimerEvent: {}
+[59.399669] (-) EventReactorShutdown: {}

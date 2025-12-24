@@ -1,0 +1,46 @@
+[0.030s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.193s] [  2%] Built target grab_demo__cpp
+[0.209s] [  8%] Built target grab_demo__rosidl_generator_c
+[0.212s] [ 12%] Built target hsv_range
+[0.215s] [ 14%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o
+[0.232s] [ 19%] Built target hand_eye
+[0.235s] [ 19%] Built target ament_cmake_python_copy_grab_demo
+[0.273s] [ 21%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o
+[0.292s] [ 25%] Built target camera_info_node
+[0.293s] [ 31%] Built target grab_demo__rosidl_typesupport_cpp
+[0.309s] [ 38%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.312s] [ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.353s] [ 51%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.361s] [ 57%] Built target grab_demo__rosidl_typesupport_c
+[0.378s] [ 63%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.459s] [ 72%] Built target grab_service_node
+[0.459s] [ 72%] Built target nav_grab
+[0.489s] [ 76%] Built target start_grab
+[0.512s] [ 76%] Built target grab_demo
+[0.570s] [ 78%] Built target grab_demo__py
+[0.629s] [ 82%] Built target grab_demo__rosidl_generator_py
+[0.698s] [ 87%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[0.699s] [ 91%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[0.712s] [ 95%] Built target grab_demo__rosidl_typesupport_c__pyext
+[0.956s] running egg_info
+[0.957s] writing grab_demo.egg-info/PKG-INFO
+[0.958s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[0.958s] writing top-level names to grab_demo.egg-info/top_level.txt
+[0.964s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[0.965s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.010s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:9:10: fatal error: opencv4/opencv2/objdetect/aruco_detector.hpp: 没有那个文件或目录
+[1.011s]     9 | #include <opencv4/opencv2/objdetect/aruco_detector.hpp>
+[1.011s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.011s] compilation terminated.
+[1.024s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[1.024s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[1.025s] gmake[1]: *** 正在等待未完成的任务....
+[1.059s] [ 95%] Built target ament_cmake_python_build_grab_demo_egg
+[1.512s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:3:10: fatal error: opencv4/opencv2/objdetect/charuco_detector.hpp: 没有那个文件或目录
+[1.512s]     3 | #include <opencv4/opencv2/objdetect/charuco_detector.hpp>
+[1.512s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.513s] compilation terminated.
+[1.528s] gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+[1.530s] gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+[1.530s] gmake: *** [Makefile:146：all] 错误 2
+[1.536s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

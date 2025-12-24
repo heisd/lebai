@@ -1,0 +1,12 @@
+[0.101s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.965s] [  2%] Built target grab_demo__cpp
+[1.204s] [  6%] Built target hsv_range
+[1.443s] [ 10%] Built target aruco_dectet
+[1.546s] [ 14%] Built target camera_info_node
+[1.611s] [ 21%] Built target grab_demo__rosidl_typesupport_cpp
+[1.736s] [ 27%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[1.821s] [ 34%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[2.046s] [ 38%] Built target grab_service_node
+[2.240s] [ 42%] Built target start_grab
+[2.321s] [ 46%] Built target nav_grab
+[2.447s] [ 48%] [32mBuilding CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o[0m

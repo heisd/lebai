@@ -1,0 +1,65 @@
+[0.033s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.281s] [35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[0.301s] [  2%] Built target grab_demo__cpp
+[0.312s] [  8%] Built target grab_demo__rosidl_generator_c
+[0.339s] [  8%] Built target ament_cmake_python_copy_grab_demo
+[0.367s] [ 10%] [32mBuilding CXX object CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o[0m
+[0.378s] [ 14%] Built target charuco_dectet_node
+[0.406s] [ 23%] Built target camera_info_node
+[0.407s] [ 23%] Built target aruco_dectet
+[0.411s] [ 29%] Built target grab_demo__rosidl_typesupport_cpp
+[0.437s] [ 34%] Built target hand_eye
+[0.468s] [ 42%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.469s] [ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.471s] [ 53%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.487s] [ 59%] Built target grab_demo__rosidl_typesupport_c
+[0.512s] [ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.566s] [ 70%] Built target nav_grab
+[0.575s] [ 74%] Built target start_grab
+[0.584s] [ 78%] Built target grab_service_node
+[0.591s] [ 78%] Built target grab_demo
+[0.654s] [ 80%] Built target grab_demo__py
+[0.719s] [ 85%] Built target grab_demo__rosidl_generator_py
+[0.780s] [ 93%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[0.781s] [ 93%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[0.782s] [ 97%] Built target grab_demo__rosidl_typesupport_c__pyext
+[1.119s] running egg_info
+[1.120s] writing grab_demo.egg-info/PKG-INFO
+[1.121s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.121s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.127s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.128s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.207s] [ 97%] Built target ament_cmake_python_build_grab_demo_egg
+[10.209s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::imageCallback(const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[10.209s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:141:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+[10.209s]   141 |             [01;31m[Kz[m[K += z_offset;
+[10.210s]       |             [01;31m[K^[m[K
+[10.238s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[10.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[10.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[10.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[10.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[10.238s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[10.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[10.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[10.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[10.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[10.239s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[10.239s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:1[m[K:
+[10.239s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:166:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kdis[m[K’ was not declared in this scope; did you mean ‘[01m[Kdiv[m[K’?
+[10.240s]   166 |           RCLCPP_WARN(this->get_logger(), "无效的深度值: %.3f", [01;31m[Kdis[m[K);
+[10.240s]       |                                                                 [01;31m[K^~~[m[K
+[10.248s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::updateDebugInfo(double, double, double, cv::Point, double, double, double)[m[K’:
+[10.248s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:173:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.248s]   173 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, [01;35m[Kdouble x_offset[m[K, double y_offset, double z_offset )
+[10.249s]       |                                                                           [01;35m[K~~~~~~~^~~~~~~~[m[K
+[10.249s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:173:99:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.249s]   173 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, double x_offset, [01;35m[Kdouble y_offset[m[K, double z_offset )
+[10.249s]       |                                                                                            [01;35m[K~~~~~~~^~~~~~~~[m[K
+[10.249s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:173:116:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kz_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.249s]   173 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, double x_offset, double y_offset, [01;35m[Kdouble z_offset[m[K )
+[10.249s]       |                                                                                                             [01;35m[K~~~~~~~^~~~~~~~[m[K
+[20.671s] gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:76：CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o] 错误 1
+[20.672s] gmake[1]: *** [CMakeFiles/Makefile2:658：CMakeFiles/hsv_range.dir/all] 错误 2
+[20.672s] gmake: *** [Makefile:146：all] 错误 2
+[20.718s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

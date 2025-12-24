@@ -1,0 +1,26 @@
+[1.701s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver': PYTHONPATH=/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lebai_driver build --build-base /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build install --record /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log --single-version-externally-managed install_data
+[2.283s] running egg_info
+[2.284s] writing ../../../build/lebai_driver/lebai_driver.egg-info/PKG-INFO
+[2.284s] writing dependency_links to ../../../build/lebai_driver/lebai_driver.egg-info/dependency_links.txt
+[2.285s] writing entry points to ../../../build/lebai_driver/lebai_driver.egg-info/entry_points.txt
+[2.286s] writing top-level names to ../../../build/lebai_driver/lebai_driver.egg-info/top_level.txt
+[2.291s] reading manifest file '../../../build/lebai_driver/lebai_driver.egg-info/SOURCES.txt'
+[2.294s] writing manifest file '../../../build/lebai_driver/lebai_driver.egg-info/SOURCES.txt'
+[2.294s] running build
+[2.294s] running build_py
+[2.295s] copying lebai_driver/urdf_helper.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver
+[2.299s] running install
+[2.300s] running install_lib
+[2.303s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/urdf_helper.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver
+[2.305s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/urdf_helper.py to urdf_helper.cpython-310.pyc
+[2.307s] running install_data
+[2.308s] running install_egg_info
+[2.315s] removing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver-0.0.1-py3.10.egg-info' (and everything under it)
+[2.315s] Copying ../../../build/lebai_driver/lebai_driver.egg-info to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver-0.0.1-py3.10.egg-info
+[2.317s] running install_scripts
+[2.363s] Installing io_service script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.364s] Installing motion script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.364s] Installing robot_state script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.364s] Installing system_service script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.366s] writing list of installed files to '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log'
+[2.438s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver' returned '0': PYTHONPATH=/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lebai_driver build --build-base /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build install --record /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log --single-version-externally-managed install_data

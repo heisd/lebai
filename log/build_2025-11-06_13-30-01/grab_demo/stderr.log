@@ -1,0 +1,4 @@
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:63:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kdata_cout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+   63 |           [01;35m[K         [m[K -900,900};
+      |           [01;35m[K^[m[K        

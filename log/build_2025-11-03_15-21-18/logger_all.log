@@ -1,0 +1,219 @@
+[0.301s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'lebai_driver']
+[0.301s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['lebai_driver'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb370b100>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb370ac80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb370ac80>>)
+[0.718s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.718s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.719s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dxf/wheeltec_lebai_humble_2024_7_17'
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.719s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.720s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.746s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.747s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extension 'ignore'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extension 'ignore_ament_install'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extensions ['colcon_pkg']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extension 'colcon_pkg'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extensions ['colcon_meta']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extension 'colcon_meta'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extensions ['ros']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/arm_demo) by extension 'ros'
+[0.758s] DEBUG:colcon.colcon_core.package_identification:Package 'src/arm_demo' with type 'ros.ament_cmake' and name 'arm_demo'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extension 'ignore_ament_install'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extensions ['colcon_pkg']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extension 'colcon_pkg'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extensions ['colcon_meta']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extension 'colcon_meta'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extensions ['ros']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/grab_demo) by extension 'ros'
+[0.761s] DEBUG:colcon.colcon_core.package_identification:Package 'src/grab_demo' with type 'ros.ament_cmake' and name 'grab_demo'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extensions ['ignore', 'ignore_ament_install']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'ignore'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'ignore_ament_install'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extensions ['colcon_pkg']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'colcon_pkg'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extensions ['colcon_meta']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'colcon_meta'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extensions ['ros']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'ros'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extensions ['cmake', 'python']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'cmake'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'python'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extensions ['python_setup_py']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev) by extension 'python_setup_py'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extension 'ignore'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extension 'ignore_ament_install'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extensions ['colcon_pkg']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extension 'colcon_pkg'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extensions ['colcon_meta']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extension 'colcon_meta'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extensions ['ros']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_driver) by extension 'ros'
+[0.765s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lebai-ros-sdk-humble-dev/lebai_driver' with type 'ros.ament_python' and name 'lebai_driver'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extension 'ignore'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extension 'ignore_ament_install'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extensions ['colcon_pkg']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extension 'colcon_pkg'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extensions ['colcon_meta']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extension 'colcon_meta'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extensions ['ros']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_interfaces) by extension 'ros'
+[0.768s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lebai-ros-sdk-humble-dev/lebai_interfaces' with type 'ros.ament_cmake' and name 'lebai_interfaces'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extension 'ignore'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extension 'ignore_ament_install'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extensions ['colcon_pkg']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extension 'colcon_pkg'
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extensions ['colcon_meta']
+[0.769s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extension 'colcon_meta'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extensions ['ros']
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config) by extension 'ros'
+[0.771s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config' with type 'ros.ament_cmake' and name 'lebai_lm3_moveit_config'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extensions ['ignore', 'ignore_ament_install']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extension 'ignore'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extension 'ignore_ament_install'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extensions ['colcon_pkg']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extension 'colcon_pkg'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extensions ['colcon_meta']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extension 'colcon_meta'
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extensions ['ros']
+[0.772s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_lm3_support) by extension 'ros'
+[0.773s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lebai-ros-sdk-humble-dev/lebai_lm3_support' with type 'ros.ament_cmake' and name 'lebai_lm3_support'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extension 'ignore'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extension 'ignore_ament_install'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extensions ['colcon_pkg']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extension 'colcon_pkg'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extensions ['colcon_meta']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extension 'colcon_meta'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extensions ['ros']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_resources) by extension 'ros'
+[0.776s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lebai-ros-sdk-humble-dev/lebai_resources' with type 'ros.ament_cmake' and name 'lebai_resources'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extensions ['ignore', 'ignore_ament_install']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extension 'ignore'
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extension 'ignore_ament_install'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extensions ['colcon_pkg']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extension 'colcon_pkg'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extensions ['colcon_meta']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extension 'colcon_meta'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extensions ['ros']
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/lebai-ros-sdk-humble-dev/lebai_tutorials) by extension 'ros'
+[0.778s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lebai-ros-sdk-humble-dev/lebai_tutorials' with type 'ros.ament_cmake' and name 'lebai_tutorials'
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.859s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'arm_demo' in 'src/arm_demo'
+[0.860s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'grab_demo' in 'src/grab_demo'
+[0.860s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lebai_interfaces' in 'src/lebai-ros-sdk-humble-dev/lebai_interfaces'
+[0.860s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lebai_lm3_support' in 'src/lebai-ros-sdk-humble-dev/lebai_lm3_support'
+[0.860s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lebai_resources' in 'src/lebai-ros-sdk-humble-dev/lebai_resources'
+[0.860s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lebai_lm3_moveit_config' in 'src/lebai-ros-sdk-humble-dev/lebai_lm3_moveit_config'
+[0.860s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'lebai_tutorials' in 'src/lebai-ros-sdk-humble-dev/lebai_tutorials'
+[0.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.878s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/dxf/wheeltec_lebai_humble_2024_7_17/install
+[0.890s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 44 installed packages in /home/dxf/WHEELTEC_S300Pro_mini/install
+[0.894s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 413 installed packages in /opt/ros/humble
+[0.898s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.102s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'cmake_args' from command line to 'None'
+[1.102s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'cmake_target' from command line to 'None'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'cmake_clean_first' from command line to 'False'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'cmake_force_configure' from command line to 'False'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'ament_cmake_args' from command line to 'None'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[1.103s] Level 5:colcon.colcon_core.verb:set package 'lebai_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.103s] DEBUG:colcon.colcon_core.verb:Building package 'lebai_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver', 'merge_install': False, 'path': '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver', 'symlink_install': False, 'test_result_base': None}
+[1.103s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.106s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.107s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver' with build type 'ament_python'
+[1.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('lebai_driver', 'ament_prefix_path')
+[1.115s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/hook/ament_prefix_path.ps1'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/hook/ament_prefix_path.dsv'
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/hook/ament_prefix_path.sh'
+[1.120s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.121s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.762s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver'
+[1.763s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.764s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver': PYTHONPATH=/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lebai_driver build --build-base /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build install --record /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log --single-version-externally-managed install_data
+[3.491s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver' returned '0': PYTHONPATH=/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lebai_driver build --build-base /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build install --record /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log --single-version-externally-managed install_data
+[3.504s] Level 1:colcon.colcon_core.environment:checking '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver' for CMake module files
+[3.505s] Level 1:colcon.colcon_core.environment:checking '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver' for CMake config files
+[3.508s] Level 1:colcon.colcon_core.environment:checking '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib'
+[3.508s] Level 1:colcon.colcon_core.environment:checking '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/bin'
+[3.508s] Level 1:colcon.colcon_core.environment:checking '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/pkgconfig/lebai_driver.pc'
+[3.509s] Level 1:colcon.colcon_core.environment:checking '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages'
+[3.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('lebai_driver', 'pythonpath')
+[3.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/hook/pythonpath.ps1'
+[3.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/hook/pythonpath.dsv'
+[3.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/hook/pythonpath.sh'
+[3.516s] Level 1:colcon.colcon_core.environment:checking '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/bin'
+[3.516s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lebai_driver)
+[3.517s] INFO:colcon.colcon_core.shell:Creating package script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/package.ps1'
+[3.520s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/package.dsv'
+[3.522s] INFO:colcon.colcon_core.shell:Creating package script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/package.sh'
+[3.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/package.bash'
+[3.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/package.zsh'
+[3.528s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/colcon-core/packages/lebai_driver)
+[3.529s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.530s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.530s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.531s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.558s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.559s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.559s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.611s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.612s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/local_setup.ps1'
+[3.616s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/_local_setup_util_ps1.py'
+[3.622s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/setup.ps1'
+[3.634s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/local_setup.sh'
+[3.636s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/_local_setup_util_sh.py'
+[3.638s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/setup.sh'
+[3.649s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/local_setup.bash'
+[3.651s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/setup.bash'
+[3.662s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/local_setup.zsh'
+[3.664s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/setup.zsh'

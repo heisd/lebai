@@ -1,0 +1,443 @@
+// generated from rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em
+// with input from lebai_interfaces:srv/SetAO.idl
+// generated code does not contain a copyright notice
+#include "lebai_interfaces/srv/detail/set_ao__rosidl_typesupport_fastrtps_c.h"
+
+
+#include <cassert>
+#include <limits>
+#include <string>
+#include "rosidl_typesupport_fastrtps_c/identifier.h"
+#include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
+#include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+#include "lebai_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+#include "lebai_interfaces/srv/detail/set_ao__struct.h"
+#include "lebai_interfaces/srv/detail/set_ao__functions.h"
+#include "fastcdr/Cdr.h"
+
+#ifndef _WIN32
+# pragma GCC diagnostic push
+# pragma GCC diagnostic ignored "-Wunused-parameter"
+# ifdef __clang__
+#  pragma clang diagnostic ignored "-Wdeprecated-register"
+#  pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
+# endif
+#endif
+#ifndef _WIN32
+# pragma GCC diagnostic pop
+#endif
+
+// includes and forward declarations of message dependencies and their conversion functions
+
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
+
+
+// forward declare type support functions
+
+
+using _SetAO_Request__ros_msg_type = lebai_interfaces__srv__SetAO_Request;
+
+static bool _SetAO_Request__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const _SetAO_Request__ros_msg_type * ros_message = static_cast<const _SetAO_Request__ros_msg_type *>(untyped_ros_message);
+  // Field name: pin
+  {
+    cdr << ros_message->pin;
+  }
+
+  // Field name: value
+  {
+    cdr << ros_message->value;
+  }
+
+  return true;
+}
+
+static bool _SetAO_Request__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  _SetAO_Request__ros_msg_type * ros_message = static_cast<_SetAO_Request__ros_msg_type *>(untyped_ros_message);
+  // Field name: pin
+  {
+    cdr >> ros_message->pin;
+  }
+
+  // Field name: value
+  {
+    cdr >> ros_message->value;
+  }
+
+  return true;
+}  // NOLINT(readability/fn_size)
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_lebai_interfaces
+size_t get_serialized_size_lebai_interfaces__srv__SetAO_Request(
+  const void * untyped_ros_message,
+  size_t current_alignment)
+{
+  const _SetAO_Request__ros_msg_type * ros_message = static_cast<const _SetAO_Request__ros_msg_type *>(untyped_ros_message);
+  (void)ros_message;
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // field.name pin
+  {
+    size_t item_size = sizeof(ros_message->pin);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name value
+  {
+    size_t item_size = sizeof(ros_message->value);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+static uint32_t _SetAO_Request__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_lebai_interfaces__srv__SetAO_Request(
+      untyped_ros_message, 0));
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_lebai_interfaces
+size_t max_serialized_size_lebai_interfaces__srv__SetAO_Request(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+  // member: pin
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint16_t);
+    current_alignment += array_size * sizeof(uint16_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
+  }
+  // member: value
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = lebai_interfaces__srv__SetAO_Request;
+    is_plain =
+      (
+      offsetof(DataType, value) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static size_t _SetAO_Request__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_lebai_interfaces__srv__SetAO_Request(
+    full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+
+static message_type_support_callbacks_t __callbacks_SetAO_Request = {
+  "lebai_interfaces::srv",
+  "SetAO_Request",
+  _SetAO_Request__cdr_serialize,
+  _SetAO_Request__cdr_deserialize,
+  _SetAO_Request__get_serialized_size,
+  _SetAO_Request__max_serialized_size
+};
+
+static rosidl_message_type_support_t _SetAO_Request__type_support = {
+  rosidl_typesupport_fastrtps_c__identifier,
+  &__callbacks_SetAO_Request,
+  get_message_typesupport_handle_function,
+};
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, lebai_interfaces, srv, SetAO_Request)() {
+  return &_SetAO_Request__type_support;
+}
+
+#if defined(__cplusplus)
+}
+#endif
+
+// already included above
+// #include <cassert>
+// already included above
+// #include <limits>
+// already included above
+// #include <string>
+// already included above
+// #include "rosidl_typesupport_fastrtps_c/identifier.h"
+// already included above
+// #include "rosidl_typesupport_fastrtps_c/wstring_conversion.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
+// already included above
+// #include "lebai_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+// already included above
+// #include "lebai_interfaces/srv/detail/set_ao__struct.h"
+// already included above
+// #include "lebai_interfaces/srv/detail/set_ao__functions.h"
+// already included above
+// #include "fastcdr/Cdr.h"
+
+#ifndef _WIN32
+# pragma GCC diagnostic push
+# pragma GCC diagnostic ignored "-Wunused-parameter"
+# ifdef __clang__
+#  pragma clang diagnostic ignored "-Wdeprecated-register"
+#  pragma clang diagnostic ignored "-Wreturn-type-c-linkage"
+# endif
+#endif
+#ifndef _WIN32
+# pragma GCC diagnostic pop
+#endif
+
+// includes and forward declarations of message dependencies and their conversion functions
+
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
+
+
+// forward declare type support functions
+
+
+using _SetAO_Response__ros_msg_type = lebai_interfaces__srv__SetAO_Response;
+
+static bool _SetAO_Response__cdr_serialize(
+  const void * untyped_ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  const _SetAO_Response__ros_msg_type * ros_message = static_cast<const _SetAO_Response__ros_msg_type *>(untyped_ros_message);
+  // Field name: code
+  {
+    cdr << (ros_message->code ? true : false);
+  }
+
+  return true;
+}
+
+static bool _SetAO_Response__cdr_deserialize(
+  eprosima::fastcdr::Cdr & cdr,
+  void * untyped_ros_message)
+{
+  if (!untyped_ros_message) {
+    fprintf(stderr, "ros message handle is null\n");
+    return false;
+  }
+  _SetAO_Response__ros_msg_type * ros_message = static_cast<_SetAO_Response__ros_msg_type *>(untyped_ros_message);
+  // Field name: code
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->code = tmp ? true : false;
+  }
+
+  return true;
+}  // NOLINT(readability/fn_size)
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_lebai_interfaces
+size_t get_serialized_size_lebai_interfaces__srv__SetAO_Response(
+  const void * untyped_ros_message,
+  size_t current_alignment)
+{
+  const _SetAO_Response__ros_msg_type * ros_message = static_cast<const _SetAO_Response__ros_msg_type *>(untyped_ros_message);
+  (void)ros_message;
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // field.name code
+  {
+    size_t item_size = sizeof(ros_message->code);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+static uint32_t _SetAO_Response__get_serialized_size(const void * untyped_ros_message)
+{
+  return static_cast<uint32_t>(
+    get_serialized_size_lebai_interfaces__srv__SetAO_Response(
+      untyped_ros_message, 0));
+}
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_lebai_interfaces
+size_t max_serialized_size_lebai_interfaces__srv__SetAO_Response(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+  // member: code
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = lebai_interfaces__srv__SetAO_Response;
+    is_plain =
+      (
+      offsetof(DataType, code) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
+static size_t _SetAO_Response__max_serialized_size(char & bounds_info)
+{
+  bool full_bounded;
+  bool is_plain;
+  size_t ret_val;
+
+  ret_val = max_serialized_size_lebai_interfaces__srv__SetAO_Response(
+    full_bounded, is_plain, 0);
+
+  bounds_info =
+    is_plain ? ROSIDL_TYPESUPPORT_FASTRTPS_PLAIN_TYPE :
+    full_bounded ? ROSIDL_TYPESUPPORT_FASTRTPS_BOUNDED_TYPE : ROSIDL_TYPESUPPORT_FASTRTPS_UNBOUNDED_TYPE;
+  return ret_val;
+}
+
+
+static message_type_support_callbacks_t __callbacks_SetAO_Response = {
+  "lebai_interfaces::srv",
+  "SetAO_Response",
+  _SetAO_Response__cdr_serialize,
+  _SetAO_Response__cdr_deserialize,
+  _SetAO_Response__get_serialized_size,
+  _SetAO_Response__max_serialized_size
+};
+
+static rosidl_message_type_support_t _SetAO_Response__type_support = {
+  rosidl_typesupport_fastrtps_c__identifier,
+  &__callbacks_SetAO_Response,
+  get_message_typesupport_handle_function,
+};
+
+const rosidl_message_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, lebai_interfaces, srv, SetAO_Response)() {
+  return &_SetAO_Response__type_support;
+}
+
+#if defined(__cplusplus)
+}
+#endif
+
+#include "rosidl_typesupport_fastrtps_cpp/service_type_support.h"
+#include "rosidl_typesupport_cpp/service_type_support.hpp"
+// already included above
+// #include "rosidl_typesupport_fastrtps_c/identifier.h"
+// already included above
+// #include "lebai_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+#include "lebai_interfaces/srv/set_ao.h"
+
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
+
+static service_type_support_callbacks_t SetAO__callbacks = {
+  "lebai_interfaces::srv",
+  "SetAO",
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, lebai_interfaces, srv, SetAO_Request)(),
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, lebai_interfaces, srv, SetAO_Response)(),
+};
+
+static rosidl_service_type_support_t SetAO__handle = {
+  rosidl_typesupport_fastrtps_c__identifier,
+  &SetAO__callbacks,
+  get_service_typesupport_handle_function,
+};
+
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, lebai_interfaces, srv, SetAO)() {
+  return &SetAO__handle;
+}
+
+#if defined(__cplusplus)
+}
+#endif

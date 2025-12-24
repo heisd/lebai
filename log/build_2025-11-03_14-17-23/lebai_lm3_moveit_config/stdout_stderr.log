@@ -1,0 +1,53 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_moveit_config
+-- Install configuration: ""
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/ament_index/resource_index/package_run_dependencies/lebai_lm3_moveit_config
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/ament_index/resource_index/parent_prefix_path/lebai_lm3_moveit_config
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/environment/ament_prefix_path.sh
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/environment/ament_prefix_path.dsv
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/environment/path.sh
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/environment/path.dsv
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/local_setup.bash
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/local_setup.sh
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/local_setup.zsh
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/local_setup.dsv
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/package.dsv
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/ament_index/resource_index/packages/lebai_lm3_moveit_config
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/cmake/lebai_lm3_moveit_configConfig.cmake
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/cmake/lebai_lm3_moveit_configConfig-version.cmake
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/package.xml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/launch
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/launch/lm3_l1.launch.py
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/launch/moveit_empty.rviz
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/launch/demo.launch.py
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/launch/moveit.rviz
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/launch/rviz.launch.py
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/launch/lm3.launch.py
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/ompl_planning.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/lebai_lm3.srdf
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/sensors_3d.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/joint_limits.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/chomp_planning.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/cartesian_limits.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/fake_controllers.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/lebai_lm3_l1.srdf
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/lm3_controllers.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/kinematics.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/config/ros_controllers.yaml
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config/share/lebai_lm3_moveit_config/.setup_assistant

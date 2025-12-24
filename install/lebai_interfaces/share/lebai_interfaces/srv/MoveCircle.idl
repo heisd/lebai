@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lebai_interfaces/srv/MoveCircle.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "lebai_interfaces/msg/MoveCommon.idl"
+
+module lebai_interfaces {
+  module srv {
+    struct MoveCircle_Request {
+      boolean way_point_is_joint_pose;
+
+      sequence<double> way_point_joint_pose;
+
+      geometry_msgs::msg::Pose way_point_cartesian_pose;
+
+      boolean end_point_is_joint_pose;
+
+      sequence<double> end_point_joint_pose;
+
+      geometry_msgs::msg::Pose end_point_cartesian_pose;
+
+      double circle_angle;
+
+      lebai_interfaces::msg::MoveCommon common;
+    };
+    struct MoveCircle_Response {
+      boolean ret;
+    };
+  };
+};

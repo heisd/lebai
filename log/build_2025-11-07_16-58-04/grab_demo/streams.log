@@ -1,0 +1,60 @@
+[0.065s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo
+[0.327s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.328s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.530s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.551s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.612s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.753s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.849s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.371s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.386s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.315s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.661s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[4.154s] -- Found cv_bridge: 3.2.1 (/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/cv_bridge/share/cv_bridge/cmake)
+[4.221s] -- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)
+[4.223s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.591s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.625s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.632s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.637s] -- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)
+[4.983s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.038s] -- Found lebai_interfaces: 0.0.1 (/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake)
+[5.820s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[5.915s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[6.286s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[6.433s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[6.521s] -- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[6.760s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[7.078s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[7.603s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[7.815s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[7.926s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[9.331s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[10.933s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[11.588s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.757s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[11.843s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[11.843s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[11.844s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[11.967s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.157s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[12.161s] -- Configured cppcheck include dirs: /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include
+[12.161s] -- Configured cppcheck exclude dirs and/or files: 
+[12.167s] -- Added test 'flake8' to check Python code syntax and style conventions
+[12.169s] -- Added test 'lint_cmake' to check CMake code style
+[12.171s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[12.175s] -- Added test 'uncrustify' to check C / C++ code style
+[12.175s] -- Configured uncrustify additional arguments: 
+[12.178s] -- Added test 'xmllint' to check XML markup files
+[12.212s] -- Configuring done
+[13.494s] -- Generating done
+[14.185s] -- Build files have been written to: /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo
+[14.312s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo
+[14.315s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[15.229s] [  2%] Built target grab_demo__cpp
+[15.322s] [35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[15.757s] [  6%] Built target hsv_range
+[15.833s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:275: CMakeFiles/aruco_dectet.dir/depend] 中断
+[15.844s] gmake[1]: *** [CMakeFiles/Makefile2:683: CMakeFiles/aruco_dectet.dir/all] 中断
+[15.844s] gmake: *** [Makefile:146: all] 中断
+[15.845s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

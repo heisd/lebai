@@ -1,0 +1,31 @@
+[0.169s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble PS1=\n(TraeAI-5) \w [$?] $ __trae_PS1=\n(TraeAI-5) \w [$?] $ /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[1.841s] [  2%] Built target grab_demo__cpp
+[1.842s] [  8%] Built target grab_demo__rosidl_generator_c
+[1.842s] [  8%] Built target ament_cmake_python_copy_grab_demo
+[1.842s] [ 10%] [32mBuilding CXX object CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o[0m
+[1.842s] [ 14%] Built target charuco_dectet_node
+[1.842s] [ 19%] Built target aruco_dectet
+[1.843s] [ 23%] Built target hand_eye
+[1.843s] [ 27%] Built target camera_info_node
+[1.843s] [ 34%] Built target grab_demo__rosidl_typesupport_cpp
+[1.843s] [ 40%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[1.843s] [ 46%] Built target grab_demo__rosidl_typesupport_introspection_c
+[1.843s] [ 53%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[1.843s] [ 59%] Built target grab_demo__rosidl_typesupport_c
+[1.844s] [ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[1.844s] [ 65%] Built target grab_demo
+[1.844s] [ 70%] Built target grab_service_node
+[1.844s] [ 74%] Built target nav_grab
+[1.844s] [ 76%] [32mBuilding CXX object CMakeFiles/start_grab.dir/src/start_grab.cpp.o[0m
+[1.844s] [ 78%] Built target grab_demo__py
+[2.006s] [ 82%] Built target grab_demo__rosidl_generator_py
+[2.305s] [ 87%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[2.529s] [ 91%] Built target grab_demo__rosidl_typesupport_c__pyext
+[2.530s] [ 95%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[4.888s] running egg_info
+[4.913s] writing grab_demo.egg-info/PKG-INFO
+[4.920s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[4.932s] writing top-level names to grab_demo.egg-info/top_level.txt
+[4.978s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[4.991s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[5.749s] [ 95%] Built target ament_cmake_python_build_grab_demo_egg

@@ -1,0 +1,281 @@
+[0.036s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.283s] [35m[1mConsolidate compiler generated dependencies of target charuco_dectet_node[0m
+[0.305s] [35m[1mConsolidate compiler generated dependencies of target hand_eye[0m
+[0.332s] [  6%] Built target grab_demo__rosidl_generator_c
+[0.359s] [ 10%] Built target hsv_range
+[0.376s] [ 12%] Built target ament_cmake_python_copy_grab_demo
+[0.377s] [ 12%] Built target grab_demo__cpp
+[0.378s] [ 14%] [32mBuilding CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o[0m
+[0.404s] [35m[1mConsolidate compiler generated dependencies of target aruco_dectet[0m
+[0.444s] [ 21%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.455s] [ 27%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.465s] [ 31%] [32mBuilding CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o[0m
+[0.466s] [ 31%] [32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o[0m
+[0.472s] [ 36%] Built target camera_info_node
+[0.530s] [ 42%] Built target grab_demo__rosidl_typesupport_c
+[0.551s] [ 48%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.633s] [ 55%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.638s] [ 61%] Built target grab_demo__rosidl_typesupport_cpp
+[0.735s] [ 61%] Built target grab_demo
+[0.797s] [ 65%] Built target grab_service_node
+[0.877s] [ 70%] Built target start_grab
+[0.892s] [ 74%] Built target nav_grab
+[0.989s] [ 76%] Built target grab_demo__py
+[1.131s] [ 80%] Built target grab_demo__rosidl_generator_py
+[1.162s] running egg_info
+[1.164s] writing grab_demo.egg-info/PKG-INFO
+[1.164s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.165s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.171s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.173s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.234s] [ 85%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[1.263s] [ 89%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[1.287s] [ 89%] Built target ament_cmake_python_build_grab_demo_egg
+[1.317s] [ 93%] Built target grab_demo__rosidl_typesupport_c__pyext
+[6.829s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7[m[K:
+[6.834s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:62:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass cv::aruco::CharucoBoard[m[K’
+[6.834s]    62 | class CV_EXPORTS_W [01;31m[KCharucoBoard[m[K : public Board {
+[6.834s]       |                    [01;31m[K^~~~~~~~~~~~[m[K
+[6.834s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8[m[K,
+[6.835s]                  from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48[m[K,
+[6.835s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.835s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5[m[K:
+[6.835s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass cv::aruco::CharucoBoard[m[K’
+[6.835s]   135 | class CV_EXPORTS_W_SIMPLE [01;36m[KCharucoBoard[m[K : public Board {
+[6.835s]       |                           [01;36m[K^~~~~~~~~~~~[m[K
+[6.835s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7[m[K:
+[6.835s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:185:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 8 of ‘[01m[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.836s]   185 | CV_EXPORTS_W bool [01;31m[KestimatePoseCharucoBoard[m[K(InputArray charucoCorners, InputArray charucoIds,
+[6.836s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.836s] In file included from [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:44[m[K,
+[6.836s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7[m[K:
+[6.836s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/aruco.hpp:81:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)[m[K’ here
+[6.836s]    81 | CV_EXPORTS_W bool [01;36m[KestimatePoseCharucoBoard[m[K(InputArray charucoCorners, InputArray charucoIds,
+[6.840s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.840s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7[m[K:
+[6.841s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 3 of ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.841s]   204 | CV_EXPORTS_W void [01;31m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.841s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.841s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.841s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.841s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5[m[K:
+[6.842s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ here
+[6.842s]   127 | CV_EXPORTS_W void [01;36m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.842s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.842s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7[m[K:
+[6.842s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 4 of ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’
+[6.842s]   204 | CV_EXPORTS_W void [01;31m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.843s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.843s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.843s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.843s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5[m[K:
+[6.843s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ here
+[6.843s]   127 | CV_EXPORTS_W void [01;36m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.843s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.843s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7[m[K:
+[6.844s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 3 of ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.844s]   310 | CV_EXPORTS_W void [01;31m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.844s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.844s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.844s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.844s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5[m[K:
+[6.844s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ here
+[6.845s]   148 | CV_EXPORTS_W void [01;36m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.845s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.845s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7[m[K:
+[6.845s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 4 of ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’
+[6.845s]   310 | CV_EXPORTS_W void [01;31m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.845s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.845s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.846s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.846s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5[m[K:
+[6.846s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ here
+[6.846s]   148 | CV_EXPORTS_W void [01;36m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.846s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.883s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8[m[K,
+[6.884s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.884s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:62:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass cv::aruco::CharucoBoard[m[K’
+[6.884s]    62 | class CV_EXPORTS_W [01;31m[KCharucoBoard[m[K : public Board {
+[6.884s]       |                    [01;31m[K^~~~~~~~~~~~[m[K
+[6.884s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8[m[K,
+[6.884s]                  from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48[m[K,
+[6.884s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.885s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7[m[K,
+[6.885s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.885s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass cv::aruco::CharucoBoard[m[K’
+[6.885s]   135 | class CV_EXPORTS_W_SIMPLE [01;36m[KCharucoBoard[m[K : public Board {
+[6.885s]       |                           [01;36m[K^~~~~~~~~~~~[m[K
+[6.885s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8[m[K,
+[6.885s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.885s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:185:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 8 of ‘[01m[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.886s]   185 | CV_EXPORTS_W bool [01;31m[KestimatePoseCharucoBoard[m[K(InputArray charucoCorners, InputArray charucoIds,
+[6.886s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.886s] In file included from [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:44[m[K,
+[6.886s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8[m[K,
+[6.886s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.886s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/aruco.hpp:81:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)[m[K’ here
+[6.891s]    81 | CV_EXPORTS_W bool [01;36m[KestimatePoseCharucoBoard[m[K(InputArray charucoCorners, InputArray charucoIds,
+[6.891s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.891s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8[m[K,
+[6.891s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.892s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 3 of ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.892s]   204 | CV_EXPORTS_W void [01;31m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.892s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.892s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.892s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.893s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7[m[K,
+[6.893s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.893s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ here
+[6.893s]   127 | CV_EXPORTS_W void [01;36m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.893s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.893s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8[m[K,
+[6.894s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.894s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 4 of ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’
+[6.894s]   204 | CV_EXPORTS_W void [01;31m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.894s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.894s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.895s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.895s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7[m[K,
+[6.896s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.896s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ here
+[6.896s]   127 | CV_EXPORTS_W void [01;36m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[6.896s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.896s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8[m[K,
+[6.897s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.897s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 3 of ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[6.897s]   310 | CV_EXPORTS_W void [01;31m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.897s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.898s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.898s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.898s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7[m[K,
+[6.898s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.899s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ here
+[6.899s]   148 | CV_EXPORTS_W void [01;36m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.899s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.899s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8[m[K,
+[6.899s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.900s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 4 of ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’
+[6.900s]   310 | CV_EXPORTS_W void [01;31m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.900s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[6.900s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[6.900s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[6.900s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7[m[K,
+[6.901s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[6.902s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ here
+[6.902s]   148 | CV_EXPORTS_W void [01;36m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[6.902s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[9.608s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9[m[K,
+[9.609s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.609s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:62:20:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass cv::aruco::CharucoBoard[m[K’
+[9.609s]    62 | class CV_EXPORTS_W [01;31m[KCharucoBoard[m[K : public Board {
+[9.610s]       |                    [01;31m[K^~~~~~~~~~~~[m[K
+[9.610s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8[m[K,
+[9.610s]                  from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48[m[K,
+[9.611s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[9.611s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8[m[K,
+[9.611s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.611s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass cv::aruco::CharucoBoard[m[K’
+[9.611s]   135 | class CV_EXPORTS_W_SIMPLE [01;36m[KCharucoBoard[m[K : public Board {
+[9.611s]       |                           [01;36m[K^~~~~~~~~~~~[m[K
+[9.612s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9[m[K,
+[9.612s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.612s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:185:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 8 of ‘[01m[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[9.612s]   185 | CV_EXPORTS_W bool [01;31m[KestimatePoseCharucoBoard[m[K(InputArray charucoCorners, InputArray charucoIds,
+[9.612s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.612s] In file included from [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:44[m[K,
+[9.612s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9[m[K,
+[9.612s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.613s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/aruco.hpp:81:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)[m[K’ here
+[9.613s]    81 | CV_EXPORTS_W bool [01;36m[KestimatePoseCharucoBoard[m[K(InputArray charucoCorners, InputArray charucoIds,
+[9.613s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.613s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9[m[K,
+[9.613s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.614s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 3 of ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[9.614s]   204 | CV_EXPORTS_W void [01;31m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[9.614s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.614s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[9.615s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[9.615s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8[m[K,
+[9.615s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.615s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ here
+[9.615s]   127 | CV_EXPORTS_W void [01;36m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[9.615s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.615s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9[m[K,
+[9.615s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.616s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 4 of ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’
+[9.616s]   204 | CV_EXPORTS_W void [01;31m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[9.616s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.616s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[9.616s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[9.616s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8[m[K,
+[9.616s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.616s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)[m[K’ here
+[9.617s]   127 | CV_EXPORTS_W void [01;36m[KdrawDetectedCornersCharuco[m[K(InputOutputArray image, InputArray charucoCorners,
+[9.617s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.617s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9[m[K,
+[9.617s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.617s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 3 of ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[9.617s]   310 | CV_EXPORTS_W void [01;31m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[9.617s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[9.617s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[9.618s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[9.618s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8[m[K,
+[9.618s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.618s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ here
+[9.618s]   148 | CV_EXPORTS_W void [01;36m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[9.618s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[9.618s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9[m[K,
+[9.619s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.619s] [01m[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:[m[K [01;31m[Kerror: [m[Kdefault argument given for parameter 4 of ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’
+[9.619s]   310 | CV_EXPORTS_W void [01;31m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[9.619s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[9.619s] In file included from [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870[m[K,
+[9.620s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:80[m[K,
+[9.620s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8[m[K,
+[9.620s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[9.620s] [01m[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:[m[K [01;36m[Knote: [m[Kprevious specification in ‘[01m[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)[m[K’ here
+[9.620s]   148 | CV_EXPORTS_W void [01;36m[KdrawDetectedDiamonds[m[K(InputOutputArray image, InputArrayOfArrays diamondCorners,
+[9.620s]       |                   [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[12.059s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In constructor ‘[01m[Karuco_dectet::aruco_dectet()[m[K’:
+[12.060s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:50:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::DetectorParameters[m[K’
+[12.060s]    50 |             DetectorParameters=cv::aruco::DetectorParameters::[01;31m[Kcreate[m[K();
+[12.060s]       |                                                               [01;31m[K^~~~~~[m[K
+[12.075s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:71:70:[m[K [01;31m[Kerror: [m[K‘[01m[KPREDEFINED_DICTIONARY_NAME[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+[12.075s]    71 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::[01;31m[KPREDEFINED_DICTIONARY_NAME[m[K(dictionary_id));
+[12.076s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.342s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[12.343s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:[m[K In constructor ‘[01m[Kcharuco_dectet::charuco_dectet()[m[K’:
+[12.343s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:66:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::DetectorParameters[m[K’
+[12.343s]    66 |             DetectorParameters=cv::aruco::DetectorParameters::[01;31m[Kcreate[m[K();
+[12.343s]       |                                                               [01;31m[K^~~~~~[m[K
+[12.358s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:88:70:[m[K [01;31m[Kerror: [m[K‘[01m[KPREDEFINED_DICTIONARY_NAME[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+[12.358s]    88 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::[01;31m[KPREDEFINED_DICTIONARY_NAME[m[K(dictionary_id));
+[12.358s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.359s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:89:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::CharucoBoard[m[K’
+[12.359s]    89 |             charuco_board=cv::aruco::CharucoBoard::[01;31m[Kcreate[m[K(squaresX,squaresY,squareLength,markerLength,dictionary);
+[12.359s]       |                                                    [01;31m[K^~~~~~[m[K
+[12.374s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:95:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::aruco::CharucoBoard[m[K’ has no member named ‘[01m[Kdraw[m[K’
+[12.374s]    95 |             charuco_board->[01;31m[Kdraw[m[K(cv::Size(1080,720),board_img,10,1);
+[12.374s]       |                            [01;31m[K^~~~[m[K
+[39.777s] gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+[39.781s] gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+[39.781s] gmake[1]: *** 正在等待未完成的任务....
+[40.397s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[40.403s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[44.330s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:9:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[44.330s]     9 | void charuco_pose_callback(const geometry_msgs::msg::Pose::ConstPtr msg[01;35m[K)[m[K
+[44.330s]       |                                                                        [01;35m[K^[m[K
+[44.334s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:7[m[K,
+[44.334s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:14[m[K,
+[44.335s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[44.335s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:115:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[44.335s]   115 |     [01;36m[KConstPtr[m[K;
+[44.336s]       |     [01;36m[K^~~~~~~~[m[K
+[44.568s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:[m[K In function ‘[01m[Kint main(int, const char**)[m[K’:
+[44.569s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:63:11:[m[K [01;35m[Kwarning: [m[KISO C++ forbids variable length array ‘[01m[Kdata_cout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla-Wvla]8;;[m[K]
+[44.569s]    63 |     float [01;35m[Kdata_cout[m[K[hand_eye_cout][6];
+[44.570s]       |           [01;35m[K^~~~~~~~~[m[K
+[59.290s] gmake[2]: *** [CMakeFiles/hand_eye.dir/build.make:76：CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o] 错误 1
+[59.302s] gmake[1]: *** [CMakeFiles/Makefile2:632：CMakeFiles/hand_eye.dir/all] 错误 2
+[59.318s] gmake: *** [Makefile:146：all] 错误 2
+[59.427s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

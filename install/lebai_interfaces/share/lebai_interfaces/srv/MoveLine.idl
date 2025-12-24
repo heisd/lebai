@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lebai_interfaces/srv/MoveLine.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "lebai_interfaces/msg/MoveCommon.idl"
+
+module lebai_interfaces {
+  module srv {
+    struct MoveLine_Request {
+      boolean is_joint_pose;
+
+      sequence<double> joint_pose;
+
+      geometry_msgs::msg::Pose cartesian_pose;
+
+      lebai_interfaces::msg::MoveCommon common;
+    };
+    struct MoveLine_Response {
+      boolean ret;
+    };
+  };
+};

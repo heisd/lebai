@@ -1,0 +1,1116 @@
+[0.000000] (-) TimerEvent: {}
+[0.001091] (-) JobUnselected: {'identifier': 'arm_demo'}
+[0.001171] (-) JobUnselected: {'identifier': 'lebai_driver'}
+[0.001237] (-) JobUnselected: {'identifier': 'lebai_interfaces'}
+[0.001283] (-) JobUnselected: {'identifier': 'lebai_lm3_moveit_config'}
+[0.001321] (-) JobUnselected: {'identifier': 'lebai_lm3_support'}
+[0.001357] (-) JobUnselected: {'identifier': 'lebai_resources'}
+[0.001391] (-) JobUnselected: {'identifier': 'lebai_tutorials'}
+[0.001433] (grab_demo) JobQueued: {'identifier': 'grab_demo', 'dependencies': OrderedDict()}
+[0.001478] (grab_demo) JobStarted: {'identifier': 'grab_demo'}
+[0.041372] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'cmake'}
+[0.044357] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'build'}
+[0.046208] (grab_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', '--', '-j6', '-l6'], 'cwd': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.66 52877 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib:/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/serial/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/3.WHEELTEC S300+乐白机械臂补充资料/lebai-ros-sdk-humble-dev'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-add7fb15-5c49-47e1-b51f-bb70efb19d7d.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install:/home/dxf/WHEELTEC_S300Pro_mini/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ced936a5f0.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_tutorials:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_resources:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'), ('SSH_CONNECTION', '192.168.0.66 52877 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_tutorials:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_resources:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_moveit_config:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo:/usr/local/opencv410:/usr/local/opencv410:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble')]), 'shell': False}
+[0.098969] (-) TimerEvent: {}
+[0.199650] (-) TimerEvent: {}
+[0.300395] (-) TimerEvent: {}
+[0.401103] (-) TimerEvent: {}
+[0.415448] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target charuco_dectet_node\x1b[0m\n'}
+[0.467099] (grab_demo) StdoutLine: {'line': b'[  2%] Built target grab_demo__cpp\n'}
+[0.481347] (grab_demo) StdoutLine: {'line': b'[  8%] Built target grab_demo__rosidl_generator_c\n'}
+[0.501288] (-) TimerEvent: {}
+[0.541379] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target aruco_dectet\x1b[0m\n'}
+[0.547741] (grab_demo) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_copy_grab_demo\n'}
+[0.586509] (grab_demo) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o\x1b[0m\n'}
+[0.594282] (grab_demo) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o\x1b[0m\n'}
+[0.601592] (-) TimerEvent: {}
+[0.638127] (grab_demo) StdoutLine: {'line': b'[ 17%] Built target camera_info_node\n'}
+[0.659699] (grab_demo) StdoutLine: {'line': b'[ 21%] Built target hsv_range\n'}
+[0.702089] (-) TimerEvent: {}
+[0.706550] (grab_demo) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o\x1b[0m\n'}
+[0.716599] (grab_demo) StdoutLine: {'line': b'[ 29%] Built target grab_demo__rosidl_typesupport_cpp\n'}
+[0.771134] (grab_demo) StdoutLine: {'line': b'[ 36%] Built target grab_demo__rosidl_typesupport_fastrtps_c\n'}
+[0.796940] (grab_demo) StdoutLine: {'line': b'[ 42%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp\n'}
+[0.802266] (-) TimerEvent: {}
+[0.875582] (grab_demo) StdoutLine: {'line': b'[ 48%] Built target grab_demo__rosidl_typesupport_c\n'}
+[0.885451] (grab_demo) StdoutLine: {'line': b'[ 55%] Built target grab_demo__rosidl_typesupport_introspection_c\n'}
+[0.902457] (-) TimerEvent: {}
+[0.976713] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_service_node\x1b[0m\n'}
+[0.990760] (grab_demo) StdoutLine: {'line': b'[ 61%] Built target grab_demo__rosidl_typesupport_introspection_cpp\n'}
+[1.002626] (-) TimerEvent: {}
+[1.076553] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target start_grab\x1b[0m\n'}
+[1.102791] (-) TimerEvent: {}
+[1.198994] (grab_demo) StdoutLine: {'line': b'[ 65%] Built target grab_service_node\n'}
+[1.202937] (-) TimerEvent: {}
+[1.258202] (grab_demo) StdoutLine: {'line': b'[ 70%] Built target start_grab\n'}
+[1.281959] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nav_grab\x1b[0m\n'}
+[1.303126] (-) TimerEvent: {}
+[1.403813] (-) TimerEvent: {}
+[1.404685] (grab_demo) StdoutLine: {'line': b'[ 74%] Built target nav_grab\n'}
+[1.441641] (grab_demo) StdoutLine: {'line': b'[ 74%] Built target grab_demo\n'}
+[1.503990] (-) TimerEvent: {}
+[1.567611] (grab_demo) StdoutLine: {'line': b'[ 76%] Built target grab_demo__py\n'}
+[1.598329] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_generator_py\x1b[0m\n'}
+[1.604125] (-) TimerEvent: {}
+[1.639276] (grab_demo) StdoutLine: {'line': b'[ 80%] Built target grab_demo__rosidl_generator_py\n'}
+[1.689007] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.704298] (-) TimerEvent: {}
+[1.804964] (-) TimerEvent: {}
+[1.813906] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.833470] (grab_demo) StdoutLine: {'line': b'[ 85%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.905151] (-) TimerEvent: {}
+[1.906204] (grab_demo) StdoutLine: {'line': b'[ 89%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext\n'}
+[1.946074] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.017581] (-) TimerEvent: {}
+[2.055091] (grab_demo) StdoutLine: {'line': b'[ 93%] Built target grab_demo__rosidl_typesupport_c__pyext\n'}
+[2.117762] (-) TimerEvent: {}
+[2.218436] (-) TimerEvent: {}
+[2.319118] (-) TimerEvent: {}
+[2.331477] (grab_demo) StdoutLine: {'line': b'running egg_info\n'}
+[2.333743] (grab_demo) StdoutLine: {'line': b'writing grab_demo.egg-info/PKG-INFO\n'}
+[2.334506] (grab_demo) StdoutLine: {'line': b'writing dependency_links to grab_demo.egg-info/dependency_links.txt\n'}
+[2.335047] (grab_demo) StdoutLine: {'line': b'writing top-level names to grab_demo.egg-info/top_level.txt\n'}
+[2.345795] (grab_demo) StdoutLine: {'line': b"reading manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[2.347384] (grab_demo) StdoutLine: {'line': b"writing manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[2.419319] (-) TimerEvent: {}
+[2.520226] (-) TimerEvent: {}
+[2.551878] (grab_demo) StdoutLine: {'line': b'[ 93%] Built target ament_cmake_python_build_grab_demo_egg\n'}
+[2.620279] (-) TimerEvent: {}
+[2.721014] (-) TimerEvent: {}
+[2.821817] (-) TimerEvent: {}
+[2.922544] (-) TimerEvent: {}
+[3.023289] (-) TimerEvent: {}
+[3.124007] (-) TimerEvent: {}
+[3.224745] (-) TimerEvent: {}
+[3.325483] (-) TimerEvent: {}
+[3.426299] (-) TimerEvent: {}
+[3.527578] (-) TimerEvent: {}
+[3.628877] (-) TimerEvent: {}
+[3.734005] (-) TimerEvent: {}
+[3.835206] (-) TimerEvent: {}
+[3.936535] (-) TimerEvent: {}
+[4.037332] (-) TimerEvent: {}
+[4.138214] (-) TimerEvent: {}
+[4.238952] (-) TimerEvent: {}
+[4.339664] (-) TimerEvent: {}
+[4.440773] (-) TimerEvent: {}
+[4.541506] (-) TimerEvent: {}
+[4.642238] (-) TimerEvent: {}
+[4.743383] (-) TimerEvent: {}
+[4.844102] (-) TimerEvent: {}
+[4.944805] (-) TimerEvent: {}
+[5.045509] (-) TimerEvent: {}
+[5.146199] (-) TimerEvent: {}
+[5.246904] (-) TimerEvent: {}
+[5.347634] (-) TimerEvent: {}
+[5.448380] (-) TimerEvent: {}
+[5.549067] (-) TimerEvent: {}
+[5.656224] (-) TimerEvent: {}
+[5.756915] (-) TimerEvent: {}
+[5.860248] (-) TimerEvent: {}
+[5.961112] (-) TimerEvent: {}
+[6.061864] (-) TimerEvent: {}
+[6.162660] (-) TimerEvent: {}
+[6.263428] (-) TimerEvent: {}
+[6.364214] (-) TimerEvent: {}
+[6.464967] (-) TimerEvent: {}
+[6.565751] (-) TimerEvent: {}
+[6.666609] (-) TimerEvent: {}
+[6.767437] (-) TimerEvent: {}
+[6.868367] (-) TimerEvent: {}
+[6.969577] (-) TimerEvent: {}
+[7.070403] (-) TimerEvent: {}
+[7.171446] (-) TimerEvent: {}
+[7.272566] (-) TimerEvent: {}
+[7.373380] (-) TimerEvent: {}
+[7.474268] (-) TimerEvent: {}
+[7.575116] (-) TimerEvent: {}
+[7.676088] (-) TimerEvent: {}
+[7.777017] (-) TimerEvent: {}
+[7.878136] (-) TimerEvent: {}
+[7.979040] (-) TimerEvent: {}
+[8.080402] (-) TimerEvent: {}
+[8.181792] (-) TimerEvent: {}
+[8.283188] (-) TimerEvent: {}
+[8.383987] (-) TimerEvent: {}
+[8.484826] (-) TimerEvent: {}
+[8.585631] (-) TimerEvent: {}
+[8.686467] (-) TimerEvent: {}
+[8.787284] (-) TimerEvent: {}
+[8.888828] (-) TimerEvent: {}
+[8.990182] (-) TimerEvent: {}
+[9.055458] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8\x1b[m\x1b[K,\n'}
+[9.057843] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.058127] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:62:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass cv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.058296] (grab_demo) StderrLine: {'line': b'   62 | class CV_EXPORTS_W \x1b[01;31m\x1b[KCharucoBoard\x1b[m\x1b[K : public Board {\n'}
+[9.058440] (grab_demo) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.058574] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8\x1b[m\x1b[K,\n'}
+[9.058727] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48\x1b[m\x1b[K,\n'}
+[9.058855] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.058979] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7\x1b[m\x1b[K,\n'}
+[9.059101] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.059222] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kclass cv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.059345] (grab_demo) StderrLine: {'line': b'  135 | class CV_EXPORTS_W_SIMPLE \x1b[01;36m\x1b[KCharucoBoard\x1b[m\x1b[K : public Board {\n'}
+[9.059464] (grab_demo) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.059711] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8\x1b[m\x1b[K,\n'}
+[9.059859] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.060010] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:185:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 8 of \xe2\x80\x98\x1b[01m\x1b[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.060205] (grab_demo) StderrLine: {'line': b'  185 | CV_EXPORTS_W bool \x1b[01;31m\x1b[KestimatePoseCharucoBoard\x1b[m\x1b[K(InputArray charucoCorners, InputArray charucoIds,\n'}
+[9.060335] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.064809] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:44\x1b[m\x1b[K,\n'}
+[9.065068] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8\x1b[m\x1b[K,\n'}
+[9.065205] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.065334] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/aruco.hpp:81:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.065468] (grab_demo) StderrLine: {'line': b'   81 | CV_EXPORTS_W bool \x1b[01;36m\x1b[KestimatePoseCharucoBoard\x1b[m\x1b[K(InputArray charucoCorners, InputArray charucoIds,\n'}
+[9.065591] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.066533] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8\x1b[m\x1b[K,\n'}
+[9.066725] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.066861] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 3 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.067002] (grab_demo) StderrLine: {'line': b'  204 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.067129] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.067658] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.067862] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.067998] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7\x1b[m\x1b[K,\n'}
+[9.068155] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.068297] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.068447] (grab_demo) StderrLine: {'line': b'  127 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.069601] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.069813] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8\x1b[m\x1b[K,\n'}
+[9.069952] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.070078] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.070208] (grab_demo) StderrLine: {'line': b'  204 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.070330] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.070449] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.070597] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.070718] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7\x1b[m\x1b[K,\n'}
+[9.070837] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.070955] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.071080] (grab_demo) StderrLine: {'line': b'  127 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.071198] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.071979] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8\x1b[m\x1b[K,\n'}
+[9.072217] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.072368] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 3 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.072508] (grab_demo) StderrLine: {'line': b'  310 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.072635] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.072959] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.073129] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.073353] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7\x1b[m\x1b[K,\n'}
+[9.073508] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.073735] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.073972] (grab_demo) StderrLine: {'line': b'  148 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.074144] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.074425] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8\x1b[m\x1b[K,\n'}
+[9.074677] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.074918] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.075077] (grab_demo) StderrLine: {'line': b'  310 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.075291] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.075598] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.075838] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.076067] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7\x1b[m\x1b[K,\n'}
+[9.076289] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[9.076525] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.076741] (grab_demo) StderrLine: {'line': b'  148 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.076903] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.090347] (-) TimerEvent: {}
+[9.191056] (-) TimerEvent: {}
+[9.291798] (-) TimerEvent: {}
+[9.392706] (-) TimerEvent: {}
+[9.493387] (-) TimerEvent: {}
+[9.594117] (-) TimerEvent: {}
+[9.694809] (-) TimerEvent: {}
+[9.795507] (-) TimerEvent: {}
+[9.798808] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7\x1b[m\x1b[K:\n'}
+[9.800743] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:62:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass cv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.800946] (grab_demo) StderrLine: {'line': b'   62 | class CV_EXPORTS_W \x1b[01;31m\x1b[KCharucoBoard\x1b[m\x1b[K : public Board {\n'}
+[9.801101] (grab_demo) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.801237] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8\x1b[m\x1b[K,\n'}
+[9.801371] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48\x1b[m\x1b[K,\n'}
+[9.801499] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.801628] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5\x1b[m\x1b[K:\n'}
+[9.801758] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kclass cv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.801888] (grab_demo) StderrLine: {'line': b'  135 | class CV_EXPORTS_W_SIMPLE \x1b[01;36m\x1b[KCharucoBoard\x1b[m\x1b[K : public Board {\n'}
+[9.802009] (grab_demo) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.802127] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7\x1b[m\x1b[K:\n'}
+[9.802245] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:185:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 8 of \xe2\x80\x98\x1b[01m\x1b[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.807595] (grab_demo) StderrLine: {'line': b'  185 | CV_EXPORTS_W bool \x1b[01;31m\x1b[KestimatePoseCharucoBoard\x1b[m\x1b[K(InputArray charucoCorners, InputArray charucoIds,\n'}
+[9.807738] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.807867] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:44\x1b[m\x1b[K,\n'}
+[9.807991] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7\x1b[m\x1b[K:\n'}
+[9.808399] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/aruco.hpp:81:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.808596] (grab_demo) StderrLine: {'line': b'   81 | CV_EXPORTS_W bool \x1b[01;36m\x1b[KestimatePoseCharucoBoard\x1b[m\x1b[K(InputArray charucoCorners, InputArray charucoIds,\n'}
+[9.808728] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.808855] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7\x1b[m\x1b[K:\n'}
+[9.808993] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 3 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.809126] (grab_demo) StderrLine: {'line': b'  204 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.809247] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.809366] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.809487] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.809605] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5\x1b[m\x1b[K:\n'}
+[9.809724] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.809849] (grab_demo) StderrLine: {'line': b'  127 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.809984] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.810101] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7\x1b[m\x1b[K:\n'}
+[9.810218] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.810340] (grab_demo) StderrLine: {'line': b'  204 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.810457] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.810574] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.810692] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.810812] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5\x1b[m\x1b[K:\n'}
+[9.810931] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.811053] (grab_demo) StderrLine: {'line': b'  127 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[9.811170] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.811301] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7\x1b[m\x1b[K:\n'}
+[9.811418] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 3 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.812269] (grab_demo) StderrLine: {'line': b'  310 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.812415] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.812580] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.812711] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.812837] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5\x1b[m\x1b[K:\n'}
+[9.812973] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.813099] (grab_demo) StderrLine: {'line': b'  148 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.813219] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.813336] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7\x1b[m\x1b[K:\n'}
+[9.813454] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.813579] (grab_demo) StderrLine: {'line': b'  310 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.813698] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.813816] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[9.813933] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[9.814049] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5\x1b[m\x1b[K:\n'}
+[9.814172] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[9.814297] (grab_demo) StderrLine: {'line': b'  148 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[9.814443] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.895685] (-) TimerEvent: {}
+[9.996452] (-) TimerEvent: {}
+[10.097451] (-) TimerEvent: {}
+[10.200255] (-) TimerEvent: {}
+[10.300966] (-) TimerEvent: {}
+[10.401713] (-) TimerEvent: {}
+[10.502443] (-) TimerEvent: {}
+[10.603157] (-) TimerEvent: {}
+[10.703911] (-) TimerEvent: {}
+[10.804643] (-) TimerEvent: {}
+[10.905391] (-) TimerEvent: {}
+[11.006104] (-) TimerEvent: {}
+[11.106805] (-) TimerEvent: {}
+[11.207518] (-) TimerEvent: {}
+[11.308225] (-) TimerEvent: {}
+[11.408937] (-) TimerEvent: {}
+[11.509642] (-) TimerEvent: {}
+[11.610364] (-) TimerEvent: {}
+[11.711079] (-) TimerEvent: {}
+[11.811820] (-) TimerEvent: {}
+[11.912533] (-) TimerEvent: {}
+[12.013241] (-) TimerEvent: {}
+[12.113944] (-) TimerEvent: {}
+[12.214619] (-) TimerEvent: {}
+[12.315328] (-) TimerEvent: {}
+[12.416010] (-) TimerEvent: {}
+[12.516787] (-) TimerEvent: {}
+[12.617513] (-) TimerEvent: {}
+[12.718250] (-) TimerEvent: {}
+[12.819592] (-) TimerEvent: {}
+[12.920647] (-) TimerEvent: {}
+[12.927210] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9\x1b[m\x1b[K,\n'}
+[12.930533] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.931126] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:62:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass cv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.932725] (grab_demo) StderrLine: {'line': b'   62 | class CV_EXPORTS_W \x1b[01;31m\x1b[KCharucoBoard\x1b[m\x1b[K : public Board {\n'}
+[12.933235] (grab_demo) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.933482] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8\x1b[m\x1b[K,\n'}
+[12.933660] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48\x1b[m\x1b[K,\n'}
+[12.933921] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[12.934099] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8\x1b[m\x1b[K,\n'}
+[12.934308] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.934496] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kclass cv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.934684] (grab_demo) StderrLine: {'line': b'  135 | class CV_EXPORTS_W_SIMPLE \x1b[01;36m\x1b[KCharucoBoard\x1b[m\x1b[K : public Board {\n'}
+[12.934876] (grab_demo) StderrLine: {'line': b'      |                           \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.935220] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9\x1b[m\x1b[K,\n'}
+[12.935419] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.935582] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:185:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 8 of \xe2\x80\x98\x1b[01m\x1b[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.935853] (grab_demo) StderrLine: {'line': b'  185 | CV_EXPORTS_W bool \x1b[01;31m\x1b[KestimatePoseCharucoBoard\x1b[m\x1b[K(InputArray charucoCorners, InputArray charucoIds,\n'}
+[12.936061] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.936356] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:44\x1b[m\x1b[K,\n'}
+[12.936670] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9\x1b[m\x1b[K,\n'}
+[12.937225] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.937541] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/aruco.hpp:81:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kbool cv::aruco::estimatePoseCharucoBoard(cv::InputArray, cv::InputArray, const cv::Ptr<cv::aruco::CharucoBoard>&, cv::InputArray, cv::InputArray, cv::InputOutputArray, cv::InputOutputArray, bool)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[12.938568] (grab_demo) StderrLine: {'line': b'   81 | CV_EXPORTS_W bool \x1b[01;36m\x1b[KestimatePoseCharucoBoard\x1b[m\x1b[K(InputArray charucoCorners, InputArray charucoIds,\n'}
+[12.938963] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.939138] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9\x1b[m\x1b[K,\n'}
+[12.939385] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.939616] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 3 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.940605] (grab_demo) StderrLine: {'line': b'  204 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[12.940799] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.940993] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[12.941142] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[12.941280] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8\x1b[m\x1b[K,\n'}
+[12.941407] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.941529] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[12.941683] (grab_demo) StderrLine: {'line': b'  127 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[12.941807] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.942245] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9\x1b[m\x1b[K,\n'}
+[12.942426] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.942563] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:204:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.942702] (grab_demo) StderrLine: {'line': b'  204 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[12.942828] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.944951] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[12.945260] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[12.945421] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8\x1b[m\x1b[K,\n'}
+[12.945563] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.945695] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:127:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedCornersCharuco(cv::InputOutputArray, cv::InputArray, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[12.945833] (grab_demo) StderrLine: {'line': b'  127 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedCornersCharuco\x1b[m\x1b[K(InputOutputArray image, InputArray charucoCorners,\n'}
+[12.945961] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.946109] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9\x1b[m\x1b[K,\n'}
+[12.946235] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.946356] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 3 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[12.946491] (grab_demo) StderrLine: {'line': b'  310 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[12.946613] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.952471] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[12.952877] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[12.953040] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8\x1b[m\x1b[K,\n'}
+[12.953190] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.953330] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[12.953473] (grab_demo) StderrLine: {'line': b'  148 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[12.953624] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.953750] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9\x1b[m\x1b[K,\n'}
+[12.953873] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.953994] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/aruco/charuco.hpp:310:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kdefault argument given for parameter 4 of \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.954118] (grab_demo) StderrLine: {'line': b'  310 | CV_EXPORTS_W void \x1b[01;31m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[12.954238] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.954356] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:870\x1b[m\x1b[K,\n'}
+[12.954472] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:80\x1b[m\x1b[K,\n'}
+[12.954590] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:8\x1b[m\x1b[K,\n'}
+[12.954707] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[12.954828] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/opencv410/include/opencv4/opencv2/objdetect/charuco_detector.hpp:148:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious specification in \xe2\x80\x98\x1b[01m\x1b[Kvoid cv::aruco::drawDetectedDiamonds(cv::InputOutputArray, cv::InputArrayOfArrays, cv::InputArray, cv::Scalar)\x1b[m\x1b[K\xe2\x80\x99 here\n'}
+[12.954971] (grab_demo) StderrLine: {'line': b'  148 | CV_EXPORTS_W void \x1b[01;36m\x1b[KdrawDetectedDiamonds\x1b[m\x1b[K(InputOutputArray image, InputArrayOfArrays diamondCorners,\n'}
+[12.955093] (grab_demo) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.021132] (-) TimerEvent: {}
+[13.121841] (-) TimerEvent: {}
+[13.222530] (-) TimerEvent: {}
+[13.323424] (-) TimerEvent: {}
+[13.424208] (-) TimerEvent: {}
+[13.524958] (-) TimerEvent: {}
+[13.625736] (-) TimerEvent: {}
+[13.726531] (-) TimerEvent: {}
+[13.827333] (-) TimerEvent: {}
+[13.928096] (-) TimerEvent: {}
+[14.028844] (-) TimerEvent: {}
+[14.130103] (-) TimerEvent: {}
+[14.230871] (-) TimerEvent: {}
+[14.332307] (-) TimerEvent: {}
+[14.433647] (-) TimerEvent: {}
+[14.534392] (-) TimerEvent: {}
+[14.635702] (-) TimerEvent: {}
+[14.738790] (-) TimerEvent: {}
+[14.840329] (-) TimerEvent: {}
+[14.941887] (-) TimerEvent: {}
+[15.043342] (-) TimerEvent: {}
+[15.144881] (-) TimerEvent: {}
+[15.246386] (-) TimerEvent: {}
+[15.347964] (-) TimerEvent: {}
+[15.449461] (-) TimerEvent: {}
+[15.550987] (-) TimerEvent: {}
+[15.652560] (-) TimerEvent: {}
+[15.754150] (-) TimerEvent: {}
+[15.855224] (-) TimerEvent: {}
+[15.956388] (-) TimerEvent: {}
+[16.057397] (-) TimerEvent: {}
+[16.158448] (-) TimerEvent: {}
+[16.260216] (-) TimerEvent: {}
+[16.361660] (-) TimerEvent: {}
+[16.462986] (-) TimerEvent: {}
+[16.564304] (-) TimerEvent: {}
+[16.666733] (-) TimerEvent: {}
+[16.767788] (-) TimerEvent: {}
+[16.869105] (-) TimerEvent: {}
+[16.970156] (-) TimerEvent: {}
+[17.072238] (-) TimerEvent: {}
+[17.172946] (-) TimerEvent: {}
+[17.273647] (-) TimerEvent: {}
+[17.374374] (-) TimerEvent: {}
+[17.475068] (-) TimerEvent: {}
+[17.576067] (-) TimerEvent: {}
+[17.676767] (-) TimerEvent: {}
+[17.777489] (-) TimerEvent: {}
+[17.878387] (-) TimerEvent: {}
+[17.979184] (-) TimerEvent: {}
+[18.079882] (-) TimerEvent: {}
+[18.180642] (-) TimerEvent: {}
+[18.281369] (-) TimerEvent: {}
+[18.384225] (-) TimerEvent: {}
+[18.488415] (-) TimerEvent: {}
+[18.589758] (-) TimerEvent: {}
+[18.690786] (-) TimerEvent: {}
+[18.792062] (-) TimerEvent: {}
+[18.892827] (-) TimerEvent: {}
+[18.994431] (-) TimerEvent: {}
+[19.095512] (-) TimerEvent: {}
+[19.197150] (-) TimerEvent: {}
+[19.297900] (-) TimerEvent: {}
+[19.398866] (-) TimerEvent: {}
+[19.499595] (-) TimerEvent: {}
+[19.600333] (-) TimerEvent: {}
+[19.648701] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1\x1b[m\x1b[K:\n'}
+[19.678717] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kcharuco_dectet::charuco_dectet()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.679839] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:66:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcreate\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcv::aruco::DetectorParameters\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.680412] (grab_demo) StderrLine: {'line': b'   66 |             DetectorParameters=cv::aruco::DetectorParameters::\x1b[01;31m\x1b[Kcreate\x1b[m\x1b[K();\n'}
+[19.680696] (grab_demo) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.700551] (-) TimerEvent: {}
+[19.706713] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Karuco_dectet::aruco_dectet()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[19.707319] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:50:63:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcreate\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcv::aruco::DetectorParameters\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.707536] (grab_demo) StderrLine: {'line': b'   50 |             DetectorParameters=cv::aruco::DetectorParameters::\x1b[01;31m\x1b[Kcreate\x1b[m\x1b[K();\n'}
+[19.707685] (grab_demo) StderrLine: {'line': b'      |                                                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.800732] (-) TimerEvent: {}
+[19.825190] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:88:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPREDEFINED_DICTIONARY_NAME\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcv::aruco\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.825891] (grab_demo) StderrLine: {'line': b'   88 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::\x1b[01;31m\x1b[KPREDEFINED_DICTIONARY_NAME\x1b[m\x1b[K(dictionary_id));\n'}
+[19.826113] (grab_demo) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.826271] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:89:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcreate\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.826487] (grab_demo) StderrLine: {'line': b'   89 |             charuco_board=cv::aruco::CharucoBoard::\x1b[01;31m\x1b[Kcreate\x1b[m\x1b[K(squaresX,squaresY,squareLength,markerLength,dictionary);\n'}
+[19.826625] (grab_demo) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.857925] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:95:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass cv::aruco::CharucoBoard\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kdraw\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.858625] (grab_demo) StderrLine: {'line': b'   95 |             charuco_board->\x1b[01;31m\x1b[Kdraw\x1b[m\x1b[K(cv::Size(1080,720),board_img,10,1);\n'}
+[19.858845] (grab_demo) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[19.900904] (-) TimerEvent: {}
+[19.924451] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:71:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPREDEFINED_DICTIONARY_NAME\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcv::aruco\x1b[m\x1b[K\xe2\x80\x99\n'}
+[19.925005] (grab_demo) StderrLine: {'line': b'   71 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::\x1b[01;31m\x1b[KPREDEFINED_DICTIONARY_NAME\x1b[m\x1b[K(dictionary_id));\n'}
+[19.925228] (grab_demo) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[20.001085] (-) TimerEvent: {}
+[20.101810] (-) TimerEvent: {}
+[20.202533] (-) TimerEvent: {}
+[20.303207] (-) TimerEvent: {}
+[20.403920] (-) TimerEvent: {}
+[20.504671] (-) TimerEvent: {}
+[20.605655] (-) TimerEvent: {}
+[20.707346] (-) TimerEvent: {}
+[20.809004] (-) TimerEvent: {}
+[20.909698] (-) TimerEvent: {}
+[21.010700] (-) TimerEvent: {}
+[21.111409] (-) TimerEvent: {}
+[21.212155] (-) TimerEvent: {}
+[21.312893] (-) TimerEvent: {}
+[21.413662] (-) TimerEvent: {}
+[21.514754] (-) TimerEvent: {}
+[21.615726] (-) TimerEvent: {}
+[21.716806] (-) TimerEvent: {}
+[21.817538] (-) TimerEvent: {}
+[21.918258] (-) TimerEvent: {}
+[22.018997] (-) TimerEvent: {}
+[22.119725] (-) TimerEvent: {}
+[22.220494] (-) TimerEvent: {}
+[22.321225] (-) TimerEvent: {}
+[22.421936] (-) TimerEvent: {}
+[22.522674] (-) TimerEvent: {}
+[22.624215] (-) TimerEvent: {}
+[22.724927] (-) TimerEvent: {}
+[22.825661] (-) TimerEvent: {}
+[22.927017] (-) TimerEvent: {}
+[23.028237] (-) TimerEvent: {}
+[23.129057] (-) TimerEvent: {}
+[23.229978] (-) TimerEvent: {}
+[23.330981] (-) TimerEvent: {}
+[23.431872] (-) TimerEvent: {}
+[23.532747] (-) TimerEvent: {}
+[23.633502] (-) TimerEvent: {}
+[23.734397] (-) TimerEvent: {}
+[23.835231] (-) TimerEvent: {}
+[23.935987] (-) TimerEvent: {}
+[24.036715] (-) TimerEvent: {}
+[24.137748] (-) TimerEvent: {}
+[24.238512] (-) TimerEvent: {}
+[24.339354] (-) TimerEvent: {}
+[24.440093] (-) TimerEvent: {}
+[24.540820] (-) TimerEvent: {}
+[24.641583] (-) TimerEvent: {}
+[24.742466] (-) TimerEvent: {}
+[24.843205] (-) TimerEvent: {}
+[24.944012] (-) TimerEvent: {}
+[25.044767] (-) TimerEvent: {}
+[25.145515] (-) TimerEvent: {}
+[25.246236] (-) TimerEvent: {}
+[25.346957] (-) TimerEvent: {}
+[25.448002] (-) TimerEvent: {}
+[25.549269] (-) TimerEvent: {}
+[25.650756] (-) TimerEvent: {}
+[25.752221] (-) TimerEvent: {}
+[25.853682] (-) TimerEvent: {}
+[25.954948] (-) TimerEvent: {}
+[26.056633] (-) TimerEvent: {}
+[26.157952] (-) TimerEvent: {}
+[26.259518] (-) TimerEvent: {}
+[26.360560] (-) TimerEvent: {}
+[26.461590] (-) TimerEvent: {}
+[26.562622] (-) TimerEvent: {}
+[26.663794] (-) TimerEvent: {}
+[26.764877] (-) TimerEvent: {}
+[26.866415] (-) TimerEvent: {}
+[26.967721] (-) TimerEvent: {}
+[27.069034] (-) TimerEvent: {}
+[27.170029] (-) TimerEvent: {}
+[27.270969] (-) TimerEvent: {}
+[27.372104] (-) TimerEvent: {}
+[27.473382] (-) TimerEvent: {}
+[27.574695] (-) TimerEvent: {}
+[27.675423] (-) TimerEvent: {}
+[27.776208] (-) TimerEvent: {}
+[27.877248] (-) TimerEvent: {}
+[27.978228] (-) TimerEvent: {}
+[28.079201] (-) TimerEvent: {}
+[28.180577] (-) TimerEvent: {}
+[28.281335] (-) TimerEvent: {}
+[28.383090] (-) TimerEvent: {}
+[28.484697] (-) TimerEvent: {}
+[28.585720] (-) TimerEvent: {}
+[28.686731] (-) TimerEvent: {}
+[28.787451] (-) TimerEvent: {}
+[28.888797] (-) TimerEvent: {}
+[28.990387] (-) TimerEvent: {}
+[29.091115] (-) TimerEvent: {}
+[29.191864] (-) TimerEvent: {}
+[29.293030] (-) TimerEvent: {}
+[29.393743] (-) TimerEvent: {}
+[29.494435] (-) TimerEvent: {}
+[29.595124] (-) TimerEvent: {}
+[29.695896] (-) TimerEvent: {}
+[29.796876] (-) TimerEvent: {}
+[29.897873] (-) TimerEvent: {}
+[29.998814] (-) TimerEvent: {}
+[30.099733] (-) TimerEvent: {}
+[30.201155] (-) TimerEvent: {}
+[30.302065] (-) TimerEvent: {}
+[30.402948] (-) TimerEvent: {}
+[30.503739] (-) TimerEvent: {}
+[30.604837] (-) TimerEvent: {}
+[30.705500] (-) TimerEvent: {}
+[30.806161] (-) TimerEvent: {}
+[30.907091] (-) TimerEvent: {}
+[31.007884] (-) TimerEvent: {}
+[31.108618] (-) TimerEvent: {}
+[31.209355] (-) TimerEvent: {}
+[31.310047] (-) TimerEvent: {}
+[31.410801] (-) TimerEvent: {}
+[31.511547] (-) TimerEvent: {}
+[31.612307] (-) TimerEvent: {}
+[31.713389] (-) TimerEvent: {}
+[31.814121] (-) TimerEvent: {}
+[31.914854] (-) TimerEvent: {}
+[32.015583] (-) TimerEvent: {}
+[32.116358] (-) TimerEvent: {}
+[32.217163] (-) TimerEvent: {}
+[32.319446] (-) TimerEvent: {}
+[32.420924] (-) TimerEvent: {}
+[32.523018] (-) TimerEvent: {}
+[32.624769] (-) TimerEvent: {}
+[32.726385] (-) TimerEvent: {}
+[32.827134] (-) TimerEvent: {}
+[32.927935] (-) TimerEvent: {}
+[33.028795] (-) TimerEvent: {}
+[33.129562] (-) TimerEvent: {}
+[33.230275] (-) TimerEvent: {}
+[33.331349] (-) TimerEvent: {}
+[33.432353] (-) TimerEvent: {}
+[33.533071] (-) TimerEvent: {}
+[33.633795] (-) TimerEvent: {}
+[33.735171] (-) TimerEvent: {}
+[33.836919] (-) TimerEvent: {}
+[33.938003] (-) TimerEvent: {}
+[34.039450] (-) TimerEvent: {}
+[34.140222] (-) TimerEvent: {}
+[34.241215] (-) TimerEvent: {}
+[34.342473] (-) TimerEvent: {}
+[34.444343] (-) TimerEvent: {}
+[34.545087] (-) TimerEvent: {}
+[34.646100] (-) TimerEvent: {}
+[34.746847] (-) TimerEvent: {}
+[34.847581] (-) TimerEvent: {}
+[34.948323] (-) TimerEvent: {}
+[35.049060] (-) TimerEvent: {}
+[35.149804] (-) TimerEvent: {}
+[35.250972] (-) TimerEvent: {}
+[35.352347] (-) TimerEvent: {}
+[35.453556] (-) TimerEvent: {}
+[35.554769] (-) TimerEvent: {}
+[35.655880] (-) TimerEvent: {}
+[35.756603] (-) TimerEvent: {}
+[35.857314] (-) TimerEvent: {}
+[35.958052] (-) TimerEvent: {}
+[36.059361] (-) TimerEvent: {}
+[36.160606] (-) TimerEvent: {}
+[36.261344] (-) TimerEvent: {}
+[36.362090] (-) TimerEvent: {}
+[36.463024] (-) TimerEvent: {}
+[36.564304] (-) TimerEvent: {}
+[36.665287] (-) TimerEvent: {}
+[36.766624] (-) TimerEvent: {}
+[36.867485] (-) TimerEvent: {}
+[36.968245] (-) TimerEvent: {}
+[37.069014] (-) TimerEvent: {}
+[37.169728] (-) TimerEvent: {}
+[37.270441] (-) TimerEvent: {}
+[37.371177] (-) TimerEvent: {}
+[37.471884] (-) TimerEvent: {}
+[37.572599] (-) TimerEvent: {}
+[37.673789] (-) TimerEvent: {}
+[37.774471] (-) TimerEvent: {}
+[37.875160] (-) TimerEvent: {}
+[37.975873] (-) TimerEvent: {}
+[38.076636] (-) TimerEvent: {}
+[38.177409] (-) TimerEvent: {}
+[38.278171] (-) TimerEvent: {}
+[38.378872] (-) TimerEvent: {}
+[38.481052] (-) TimerEvent: {}
+[38.588221] (-) TimerEvent: {}
+[38.688938] (-) TimerEvent: {}
+[38.789687] (-) TimerEvent: {}
+[38.890406] (-) TimerEvent: {}
+[38.991327] (-) TimerEvent: {}
+[39.092114] (-) TimerEvent: {}
+[39.192831] (-) TimerEvent: {}
+[39.293624] (-) TimerEvent: {}
+[39.394778] (-) TimerEvent: {}
+[39.495513] (-) TimerEvent: {}
+[39.596262] (-) TimerEvent: {}
+[39.697016] (-) TimerEvent: {}
+[39.797744] (-) TimerEvent: {}
+[39.898497] (-) TimerEvent: {}
+[39.999241] (-) TimerEvent: {}
+[40.099988] (-) TimerEvent: {}
+[40.204245] (-) TimerEvent: {}
+[40.304935] (-) TimerEvent: {}
+[40.405613] (-) TimerEvent: {}
+[40.506320] (-) TimerEvent: {}
+[40.607096] (-) TimerEvent: {}
+[40.708237] (-) TimerEvent: {}
+[40.808985] (-) TimerEvent: {}
+[40.909719] (-) TimerEvent: {}
+[41.016916] (-) TimerEvent: {}
+[41.117642] (-) TimerEvent: {}
+[41.220219] (-) TimerEvent: {}
+[41.320944] (-) TimerEvent: {}
+[41.421788] (-) TimerEvent: {}
+[41.522493] (-) TimerEvent: {}
+[41.623800] (-) TimerEvent: {}
+[41.724664] (-) TimerEvent: {}
+[41.825373] (-) TimerEvent: {}
+[41.926081] (-) TimerEvent: {}
+[42.026798] (-) TimerEvent: {}
+[42.127516] (-) TimerEvent: {}
+[42.228219] (-) TimerEvent: {}
+[42.328908] (-) TimerEvent: {}
+[42.429614] (-) TimerEvent: {}
+[42.530323] (-) TimerEvent: {}
+[42.631062] (-) TimerEvent: {}
+[42.732217] (-) TimerEvent: {}
+[42.838941] (-) TimerEvent: {}
+[42.939673] (-) TimerEvent: {}
+[43.040432] (-) TimerEvent: {}
+[43.141734] (-) TimerEvent: {}
+[43.242699] (-) TimerEvent: {}
+[43.343458] (-) TimerEvent: {}
+[43.444250] (-) TimerEvent: {}
+[43.544991] (-) TimerEvent: {}
+[43.645705] (-) TimerEvent: {}
+[43.746441] (-) TimerEvent: {}
+[43.847199] (-) TimerEvent: {}
+[43.947927] (-) TimerEvent: {}
+[44.048681] (-) TimerEvent: {}
+[44.149486] (-) TimerEvent: {}
+[44.250222] (-) TimerEvent: {}
+[44.350953] (-) TimerEvent: {}
+[44.451669] (-) TimerEvent: {}
+[44.552424] (-) TimerEvent: {}
+[44.655314] (-) TimerEvent: {}
+[44.756139] (-) TimerEvent: {}
+[44.856893] (-) TimerEvent: {}
+[44.957923] (-) TimerEvent: {}
+[45.059043] (-) TimerEvent: {}
+[45.160195] (-) TimerEvent: {}
+[45.260899] (-) TimerEvent: {}
+[45.361645] (-) TimerEvent: {}
+[45.462334] (-) TimerEvent: {}
+[45.563094] (-) TimerEvent: {}
+[45.663835] (-) TimerEvent: {}
+[45.765165] (-) TimerEvent: {}
+[45.865905] (-) TimerEvent: {}
+[45.966885] (-) TimerEvent: {}
+[46.068719] (-) TimerEvent: {}
+[46.169515] (-) TimerEvent: {}
+[46.270579] (-) TimerEvent: {}
+[46.371289] (-) TimerEvent: {}
+[46.472016] (-) TimerEvent: {}
+[46.572748] (-) TimerEvent: {}
+[46.673441] (-) TimerEvent: {}
+[46.775027] (-) TimerEvent: {}
+[46.876143] (-) TimerEvent: {}
+[46.976914] (-) TimerEvent: {}
+[47.077625] (-) TimerEvent: {}
+[47.178327] (-) TimerEvent: {}
+[47.279075] (-) TimerEvent: {}
+[47.379801] (-) TimerEvent: {}
+[47.480581] (-) TimerEvent: {}
+[47.581299] (-) TimerEvent: {}
+[47.682011] (-) TimerEvent: {}
+[47.782715] (-) TimerEvent: {}
+[47.883465] (-) TimerEvent: {}
+[47.984173] (-) TimerEvent: {}
+[48.084868] (-) TimerEvent: {}
+[48.185612] (-) TimerEvent: {}
+[48.286581] (-) TimerEvent: {}
+[48.387382] (-) TimerEvent: {}
+[48.488176] (-) TimerEvent: {}
+[48.589301] (-) TimerEvent: {}
+[48.691298] (-) TimerEvent: {}
+[48.792568] (-) TimerEvent: {}
+[48.893694] (-) TimerEvent: {}
+[48.994874] (-) TimerEvent: {}
+[49.096469] (-) TimerEvent: {}
+[49.197273] (-) TimerEvent: {}
+[49.298012] (-) TimerEvent: {}
+[49.398948] (-) TimerEvent: {}
+[49.504229] (-) TimerEvent: {}
+[49.604932] (-) TimerEvent: {}
+[49.705652] (-) TimerEvent: {}
+[49.806582] (-) TimerEvent: {}
+[49.907290] (-) TimerEvent: {}
+[50.010028] (-) TimerEvent: {}
+[50.110774] (-) TimerEvent: {}
+[50.211470] (-) TimerEvent: {}
+[50.312163] (-) TimerEvent: {}
+[50.412851] (-) TimerEvent: {}
+[50.513672] (-) TimerEvent: {}
+[50.614368] (-) TimerEvent: {}
+[50.715110] (-) TimerEvent: {}
+[50.815842] (-) TimerEvent: {}
+[50.916612] (-) TimerEvent: {}
+[51.017319] (-) TimerEvent: {}
+[51.118032] (-) TimerEvent: {}
+[51.224231] (-) TimerEvent: {}
+[51.328219] (-) TimerEvent: {}
+[51.434768] (-) TimerEvent: {}
+[51.535896] (-) TimerEvent: {}
+[51.636655] (-) TimerEvent: {}
+[51.737404] (-) TimerEvent: {}
+[51.838355] (-) TimerEvent: {}
+[51.939178] (-) TimerEvent: {}
+[52.040181] (-) TimerEvent: {}
+[52.141325] (-) TimerEvent: {}
+[52.242489] (-) TimerEvent: {}
+[52.343680] (-) TimerEvent: {}
+[52.444699] (-) TimerEvent: {}
+[52.545414] (-) TimerEvent: {}
+[52.646143] (-) TimerEvent: {}
+[52.746836] (-) TimerEvent: {}
+[52.848059] (-) TimerEvent: {}
+[52.948793] (-) TimerEvent: {}
+[53.049751] (-) TimerEvent: {}
+[53.150589] (-) TimerEvent: {}
+[53.251345] (-) TimerEvent: {}
+[53.352189] (-) TimerEvent: {}
+[53.452881] (-) TimerEvent: {}
+[53.553831] (-) TimerEvent: {}
+[53.654629] (-) TimerEvent: {}
+[53.755339] (-) TimerEvent: {}
+[53.856084] (-) TimerEvent: {}
+[53.956813] (-) TimerEvent: {}
+[54.057520] (-) TimerEvent: {}
+[54.158207] (-) TimerEvent: {}
+[54.258908] (-) TimerEvent: {}
+[54.359632] (-) TimerEvent: {}
+[54.460455] (-) TimerEvent: {}
+[54.561457] (-) TimerEvent: {}
+[54.662749] (-) TimerEvent: {}
+[54.763857] (-) TimerEvent: {}
+[54.865035] (-) TimerEvent: {}
+[54.965948] (-) TimerEvent: {}
+[55.066910] (-) TimerEvent: {}
+[55.167782] (-) TimerEvent: {}
+[55.269274] (-) TimerEvent: {}
+[55.370111] (-) TimerEvent: {}
+[55.470965] (-) TimerEvent: {}
+[55.573825] (-) TimerEvent: {}
+[55.675489] (-) TimerEvent: {}
+[55.776414] (-) TimerEvent: {}
+[55.877527] (-) TimerEvent: {}
+[55.978274] (-) TimerEvent: {}
+[56.079047] (-) TimerEvent: {}
+[56.179772] (-) TimerEvent: {}
+[56.280530] (-) TimerEvent: {}
+[56.381270] (-) TimerEvent: {}
+[56.482000] (-) TimerEvent: {}
+[56.582773] (-) TimerEvent: {}
+[56.683744] (-) TimerEvent: {}
+[56.784527] (-) TimerEvent: {}
+[56.885260] (-) TimerEvent: {}
+[56.985973] (-) TimerEvent: {}
+[57.086780] (-) TimerEvent: {}
+[57.189778] (-) TimerEvent: {}
+[57.290639] (-) TimerEvent: {}
+[57.391437] (-) TimerEvent: {}
+[57.492163] (-) TimerEvent: {}
+[57.592863] (-) TimerEvent: {}
+[57.693551] (-) TimerEvent: {}
+[57.794493] (-) TimerEvent: {}
+[57.895300] (-) TimerEvent: {}
+[57.996430] (-) TimerEvent: {}
+[58.097164] (-) TimerEvent: {}
+[58.197900] (-) TimerEvent: {}
+[58.299768] (-) TimerEvent: {}
+[58.400518] (-) TimerEvent: {}
+[58.501257] (-) TimerEvent: {}
+[58.608236] (-) TimerEvent: {}
+[58.708940] (-) TimerEvent: {}
+[58.809667] (-) TimerEvent: {}
+[58.910360] (-) TimerEvent: {}
+[59.011053] (-) TimerEvent: {}
+[59.111757] (-) TimerEvent: {}
+[59.212475] (-) TimerEvent: {}
+[59.313191] (-) TimerEvent: {}
+[59.414310] (-) TimerEvent: {}
+[59.515023] (-) TimerEvent: {}
+[59.615795] (-) TimerEvent: {}
+[59.716474] (-) TimerEvent: {}
+[59.817165] (-) TimerEvent: {}
+[59.917921] (-) TimerEvent: {}
+[60.018686] (-) TimerEvent: {}
+[60.122529] (-) TimerEvent: {}
+[60.225956] (-) TimerEvent: {}
+[60.326694] (-) TimerEvent: {}
+[60.427425] (-) TimerEvent: {}
+[60.528242] (-) TimerEvent: {}
+[60.628980] (-) TimerEvent: {}
+[60.729685] (-) TimerEvent: {}
+[60.830425] (-) TimerEvent: {}
+[60.931371] (-) TimerEvent: {}
+[61.032128] (-) TimerEvent: {}
+[61.133103] (-) TimerEvent: {}
+[61.233981] (-) TimerEvent: {}
+[61.334748] (-) TimerEvent: {}
+[61.435575] (-) TimerEvent: {}
+[61.536366] (-) TimerEvent: {}
+[61.640174] (-) TimerEvent: {}
+[61.740875] (-) TimerEvent: {}
+[61.844240] (-) TimerEvent: {}
+[61.944939] (-) TimerEvent: {}
+[62.045647] (-) TimerEvent: {}
+[62.146740] (-) TimerEvent: {}
+[62.247485] (-) TimerEvent: {}
+[62.348232] (-) TimerEvent: {}
+[62.449277] (grab_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76\xef\xbc\x9aCMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[62.463628] (-) TimerEvent: {}
+[62.464456] (grab_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:684\xef\xbc\x9aCMakeFiles/aruco_dectet.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[62.464929] (grab_demo) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[62.563827] (-) TimerEvent: {}
+[62.664784] (-) TimerEvent: {}
+[62.765622] (-) TimerEvent: {}
+[62.866464] (-) TimerEvent: {}
+[62.967394] (-) TimerEvent: {}
+[63.068189] (-) TimerEvent: {}
+[63.169037] (-) TimerEvent: {}
+[63.269862] (-) TimerEvent: {}
+[63.370596] (-) TimerEvent: {}
+[63.471393] (-) TimerEvent: {}
+[63.572228] (-) TimerEvent: {}
+[63.672974] (-) TimerEvent: {}
+[63.756165] (grab_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[63.763238] (grab_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:606\xef\xbc\x9aCMakeFiles/charuco_dectet_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[63.773147] (-) TimerEvent: {}
+[63.873908] (-) TimerEvent: {}
+[63.974748] (-) TimerEvent: {}
+[64.075620] (-) TimerEvent: {}
+[64.176511] (-) TimerEvent: {}
+[64.277206] (-) TimerEvent: {}
+[64.377969] (-) TimerEvent: {}
+[64.478701] (-) TimerEvent: {}
+[64.579351] (-) TimerEvent: {}
+[64.680003] (-) TimerEvent: {}
+[64.723286] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:9:72:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Pose_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[64.724416] (grab_demo) StderrLine: {'line': b'    9 | void charuco_pose_callback(const geometry_msgs::msg::Pose::ConstPtr msg\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[64.724601] (grab_demo) StderrLine: {'line': b'      |                                                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[64.736639] (grab_demo) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:7\x1b[m\x1b[K,\n'}
+[64.737108] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:14\x1b[m\x1b[K,\n'}
+[64.737264] (grab_demo) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1\x1b[m\x1b[K:\n'}
+[64.737409] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:115:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[64.737547] (grab_demo) StderrLine: {'line': b'  115 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[64.737674] (grab_demo) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[64.780189] (-) TimerEvent: {}
+[64.880824] (-) TimerEvent: {}
+[64.981788] (-) TimerEvent: {}
+[65.031130] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, const char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[65.031762] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:63:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids variable length array \xe2\x80\x98\x1b[01m\x1b[Kdata_cout\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvla\x07-Wvla\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[65.032870] (grab_demo) StderrLine: {'line': b'   63 |     float \x1b[01;35m\x1b[Kdata_cout\x1b[m\x1b[K[hand_eye_cout][6];\n'}
+[65.033133] (grab_demo) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[65.081978] (-) TimerEvent: {}
+[65.182724] (-) TimerEvent: {}
+[65.283403] (-) TimerEvent: {}
+[65.384119] (-) TimerEvent: {}
+[65.484899] (-) TimerEvent: {}
+[65.585862] (-) TimerEvent: {}
+[65.686601] (-) TimerEvent: {}
+[65.787448] (-) TimerEvent: {}
+[65.888367] (-) TimerEvent: {}
+[65.989465] (-) TimerEvent: {}
+[66.090492] (-) TimerEvent: {}
+[66.191214] (-) TimerEvent: {}
+[66.291960] (-) TimerEvent: {}
+[66.392707] (-) TimerEvent: {}
+[66.493424] (-) TimerEvent: {}
+[66.594199] (-) TimerEvent: {}
+[66.694932] (-) TimerEvent: {}
+[66.795654] (-) TimerEvent: {}
+[66.896391] (-) TimerEvent: {}
+[66.997125] (-) TimerEvent: {}
+[67.097867] (-) TimerEvent: {}
+[67.198613] (-) TimerEvent: {}
+[67.299407] (-) TimerEvent: {}
+[67.400401] (-) TimerEvent: {}
+[67.501172] (-) TimerEvent: {}
+[67.602229] (-) TimerEvent: {}
+[67.702961] (-) TimerEvent: {}
+[67.803643] (-) TimerEvent: {}
+[67.904284] (-) TimerEvent: {}
+[68.005240] (-) TimerEvent: {}
+[68.105983] (-) TimerEvent: {}
+[68.206646] (-) TimerEvent: {}
+[68.308007] (-) TimerEvent: {}
+[68.408671] (-) TimerEvent: {}
+[68.509363] (-) TimerEvent: {}
+[68.610081] (-) TimerEvent: {}
+[68.710777] (-) TimerEvent: {}
+[68.811450] (-) TimerEvent: {}
+[68.912256] (-) TimerEvent: {}
+[69.013136] (-) TimerEvent: {}
+[69.114062] (-) TimerEvent: {}
+[69.214756] (-) TimerEvent: {}
+[69.315512] (-) TimerEvent: {}
+[69.416290] (-) TimerEvent: {}
+[69.517094] (-) TimerEvent: {}
+[69.617830] (-) TimerEvent: {}
+[69.718532] (-) TimerEvent: {}
+[69.819318] (-) TimerEvent: {}
+[69.920018] (-) TimerEvent: {}
+[70.020730] (-) TimerEvent: {}
+[70.121450] (-) TimerEvent: {}
+[70.222202] (-) TimerEvent: {}
+[70.322863] (-) TimerEvent: {}
+[70.423508] (-) TimerEvent: {}
+[70.524183] (-) TimerEvent: {}
+[70.624890] (-) TimerEvent: {}
+[70.725546] (-) TimerEvent: {}
+[70.826190] (-) TimerEvent: {}
+[70.926891] (-) TimerEvent: {}
+[71.027598] (-) TimerEvent: {}
+[71.128539] (-) TimerEvent: {}
+[71.229228] (-) TimerEvent: {}
+[71.329891] (-) TimerEvent: {}
+[71.430557] (-) TimerEvent: {}
+[71.531219] (-) TimerEvent: {}
+[71.631889] (-) TimerEvent: {}
+[71.732620] (-) TimerEvent: {}
+[71.833292] (-) TimerEvent: {}
+[71.933989] (-) TimerEvent: {}
+[72.034701] (-) TimerEvent: {}
+[72.135308] (-) TimerEvent: {}
+[72.236020] (-) TimerEvent: {}
+[72.336744] (-) TimerEvent: {}
+[72.437397] (-) TimerEvent: {}
+[72.538058] (-) TimerEvent: {}
+[72.638767] (-) TimerEvent: {}
+[72.739496] (-) TimerEvent: {}
+[72.840157] (-) TimerEvent: {}
+[72.940777] (-) TimerEvent: {}
+[73.041439] (-) TimerEvent: {}
+[73.142106] (-) TimerEvent: {}
+[73.242821] (-) TimerEvent: {}
+[73.343546] (-) TimerEvent: {}
+[73.444254] (-) TimerEvent: {}
+[73.544913] (-) TimerEvent: {}
+[73.645637] (-) TimerEvent: {}
+[73.746859] (-) TimerEvent: {}
+[73.847489] (-) TimerEvent: {}
+[73.948168] (-) TimerEvent: {}
+[74.048818] (-) TimerEvent: {}
+[74.149476] (-) TimerEvent: {}
+[74.250111] (-) TimerEvent: {}
+[74.351019] (-) TimerEvent: {}
+[74.451682] (-) TimerEvent: {}
+[74.552462] (-) TimerEvent: {}
+[74.653120] (-) TimerEvent: {}
+[74.753746] (-) TimerEvent: {}
+[74.854399] (-) TimerEvent: {}
+[74.955041] (-) TimerEvent: {}
+[75.055809] (-) TimerEvent: {}
+[75.157251] (-) TimerEvent: {}
+[75.257954] (-) TimerEvent: {}
+[75.358695] (-) TimerEvent: {}
+[75.459372] (-) TimerEvent: {}
+[75.559996] (-) TimerEvent: {}
+[75.660675] (-) TimerEvent: {}
+[75.761316] (-) TimerEvent: {}
+[75.861934] (-) TimerEvent: {}
+[75.962583] (-) TimerEvent: {}
+[76.063281] (-) TimerEvent: {}
+[76.163952] (-) TimerEvent: {}
+[76.265014] (-) TimerEvent: {}
+[76.365714] (-) TimerEvent: {}
+[76.466361] (-) TimerEvent: {}
+[76.566996] (-) TimerEvent: {}
+[76.667649] (-) TimerEvent: {}
+[76.768425] (-) TimerEvent: {}
+[76.869059] (-) TimerEvent: {}
+[76.969725] (-) TimerEvent: {}
+[77.070350] (-) TimerEvent: {}
+[77.170988] (-) TimerEvent: {}
+[77.271625] (-) TimerEvent: {}
+[77.372784] (-) TimerEvent: {}
+[77.473482] (-) TimerEvent: {}
+[77.574668] (-) TimerEvent: {}
+[77.675362] (-) TimerEvent: {}
+[77.776361] (-) TimerEvent: {}
+[77.877034] (-) TimerEvent: {}
+[77.977705] (-) TimerEvent: {}
+[78.078343] (-) TimerEvent: {}
+[78.179064] (-) TimerEvent: {}
+[78.280345] (-) TimerEvent: {}
+[78.380983] (-) TimerEvent: {}
+[78.481659] (-) TimerEvent: {}
+[78.582315] (-) TimerEvent: {}
+[78.682995] (-) TimerEvent: {}
+[78.783875] (-) TimerEvent: {}
+[78.884581] (-) TimerEvent: {}
+[78.985333] (-) TimerEvent: {}
+[79.085970] (-) TimerEvent: {}
+[79.186601] (-) TimerEvent: {}
+[79.287208] (-) TimerEvent: {}
+[79.387856] (-) TimerEvent: {}
+[79.488527] (-) TimerEvent: {}
+[79.589688] (-) TimerEvent: {}
+[79.690539] (-) TimerEvent: {}
+[79.791194] (-) TimerEvent: {}
+[79.891884] (-) TimerEvent: {}
+[79.992890] (-) TimerEvent: {}
+[80.093681] (-) TimerEvent: {}
+[80.194717] (-) TimerEvent: {}
+[80.295339] (-) TimerEvent: {}
+[80.396111] (-) TimerEvent: {}
+[80.496902] (-) TimerEvent: {}
+[80.597818] (-) TimerEvent: {}
+[80.698489] (-) TimerEvent: {}
+[80.799127] (-) TimerEvent: {}
+[80.899753] (-) TimerEvent: {}
+[81.000427] (-) TimerEvent: {}
+[81.101054] (-) TimerEvent: {}
+[81.201762] (-) TimerEvent: {}
+[81.302495] (-) TimerEvent: {}
+[81.403204] (-) TimerEvent: {}
+[81.504419] (-) TimerEvent: {}
+[81.605087] (-) TimerEvent: {}
+[81.706287] (-) TimerEvent: {}
+[81.806936] (-) TimerEvent: {}
+[81.907580] (-) TimerEvent: {}
+[82.008262] (-) TimerEvent: {}
+[82.062572] (grab_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hand_eye.dir/build.make:76\xef\xbc\x9aCMakeFiles/hand_eye.dir/src/hand_eye.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[82.076864] (grab_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:632\xef\xbc\x9aCMakeFiles/hand_eye.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[82.083041] (grab_demo) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[82.108415] (-) TimerEvent: {}
+[82.194588] (grab_demo) CommandEnded: {'returncode': 2}
+[82.226248] (-) TimerEvent: {}
+[82.328644] (-) TimerEvent: {}
+[82.379064] (grab_demo) JobEnded: {'identifier': 'grab_demo', 'rc': 2}
+[82.404110] (-) EventReactorShutdown: {}

@@ -1,0 +1,14 @@
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:9:10: fatal error: opencv4/opencv2/objdetect/aruco_detector.hpp: 没有那个文件或目录
+    9 | #include <opencv4/opencv2/objdetect/aruco_detector.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:3:10: fatal error: opencv4/opencv2/objdetect/charuco_detector.hpp: 没有那个文件或目录
+    3 | #include <opencv4/opencv2/objdetect/charuco_detector.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

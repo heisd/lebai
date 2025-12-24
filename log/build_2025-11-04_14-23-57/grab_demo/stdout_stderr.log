@@ -1,0 +1,44 @@
+[  2%] Built target grab_demo__cpp
+[  8%] Built target grab_demo__rosidl_generator_c
+[ 12%] Built target hsv_range
+[ 14%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o
+[ 19%] Built target hand_eye
+[ 19%] Built target ament_cmake_python_copy_grab_demo
+[ 21%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o
+[ 25%] Built target camera_info_node
+[ 31%] Built target grab_demo__rosidl_typesupport_cpp
+[ 38%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 51%] Built target grab_demo__rosidl_typesupport_introspection_c
+[ 57%] Built target grab_demo__rosidl_typesupport_c
+[ 63%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[ 72%] Built target grab_service_node
+[ 72%] Built target nav_grab
+[ 76%] Built target start_grab
+[ 76%] Built target grab_demo
+[ 78%] Built target grab_demo__py
+[ 82%] Built target grab_demo__rosidl_generator_py
+[ 87%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[ 91%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target grab_demo__rosidl_typesupport_c__pyext
+running egg_info
+writing grab_demo.egg-info/PKG-INFO
+writing dependency_links to grab_demo.egg-info/dependency_links.txt
+writing top-level names to grab_demo.egg-info/top_level.txt
+reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:9:10: fatal error: opencv4/opencv2/objdetect/aruco_detector.hpp: 没有那个文件或目录
+    9 | #include <opencv4/opencv2/objdetect/aruco_detector.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 95%] Built target ament_cmake_python_build_grab_demo_egg
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:3:10: fatal error: opencv4/opencv2/objdetect/charuco_detector.hpp: 没有那个文件或目录
+    3 | #include <opencv4/opencv2/objdetect/charuco_detector.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

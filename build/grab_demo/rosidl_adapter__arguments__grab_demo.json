@@ -1,0 +1,6 @@
+{
+  "package_name": "grab_demo",
+  "non_idl_tuples": [
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo:srv/GrabObject.srv"
+  ]
+}

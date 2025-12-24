@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:76: CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:658: CMakeFiles/hsv_range.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

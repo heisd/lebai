@@ -1,0 +1,9 @@
+[0.080s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.266s] [31mCMake Error at CMakeLists.txt:6:
+[0.267s]   Parse error.  Expected a command name, got unquoted argument with text "~".
+[0.267s] 
+[0.267s] [0m
+[0.267s] -- Configuring incomplete, errors occurred!
+[0.268s] See also "/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo/CMakeFiles/CMakeOutput.log".
+[0.275s] gmake: *** [Makefile:1075：cmake_check_build_system] 错误 1
+[0.286s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

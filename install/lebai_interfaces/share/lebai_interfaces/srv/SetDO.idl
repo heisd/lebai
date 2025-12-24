@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lebai_interfaces/srv/SetDO.srv
+// generated code does not contain a copyright notice
+
+
+module lebai_interfaces {
+  module srv {
+    struct SetDO_Request {
+      uint16 pin;
+
+      boolean value;
+    };
+    struct SetDO_Response {
+      boolean code;
+    };
+  };
+};

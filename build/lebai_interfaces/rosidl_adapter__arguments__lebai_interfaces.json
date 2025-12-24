@@ -1,0 +1,25 @@
+{
+  "package_name": "lebai_interfaces",
+  "non_idl_tuples": [
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/GripperStatus.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/IOConditionalExpress.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/UntilInfo.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/MoveCommon.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/TrajectoryMoveCircle.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/TrajectoryMoveJoint.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/TrajectoryMoveLine.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/IOStatus.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/DebugLevel.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/DeviceInfo.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/TriState.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/RobotStatus.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:msg/RobotMode.msg",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:srv/MoveCircle.srv",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:srv/MoveJoint.srv",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:srv/MoveLine.srv",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:srv/SetAMode.srv",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:srv/SetAO.srv",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:srv/SetDO.srv",
+    "/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces:srv/SetGripper.srv"
+  ]
+}

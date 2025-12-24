@@ -1,0 +1,183 @@
+Consolidate compiler generated dependencies of target charuco_dectet_node
+[  2%] Built target grab_demo__cpp
+[  8%] Built target grab_demo__rosidl_generator_c
+[  8%] Built target ament_cmake_python_copy_grab_demo
+Consolidate compiler generated dependencies of target hand_eye
+[ 10%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o
+[ 14%] Built target hsv_range
+Consolidate compiler generated dependencies of target aruco_dectet
+[ 23%] Built target grab_demo__rosidl_typesupport_cpp
+[ 23%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o
+[ 29%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 31%] Building CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o
+[ 36%] Built target camera_info_node
+[ 42%] Built target grab_demo__rosidl_typesupport_introspection_c
+[ 48%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 55%] Built target grab_demo__rosidl_typesupport_c
+[ 61%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[ 65%] Built target grab_service_node
+[ 70%] Built target start_grab
+[ 74%] Built target nav_grab
+[ 74%] Built target grab_demo
+[ 76%] Built target grab_demo__py
+[ 80%] Built target grab_demo__rosidl_generator_py
+[ 85%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing grab_demo.egg-info/PKG-INFO
+writing dependency_links to grab_demo.egg-info/dependency_links.txt
+writing top-level names to grab_demo.egg-info/top_level.txt
+reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[ 89%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target grab_demo__rosidl_typesupport_c__pyext
+[ 93%] Built target ament_cmake_python_build_grab_demo_egg
+In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp: In constructor ‘charuco_dectet::charuco_dectet()’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:111:70: error: no match for ‘operator=’ (operand types are ‘cv::Ptr<cv::aruco::Dictionary>’ and ‘cv::aruco::Dictionary’)
+  111 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+      |                                                                      ^
+In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:52,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note: candidate: ‘template<class Y> cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = Y; T = cv::aruco::Dictionary]’
+  122 |     template<typename Y> inline Ptr& operator=(const Ptr<Y>& o) { std::shared_ptr<T>::operator =(o); return *this; }
+      |                                      ^~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note:   template argument deduction/substitution failed:
+In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:111:70: note:   ‘cv::aruco::Dictionary’ is not derived from ‘const cv::Ptr<_Tp>’
+  111 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+      |                                                                      ^
+In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:52,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:10: note: candidate: ‘cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::aruco::Dictionary]’
+  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }
+      |          ^~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:31: note:   no known conversion for argument 1 from ‘cv::aruco::Dictionary’ to ‘const cv::Ptr<cv::aruco::Dictionary>&’
+  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }
+      |                    ~~~~~~~~~~~^
+In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:119:28: error: ‘class cv::aruco::CharucoBoard’ has no member named ‘draw’
+  119 |             charuco_board->draw(cv::Size(1080,720),board_img,10,1);
+      |                            ^~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp: In member function ‘void charuco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:62:20: error: ‘detectMarkers’ is not a member of ‘cv::aruco’; did you mean ‘drawDetectedMarkers’?
+   62 |         cv::aruco::detectMarkers(image_rgb,dictionary,marker_corners,marker_ids,DetectorParameters,rejected_markers);
+      |                    ^~~~~~~~~~~~~
+      |                    drawDetectedMarkers
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:63:20: error: ‘refineDetectedMarkers’ is not a member of ‘cv::aruco’; did you mean ‘drawDetectedMarkers’?
+   63 |         cv::aruco::refineDetectedMarkers(image_rgb,charuco_board,marker_corners,marker_ids,rejected_markers,camera_matrix,camera_dis);
+      |                    ^~~~~~~~~~~~~~~~~~~~~
+      |                    drawDetectedMarkers
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:67:54: error: ‘interpolateCornersCharuco’ is not a member of ‘cv::aruco’
+   67 |                     interpolatedCorners = cv::aruco::interpolateCornersCharuco(marker_corners, marker_ids, image_rgb, charuco_board, charuco_corners, charuco_ids,
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:72:49: error: ‘estimatePoseCharucoBoard’ is not a member of ‘cv::aruco’
+   72 |                         valid_pose = cv::aruco::estimatePoseCharucoBoard(charuco_corners, charuco_ids, charuco_board, camera_matrix, camera_dis,
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In constructor ‘aruco_dectet::aruco_dectet()’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:70: error: no match for ‘operator=’ (operand types are ‘cv::Ptr<cv::aruco::Dictionary>’ and ‘cv::aruco::Dictionary’)
+   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+      |                                                                      ^
+In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:52,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5:
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note: candidate: ‘template<class Y> cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = Y; T = cv::aruco::Dictionary]’
+  122 |     template<typename Y> inline Ptr& operator=(const Ptr<Y>& o) { std::shared_ptr<T>::operator =(o); return *this; }
+      |                                      ^~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note:   template argument deduction/substitution failed:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:70: note:   ‘cv::aruco::Dictionary’ is not derived from ‘const cv::Ptr<_Tp>’
+   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+      |                                                                      ^
+In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,
+                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:52,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5:
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:10: note: candidate: ‘cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::aruco::Dictionary]’
+  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }
+      |          ^~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:31: note:   no known conversion for argument 1 from ‘cv::aruco::Dictionary’ to ‘const cv::Ptr<cv::aruco::Dictionary>&’
+  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }
+      |                    ~~~~~~~~~~~^
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In member function ‘void aruco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:121:20: error: ‘detectMarkers’ is not a member of ‘cv::aruco’; did you mean ‘drawDetectedMarkers’?
+  121 |         cv::aruco::detectMarkers(image_rgb,dictionary,marker_corners,aruco_ids,DetectorParameters);
+      |                    ^~~~~~~~~~~~~
+      |                    drawDetectedMarkers
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:125:24: error: ‘estimatePoseSingleMarkers’ is not a member of ‘cv::aruco’
+  125 |             cv::aruco::estimatePoseSingleMarkers(marker_corners,markerLength,camera_matrix,camera_dis,rotation_matrix,pos_matrix);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33,
+                 from /usr/include/c++/11/bits/allocator.h:46,
+                 from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:3,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = cv::aruco::CharucoBoard; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard]’:
+/usr/include/c++/11/bits/alloc_traits.h:516:17:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = cv::aruco::CharucoBoard; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<cv::aruco::CharucoBoard>]’
+/usr/include/c++/11/bits/shared_ptr_base.h:519:39:   required from ‘std::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard; _Alloc = std::allocator<cv::aruco::CharucoBoard>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/11/bits/shared_ptr_base.h:650:16:   required from ‘std::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = cv::aruco::CharucoBoard; _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:   required from ‘std::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]’
+/usr/include/c++/11/bits/shared_ptr.h:409:59:   required from ‘std::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}; _Tp = cv::aruco::CharucoBoard]’
+/usr/include/c++/11/bits/shared_ptr.h:862:14:   required from ‘std::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = cv::aruco::CharucoBoard; _Alloc = std::allocator<cv::aruco::CharucoBoard>; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}]’
+/usr/include/c++/11/bits/shared_ptr.h:878:39:   required from ‘std::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = cv::aruco::CharucoBoard; _Args = {const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&}]’
+/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:146:43:   required from ‘cv::Ptr<_Tp> cv::makePtr(const A1& ...) [with _Tp = cv::aruco::CharucoBoard; A1 = {cv::Size_<int>, double, double, cv::Ptr<cv::aruco::Dictionary>}]’
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:113:65:   required from here
+/usr/include/c++/11/ext/new_allocator.h:162:11: error: no matching function for call to ‘cv::aruco::CharucoBoard::CharucoBoard(const cv::Size_<int>&, const double&, const double&, const cv::Ptr<cv::aruco::Dictionary>&)’
+  162 |         { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8,
+                 from /usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:80,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:191:5: note: candidate: ‘cv::aruco::CharucoBoard::CharucoBoard()’
+  191 |     CharucoBoard();
+      |     ^~~~~~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:191:5: note:   candidate expects 0 arguments, 4 provided
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:146:13: note: candidate: ‘cv::aruco::CharucoBoard::CharucoBoard(const Size&, float, float, const cv::aruco::Dictionary&, cv::InputArray)’
+  146 |     CV_WRAP CharucoBoard(const Size& size, float squareLength, float markerLength,
+      |             ^~~~~~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:147:44: note:   no known conversion for argument 4 from ‘const cv::Ptr<cv::aruco::Dictionary>’ to ‘const cv::aruco::Dictionary&’
+  147 |                          const Dictionary &dictionary, InputArray ids = noArray());
+      |                          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note: candidate: ‘cv::aruco::CharucoBoard::CharucoBoard(const cv::aruco::CharucoBoard&)’
+  135 | class CV_EXPORTS_W_SIMPLE CharucoBoard : public Board {
+      |                           ^~~~~~~~~~~~
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note:   candidate expects 1 argument, 4 provided
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note: candidate: ‘cv::aruco::CharucoBoard::CharucoBoard(cv::aruco::CharucoBoard&&)’
+/usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:135:27: note:   candidate expects 1 argument, 4 provided
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:9:72: warning: ‘geometry_msgs::msg::Pose_<std::allocator<void> >::ConstPtr’ is deprecated [-Wdeprecated-declarations]
+    9 | void charuco_pose_callback(const geometry_msgs::msg::Pose::ConstPtr msg)
+      |                                                                        ^
+In file included from /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp:7,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:14,
+                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:115:5: note: declared here
+  115 |     ConstPtr;
+      |     ^~~~~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp: In function ‘int main(int, const char**)’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:63:11: warning: ISO C++ forbids variable length array ‘data_cout’ [-Wvla]
+   63 |     float data_cout[hand_eye_cout][6];
+      |           ^~~~~~~~~
+[ 95%] Linking CXX executable hand_eye
+[ 95%] Built target hand_eye
+gmake: *** [Makefile:146：all] 错误 2

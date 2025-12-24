@@ -1,0 +1,150 @@
+[0.034s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.201s] [  6%] Built target grab_demo__rosidl_generator_c
+[0.211s] [  8%] Built target grab_demo__cpp
+[0.221s] [ 12%] Built target hsv_range
+[0.233s] [ 14%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o
+[0.241s] [ 17%] Built target ament_cmake_python_copy_grab_demo
+[0.242s] [ 19%] Built target hand_eye
+[0.303s] [ 21%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o
+[0.314s] [ 27%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.318s] [ 34%] Built target grab_demo__rosidl_typesupport_cpp
+[0.337s] [ 38%] Built target camera_info_node
+[0.344s] [ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.399s] [ 51%] Built target grab_demo__rosidl_typesupport_c
+[0.406s] [ 57%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.427s] [ 63%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.545s] [ 68%] Built target nav_grab
+[0.554s] [ 76%] Built target grab_service_node
+[0.554s] [ 76%] Built target start_grab
+[0.630s] [ 76%] Built target grab_demo
+[0.713s] [ 78%] Built target grab_demo__py
+[0.793s] [ 82%] Built target grab_demo__rosidl_generator_py
+[0.904s] [ 87%] Built target grab_demo__rosidl_typesupport_c__pyext
+[0.911s] [ 91%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[0.954s] [ 95%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[1.032s] running egg_info
+[1.035s] writing grab_demo.egg-info/PKG-INFO
+[1.036s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.036s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.043s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.044s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.141s] [ 95%] Built target ament_cmake_python_build_grab_demo_egg
+[10.129s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:28:13: error: ‘aruco’ in namespace ‘cv’ does not name a type
+[10.130s]    28 |         cv::aruco::Dictionary dictionary;
+[10.130s]       |             ^~~~~
+[10.130s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:29:13: error: ‘aruco’ in namespace ‘cv’ does not name a type
+[10.130s]    29 |         cv::aruco::DetectorParameters detectorParams;
+[10.130s]       |             ^~~~~
+[10.134s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:30:21: error: ‘aruco’ is not a member of ‘cv’
+[10.135s]    30 |         cv::Ptr<cv::aruco::ArucoDetector> arucoDetector;
+[10.135s]       |                     ^~~~~
+[10.135s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:30:41: error: template argument 1 is invalid
+[10.135s]    30 |         cv::Ptr<cv::aruco::ArucoDetector> arucoDetector;
+[10.135s]       |                                         ^
+[10.268s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In constructor ‘aruco_dectet::aruco_dectet()’:
+[10.269s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:72:17: error: ‘cv::aruco’ has not been declared
+[10.269s]    72 |             cv::aruco::PredefinedDictionaryType dict_type;
+[10.269s]       |                 ^~~~~
+[10.306s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:74:25: error: ‘dict_type’ was not declared in this scope; did you mean ‘decltype’?
+[10.306s]    74 |                 case 0: dict_type = cv::aruco::DICT_4X4_50; break;
+[10.306s]       |                         ^~~~~~~~~
+[10.306s]       |                         decltype
+[10.307s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:74:41: error: ‘cv::aruco’ has not been declared
+[10.307s]    74 |                 case 0: dict_type = cv::aruco::DICT_4X4_50; break;
+[10.307s]       |                                         ^~~~~
+[10.307s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:75:41: error: ‘cv::aruco’ has not been declared
+[10.307s]    75 |                 case 1: dict_type = cv::aruco::DICT_4X4_100; break;
+[10.307s]       |                                         ^~~~~
+[10.307s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:76:41: error: ‘cv::aruco’ has not been declared
+[10.308s]    76 |                 case 2: dict_type = cv::aruco::DICT_4X4_250; break;
+[10.308s]       |                                         ^~~~~
+[10.308s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:77:41: error: ‘cv::aruco’ has not been declared
+[10.308s]    77 |                 case 3: dict_type = cv::aruco::DICT_4X4_1000; break;
+[10.308s]       |                                         ^~~~~
+[10.308s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:78:41: error: ‘cv::aruco’ has not been declared
+[10.308s]    78 |                 case 4: dict_type = cv::aruco::DICT_5X5_50; break;
+[10.308s]       |                                         ^~~~~
+[10.309s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:79:41: error: ‘cv::aruco’ has not been declared
+[10.309s]    79 |                 case 5: dict_type = cv::aruco::DICT_5X5_100; break;
+[10.309s]       |                                         ^~~~~
+[10.309s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:80:41: error: ‘cv::aruco’ has not been declared
+[10.309s]    80 |                 case 6: dict_type = cv::aruco::DICT_5X5_250; break;
+[10.309s]       |                                         ^~~~~
+[10.309s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:81:41: error: ‘cv::aruco’ has not been declared
+[10.310s]    81 |                 case 7: dict_type = cv::aruco::DICT_5X5_1000; break;
+[10.310s]       |                                         ^~~~~
+[10.310s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:82:41: error: ‘cv::aruco’ has not been declared
+[10.310s]    82 |                 case 8: dict_type = cv::aruco::DICT_6X6_50; break;
+[10.310s]       |                                         ^~~~~
+[10.310s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:83:41: error: ‘cv::aruco’ has not been declared
+[10.310s]    83 |                 case 9: dict_type = cv::aruco::DICT_6X6_100; break;
+[10.311s]       |                                         ^~~~~
+[10.311s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:84:42: error: ‘cv::aruco’ has not been declared
+[10.311s]    84 |                 case 10: dict_type = cv::aruco::DICT_6X6_250; break;
+[10.311s]       |                                          ^~~~~
+[10.311s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:85:42: error: ‘cv::aruco’ has not been declared
+[10.311s]    85 |                 case 11: dict_type = cv::aruco::DICT_6X6_1000; break;
+[10.312s]       |                                          ^~~~~
+[10.312s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:86:42: error: ‘cv::aruco’ has not been declared
+[10.312s]    86 |                 case 12: dict_type = cv::aruco::DICT_7X7_50; break;
+[10.312s]       |                                          ^~~~~
+[10.312s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:87:42: error: ‘cv::aruco’ has not been declared
+[10.312s]    87 |                 case 13: dict_type = cv::aruco::DICT_7X7_100; break;
+[10.312s]       |                                          ^~~~~
+[10.313s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:88:42: error: ‘cv::aruco’ has not been declared
+[10.313s]    88 |                 case 14: dict_type = cv::aruco::DICT_7X7_250; break;
+[10.313s]       |                                          ^~~~~
+[10.313s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:89:42: error: ‘cv::aruco’ has not been declared
+[10.314s]    89 |                 case 15: dict_type = cv::aruco::DICT_7X7_1000; break;
+[10.314s]       |                                          ^~~~~
+[10.314s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:90:42: error: ‘cv::aruco’ has not been declared
+[10.314s]    90 |                 case 16: dict_type = cv::aruco::DICT_ARUCO_ORIGINAL; break;
+[10.314s]       |                                          ^~~~~
+[10.314s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:91:42: error: ‘cv::aruco’ has not been declared
+[10.314s]    91 |                 default: dict_type = cv::aruco::DICT_6X6_250; break;
+[10.315s]       |                                          ^~~~~
+[10.344s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:13: error: ‘dictionary’ was not declared in this scope; did you mean ‘dictionary_id’?
+[10.344s]    93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+[10.345s]       |             ^~~~~~~~~~
+[10.345s]       |             dictionary_id
+[10.345s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:30: error: ‘cv::aruco’ has not been declared
+[10.345s]    93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+[10.345s]       |                              ^~~~~
+[10.382s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:61: error: ‘dict_type’ was not declared in this scope; did you mean ‘decltype’?
+[10.382s]    93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+[10.382s]       |                                                             ^~~~~~~~~
+[10.382s]       |                                                             decltype
+[10.385s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:95:45: error: ‘aruco’ is not a member of ‘cv’
+[10.385s]    95 |             arucoDetector = cv::makePtr<cv::aruco::ArucoDetector>(dictionary, detectorParams);
+[10.386s]       |                                             ^~~~~
+[10.386s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:95:33: error: parse error in template argument list
+[10.386s]    95 |             arucoDetector = cv::makePtr<cv::aruco::ArucoDetector>(dictionary, detectorParams);
+[10.386s]       |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[10.430s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:95:79: error: ‘detectorParams’ was not declared in this scope
+[10.430s]    95 |             arucoDetector = cv::makePtr<cv::aruco::ArucoDetector>(dictionary, detectorParams);
+[10.431s]       |                                                                               ^~~~~~~~~~~~~~
+[10.483s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In member function ‘void aruco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+[10.484s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:124:22: error: base operand of ‘->’ is not a pointer
+[10.484s]   124 |         arucoDetector->detectMarkers(image_rgb, marker_corners, aruco_ids);
+[10.484s]       |                      ^~
+[10.497s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:136:21: error: ‘solvePnP’ is not a member of ‘cv’; did you mean ‘solveLP’?
+[10.498s]   136 |                 cv::solvePnP(objectPoints, marker_corners[0], camera_matrix, camera_dis, rvec, tvec);
+[10.498s]       |                     ^~~~~~~~
+[10.498s]       |                     solveLP
+[10.502s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:137:21: error: ‘Rodrigues’ is not a member of ‘cv’
+[10.503s]   137 |                 cv::Rodrigues(rvec, rotation_matrix);
+[10.503s]       |                     ^~~~~~~~~
+[11.409s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp: In member function ‘void charuco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+[11.410s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:82:49: error: ‘estimatePoseCharucoBoard’ is not a member of ‘cv::aruco’
+[11.410s]    82 |                         valid_pose = cv::aruco::estimatePoseCharucoBoard(charuco_corners, charuco_ids, *charuco_board, camera_matrix, camera_dis,
+[11.410s]       |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+[11.469s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:78:13: warning: unused variable ‘interpolatedCorners’ [-Wunused-variable]
+[11.469s]    78 |         int interpolatedCorners = charuco_corners.size();
+[11.469s]       |             ^~~~~~~~~~~~~~~~~~~
+[19.458s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[19.461s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[19.462s] gmake[1]: *** 正在等待未完成的任务....
+[20.709s] gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+[20.717s] gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+[20.722s] gmake: *** [Makefile:146：all] 错误 2
+[20.837s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

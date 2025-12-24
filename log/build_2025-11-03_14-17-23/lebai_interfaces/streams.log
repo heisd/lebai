@@ -1,0 +1,814 @@
+[0.128s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces
+[0.930s] -- The C compiler identification is GNU 11.4.0
+[0.931s] -- The CXX compiler identification is GNU 11.4.0
+[0.931s] -- Detecting C compiler ABI info
+[0.931s] -- Detecting C compiler ABI info - done
+[0.931s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.931s] -- Detecting C compile features
+[0.931s] -- Detecting C compile features - done
+[0.931s] -- Detecting CXX compiler ABI info
+[0.931s] -- Detecting CXX compiler ABI info - done
+[0.952s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.952s] -- Detecting CXX compile features
+[0.953s] -- Detecting CXX compile features - done
+[0.978s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.634s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.111s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.371s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.419s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.471s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.542s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.638s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.783s] -- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[2.837s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.019s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[5.155s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.598s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.673s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[5.696s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.788s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.788s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.789s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.789s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.848s] -- Found PythonExtra: .so  
+[6.113s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.290s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.299s] -- Added test 'lint_cmake' to check CMake code style
+[6.305s] -- Added test 'xmllint' to check XML markup files
+[6.316s] -- Configuring done
+[6.460s] -- Generating done
+[6.490s] -- Build files have been written to: /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces
+[6.520s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_interfaces -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces
+[6.523s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces -- -j6 -l6
+[6.647s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.678s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.707s] [  0%] Built target ament_cmake_python_copy_lebai_interfaces
+[7.323s] running egg_info
+[7.324s] creating lebai_interfaces.egg-info
+[7.325s] writing lebai_interfaces.egg-info/PKG-INFO
+[7.325s] writing dependency_links to lebai_interfaces.egg-info/dependency_links.txt
+[7.326s] writing top-level names to lebai_interfaces.egg-info/top_level.txt
+[7.326s] writing manifest file 'lebai_interfaces.egg-info/SOURCES.txt'
+[7.331s] reading manifest file 'lebai_interfaces.egg-info/SOURCES.txt'
+[7.332s] writing manifest file 'lebai_interfaces.egg-info/SOURCES.txt'
+[7.411s] [  0%] Built target ament_cmake_python_build_lebai_interfaces_egg
+[11.417s] [  0%] Built target lebai_interfaces__cpp
+[11.457s] [  1%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.493s] [  2%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.577s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.625s] [  4%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/gripper_status__functions.c.o[0m
+[11.638s] [  4%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/io_conditional_express__functions.c.o[0m
+[11.670s] [  5%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/until_info__functions.c.o[0m
+[11.893s] [  5%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/move_common__functions.c.o[0m
+[11.937s] [  5%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/trajectory_move_joint__functions.c.o[0m
+[11.943s] [  6%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/trajectory_move_circle__functions.c.o[0m
+[12.134s] [  7%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/trajectory_move_line__functions.c.o[0m
+[12.277s] [  7%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/debug_level__functions.c.o[0m
+[12.290s] [  8%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/io_status__functions.c.o[0m
+[12.381s] [  9%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/device_info__functions.c.o[0m
+[12.486s] [  9%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/tri_state__functions.c.o[0m
+[12.622s] [ 10%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/robot_status__functions.c.o[0m
+[12.765s] [ 10%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/msg/detail/robot_mode__functions.c.o[0m
+[12.795s] [ 11%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/srv/detail/move_circle__functions.c.o[0m
+[12.997s] [ 11%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/srv/detail/move_joint__functions.c.o[0m
+[13.032s] [ 12%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/srv/detail/move_line__functions.c.o[0m
+[13.112s] [ 12%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/srv/detail/set_a_mode__functions.c.o[0m
+[13.295s] [ 13%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/srv/detail/set_ao__functions.c.o[0m
+[13.326s] [ 13%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/srv/detail/set_gripper__functions.c.o[0m
+[13.337s] [ 14%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lebai_interfaces/srv/detail/set_do__functions.c.o[0m
+[13.623s] [ 15%] [32m[1mLinking C shared library liblebai_interfaces__rosidl_generator_c.so[0m
+[13.794s] [ 15%] Built target lebai_interfaces__rosidl_generator_c
+[13.862s] [ 16%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[13.894s] [ 18%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[13.894s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[15.977s] [ 18%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/gripper_status__type_support.cpp.o[0m
+[17.164s] [ 19%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/io_conditional_express__type_support.cpp.o[0m
+[18.226s] [ 19%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/until_info__type_support.cpp.o[0m
+[18.570s] [ 19%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/gripper_status__type_support.cpp.o[0m
+[18.708s] [ 20%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/gripper_status__type_support.cpp.o[0m
+[18.779s] [ 20%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/gripper_status__type_support.cpp.o[0m
+[19.043s] [ 21%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/io_conditional_express__type_support.cpp.o[0m
+[19.244s] [ 21%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/until_info__type_support.cpp.o[0m
+[19.407s] [ 22%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/move_common__type_support.cpp.o[0m
+[19.554s] [ 23%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/move_common__type_support.cpp.o[0m
+[19.580s] [ 23%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/trajectory_move_circle__type_support.cpp.o[0m
+[19.810s] [ 24%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/trajectory_move_joint__type_support.cpp.o[0m
+[20.016s] [ 24%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/trajectory_move_line__type_support.cpp.o[0m
+[20.166s] [ 24%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/gripper_status__type_support.c.o[0m
+[20.179s] [ 24%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/io_conditional_express__type_support.cpp.o[0m
+[20.193s] [ 26%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/io_status__type_support.cpp.o[0m
+[20.193s] [ 26%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/io_conditional_express__type_support.cpp.o[0m
+[20.363s] [ 27%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/debug_level__type_support.cpp.o[0m
+[20.380s] [ 27%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/trajectory_move_circle__type_support.cpp.o[0m
+[20.486s] [ 28%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/io_conditional_express__type_support.c.o[0m
+[20.536s] [ 28%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/device_info__type_support.cpp.o[0m
+[20.676s] [ 29%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/until_info__type_support.c.o[0m
+[20.705s] [ 30%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/tri_state__type_support.cpp.o[0m
+[20.886s] [ 30%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/move_common__type_support.c.o[0m
+[20.894s] [ 30%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/robot_status__type_support.cpp.o[0m
+[21.107s] [ 31%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/msg/robot_mode__type_support.cpp.o[0m
+[21.107s] [ 32%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/trajectory_move_circle__type_support.c.o[0m
+[21.250s] [ 32%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/srv/move_circle__type_support.cpp.o[0m
+[21.278s] [ 34%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/until_info__type_support.cpp.o[0m
+[21.278s] [ 34%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/trajectory_move_joint__type_support.cpp.o[0m
+[21.318s] [ 34%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/trajectory_move_joint__type_support.c.o[0m
+[21.417s] [ 35%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/srv/move_joint__type_support.cpp.o[0m
+[21.463s] [ 36%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/until_info__type_support.cpp.o[0m
+[21.526s] [ 37%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/trajectory_move_line__type_support.c.o[0m
+[21.606s] [ 37%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/srv/move_line__type_support.cpp.o[0m
+[21.606s] [ 37%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/gripper_status__type_support_c.cpp.o[0m
+[21.714s] [ 37%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/io_status__type_support.c.o[0m
+[21.802s] [ 38%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/srv/set_a_mode__type_support.cpp.o[0m
+[22.003s] [ 38%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/srv/set_ao__type_support.cpp.o[0m
+[22.113s] [ 39%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/debug_level__type_support.c.o[0m
+[22.229s] [ 40%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/srv/set_do__type_support.cpp.o[0m
+[22.273s] [ 40%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/device_info__type_support.c.o[0m
+[22.280s] [ 41%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/trajectory_move_line__type_support.cpp.o[0m
+[22.433s] [ 42%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lebai_interfaces/srv/set_gripper__type_support.cpp.o[0m
+[22.439s] [ 43%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/tri_state__type_support.c.o[0m
+[22.667s] [ 43%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/robot_status__type_support.c.o[0m
+[22.719s] [ 43%] [32m[1mLinking CXX shared library liblebai_interfaces__rosidl_typesupport_c.so[0m
+[22.768s] [ 43%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/move_common__type_support.cpp.o[0m
+[22.802s] [ 44%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/io_conditional_express__type_support_c.cpp.o[0m
+[22.828s] [ 45%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/msg/detail/robot_mode__type_support.c.o[0m
+[22.992s] [ 45%] Built target lebai_interfaces__rosidl_typesupport_c
+[23.000s] [ 46%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/srv/detail/move_circle__type_support.c.o[0m
+[23.023s] [ 46%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/io_status__type_support.cpp.o[0m
+[23.066s] [ 46%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/move_common__type_support.cpp.o[0m
+[23.179s] [ 46%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/srv/detail/move_joint__type_support.c.o[0m
+[23.300s] [ 47%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/srv/detail/move_line__type_support.c.o[0m
+[23.409s] [ 48%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/trajectory_move_circle__type_support.cpp.o[0m
+[23.555s] [ 48%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/srv/detail/set_a_mode__type_support.c.o[0m
+[23.888s] [ 49%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/srv/detail/set_ao__type_support.c.o[0m
+[23.982s] [ 49%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/until_info__type_support_c.cpp.o[0m
+[24.129s] [ 50%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/debug_level__type_support.cpp.o[0m
+[24.137s] [ 50%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/srv/detail/set_do__type_support.c.o[0m
+[24.156s] [ 51%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/move_common__type_support_c.cpp.o[0m
+[24.165s] [ 52%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/trajectory_move_circle__type_support.cpp.o[0m
+[24.352s] [ 53%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lebai_interfaces/srv/detail/set_gripper__type_support.c.o[0m
+[24.640s] [ 53%] [32m[1mLinking C shared library liblebai_interfaces__rosidl_typesupport_introspection_c.so[0m
+[24.959s] [ 53%] Built target lebai_interfaces__rosidl_typesupport_introspection_c
+[25.045s] [ 53%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/trajectory_move_joint__type_support.cpp.o[0m
+[25.115s] [ 53%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/device_info__type_support.cpp.o[0m
+[25.246s] [ 54%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/trajectory_move_circle__type_support_c.cpp.o[0m
+[25.256s] [ 54%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/trajectory_move_joint__type_support.cpp.o[0m
+[25.452s] [ 54%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/trajectory_move_joint__type_support_c.cpp.o[0m
+[26.215s] [ 55%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/tri_state__type_support.cpp.o[0m
+[26.247s] [ 56%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/trajectory_move_line__type_support_c.cpp.o[0m
+[26.691s] [ 57%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/trajectory_move_line__type_support.cpp.o[0m
+[26.748s] [ 57%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/io_status__type_support_c.cpp.o[0m
+[26.820s] [ 58%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/debug_level__type_support_c.cpp.o[0m
+[26.983s] [ 59%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/trajectory_move_line__type_support.cpp.o[0m
+[27.249s] [ 59%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/robot_status__type_support.cpp.o[0m
+[27.534s] [ 59%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/device_info__type_support_c.cpp.o[0m
+[28.178s] [ 60%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/tri_state__type_support_c.cpp.o[0m
+[28.179s] [ 60%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/io_status__type_support.cpp.o[0m
+[28.179s] [ 60%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/robot_status__type_support_c.cpp.o[0m
+[28.255s] [ 61%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/msg/robot_mode__type_support.cpp.o[0m
+[28.317s] [ 61%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/io_status__type_support.cpp.o[0m
+[28.861s] [ 62%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/msg/detail/robot_mode__type_support_c.cpp.o[0m
+[29.115s] [ 62%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/srv/move_circle__type_support.cpp.o[0m
+[29.219s] [ 63%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/debug_level__type_support.cpp.o[0m
+[29.300s] [ 63%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/srv/detail/move_circle__type_support_c.cpp.o[0m
+[29.970s] [ 63%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/device_info__type_support.cpp.o[0m
+[30.074s] [ 64%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/debug_level__type_support.cpp.o[0m
+[30.099s] [ 65%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/srv/move_joint__type_support.cpp.o[0m
+[30.199s] [ 66%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/srv/detail/move_joint__type_support_c.cpp.o[0m
+[30.566s] [ 67%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/srv/detail/move_line__type_support_c.cpp.o[0m
+[30.785s] [ 68%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/tri_state__type_support.cpp.o[0m
+[31.390s] [ 68%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/srv/move_line__type_support.cpp.o[0m
+[31.499s] [ 69%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/srv/set_a_mode__type_support.cpp.o[0m
+[31.556s] [ 69%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/device_info__type_support.cpp.o[0m
+[31.599s] [ 69%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/srv/detail/set_a_mode__type_support_c.cpp.o[0m
+[31.640s] [ 69%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o[0m
+[32.281s] [ 70%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/msg/detail/dds_fastrtps/robot_mode__type_support.cpp.o[0m
+[32.283s] [ 71%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/srv/detail/set_ao__type_support_c.cpp.o[0m
+[32.776s] [ 72%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/srv/detail/dds_fastrtps/move_circle__type_support.cpp.o[0m
+[32.893s] [ 73%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/tri_state__type_support.cpp.o[0m
+[32.903s] [ 74%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/srv/set_ao__type_support.cpp.o[0m
+[32.918s] [ 74%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/srv/detail/set_do__type_support_c.cpp.o[0m
+[33.454s] [ 75%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lebai_interfaces/srv/detail/set_gripper__type_support_c.cpp.o[0m
+[33.726s] [ 75%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/srv/set_do__type_support.cpp.o[0m
+[33.845s] [ 76%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/robot_status__type_support.cpp.o[0m
+[34.221s] [ 77%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lebai_interfaces/srv/set_gripper__type_support.cpp.o[0m
+[34.329s] [ 77%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/srv/detail/dds_fastrtps/move_joint__type_support.cpp.o[0m
+[34.400s] [ 78%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/srv/detail/dds_fastrtps/move_line__type_support.cpp.o[0m
+[34.632s] [ 78%] [32m[1mLinking CXX shared library liblebai_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[34.685s] [ 78%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/srv/detail/dds_fastrtps/set_a_mode__type_support.cpp.o[0m
+[35.206s] [ 78%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/msg/detail/robot_mode__type_support.cpp.o[0m
+[35.272s] [ 78%] Built target lebai_interfaces__rosidl_typesupport_fastrtps_c
+[35.307s] [ 79%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/srv/detail/dds_fastrtps/set_ao__type_support.cpp.o[0m
+[35.328s] [ 79%] [32m[1mLinking CXX shared library liblebai_interfaces__rosidl_typesupport_cpp.so[0m
+[35.729s] [ 79%] Built target lebai_interfaces__rosidl_typesupport_cpp
+[35.738s] [ 79%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/srv/detail/dds_fastrtps/set_do__type_support.cpp.o[0m
+[35.753s] [ 80%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lebai_interfaces/srv/detail/dds_fastrtps/set_gripper__type_support.cpp.o[0m
+[35.877s] [ 81%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/srv/detail/move_circle__type_support.cpp.o[0m
+[36.367s] [ 81%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/srv/detail/move_joint__type_support.cpp.o[0m
+[36.905s] [ 82%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/srv/detail/move_line__type_support.cpp.o[0m
+[36.929s] [ 82%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/srv/detail/set_a_mode__type_support.cpp.o[0m
+[37.092s] [ 83%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/srv/detail/set_ao__type_support.cpp.o[0m
+[37.974s] [ 83%] [32m[1mLinking CXX shared library liblebai_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[37.977s] [ 83%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/srv/detail/set_do__type_support.cpp.o[0m
+[38.010s] [ 84%] [32mBuilding CXX object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lebai_interfaces/srv/detail/set_gripper__type_support.cpp.o[0m
+[38.406s] [ 84%] Built target lebai_interfaces__rosidl_typesupport_fastrtps_cpp
+[39.003s] [ 85%] [32m[1mLinking CXX shared library liblebai_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[39.226s] [ 85%] Built target lebai_interfaces__rosidl_typesupport_introspection_cpp
+[39.306s] [ 85%] Built target lebai_interfaces
+[39.376s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[46.744s] [ 86%] Built target lebai_interfaces__py
+[46.826s] [ 86%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_gripper_status_s.c.o[0m
+[46.830s] [ 86%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_until_info_s.c.o[0m
+[46.844s] [ 87%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_io_conditional_express_s.c.o[0m
+[46.844s] [ 87%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_trajectory_move_circle_s.c.o[0m
+[46.863s] [ 89%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_trajectory_move_joint_s.c.o[0m
+[46.864s] [ 88%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_move_common_s.c.o[0m
+[47.510s] [ 90%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_debug_level_s.c.o[0m
+[47.511s] [ 90%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_trajectory_move_line_s.c.o[0m
+[47.512s] [ 91%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_io_status_s.c.o[0m
+[47.512s] [ 91%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_device_info_s.c.o[0m
+[47.513s] [ 92%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_tri_state_s.c.o[0m
+[47.513s] [ 92%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_robot_status_s.c.o[0m
+[47.801s] [ 92%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/srv/_move_circle_s.c.o[0m
+[47.826s] [ 93%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/msg/_robot_mode_s.c.o[0m
+[47.891s] [ 94%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/srv/_move_joint_s.c.o[0m
+[47.999s] [ 94%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/srv/_move_line_s.c.o[0m
+[48.056s] [ 95%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/srv/_set_a_mode_s.c.o[0m
+[48.189s] [ 95%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/srv/_set_ao_s.c.o[0m
+[48.256s] [ 96%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/srv/_set_do_s.c.o[0m
+[48.271s] [ 97%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lebai_interfaces/srv/_set_gripper_s.c.o[0m
+[48.631s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/lebai_interfaces/liblebai_interfaces__rosidl_generator_py.so[0m
+[48.776s] [ 97%] Built target lebai_interfaces__rosidl_generator_py
+[48.848s] [ 98%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lebai_interfaces/_lebai_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[48.848s] [ 99%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lebai_interfaces/_lebai_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[48.848s] [100%] [32mBuilding C object CMakeFiles/lebai_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lebai_interfaces/_lebai_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[49.311s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[49.311s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[49.311s] [100%] [32m[1mLinking C shared library rosidl_generator_py/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[49.454s] [100%] Built target lebai_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[49.454s] [100%] Built target lebai_interfaces__rosidl_typesupport_introspection_c__pyext
+[49.458s] [100%] Built target lebai_interfaces__rosidl_typesupport_c__pyext
+[49.608s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces -- -j6 -l6
+[49.646s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces
+[49.682s] -- Install configuration: ""
+[49.684s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/ament_index/resource_index/rosidl_interfaces/lebai_interfaces
+[49.685s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces
+[49.686s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg
+[49.686s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/until_info.h
+[49.687s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/io_conditional_express.h
+[49.687s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/move_common.h
+[49.688s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/io_status.h
+[49.689s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/robot_mode.h
+[49.689s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/gripper_status.h
+[49.689s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/rosidl_generator_c__visibility_control.h
+[49.690s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/device_info.h
+[49.690s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/trajectory_move_circle.h
+[49.691s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail
+[49.691s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__functions.h
+[49.691s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__struct.h
+[49.692s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__type_support.h
+[49.692s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__type_support.h
+[49.693s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__functions.h
+[49.693s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__type_support.h
+[49.693s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__functions.c
+[49.694s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__functions.c
+[49.694s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__struct.h
+[49.695s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__type_support.h
+[49.695s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__type_support.h
+[49.695s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__functions.c
+[49.696s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__type_support.h
+[49.696s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__functions.h
+[49.696s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__functions.h
+[49.696s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__type_support.h
+[49.696s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__type_support.h
+[49.697s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__struct.h
+[49.697s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__functions.c
+[49.697s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__struct.h
+[49.697s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__struct.h
+[49.697s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__functions.c
+[49.698s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__functions.c
+[49.698s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__functions.h
+[49.698s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__functions.h
+[49.698s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__functions.c
+[49.698s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__type_support.h
+[49.698s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__functions.c
+[49.699s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__functions.h
+[49.699s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__type_support.h
+[49.699s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__functions.c
+[49.699s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__struct.h
+[49.699s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__functions.h
+[49.699s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__functions.c
+[49.699s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__functions.c
+[49.700s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__struct.h
+[49.700s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__struct.h
+[49.700s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__struct.h
+[49.701s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__functions.h
+[49.701s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__struct.h
+[49.701s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__functions.h
+[49.701s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__functions.h
+[49.702s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__struct.h
+[49.702s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__functions.c
+[49.702s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__type_support.h
+[49.703s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__functions.c
+[49.703s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__type_support.h
+[49.703s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__type_support.h
+[49.703s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__functions.h
+[49.704s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__struct.h
+[49.704s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__struct.h
+[49.705s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__functions.h
+[49.706s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/trajectory_move_line.h
+[49.707s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/tri_state.h
+[49.707s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/robot_status.h
+[49.707s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/debug_level.h
+[49.708s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/trajectory_move_joint.h
+[49.708s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv
+[49.709s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/move_joint.h
+[49.709s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/move_line.h
+[49.710s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/move_circle.h
+[49.710s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_ao.h
+[49.710s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail
+[49.711s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__type_support.h
+[49.712s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__functions.h
+[49.713s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__functions.h
+[49.714s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__struct.h
+[49.714s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__type_support.h
+[49.715s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__functions.h
+[49.716s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__type_support.h
+[49.716s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__functions.c
+[49.717s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__functions.h
+[49.717s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__struct.h
+[49.718s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__functions.h
+[49.718s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__functions.c
+[49.719s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__type_support.h
+[49.720s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__type_support.h
+[49.721s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__struct.h
+[49.721s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__functions.c
+[49.722s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__struct.h
+[49.723s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__functions.c
+[49.724s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__type_support.h
+[49.724s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__functions.h
+[49.724s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__functions.c
+[49.725s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__struct.h
+[49.726s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__functions.h
+[49.727s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__functions.c
+[49.728s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__struct.h
+[49.729s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__functions.c
+[49.730s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__type_support.h
+[49.731s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__struct.h
+[49.732s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_do.h
+[49.732s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_gripper.h
+[49.733s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_a_mode.h
+[49.733s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/library_path.sh
+[49.734s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/library_path.dsv
+[49.735s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_generator_c.so
+[49.735s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_generator_c.so" to ""
+[49.736s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces
+[49.736s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg
+[49.737s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[49.738s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail
+[49.738s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__rosidl_typesupport_fastrtps_c.h
+[49.739s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__rosidl_typesupport_fastrtps_c.h
+[49.740s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__rosidl_typesupport_fastrtps_c.h
+[49.740s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__rosidl_typesupport_fastrtps_c.h
+[49.741s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__rosidl_typesupport_fastrtps_c.h
+[49.742s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__rosidl_typesupport_fastrtps_c.h
+[49.742s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__rosidl_typesupport_fastrtps_c.h
+[49.743s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__rosidl_typesupport_fastrtps_c.h
+[49.743s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__rosidl_typesupport_fastrtps_c.h
+[49.744s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[49.744s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__rosidl_typesupport_fastrtps_c.h
+[49.744s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__rosidl_typesupport_fastrtps_c.h
+[49.745s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__rosidl_typesupport_fastrtps_c.h
+[49.745s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv
+[49.746s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail
+[49.746s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__rosidl_typesupport_fastrtps_c.h
+[49.747s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__rosidl_typesupport_fastrtps_c.h
+[49.747s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__rosidl_typesupport_fastrtps_c.h
+[49.747s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__rosidl_typesupport_fastrtps_c.h
+[49.747s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__rosidl_typesupport_fastrtps_c.h
+[49.748s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__rosidl_typesupport_fastrtps_c.h
+[49.749s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__rosidl_typesupport_fastrtps_c.h
+[49.749s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_fastrtps_c.so
+[49.751s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[49.751s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces
+[49.752s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg
+[49.752s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/trajectory_move_joint.hpp
+[49.753s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[49.754s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/gripper_status.hpp
+[49.755s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/tri_state.hpp
+[49.755s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/move_common.hpp
+[49.756s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/until_info.hpp
+[49.757s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/trajectory_move_circle.hpp
+[49.757s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail
+[49.757s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__builder.hpp
+[49.758s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__traits.hpp
+[49.758s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__type_support.hpp
+[49.759s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__builder.hpp
+[49.759s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__builder.hpp
+[49.759s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__builder.hpp
+[49.759s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__type_support.hpp
+[49.759s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__builder.hpp
+[49.760s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__builder.hpp
+[49.760s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__type_support.hpp
+[49.760s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__struct.hpp
+[49.760s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__traits.hpp
+[49.761s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__builder.hpp
+[49.761s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__type_support.hpp
+[49.761s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__struct.hpp
+[49.761s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__traits.hpp
+[49.761s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__type_support.hpp
+[49.761s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__struct.hpp
+[49.762s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__struct.hpp
+[49.762s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__traits.hpp
+[49.762s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__type_support.hpp
+[49.762s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__struct.hpp
+[49.762s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__struct.hpp
+[49.762s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__traits.hpp
+[49.762s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__type_support.hpp
+[49.763s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__builder.hpp
+[49.763s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__type_support.hpp
+[49.763s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__struct.hpp
+[49.764s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__type_support.hpp
+[49.764s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__builder.hpp
+[49.764s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__builder.hpp
+[49.764s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__struct.hpp
+[49.764s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__type_support.hpp
+[49.764s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__traits.hpp
+[49.765s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__builder.hpp
+[49.765s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__traits.hpp
+[49.766s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__traits.hpp
+[49.767s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__struct.hpp
+[49.767s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__struct.hpp
+[49.769s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__type_support.hpp
+[49.770s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__builder.hpp
+[49.771s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__struct.hpp
+[49.773s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__traits.hpp
+[49.774s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__type_support.hpp
+[49.774s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__traits.hpp
+[49.775s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__traits.hpp
+[49.775s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__type_support.hpp
+[49.775s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__traits.hpp
+[49.776s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__builder.hpp
+[49.776s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__traits.hpp
+[49.776s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__struct.hpp
+[49.776s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__struct.hpp
+[49.777s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/io_conditional_express.hpp
+[49.777s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/device_info.hpp
+[49.778s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/debug_level.hpp
+[49.778s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/robot_status.hpp
+[49.779s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/io_status.hpp
+[49.779s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/trajectory_move_line.hpp
+[49.779s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/robot_mode.hpp
+[49.780s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv
+[49.780s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_do.hpp
+[49.781s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_ao.hpp
+[49.781s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/move_joint.hpp
+[49.782s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_gripper.hpp
+[49.782s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail
+[49.782s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__type_support.hpp
+[49.783s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__builder.hpp
+[49.783s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__traits.hpp
+[49.784s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__traits.hpp
+[49.784s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__traits.hpp
+[49.785s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__traits.hpp
+[49.785s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__type_support.hpp
+[49.786s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__struct.hpp
+[49.786s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__traits.hpp
+[49.787s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__builder.hpp
+[49.787s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__struct.hpp
+[49.788s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__struct.hpp
+[49.788s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__builder.hpp
+[49.788s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__builder.hpp
+[49.790s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__builder.hpp
+[49.791s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__type_support.hpp
+[49.792s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__struct.hpp
+[49.792s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__traits.hpp
+[49.793s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__type_support.hpp
+[49.793s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__traits.hpp
+[49.793s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__type_support.hpp
+[49.794s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__struct.hpp
+[49.794s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__builder.hpp
+[49.795s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__type_support.hpp
+[49.795s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__type_support.hpp
+[49.795s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__struct.hpp
+[49.796s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__struct.hpp
+[49.796s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__builder.hpp
+[49.797s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/move_line.hpp
+[49.797s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/set_a_mode.hpp
+[49.798s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/move_circle.hpp
+[49.798s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces
+[49.799s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg
+[49.799s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[49.806s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail
+[49.806s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__rosidl_typesupport_fastrtps_cpp.hpp
+[49.810s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/dds_fastrtps
+[49.810s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__rosidl_typesupport_fastrtps_cpp.hpp
+[49.810s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp
+[49.811s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__rosidl_typesupport_fastrtps_cpp.hpp
+[49.811s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__rosidl_typesupport_fastrtps_cpp.hpp
+[49.811s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[49.811s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__rosidl_typesupport_fastrtps_cpp.hpp
+[49.812s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__rosidl_typesupport_fastrtps_cpp.hpp
+[49.812s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__rosidl_typesupport_fastrtps_cpp.hpp
+[49.812s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__rosidl_typesupport_fastrtps_cpp.hpp
+[49.813s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__rosidl_typesupport_fastrtps_cpp.hpp
+[49.813s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[49.816s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__rosidl_typesupport_fastrtps_cpp.hpp
+[49.816s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv
+[49.817s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail
+[49.817s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/dds_fastrtps
+[49.817s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__rosidl_typesupport_fastrtps_cpp.hpp
+[49.818s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[49.818s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__rosidl_typesupport_fastrtps_cpp.hpp
+[49.818s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__rosidl_typesupport_fastrtps_cpp.hpp
+[49.818s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__rosidl_typesupport_fastrtps_cpp.hpp
+[49.818s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__rosidl_typesupport_fastrtps_cpp.hpp
+[49.818s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__rosidl_typesupport_fastrtps_cpp.hpp
+[49.818s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[49.818s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[49.819s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces
+[49.819s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg
+[49.819s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail
+[49.819s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__rosidl_typesupport_introspection_c.h
+[49.819s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__type_support.c
+[49.819s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__type_support.c
+[49.820s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__rosidl_typesupport_introspection_c.h
+[49.820s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__rosidl_typesupport_introspection_c.h
+[49.820s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__type_support.c
+[49.820s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__type_support.c
+[49.820s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__type_support.c
+[49.821s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__rosidl_typesupport_introspection_c.h
+[49.821s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__rosidl_typesupport_introspection_c.h
+[49.821s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__rosidl_typesupport_introspection_c.h
+[49.825s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__rosidl_typesupport_introspection_c.h
+[49.828s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__type_support.c
+[49.828s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__rosidl_typesupport_introspection_c.h
+[49.829s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__rosidl_typesupport_introspection_c.h
+[49.829s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__type_support.c
+[49.830s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__rosidl_typesupport_introspection_c.h
+[49.831s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__type_support.c
+[49.831s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[49.832s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__type_support.c
+[49.836s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__rosidl_typesupport_introspection_c.h
+[49.837s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__type_support.c
+[49.837s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__type_support.c
+[49.837s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__type_support.c
+[49.837s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__rosidl_typesupport_introspection_c.h
+[49.838s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__type_support.c
+[49.838s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[49.838s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv
+[49.839s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail
+[49.839s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__rosidl_typesupport_introspection_c.h
+[49.839s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__type_support.c
+[49.840s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__rosidl_typesupport_introspection_c.h
+[49.840s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__type_support.c
+[49.840s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__type_support.c
+[49.840s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__rosidl_typesupport_introspection_c.h
+[49.840s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__type_support.c
+[49.841s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__rosidl_typesupport_introspection_c.h
+[49.841s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__rosidl_typesupport_introspection_c.h
+[49.841s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__rosidl_typesupport_introspection_c.h
+[49.841s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__type_support.c
+[49.842s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__rosidl_typesupport_introspection_c.h
+[49.842s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__type_support.c
+[49.842s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__type_support.c
+[49.842s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_introspection_c.so
+[49.842s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[49.843s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_c.so
+[49.843s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_c.so" to ""
+[49.843s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces
+[49.843s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg
+[49.843s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail
+[49.844s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__rosidl_typesupport_introspection_cpp.hpp
+[49.844s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__type_support.cpp
+[49.844s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__rosidl_typesupport_introspection_cpp.hpp
+[49.844s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__rosidl_typesupport_introspection_cpp.hpp
+[49.844s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__type_support.cpp
+[49.844s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__type_support.cpp
+[49.845s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__rosidl_typesupport_introspection_cpp.hpp
+[49.845s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[49.845s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__rosidl_typesupport_introspection_cpp.hpp
+[49.845s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__rosidl_typesupport_introspection_cpp.hpp
+[49.845s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/move_common__type_support.cpp
+[49.846s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__type_support.cpp
+[49.846s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__rosidl_typesupport_introspection_cpp.hpp
+[49.846s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_status__type_support.cpp
+[49.846s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__rosidl_typesupport_introspection_cpp.hpp
+[49.846s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/debug_level__type_support.cpp
+[49.847s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/tri_state__rosidl_typesupport_introspection_cpp.hpp
+[49.847s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_conditional_express__type_support.cpp
+[49.847s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/device_info__type_support.cpp
+[49.847s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_line__type_support.cpp
+[49.847s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_circle__rosidl_typesupport_introspection_cpp.hpp
+[49.848s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/until_info__type_support.cpp
+[49.848s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/gripper_status__type_support.cpp
+[49.848s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/robot_mode__type_support.cpp
+[49.848s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/io_status__rosidl_typesupport_introspection_cpp.hpp
+[49.848s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/msg/detail/trajectory_move_joint__rosidl_typesupport_introspection_cpp.hpp
+[49.848s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv
+[49.849s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail
+[49.849s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__rosidl_typesupport_introspection_cpp.hpp
+[49.849s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__rosidl_typesupport_introspection_cpp.hpp
+[49.849s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__rosidl_typesupport_introspection_cpp.hpp
+[49.849s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__rosidl_typesupport_introspection_cpp.hpp
+[49.850s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_line__type_support.cpp
+[49.850s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__rosidl_typesupport_introspection_cpp.hpp
+[49.850s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__type_support.cpp
+[49.851s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__rosidl_typesupport_introspection_cpp.hpp
+[49.851s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_a_mode__type_support.cpp
+[49.851s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_joint__type_support.cpp
+[49.851s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_do__rosidl_typesupport_introspection_cpp.hpp
+[49.851s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/move_circle__type_support.cpp
+[49.852s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_gripper__type_support.cpp
+[49.852s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/include/lebai_interfaces/lebai_interfaces/srv/detail/set_ao__type_support.cpp
+[49.852s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_introspection_cpp.so
+[49.853s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[49.853s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_cpp.so
+[49.853s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_typesupport_cpp.so" to ""
+[49.853s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/pythonpath.sh
+[49.853s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/pythonpath.dsv
+[49.853s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces-0.0.1-py3.10.egg-info
+[49.854s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[49.854s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[49.854s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[49.854s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[49.854s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces
+[49.855s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[49.855s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[49.855s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/__init__.py
+[49.856s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/liblebai_interfaces__rosidl_generator_py.so
+[49.856s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg
+[49.857s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_robot_mode.py
+[49.857s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_move_common.py
+[49.857s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_line.py
+[49.857s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_move_common_s.c
+[49.857s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_io_conditional_express_s.c
+[49.857s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_circle_s.c
+[49.858s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_robot_mode_s.c
+[49.858s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_robot_status.py
+[49.859s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_joint.py
+[49.859s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_debug_level_s.c
+[49.860s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/__init__.py
+[49.861s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_device_info.py
+[49.861s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_tri_state_s.c
+[49.861s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_gripper_status.py
+[49.862s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_circle.py
+[49.862s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_joint_s.c
+[49.863s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_robot_status_s.c
+[49.864s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_line_s.c
+[49.864s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_device_info_s.c
+[49.865s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_gripper_status_s.c
+[49.866s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_tri_state.py
+[49.866s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_until_info.py
+[49.867s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_until_info_s.c
+[49.867s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_debug_level.py
+[49.868s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_io_status_s.c
+[49.868s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_io_status.py
+[49.869s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_io_conditional_express.py
+[49.870s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/_lebai_interfaces_s.ep.rosidl_typesupport_c.c
+[49.870s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/_lebai_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[49.871s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv
+[49.871s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_gripper_s.c
+[49.872s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_ao.py
+[49.873s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_circle.py
+[49.874s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/__init__.py
+[49.874s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_circle_s.c
+[49.874s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_line_s.c
+[49.875s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_joint_s.c
+[49.876s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_joint.py
+[49.876s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_a_mode.py
+[49.877s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_do.py
+[49.877s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_gripper.py
+[49.878s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_ao_s.c
+[49.878s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_do_s.c
+[49.878s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_a_mode_s.c
+[49.879s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_line.py
+[49.879s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[49.881s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/_lebai_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[50.138s] Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces'...
+[50.139s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/__init__.py'...
+[50.139s] Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg'...
+[50.139s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/__init__.py'...
+[50.139s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_debug_level.py'...
+[50.139s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_device_info.py'...
+[50.139s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_gripper_status.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_io_conditional_express.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_io_status.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_move_common.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_robot_mode.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_robot_status.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_circle.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_joint.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_trajectory_move_line.py'...
+[50.140s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_tri_state.py'...
+[50.141s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/msg/_until_info.py'...
+[50.141s] Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv'...
+[50.141s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/__init__.py'...
+[50.141s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_circle.py'...
+[50.141s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_joint.py'...
+[50.141s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_move_line.py'...
+[50.141s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_a_mode.py'...
+[50.141s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_ao.py'...
+[50.142s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_do.py'...
+[50.142s] Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/srv/_set_gripper.py'...
+[50.153s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[50.155s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[50.156s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[50.157s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[50.158s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[50.159s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/local/lib/python3.10/dist-packages/lebai_interfaces/lebai_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[50.159s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_generator_py.so
+[50.160s] -- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/lib/liblebai_interfaces__rosidl_generator_py.so" to ""
+[50.161s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/GripperStatus.idl
+[50.162s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/IOConditionalExpress.idl
+[50.162s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/UntilInfo.idl
+[50.162s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/MoveCommon.idl
+[50.163s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TrajectoryMoveCircle.idl
+[50.163s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TrajectoryMoveJoint.idl
+[50.164s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TrajectoryMoveLine.idl
+[50.164s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/IOStatus.idl
+[50.165s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/DebugLevel.idl
+[50.166s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/DeviceInfo.idl
+[50.166s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TriState.idl
+[50.166s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/RobotStatus.idl
+[50.166s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/RobotMode.idl
+[50.169s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveCircle.idl
+[50.169s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveJoint.idl
+[50.169s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveLine.idl
+[50.170s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAMode.idl
+[50.170s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAO.idl
+[50.170s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetDO.idl
+[50.170s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetGripper.idl
+[50.171s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/GripperStatus.msg
+[50.171s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/IOConditionalExpress.msg
+[50.172s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/UntilInfo.msg
+[50.173s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/MoveCommon.msg
+[50.173s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TrajectoryMoveCircle.msg
+[50.173s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TrajectoryMoveJoint.msg
+[50.174s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TrajectoryMoveLine.msg
+[50.174s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/IOStatus.msg
+[50.174s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/DebugLevel.msg
+[50.175s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/DeviceInfo.msg
+[50.175s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/TriState.msg
+[50.176s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/RobotStatus.msg
+[50.176s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/msg/RobotMode.msg
+[50.177s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveCircle.srv
+[50.178s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveCircle_Request.msg
+[50.178s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveCircle_Response.msg
+[50.178s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveJoint.srv
+[50.179s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveJoint_Request.msg
+[50.179s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveJoint_Response.msg
+[50.180s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveLine.srv
+[50.180s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveLine_Request.msg
+[50.181s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/MoveLine_Response.msg
+[50.181s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAMode.srv
+[50.182s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAMode_Request.msg
+[50.184s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAMode_Response.msg
+[50.184s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAO.srv
+[50.185s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAO_Request.msg
+[50.185s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetAO_Response.msg
+[50.185s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetDO.srv
+[50.185s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetDO_Request.msg
+[50.185s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetDO_Response.msg
+[50.185s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetGripper.srv
+[50.186s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetGripper_Request.msg
+[50.186s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/srv/SetGripper_Response.msg
+[50.187s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/ament_index/resource_index/package_run_dependencies/lebai_interfaces
+[50.187s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/ament_index/resource_index/parent_prefix_path/lebai_interfaces
+[50.190s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/ament_prefix_path.sh
+[50.191s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/ament_prefix_path.dsv
+[50.191s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/path.sh
+[50.191s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/environment/path.dsv
+[50.192s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/local_setup.bash
+[50.193s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/local_setup.sh
+[50.193s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/local_setup.zsh
+[50.194s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/local_setup.dsv
+[50.194s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/package.dsv
+[50.195s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/ament_index/resource_index/packages/lebai_interfaces
+[50.196s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_generator_cExport.cmake
+[50.197s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_generator_cExport-noconfig.cmake
+[50.198s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[50.198s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[50.199s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_generator_cppExport.cmake
+[50.202s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[50.202s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[50.202s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[50.202s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[50.202s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_cExport.cmake
+[50.203s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[50.203s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[50.203s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[50.204s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_cppExport.cmake
+[50.204s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[50.206s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_generator_pyExport.cmake
+[50.206s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/export_lebai_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[50.207s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/rosidl_cmake-extras.cmake
+[50.207s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[50.207s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[50.208s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[50.208s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[50.209s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[50.209s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[50.210s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfacesConfig.cmake
+[50.210s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake/lebai_interfacesConfig-version.cmake
+[50.211s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/package.xml
+[50.225s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_interfaces

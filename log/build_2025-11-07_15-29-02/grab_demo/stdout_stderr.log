@@ -1,0 +1,7 @@
+[31mCMake Error at CMakeLists.txt:6:
+  Parse error.  Expected a command name, got unquoted argument with text "~".
+
+[0m
+-- Configuring incomplete, errors occurred!
+See also "/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:1075：cmake_check_build_system] 错误 1

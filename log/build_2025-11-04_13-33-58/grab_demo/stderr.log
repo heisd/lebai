@@ -1,0 +1,35 @@
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/nav_grab.cpp:[m[K In member function ‘[01m[Kvoid Nav_grab::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/nav_grab.cpp:75:107:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   75 |     void feedback_callback(ClientGoalHandle::SharedPtr,[01;35m[Kconst std::shared_ptr<const Nav2_client::Feedback> feedback[m[K)
+      |                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:[m[K In constructor ‘[01m[Kcharuco_dectet::charuco_dectet()[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:66:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::DetectorParameters[m[K’
+   66 |             DetectorParameters=cv::aruco::DetectorParameters::[01;31m[Kcreate[m[K();
+      |                                                               [01;31m[K^~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:88:70:[m[K [01;31m[Kerror: [m[K‘[01m[KPREDEFINED_DICTIONARY_NAME[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+   88 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::[01;31m[KPREDEFINED_DICTIONARY_NAME[m[K(dictionary_id));
+      |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:89:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::CharucoBoard[m[K’
+   89 |             charuco_board=cv::aruco::CharucoBoard::[01;31m[Kcreate[m[K(squaresX,squaresY,squareLength,markerLength,dictionary);
+      |                                                    [01;31m[K^~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:95:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::aruco::CharucoBoard[m[K’ has no member named ‘[01m[Kdraw[m[K’
+   95 |             charuco_board->[01;31m[Kdraw[m[K(cv::Size(1080,720),board_img,10,1);
+      |                            [01;31m[K^~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In constructor ‘[01m[Karuco_dectet::aruco_dectet()[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:49:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::DetectorParameters[m[K’
+   49 |             DetectorParameters=cv::aruco::DetectorParameters::[01;31m[Kcreate[m[K();
+      |                                                               [01;31m[K^~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:70:70:[m[K [01;31m[Kerror: [m[K‘[01m[KPREDEFINED_DICTIONARY_NAME[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+   70 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::[01;31m[KPREDEFINED_DICTIONARY_NAME[m[K(dictionary_id));
+      |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:[m[K In member function ‘[01m[Kvoid obj_grab::start_grab(std::shared_ptr<grab_demo::srv::GrabObject_Request_<std::allocator<void> > >, std::shared_ptr<grab_demo::srv::GrabObject_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:49:144:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   49 | void obj_grab::start_grab(const std::shared_ptr<grab_demo::srv::GrabObject::Request> req,[01;35m[Kstd::shared_ptr<grab_demo::srv::GrabObject::Response> res[m[K)
+      |                                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

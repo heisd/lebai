@@ -1,0 +1,61 @@
+[0.026s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.284s] [35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[0.316s] [  2%] Built target grab_demo__cpp
+[0.346s] [  8%] Built target grab_demo__rosidl_generator_c
+[0.359s] [  8%] Built target ament_cmake_python_copy_grab_demo
+[0.415s] [ 12%] Built target charuco_dectet_node
+[0.428s] [ 19%] Built target grab_demo__rosidl_typesupport_cpp
+[0.428s] [ 23%] Built target aruco_dectet
+[0.433s] [ 27%] Built target hsv_range
+[0.455s] [ 31%] Built target camera_info_node
+[0.465s] [ 36%] Built target hand_eye
+[0.504s] [ 42%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.522s] [ 48%] Built target grab_demo__rosidl_typesupport_c
+[0.532s] [ 55%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.533s] [ 61%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.553s] [ 68%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.591s] [35m[1mConsolidate compiler generated dependencies of target start_grab[0m
+[0.643s] [ 68%] Built target grab_demo
+[0.644s] [ 70%] [32mBuilding CXX object CMakeFiles/grab_service_node.dir/src/grab_service_node.cpp.o[0m
+[0.662s] [ 74%] Built target nav_grab
+[0.706s] [ 76%] [32mBuilding CXX object CMakeFiles/start_grab.dir/src/start_grab.cpp.o[0m
+[0.738s] [ 78%] Built target grab_demo__py
+[0.865s] [ 82%] Built target grab_demo__rosidl_generator_py
+[0.934s] [ 87%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[0.982s] [ 91%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[1.009s] [ 95%] Built target grab_demo__rosidl_typesupport_c__pyext
+[1.241s] running egg_info
+[1.245s] writing grab_demo.egg-info/PKG-INFO
+[1.246s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.246s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.258s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.261s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.360s] [ 95%] Built target ament_cmake_python_build_grab_demo_egg
+[28.388s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[28.392s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[28.393s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[28.393s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[28.393s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[28.393s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[28.393s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[28.396s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[28.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[28.397s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[28.397s]                  from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:1[m[K:
+[28.398s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:30:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+[28.398s]    30 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(),"object_grab_node is running");
+[28.398s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[28.400s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:30:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+[28.400s]    30 |     [01;31m[KRCLCPP_INFO[m[K(get_logger(),"object_grab_node is running");
+[28.400s]       |     [01;31m[K^~~~~~~~~~~[m[K
+[28.490s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:[m[K In member function ‘[01m[Kvoid obj_grab::start_grab(std::shared_ptr<grab_demo::srv::GrabObject_Request_<std::allocator<void> > >, std::shared_ptr<grab_demo::srv::GrabObject_Response_<std::allocator<void> > >)[m[K’:
+[28.491s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:52:144:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[28.492s]    52 | void obj_grab::start_grab(const std::shared_ptr<grab_demo::srv::GrabObject::Request> req,[01;35m[Kstd::shared_ptr<grab_demo::srv::GrabObject::Response> res[m[K)
+[28.494s]       |                                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[50.368s] gmake[2]: *** [CMakeFiles/grab_service_node.dir/build.make:76：CMakeFiles/grab_service_node.dir/src/grab_service_node.cpp.o] 错误 1
+[50.372s] gmake[1]: *** [CMakeFiles/Makefile2:711：CMakeFiles/grab_service_node.dir/all] 错误 2
+[50.372s] gmake[1]: *** 正在等待未完成的任务....
+[77.454s] [ 97%] [32m[1mLinking CXX executable start_grab[0m
+[78.799s] [ 97%] Built target start_grab
+[78.813s] gmake: *** [Makefile:146：all] 错误 2
+[78.906s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

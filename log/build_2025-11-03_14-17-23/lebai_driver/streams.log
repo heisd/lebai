@@ -1,0 +1,115 @@
+[2.131s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver': PYTHONPATH=/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lebai_driver build --build-base /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build install --record /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log --single-version-externally-managed install_data
+[2.789s] running egg_info
+[2.791s] creating ../../../build/lebai_driver/lebai_driver.egg-info
+[2.791s] writing ../../../build/lebai_driver/lebai_driver.egg-info/PKG-INFO
+[2.792s] writing dependency_links to ../../../build/lebai_driver/lebai_driver.egg-info/dependency_links.txt
+[2.792s] writing entry points to ../../../build/lebai_driver/lebai_driver.egg-info/entry_points.txt
+[2.793s] writing top-level names to ../../../build/lebai_driver/lebai_driver.egg-info/top_level.txt
+[2.793s] writing manifest file '../../../build/lebai_driver/lebai_driver.egg-info/SOURCES.txt'
+[2.798s] reading manifest file '../../../build/lebai_driver/lebai_driver.egg-info/SOURCES.txt'
+[2.800s] writing manifest file '../../../build/lebai_driver/lebai_driver.egg-info/SOURCES.txt'
+[2.800s] running build
+[2.800s] running build_py
+[2.800s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build
+[2.801s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib
+[2.801s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver
+[2.801s] copying lebai_driver/param_utils.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver
+[2.801s] copying lebai_driver/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver
+[2.801s] copying lebai_driver/urdf_helper.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver
+[2.802s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion
+[2.802s] copying lebai_driver/motion/motion_service_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion
+[2.802s] copying lebai_driver/motion/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion
+[2.802s] copying lebai_driver/motion/trajectory_action_server.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion
+[2.803s] copying lebai_driver/motion/motion_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion
+[2.803s] copying lebai_driver/motion/tp_trajectory_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion
+[2.804s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/io_service
+[2.804s] copying lebai_driver/io_service/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/io_service
+[2.804s] copying lebai_driver/io_service/io_service_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/io_service
+[2.804s] copying lebai_driver/io_service/io_service_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/io_service
+[2.805s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.805s] copying lebai_driver/robot_state/gripper_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.805s] copying lebai_driver/robot_state/robot_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.806s] copying lebai_driver/robot_state/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.806s] copying lebai_driver/robot_state/io_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.806s] copying lebai_driver/robot_state/joint_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.806s] copying lebai_driver/robot_state/robot_state_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.806s] copying lebai_driver/robot_state/robot_state_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state
+[2.807s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/system_service
+[2.807s] copying lebai_driver/system_service/system_service_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/system_service
+[2.807s] copying lebai_driver/system_service/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/system_service
+[2.807s] copying lebai_driver/system_service/system_service_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/system_service
+[2.811s] running install
+[2.812s] running install_lib
+[2.812s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver
+[2.813s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion
+[2.813s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion/motion_service_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion
+[2.813s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion
+[2.814s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion/trajectory_action_server.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion
+[2.814s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion/motion_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion
+[2.814s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/motion/tp_trajectory_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion
+[2.814s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/param_utils.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver
+[2.814s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver
+[2.814s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/io_service
+[2.815s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/io_service/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/io_service
+[2.815s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/io_service/io_service_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/io_service
+[2.815s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/io_service/io_service_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/io_service
+[2.815s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/urdf_helper.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver
+[2.815s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.816s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state/gripper_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.816s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state/robot_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.816s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.817s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state/io_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.817s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state/joint_state_handler.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.817s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state/robot_state_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.817s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/robot_state/robot_state_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state
+[2.818s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/system_service
+[2.818s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/system_service/system_service_node.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/system_service
+[2.819s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/system_service/__init__.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/system_service
+[2.819s] copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/system_service/system_service_interface.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/system_service
+[2.819s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion/motion_service_interface.py to motion_service_interface.cpython-310.pyc
+[2.821s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion/__init__.py to __init__.cpython-310.pyc
+[2.821s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion/trajectory_action_server.py to trajectory_action_server.cpython-310.pyc
+[2.823s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion/motion_node.py to motion_node.cpython-310.pyc
+[2.824s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/motion/tp_trajectory_handler.py to tp_trajectory_handler.cpython-310.pyc
+[2.825s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/param_utils.py to param_utils.cpython-310.pyc
+[2.826s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/__init__.py to __init__.cpython-310.pyc
+[2.826s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/io_service/__init__.py to __init__.cpython-310.pyc
+[2.826s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/io_service/io_service_node.py to io_service_node.cpython-310.pyc
+[2.827s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/io_service/io_service_interface.py to io_service_interface.cpython-310.pyc
+[2.828s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/urdf_helper.py to urdf_helper.cpython-310.pyc
+[2.829s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state/gripper_state_handler.py to gripper_state_handler.cpython-310.pyc
+[2.830s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state/robot_state_handler.py to robot_state_handler.cpython-310.pyc
+[2.830s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state/__init__.py to __init__.cpython-310.pyc
+[2.831s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state/io_state_handler.py to io_state_handler.cpython-310.pyc
+[2.833s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state/joint_state_handler.py to joint_state_handler.cpython-310.pyc
+[2.833s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state/robot_state_node.py to robot_state_node.cpython-310.pyc
+[2.833s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/robot_state/robot_state_interface.py to robot_state_interface.cpython-310.pyc
+[2.834s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/system_service/system_service_node.py to system_service_node.cpython-310.pyc
+[2.835s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/system_service/__init__.py to __init__.cpython-310.pyc
+[2.839s] byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/system_service/system_service_interface.py to system_service_interface.cpython-310.pyc
+[2.839s] running install_data
+[2.840s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/ament_index
+[2.840s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/ament_index/resource_index
+[2.840s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/ament_index/resource_index/packages
+[2.840s] copying resource/lebai_driver -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/ament_index/resource_index/packages
+[2.840s] copying package.xml -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver
+[2.840s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/launch
+[2.841s] copying launch/system_service.launch.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/launch
+[2.841s] copying launch/robot_interface.launch.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/launch
+[2.841s] copying launch/io_service.launch.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/launch
+[2.841s] copying launch/robot_state.launch.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/launch
+[2.841s] copying launch/motion.launch.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/launch
+[2.841s] creating /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/config
+[2.841s] copying config/joint_names_two_lm3.yaml -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/config
+[2.841s] copying config/joint_names_lm3 copy.yaml -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/config
+[2.842s] copying config/joint_names_lm3.yaml -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/config
+[2.842s] copying config/joint_names_gripper.yaml -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/share/lebai_driver/config
+[2.842s] running install_egg_info
+[2.848s] Copying ../../../build/lebai_driver/lebai_driver.egg-info to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver-0.0.1-py3.10.egg-info
+[2.849s] running install_scripts
+[2.900s] Installing io_service script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.900s] Installing motion script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.900s] Installing robot_state script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.900s] Installing system_service script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+[2.902s] writing list of installed files to '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log'
+[2.990s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_driver' returned '0': PYTHONPATH=/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/lebai_driver build --build-base /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build install --record /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log --single-version-externally-managed install_data

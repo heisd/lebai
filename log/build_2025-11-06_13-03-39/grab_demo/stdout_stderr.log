@@ -1,0 +1,56 @@
+[  2%] Built target grab_demo__cpp
+[  8%] Built target grab_demo__rosidl_generator_c
+[ 12%] Built target hsv_range
+[ 12%] Built target ament_cmake_python_copy_grab_demo
+[ 17%] Built target charuco_dectet_node
+[ 21%] Built target hand_eye
+[ 23%] [32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o[0m
+[ 29%] Built target grab_demo__rosidl_typesupport_cpp
+[ 34%] Built target camera_info_node
+[ 40%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 53%] Built target grab_demo__rosidl_typesupport_introspection_c
+[ 59%] Built target grab_demo__rosidl_typesupport_c
+[ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[ 70%] Built target grab_service_node
+[ 74%] Built target start_grab
+[ 78%] Built target nav_grab
+[ 78%] Built target grab_demo
+[ 80%] Built target grab_demo__py
+[ 85%] Built target grab_demo__rosidl_generator_py
+[ 89%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[ 93%] Built target grab_demo__rosidl_typesupport_c__pyext
+[ 97%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing grab_demo.egg-info/PKG-INFO
+writing dependency_links to grab_demo.egg-info/dependency_links.txt
+writing top-level names to grab_demo.egg-info/top_level.txt
+reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_grab_demo_egg
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In constructor ‘[01m[Karuco_dectet::aruco_dectet()[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:96:121:[m[K [01;31m[Kerror: [m[K‘[01m[Krgb_info_callback[m[K’ is not a member of ‘[01m[Karuco_dectet[m[K’
+   96 |             camera_info_sub=create_subscription<sensor_msgs::msg::CameraInfo>(rgb_image_info,1,std::bind(&aruco_dectet::[01;31m[Krgb_info_callback[m[K,this,std::placeholders::_1));
+      |                                                                                                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K At global scope:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:113:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid aruco_dectet::rgb_image_callback(const ConstSharedPtr&)[m[K’
+  113 | void [01;31m[Karuco_dectet[m[K::rgb_image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg)
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:113:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid aruco_dectet::rgb_image_callback(const ConstSharedPtr&)[m[K’
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass aruco_dectet[m[K’ defined here
+   18 | class [01;36m[Karuco_dectet[m[K:public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:170:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid aruco_dectet::rgb_info_callback(const ConstSharedPtr&)[m[K’
+  170 | void [01;31m[Karuco_dectet[m[K::rgb_info_callback(const sensor_msgs::msg::CameraInfo::ConstSharedPtr &msg)
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:170:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid aruco_dectet::rgb_info_callback(const ConstSharedPtr&)[m[K’
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:18:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass aruco_dectet[m[K’ defined here
+   18 | class [01;36m[Karuco_dectet[m[K:public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In member function ‘[01m[Kvoid aruco_dectet::start_devtet()[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:219:94:[m[K [01;31m[Kerror: [m[K‘[01m[Krgb_image_callback[m[K’ is not a member of ‘[01m[Karuco_dectet[m[K’
+  219 |     image_sub=image_transport_ptr_sub->subscribe(rgb_image_topic,10,std::bind(&aruco_dectet::[01;31m[Krgb_image_callback[m[K,this,std::placeholders::_1));
+      |                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

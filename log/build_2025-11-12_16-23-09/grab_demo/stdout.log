@@ -1,0 +1,34 @@
+[35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[  2%] Built target grab_demo__cpp
+[  8%] Built target grab_demo__rosidl_generator_c
+[  8%] Built target ament_cmake_python_copy_grab_demo
+[ 12%] Built target charuco_dectet_node
+[ 19%] Built target grab_demo__rosidl_typesupport_cpp
+[ 23%] Built target aruco_dectet
+[ 27%] Built target hsv_range
+[ 31%] Built target camera_info_node
+[ 36%] Built target hand_eye
+[ 42%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 48%] Built target grab_demo__rosidl_typesupport_c
+[ 55%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 61%] Built target grab_demo__rosidl_typesupport_introspection_c
+[ 68%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target start_grab[0m
+[ 68%] Built target grab_demo
+[ 70%] [32mBuilding CXX object CMakeFiles/grab_service_node.dir/src/grab_service_node.cpp.o[0m
+[ 74%] Built target nav_grab
+[ 76%] [32mBuilding CXX object CMakeFiles/start_grab.dir/src/start_grab.cpp.o[0m
+[ 78%] Built target grab_demo__py
+[ 82%] Built target grab_demo__rosidl_generator_py
+[ 87%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[ 91%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[ 95%] Built target grab_demo__rosidl_typesupport_c__pyext
+running egg_info
+writing grab_demo.egg-info/PKG-INFO
+writing dependency_links to grab_demo.egg-info/dependency_links.txt
+writing top-level names to grab_demo.egg-info/top_level.txt
+reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_grab_demo_egg
+[ 97%] [32m[1mLinking CXX executable start_grab[0m
+[ 97%] Built target start_grab

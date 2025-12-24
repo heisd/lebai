@@ -1,0 +1,44 @@
+[0.034s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.249s] [35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[0.286s] [  2%] Built target grab_demo__cpp
+[0.288s] [  8%] Built target grab_demo__rosidl_generator_c
+[0.315s] [  8%] Built target ament_cmake_python_copy_grab_demo
+[0.338s] [ 10%] [32mBuilding CXX object CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o[0m
+[0.343s] [ 14%] Built target charuco_dectet_node
+[0.365s] [ 21%] Built target aruco_dectet
+[0.365s] [ 23%] Built target camera_info_node
+[0.387s] [ 29%] Built target grab_demo__rosidl_typesupport_cpp
+[0.408s] [ 34%] Built target hand_eye
+[0.415s] [ 40%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.441s] [ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.441s] [ 53%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.477s] [ 59%] Built target grab_demo__rosidl_typesupport_c
+[0.497s] [ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.561s] [ 70%] Built target start_grab
+[0.565s] [ 74%] Built target grab_service_node
+[0.576s] [ 78%] Built target nav_grab
+[0.585s] [ 78%] Built target grab_demo
+[0.652s] [ 80%] Built target grab_demo__py
+[0.724s] [ 85%] Built target grab_demo__rosidl_generator_py
+[0.790s] [ 91%] Built target grab_demo__rosidl_typesupport_c__pyext
+[0.791s] [ 93%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[0.794s] [ 97%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[1.038s] running egg_info
+[1.040s] writing grab_demo.egg-info/PKG-INFO
+[1.041s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.041s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.047s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.048s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.128s] [ 97%] Built target ament_cmake_python_build_grab_demo_egg
+[10.125s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::imageCallback(const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[10.126s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:141:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+[10.126s]   141 |             [01;31m[Kz[m[K += z_offset;
+[10.126s]       |             [01;31m[K^[m[K
+[10.136s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::updateDebugInfo(double, double, double, cv::Point, double)[m[K’:
+[10.136s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:168:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[10.136s]   168 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, [01;35m[Kdouble x_offset[m[K)
+[10.136s]       |                                                                           [01;35m[K~~~~~~~^~~~~~~~[m[K
+[20.552s] gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:76：CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o] 错误 1
+[20.553s] gmake[1]: *** [CMakeFiles/Makefile2:658：CMakeFiles/hsv_range.dir/all] 错误 2
+[20.553s] gmake: *** [Makefile:146：all] 错误 2
+[20.600s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

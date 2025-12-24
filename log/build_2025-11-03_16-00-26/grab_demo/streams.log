@@ -1,0 +1,52 @@
+[0.035s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.230s] [  2%] [32mBuilding CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o[0m
+[0.256s] [  4%] Built target grab_demo__cpp
+[0.267s] [  6%] [32m[1mLinking CXX executable hsv_range[0m
+[0.268s] [ 12%] Built target grab_demo__rosidl_generator_c
+[0.285s] [ 14%] [32mBuilding CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o[0m
+[0.296s] [ 14%] Built target ament_cmake_python_copy_grab_demo
+[0.346s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_cpp[0m
+[0.358s] [ 17%] [32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o[0m
+[0.372s] [ 21%] Built target camera_info_node
+[0.409s] [ 27%] Built target grab_demo__rosidl_typesupport_cpp
+[0.432s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_c[0m
+[0.492s] [ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[0.501s] [ 36%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.587s] [ 38%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[0.992s] /usr/bin/ld: warning: libopencv_imgproc.so.413, needed by /home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/cv_bridge/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[0.993s] /usr/bin/ld: warning: libopencv_core.so.413, needed by /home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/cv_bridge/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[1.023s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /lib/aarch64-linux-gnu/libopencv_imgcodecs.so.413, may conflict with libopencv_imgproc.so.410
+[1.073s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /lib/aarch64-linux-gnu/libopencv_imgcodecs.so.413, may conflict with libopencv_core.so.410
+[1.544s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[1.545s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:8:10:[m[K [01;31m[Kfatal error: [m[Kopencv4/opencv2/aruco/charuco.hpp: 没有那个文件或目录
+[1.546s]     8 | #include [01;31m[K<opencv4/opencv2/aruco/charuco.hpp>[m[K
+[1.547s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.548s] compilation terminated.
+[1.559s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hand_eye.cpp:1[m[K:
+[1.559s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/hand_eye.hpp:9:10:[m[K [01;31m[Kfatal error: [m[Kopencv4/opencv2/aruco/charuco.hpp: 没有那个文件或目录
+[1.559s]     9 | #include [01;31m[K<opencv4/opencv2/aruco/charuco.hpp>[m[K
+[1.559s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.560s] compilation terminated.
+[1.567s] gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+[1.567s] gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+[1.567s] gmake[1]: *** 正在等待未完成的任务....
+[1.577s] gmake[2]: *** [CMakeFiles/hand_eye.dir/build.make:76：CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o] 错误 1
+[1.577s] gmake[1]: *** [CMakeFiles/Makefile2:632：CMakeFiles/hand_eye.dir/all] 错误 2
+[1.580s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kopencv4/opencv2/aruco/charuco.hpp: 没有那个文件或目录
+[1.581s]     6 | #include [01;31m[K<opencv4/opencv2/aruco/charuco.hpp>[m[K
+[1.581s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.581s] compilation terminated.
+[1.594s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[1.595s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[1.610s] [ 40%] [32mBuilding C object CMakeFiles/grab_demo__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/grab_demo/srv/detail/grab_object__type_support.c.o[0m
+[1.625s] [ 42%] [32mBuilding CXX object CMakeFiles/grab_demo__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/grab_demo/srv/detail/dds_fastrtps/grab_object__type_support.cpp.o[0m
+[1.793s] [ 44%] [32m[1mLinking C shared library libgrab_demo__rosidl_typesupport_introspection_c.so[0m
+[1.867s] [ 44%] Built target grab_demo__rosidl_typesupport_introspection_c
+[2.422s] /usr/bin/ld: /home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/cv_bridge/lib/libcv_bridge.so: undefined reference to `cv::cvtColor(cv::_InputArray const&, cv::_OutputArray const&, int, int, cv::AlgorithmHint)'
+[2.462s] collect2: error: ld returned 1 exit status
+[2.467s] gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:264：hsv_range] 错误 1
+[2.467s] gmake[1]: *** [CMakeFiles/Makefile2:658：CMakeFiles/hsv_range.dir/all] 错误 2
+[2.706s] [ 46%] [32m[1mLinking CXX shared library libgrab_demo__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.900s] [ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[2.903s] gmake: *** [Makefile:146：all] 错误 2
+[2.909s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

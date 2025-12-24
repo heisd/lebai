@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lebai_interfaces/msg/GripperStatus.msg
+// generated code does not contain a copyright notice
+
+
+module lebai_interfaces {
+  module msg {
+    struct GripperStatus {
+      double position;
+
+      double force;
+    };
+  };
+};

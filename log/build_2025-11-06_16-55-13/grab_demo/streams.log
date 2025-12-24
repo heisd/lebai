@@ -1,0 +1,42 @@
+[0.054s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble PS1=\n(TraeAI-5) \w [$?] $ __trae_PS1=\n(TraeAI-5) \w [$?] $ /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.471s] [35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[0.507s] [  2%] Built target grab_demo__cpp
+[0.532s] [  2%] Built target ament_cmake_python_copy_grab_demo
+[0.554s] [  8%] Built target grab_demo__rosidl_generator_c
+[0.608s] [ 10%] [32mBuilding CXX object CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o[0m
+[0.609s] [ 14%] Built target charuco_dectet_node
+[0.646s] [ 19%] Built target camera_info_node
+[0.680s] [ 23%] Built target aruco_dectet
+[0.692s] [ 29%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.700s] [ 34%] Built target hand_eye
+[0.722s] [ 40%] Built target grab_demo__rosidl_typesupport_cpp
+[0.770s] [ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.789s] [ 53%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.832s] [ 59%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.843s] [ 65%] Built target grab_demo__rosidl_typesupport_c
+[0.866s] [35m[1mConsolidate compiler generated dependencies of target start_grab[0m
+[0.969s] [ 65%] Built target grab_demo
+[0.999s] [ 70%] Built target nav_grab
+[1.020s] [ 74%] Built target start_grab
+[1.043s] [ 78%] Built target grab_service_node
+[1.084s] [ 80%] Built target grab_demo__py
+[1.222s] [ 85%] Built target grab_demo__rosidl_generator_py
+[1.363s] [ 89%] Built target grab_demo__rosidl_typesupport_c__pyext
+[1.403s] [ 93%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[1.412s] [ 97%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[2.305s] running egg_info
+[2.307s] writing grab_demo.egg-info/PKG-INFO
+[2.310s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[2.311s] writing top-level names to grab_demo.egg-info/top_level.txt
+[2.320s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[2.322s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[2.440s] [ 97%] Built target ament_cmake_python_build_grab_demo_egg
+[12.035s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In static member function ‘[01m[Kstatic void ImageProcessor::onTrackbar(int, void*)[m[K’:
+[12.036s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:55:37:[m[K [01;31m[Kerror: [m[K‘[01m[KgetTrackbarName[m[K’ is not a member of ‘[01m[Kcv[m[K’; did you mean ‘[01m[KsetTrackbarMax[m[K’?
+[12.036s]    55 |     std::string trackbar_name = cv::[01;31m[KgetTrackbarName[m[K("", "RGB Image");
+[12.037s]       |                                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[12.037s]       |                                     [32m[KsetTrackbarMax[m[K
+[23.252s] gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:76：CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o] 错误 1
+[23.259s] gmake[1]: *** [CMakeFiles/Makefile2:658：CMakeFiles/hsv_range.dir/all] 错误 2
+[23.264s] gmake: *** [Makefile:146：all] 错误 2
+[23.384s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble PS1=\n(TraeAI-5) \w [$?] $ __trae_PS1=\n(TraeAI-5) \w [$?] $ /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

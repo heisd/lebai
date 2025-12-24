@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:29 (find_package):
+  By not providing "Findlebai_interfaces.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "lebai_interfaces", but CMake did not find one.
+
+  Could not find a package configuration file provided by "lebai_interfaces"
+  with any of the following names:
+
+    lebai_interfacesConfig.cmake
+    lebai_interfaces-config.cmake
+
+  Add the installation prefix of "lebai_interfaces" to CMAKE_PREFIX_PATH or
+  set "lebai_interfaces_DIR" to a directory containing one of the above
+  files.  If "lebai_interfaces" provides a separate development package or
+  SDK, be sure it has been installed.
+
+[0m

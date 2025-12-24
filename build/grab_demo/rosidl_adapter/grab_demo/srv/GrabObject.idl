@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from grab_demo/srv/GrabObject.srv
+// generated code does not contain a copyright notice
+
+
+module grab_demo {
+  module srv {
+    struct GrabObject_Request {
+      string obj_link;
+    };
+    struct GrabObject_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

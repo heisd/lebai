@@ -1,0 +1,114 @@
+[0.112s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_lm3_support -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support
+[0.903s] -- The C compiler identification is GNU 11.4.0
+[0.903s] -- The CXX compiler identification is GNU 11.4.0
+[0.903s] -- Detecting C compiler ABI info
+[0.904s] -- Detecting C compiler ABI info - done
+[0.904s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.904s] -- Detecting C compile features
+[0.904s] -- Detecting C compile features - done
+[0.904s] -- Detecting CXX compiler ABI info
+[0.905s] -- Detecting CXX compiler ABI info - done
+[0.905s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.905s] -- Detecting CXX compile features
+[0.905s] -- Detecting CXX compile features - done
+[0.906s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.592s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.255s] -- Configuring done
+[2.272s] -- Generating done
+[2.284s] -- Build files have been written to: /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support
+[2.305s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/lebai-ros-sdk-humble-dev/lebai_lm3_support -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support
+[2.306s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support -- -j6 -l6
+[3.068s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support -- -j6 -l6
+[3.097s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support
+[3.118s] -- Install configuration: ""
+[3.118s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch
+[3.119s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch/standalone_lm3.launch.py
+[3.119s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch/robot_interface_lm3_l1.launch.py
+[3.119s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch/display_lm3_with_gripper.launch.py
+[3.119s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch/display_lm3_l1.launch.py
+[3.120s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch/robot_interface_lm3.launch.py
+[3.120s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch/display_lm3.launch.py
+[3.120s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/launch/display_lm3_l1_with_gripper.launch.py
+[3.120s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes
+[3.121s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3
+[3.121s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual
+[3.121s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/link2.stl
+[3.121s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/link6.stl
+[3.130s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/link4.stl
+[3.131s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/link3.stl
+[3.131s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/base_link.stl
+[3.131s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/link5.stl
+[3.131s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/link1.stl
+[3.132s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/s300_car_base_link.stl
+[3.158s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/visual/s300_mini_car_base_link.stl
+[3.175s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision
+[3.175s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/link2.stl
+[3.176s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/link6.stl
+[3.187s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/link4.stl
+[3.187s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/link3.stl
+[3.188s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/base_link.stl
+[3.188s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/link5.stl
+[3.190s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/link1.stl
+[3.190s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/s300_car_base_link.stl
+[3.213s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3/collision/s300_mini_car_base_link.stl
+[3.230s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper
+[3.230s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/visual
+[3.231s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/visual/gripper_base.stl
+[3.231s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/visual/gripper_link2.stl
+[3.232s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/visual/gripper_link1.stl
+[3.233s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/visual/gripper_link_finger.stl
+[3.233s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/collision
+[3.233s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/collision/gripper_base.stl
+[3.234s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/collision/gripper_link2.stl
+[3.235s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/collision/gripper_link1.stl
+[3.235s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/gripper/collision/gripper_link_finger.stl
+[3.236s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1
+[3.236s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual
+[3.237s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual/link2.stl
+[3.237s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual/link6.stl
+[3.238s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual/link4.stl
+[3.238s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual/link3.stl
+[3.239s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual/base_link.stl
+[3.239s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual/link5.stl
+[3.240s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/visual/link1.stl
+[3.240s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision
+[3.241s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision/link2.stl
+[3.241s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision/link6.stl
+[3.242s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision/link4.stl
+[3.242s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision/link3.stl
+[3.243s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision/base_link.stl
+[3.244s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision/link5.stl
+[3.245s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/meshes/lm3_l1/collision/link1.stl
+[3.245s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/config
+[3.245s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/config/joint_names_two_lm3.yaml
+[3.245s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/config/joint_names_lm3.yaml
+[3.246s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/config/joint_names_gripper.yaml
+[3.246s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/rviz
+[3.246s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/rviz/view.rviz
+[3.247s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf
+[3.247s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/lm3_with_gripper.xacro
+[3.247s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/lm3_l1_macro.xacro
+[3.248s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/lm3_l1.xacro
+[3.248s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/lm3_macro.xacro
+[3.248s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/lm3.urdf
+[3.249s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/gripper_macro.xacro
+[3.249s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/two_lm3.xacro
+[3.250s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/lm3.xacro
+[3.250s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/gripper.xacro
+[3.250s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/urdf/lm3_l1_with_gripper.xacro
+[3.251s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/ament_index/resource_index/package_run_dependencies/lebai_lm3_support
+[3.251s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/ament_index/resource_index/parent_prefix_path/lebai_lm3_support
+[3.253s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/environment/ament_prefix_path.sh
+[3.253s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/environment/ament_prefix_path.dsv
+[3.253s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/environment/path.sh
+[3.253s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/environment/path.dsv
+[3.253s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/local_setup.bash
+[3.254s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/local_setup.sh
+[3.254s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/local_setup.zsh
+[3.255s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/local_setup.dsv
+[3.255s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/package.dsv
+[3.255s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/ament_index/resource_index/packages/lebai_lm3_support
+[3.256s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/cmake/lebai_lm3_supportConfig.cmake
+[3.256s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/cmake/lebai_lm3_supportConfig-version.cmake
+[3.257s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_lm3_support/share/lebai_lm3_support/package.xml
+[3.264s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/opencv_tests:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_lm3_support

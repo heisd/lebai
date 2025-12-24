@@ -1,0 +1,29 @@
+[0.175s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble PS1=\n(TraeAI-5) \w [$?] $ __trae_PS1=\n(TraeAI-5) \w [$?] $ /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo -- -j6 -l6
+[1.865s] [35m[1mConsolidate compiler generated dependencies of target fk_demo[0m
+[1.865s] [35m[1mConsolidate compiler generated dependencies of target ik_demo[0m
+[1.865s] [ 50%] Built target fk_demo
+[1.865s] [100%] Built target ik_demo
+[2.052s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble PS1=\n(TraeAI-5) \w [$?] $ __trae_PS1=\n(TraeAI-5) \w [$?] $ /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo -- -j6 -l6
+[2.065s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble PS1=\n(TraeAI-5) \w [$?] $ __trae_PS1=\n(TraeAI-5) \w [$?] $ /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo
+[2.165s] -- Install configuration: "Release"
+[2.193s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/lib/arm_demo/fk_demo
+[2.193s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/lib/arm_demo/ik_demo
+[2.193s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/launch
+[2.197s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/launch/ik_demo.launch.py
+[2.197s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/launch/fk_demo.launch.py
+[2.197s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/ament_index/resource_index/package_run_dependencies/arm_demo
+[2.197s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/ament_index/resource_index/parent_prefix_path/arm_demo
+[2.198s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/ament_prefix_path.sh
+[2.198s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/ament_prefix_path.dsv
+[2.198s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/path.sh
+[2.198s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/path.dsv
+[2.198s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.bash
+[2.198s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.sh
+[2.198s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.zsh
+[2.199s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.dsv
+[2.199s] -- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/package.dsv
+[2.202s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/ament_index/resource_index/packages/arm_demo
+[2.219s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/cmake/arm_demoConfig.cmake
+[2.219s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/cmake/arm_demoConfig-version.cmake
+[2.219s] -- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/package.xml
+[2.399s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble PS1=\n(TraeAI-5) \w [$?] $ __trae_PS1=\n(TraeAI-5) \w [$?] $ /usr/bin/cmake --install /home/dxf/wheeltec_lebai_humble_2024_7_17/build/arm_demo

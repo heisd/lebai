@@ -1,0 +1,20 @@
+[  2%] [32mBuilding CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o[0m
+[  4%] Built target grab_demo__cpp
+[  6%] [32m[1mLinking CXX executable hsv_range[0m
+[ 12%] Built target grab_demo__rosidl_generator_c
+[ 14%] [32mBuilding CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o[0m
+[ 14%] Built target ament_cmake_python_copy_grab_demo
+[35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_cpp[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o[0m
+[ 21%] Built target camera_info_node
+[ 27%] Built target grab_demo__rosidl_typesupport_cpp
+[35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_c[0m
+[ 29%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 36%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 38%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 40%] [32mBuilding C object CMakeFiles/grab_demo__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/grab_demo/srv/detail/grab_object__type_support.c.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/grab_demo__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/grab_demo/srv/detail/dds_fastrtps/grab_object__type_support.cpp.o[0m
+[ 44%] [32m[1mLinking C shared library libgrab_demo__rosidl_typesupport_introspection_c.so[0m
+[ 44%] Built target grab_demo__rosidl_typesupport_introspection_c
+[ 46%] [32m[1mLinking CXX shared library libgrab_demo__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp

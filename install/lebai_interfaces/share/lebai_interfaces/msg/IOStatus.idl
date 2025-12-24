@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lebai_interfaces/msg/IOStatus.msg
+// generated code does not contain a copyright notice
+
+
+module lebai_interfaces {
+  module msg {
+    module IOStatus_Constants {
+      const uint8 VOLTAGETYPE = 0;
+      const uint8 CURRENTTYPE = 1;
+    };
+    struct IOStatus {
+      sequence<boolean> robot_din;
+
+      sequence<boolean> robot_dout;
+
+      sequence<float> robot_ain;
+
+      sequence<float> robot_aout;
+
+      sequence<uint8> robot_ain_type;
+
+      sequence<uint8> robot_aout_type;
+
+      sequence<boolean> flange_din;
+
+      sequence<boolean> flange_dout;
+
+      sequence<boolean> extend_din;
+
+      sequence<boolean> extend_dout;
+
+      sequence<float> extend_ain;
+
+      sequence<float> extend_aout;
+    };
+  };
+};

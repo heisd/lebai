@@ -1,0 +1,4 @@
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp: In member function ‘void charuco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:79:13: warning: unused variable ‘interpolatedCorners’ [-Wunused-variable]
+   79 |         int interpolatedCorners = charuco_corners.size();
+      |             ^~~~~~~~~~~~~~~~~~~

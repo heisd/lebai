@@ -1,0 +1,148 @@
+[  6%] Built target grab_demo__rosidl_generator_c
+[  8%] Built target grab_demo__cpp
+[ 12%] Built target hsv_range
+[ 14%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o
+[ 17%] Built target ament_cmake_python_copy_grab_demo
+[ 19%] Built target hand_eye
+[ 21%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o
+[ 27%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 34%] Built target grab_demo__rosidl_typesupport_cpp
+[ 38%] Built target camera_info_node
+[ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 51%] Built target grab_demo__rosidl_typesupport_c
+[ 57%] Built target grab_demo__rosidl_typesupport_introspection_c
+[ 63%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[ 68%] Built target nav_grab
+[ 76%] Built target grab_service_node
+[ 76%] Built target start_grab
+[ 76%] Built target grab_demo
+[ 78%] Built target grab_demo__py
+[ 82%] Built target grab_demo__rosidl_generator_py
+[ 87%] Built target grab_demo__rosidl_typesupport_c__pyext
+[ 91%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing grab_demo.egg-info/PKG-INFO
+writing dependency_links to grab_demo.egg-info/dependency_links.txt
+writing top-level names to grab_demo.egg-info/top_level.txt
+reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_grab_demo_egg
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:28:13: error: ‘aruco’ in namespace ‘cv’ does not name a type
+   28 |         cv::aruco::Dictionary dictionary;
+      |             ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:29:13: error: ‘aruco’ in namespace ‘cv’ does not name a type
+   29 |         cv::aruco::DetectorParameters detectorParams;
+      |             ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:30:21: error: ‘aruco’ is not a member of ‘cv’
+   30 |         cv::Ptr<cv::aruco::ArucoDetector> arucoDetector;
+      |                     ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:30:41: error: template argument 1 is invalid
+   30 |         cv::Ptr<cv::aruco::ArucoDetector> arucoDetector;
+      |                                         ^
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In constructor ‘aruco_dectet::aruco_dectet()’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:72:17: error: ‘cv::aruco’ has not been declared
+   72 |             cv::aruco::PredefinedDictionaryType dict_type;
+      |                 ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:74:25: error: ‘dict_type’ was not declared in this scope; did you mean ‘decltype’?
+   74 |                 case 0: dict_type = cv::aruco::DICT_4X4_50; break;
+      |                         ^~~~~~~~~
+      |                         decltype
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:74:41: error: ‘cv::aruco’ has not been declared
+   74 |                 case 0: dict_type = cv::aruco::DICT_4X4_50; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:75:41: error: ‘cv::aruco’ has not been declared
+   75 |                 case 1: dict_type = cv::aruco::DICT_4X4_100; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:76:41: error: ‘cv::aruco’ has not been declared
+   76 |                 case 2: dict_type = cv::aruco::DICT_4X4_250; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:77:41: error: ‘cv::aruco’ has not been declared
+   77 |                 case 3: dict_type = cv::aruco::DICT_4X4_1000; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:78:41: error: ‘cv::aruco’ has not been declared
+   78 |                 case 4: dict_type = cv::aruco::DICT_5X5_50; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:79:41: error: ‘cv::aruco’ has not been declared
+   79 |                 case 5: dict_type = cv::aruco::DICT_5X5_100; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:80:41: error: ‘cv::aruco’ has not been declared
+   80 |                 case 6: dict_type = cv::aruco::DICT_5X5_250; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:81:41: error: ‘cv::aruco’ has not been declared
+   81 |                 case 7: dict_type = cv::aruco::DICT_5X5_1000; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:82:41: error: ‘cv::aruco’ has not been declared
+   82 |                 case 8: dict_type = cv::aruco::DICT_6X6_50; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:83:41: error: ‘cv::aruco’ has not been declared
+   83 |                 case 9: dict_type = cv::aruco::DICT_6X6_100; break;
+      |                                         ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:84:42: error: ‘cv::aruco’ has not been declared
+   84 |                 case 10: dict_type = cv::aruco::DICT_6X6_250; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:85:42: error: ‘cv::aruco’ has not been declared
+   85 |                 case 11: dict_type = cv::aruco::DICT_6X6_1000; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:86:42: error: ‘cv::aruco’ has not been declared
+   86 |                 case 12: dict_type = cv::aruco::DICT_7X7_50; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:87:42: error: ‘cv::aruco’ has not been declared
+   87 |                 case 13: dict_type = cv::aruco::DICT_7X7_100; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:88:42: error: ‘cv::aruco’ has not been declared
+   88 |                 case 14: dict_type = cv::aruco::DICT_7X7_250; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:89:42: error: ‘cv::aruco’ has not been declared
+   89 |                 case 15: dict_type = cv::aruco::DICT_7X7_1000; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:90:42: error: ‘cv::aruco’ has not been declared
+   90 |                 case 16: dict_type = cv::aruco::DICT_ARUCO_ORIGINAL; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:91:42: error: ‘cv::aruco’ has not been declared
+   91 |                 default: dict_type = cv::aruco::DICT_6X6_250; break;
+      |                                          ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:13: error: ‘dictionary’ was not declared in this scope; did you mean ‘dictionary_id’?
+   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+      |             ^~~~~~~~~~
+      |             dictionary_id
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:30: error: ‘cv::aruco’ has not been declared
+   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+      |                              ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:61: error: ‘dict_type’ was not declared in this scope; did you mean ‘decltype’?
+   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);
+      |                                                             ^~~~~~~~~
+      |                                                             decltype
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:95:45: error: ‘aruco’ is not a member of ‘cv’
+   95 |             arucoDetector = cv::makePtr<cv::aruco::ArucoDetector>(dictionary, detectorParams);
+      |                                             ^~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:95:33: error: parse error in template argument list
+   95 |             arucoDetector = cv::makePtr<cv::aruco::ArucoDetector>(dictionary, detectorParams);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:95:79: error: ‘detectorParams’ was not declared in this scope
+   95 |             arucoDetector = cv::makePtr<cv::aruco::ArucoDetector>(dictionary, detectorParams);
+      |                                                                               ^~~~~~~~~~~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In member function ‘void aruco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:124:22: error: base operand of ‘->’ is not a pointer
+  124 |         arucoDetector->detectMarkers(image_rgb, marker_corners, aruco_ids);
+      |                      ^~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:136:21: error: ‘solvePnP’ is not a member of ‘cv’; did you mean ‘solveLP’?
+  136 |                 cv::solvePnP(objectPoints, marker_corners[0], camera_matrix, camera_dis, rvec, tvec);
+      |                     ^~~~~~~~
+      |                     solveLP
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:137:21: error: ‘Rodrigues’ is not a member of ‘cv’
+  137 |                 cv::Rodrigues(rvec, rotation_matrix);
+      |                     ^~~~~~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp: In member function ‘void charuco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:82:49: error: ‘estimatePoseCharucoBoard’ is not a member of ‘cv::aruco’
+   82 |                         valid_pose = cv::aruco::estimatePoseCharucoBoard(charuco_corners, charuco_ids, *charuco_board, camera_matrix, camera_dis,
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:78:13: warning: unused variable ‘interpolatedCorners’ [-Wunused-variable]
+   78 |         int interpolatedCorners = charuco_corners.size();
+      |             ^~~~~~~~~~~~~~~~~~~
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

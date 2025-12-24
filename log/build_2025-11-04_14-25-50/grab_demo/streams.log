@@ -1,0 +1,68 @@
+[0.035s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[0.341s] [  6%] Built target grab_demo__rosidl_generator_c
+[0.352s] Consolidate compiler generated dependencies of target charuco_dectet_node
+[0.362s] [  8%] Built target grab_demo__cpp
+[0.384s] [  8%] Built target ament_cmake_python_copy_grab_demo
+[0.403s] [ 12%] Built target hsv_range
+[0.410s] [ 14%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o
+[0.411s] Consolidate compiler generated dependencies of target aruco_dectet
+[0.447s] [ 19%] Built target hand_eye
+[0.462s] [ 21%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o
+[0.471s] [ 25%] Built target camera_info_node
+[0.477s] [ 31%] Built target grab_demo__rosidl_typesupport_cpp
+[0.489s] [ 38%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[0.541s] [ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[0.546s] [ 51%] Built target grab_demo__rosidl_typesupport_introspection_c
+[0.557s] [ 57%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[0.579s] [ 63%] Built target grab_demo__rosidl_typesupport_c
+[0.665s] [ 68%] Built target grab_service_node
+[0.706s] [ 76%] Built target nav_grab
+[0.707s] [ 72%] Built target start_grab
+[0.760s] [ 76%] Built target grab_demo
+[0.839s] [ 78%] Built target grab_demo__py
+[0.913s] [ 82%] Built target grab_demo__rosidl_generator_py
+[1.016s] [ 87%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[1.022s] [ 91%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[1.047s] [ 95%] Built target grab_demo__rosidl_typesupport_c__pyext
+[1.192s] running egg_info
+[1.193s] writing grab_demo.egg-info/PKG-INFO
+[1.194s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[1.194s] writing top-level names to grab_demo.egg-info/top_level.txt
+[1.201s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.202s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[1.299s] [ 95%] Built target ament_cmake_python_build_grab_demo_egg
+[10.124s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In member function ‘void aruco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+[10.128s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:136:21: error: ‘solvePnP’ is not a member of ‘cv’; did you mean ‘solveLP’?
+[10.129s]   136 |                 cv::solvePnP(objectPoints, marker_corners[0], camera_matrix, camera_dis, rvec, tvec);
+[10.129s]       |                     ^~~~~~~~
+[10.129s]       |                     solveLP
+[10.130s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:137:21: error: ‘Rodrigues’ is not a member of ‘cv’
+[10.130s]   137 |                 cv::Rodrigues(rvec, rotation_matrix);
+[10.130s]       |                     ^~~~~~~~~
+[11.275s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp: In member function ‘void charuco_dectet::rgb_image_callback(const ConstSharedPtr&)’:
+[11.276s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:84:40: error: ‘class cv::aruco::CharucoBoard’ has no member named ‘projectCharucoBoard’; did you mean ‘CharucoBoard’?
+[11.276s]    84 |                         charuco_board->projectCharucoBoard(camera_matrix, camera_dis, objectPoints);
+[11.277s]       |                                        ^~~~~~~~~~~~~~~~~~~
+[11.277s]       |                                        CharucoBoard
+[11.278s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:93:76: error: no matching function for call to ‘cv::aruco::CharucoBoard::getChessboardCorners(__gnu_cxx::__alloc_traits<std::allocator<int>, int>::value_type&, cv::Point3f&)’
+[11.278s]    93 |                                         charuco_board->getChessboardCorners(charuco_ids[i], pt3d);
+[11.278s]       |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+[11.278s] In file included from /usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_detector.hpp:8,
+[11.279s]                  from /usr/local/opencv410/include/opencv4/opencv2/objdetect.hpp:48,
+[11.279s]                  from /usr/include/opencv4/opencv2/opencv.hpp:80,
+[11.279s]                  from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,
+[11.279s]                  from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:
+[11.280s] /usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:167:34: note: candidate: ‘std::vector<cv::Point3_<float> > cv::aruco::CharucoBoard::getChessboardCorners() const’
+[11.280s]   167 |     CV_WRAP std::vector<Point3f> getChessboardCorners() const;
+[11.280s]       |                                  ^~~~~~~~~~~~~~~~~~~~
+[11.280s] /usr/local/opencv410/include/opencv4/opencv2/objdetect/aruco_board.hpp:167:34: note:   candidate expects 0 arguments, 2 provided
+[11.349s] /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:78:13: warning: unused variable ‘interpolatedCorners’ [-Wunused-variable]
+[11.349s]    78 |         int interpolatedCorners = charuco_corners.size();
+[11.349s]       |             ^~~~~~~~~~~~~~~~~~~
+[16.547s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[16.549s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[16.550s] gmake[1]: *** 正在等待未完成的任务....
+[20.825s] gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+[20.831s] gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+[20.837s] gmake: *** [Makefile:146：all] 错误 2
+[20.946s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

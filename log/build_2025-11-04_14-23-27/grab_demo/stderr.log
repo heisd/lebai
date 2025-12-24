@@ -1,0 +1,16 @@
+In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:7:
+/usr/include/opencv4/opencv2/aruco.hpp:44:10: fatal error: opencv2/aruco/dictionary.hpp: 没有那个文件或目录
+   44 | #include "opencv2/aruco/dictionary.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:2:
+/usr/include/opencv4/opencv2/aruco.hpp:44:10: fatal error: opencv2/aruco/dictionary.hpp: 没有那个文件或目录
+   44 | #include "opencv2/aruco/dictionary.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

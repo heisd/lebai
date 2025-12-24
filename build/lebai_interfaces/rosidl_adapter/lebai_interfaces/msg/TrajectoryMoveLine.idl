@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lebai_interfaces/msg/TrajectoryMoveLine.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "lebai_interfaces/msg/MoveCommon.idl"
+
+module lebai_interfaces {
+  module msg {
+    struct TrajectoryMoveLine {
+      lebai_interfaces::msg::MoveCommon common;
+
+      boolean is_joint_pose;
+
+      sequence<double> joint_pose;
+
+      geometry_msgs::msg::Pose cartesian_pose;
+    };
+  };
+};

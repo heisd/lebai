@@ -1,0 +1,457 @@
+[0.000000] (-) TimerEvent: {}
+[0.000621] (-) JobUnselected: {'identifier': 'arm_demo'}
+[0.000980] (-) JobUnselected: {'identifier': 'lebai_driver'}
+[0.001306] (-) JobUnselected: {'identifier': 'lebai_interfaces'}
+[0.001481] (-) JobUnselected: {'identifier': 'lebai_lm3_moveit_config'}
+[0.001568] (-) JobUnselected: {'identifier': 'lebai_lm3_support'}
+[0.001620] (-) JobUnselected: {'identifier': 'lebai_resources'}
+[0.001659] (-) JobUnselected: {'identifier': 'lebai_tutorials'}
+[0.001699] (grab_demo) JobQueued: {'identifier': 'grab_demo', 'dependencies': OrderedDict()}
+[0.001791] (grab_demo) JobStarted: {'identifier': 'grab_demo'}
+[0.030962] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'cmake'}
+[0.033468] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'build'}
+[0.035072] (grab_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', '--', '-j6', '-l6'], 'cwd': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/dxf'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.66 55755 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","messagesFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/5c17eb2968a37f66bc6662f48d6356a100b67be0/nls.messages.json","corruptMarkerFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"6fe284ae87274d9cb2cdffc89b193492.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/tcf.json","_cacheRoot":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn","_resolvedLanguagePackCoreLocation":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/5c17eb2968a37f66bc6662f48d6356a100b67be0","_corruptedFile":"/home/dxf/.cursor-server/data/clp/6fe284ae87274d9cb2cdffc89b193492.zh-cn/corrupted.info"}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/local/opencv410/lib:/usr/local/lib:/usr/local/cuda-12.6/lib64:/usr/local/opencv410/lib:/usr/local/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/serial/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/lib:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-540e1153-c3c9-4bd3-a392-a29dd083c6e4.sock'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('VSCODE_L10N_BUNDLE_LOCATION', 'vscode-local:/Users/liquanyan/.cursor/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.99.0-universal/translations/extensions/vscode.json-language-features.i18n.json'), ('COLCON_PREFIX_PATH', '/home/dxf/WHEELTEC_S300Pro_mini/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('FORCE_COLOR', '0'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:/usr/local/opencv410/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'dumb'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('COMPOSER_NO_INTERACTION', '1'), ('PATH', '/usr/local/cuda-12.6/bin:/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/dxf/.cursor-server/bin/5c17eb2968a37f66bc6662f48d6356a100b67be0/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('VSCODE_AGENT_FOLDER', '/home/dxf/.cursor-server'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CURSOR_AGENT', '1'), ('DISPLAY', 'localhost:11.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('VSCODE_SERVER_SHUTDOWN_TIMEOUT', '300'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('PWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'), ('SSH_CONNECTION', '192.168.0.66 55755 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2/lib/python3.10/site-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/opencv410:/usr/local/opencv410:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_std_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/yesense_interface:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_ultrasonic:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_slam_toolbox:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rviz2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_rrt_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rtab:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_rrt:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_kcf:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_path_follow:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_nav2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_mic_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_joy:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_cartographer:/home/dxf/WHEELTEC_S300Pro_mini/install/web_video_server:/home/dxf/WHEELTEC_S300Pro_mini/install/usb_cam:/home/dxf/WHEELTEC_S300Pro_mini/install/turn_on_wheeltec_robot:/home/dxf/WHEELTEC_S300Pro_mini/install/slam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader:/home/dxf/WHEELTEC_S300Pro_mini/install/serial:/home/dxf/WHEELTEC_S300Pro_mini/install/robot_interfaces:/home/dxf/WHEELTEC_S300Pro_mini/install/rm_description:/home/dxf/WHEELTEC_S300Pro_mini/install/qt_ros_test:/home/dxf/WHEELTEC_S300Pro_mini/install/orb_slam2_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/openslam_gmapping:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/lslidar_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_stl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ldlidar_sl_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/double_lidar_fusion:/home/dxf/WHEELTEC_S300Pro_mini/install/bodyreader_msg:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera:/home/dxf/WHEELTEC_S300Pro_mini/install/astra_camera_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_ros:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco_msgs:/home/dxf/WHEELTEC_S300Pro_mini/install/aruco:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble')]), 'shell': False}
+[0.098945] (-) TimerEvent: {}
+[0.199377] (-) TimerEvent: {}
+[0.299874] (-) TimerEvent: {}
+[0.326164] (grab_demo) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target charuco_dectet_node\n'}
+[0.349149] (grab_demo) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_grab_demo\n'}
+[0.359575] (grab_demo) StdoutLine: {'line': b'[  6%] Built target grab_demo__rosidl_generator_c\n'}
+[0.384200] (grab_demo) StdoutLine: {'line': b'[  8%] Built target grab_demo__cpp\n'}
+[0.400260] (-) TimerEvent: {}
+[0.404944] (grab_demo) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target hand_eye\n'}
+[0.428481] (grab_demo) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target aruco_dectet\n'}
+[0.457922] (grab_demo) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o\n'}
+[0.472256] (grab_demo) StdoutLine: {'line': b'[ 14%] Built target camera_info_node\n'}
+[0.500446] (-) TimerEvent: {}
+[0.502611] (grab_demo) StdoutLine: {'line': b'[ 19%] Built target hsv_range\n'}
+[0.515212] (grab_demo) StdoutLine: {'line': b'[ 21%] Building CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o\n'}
+[0.527391] (grab_demo) StdoutLine: {'line': b'[ 27%] Built target grab_demo__rosidl_typesupport_cpp\n'}
+[0.542665] (grab_demo) StdoutLine: {'line': b'[ 34%] Built target grab_demo__rosidl_typesupport_fastrtps_c\n'}
+[0.579737] (grab_demo) StdoutLine: {'line': b'[ 38%] Built target hand_eye\n'}
+[0.593125] (grab_demo) StdoutLine: {'line': b'[ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp\n'}
+[0.600628] (-) TimerEvent: {}
+[0.661878] (grab_demo) StdoutLine: {'line': b'[ 57%] Built target grab_demo__rosidl_typesupport_introspection_c\n'}
+[0.662355] (grab_demo) StdoutLine: {'line': b'[ 57%] Built target grab_demo__rosidl_typesupport_c\n'}
+[0.700787] (-) TimerEvent: {}
+[0.714143] (grab_demo) StdoutLine: {'line': b'[ 63%] Built target grab_demo__rosidl_typesupport_introspection_cpp\n'}
+[0.800950] (-) TimerEvent: {}
+[0.859812] (grab_demo) StdoutLine: {'line': b'[ 68%] Built target nav_grab\n'}
+[0.870930] (grab_demo) StdoutLine: {'line': b'[ 72%] Built target grab_service_node\n'}
+[0.901113] (-) TimerEvent: {}
+[0.928045] (grab_demo) StdoutLine: {'line': b'[ 76%] Built target start_grab\n'}
+[0.940778] (grab_demo) StdoutLine: {'line': b'[ 76%] Built target grab_demo\n'}
+[1.001281] (-) TimerEvent: {}
+[1.078700] (grab_demo) StdoutLine: {'line': b'[ 78%] Built target grab_demo__py\n'}
+[1.101455] (-) TimerEvent: {}
+[1.185992] (grab_demo) StdoutLine: {'line': b'[ 82%] Built target grab_demo__rosidl_generator_py\n'}
+[1.201714] (-) TimerEvent: {}
+[1.302104] (-) TimerEvent: {}
+[1.321779] (grab_demo) StdoutLine: {'line': b'[ 87%] Built target grab_demo__rosidl_typesupport_c__pyext\n'}
+[1.360544] (grab_demo) StdoutLine: {'line': b'[ 91%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext\n'}
+[1.371833] (grab_demo) StdoutLine: {'line': b'[ 95%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.402274] (-) TimerEvent: {}
+[1.423499] (grab_demo) StdoutLine: {'line': b'running egg_info\n'}
+[1.428600] (grab_demo) StdoutLine: {'line': b'writing grab_demo.egg-info/PKG-INFO\n'}
+[1.430049] (grab_demo) StdoutLine: {'line': b'writing dependency_links to grab_demo.egg-info/dependency_links.txt\n'}
+[1.431490] (grab_demo) StdoutLine: {'line': b'writing top-level names to grab_demo.egg-info/top_level.txt\n'}
+[1.447560] (grab_demo) StdoutLine: {'line': b"reading manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[1.449064] (grab_demo) StdoutLine: {'line': b"writing manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[1.502557] (-) TimerEvent: {}
+[1.562548] (grab_demo) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_grab_demo_egg\n'}
+[1.602768] (-) TimerEvent: {}
+[1.703215] (-) TimerEvent: {}
+[1.803804] (-) TimerEvent: {}
+[1.904220] (-) TimerEvent: {}
+[2.004650] (-) TimerEvent: {}
+[2.105071] (-) TimerEvent: {}
+[2.205486] (-) TimerEvent: {}
+[2.305918] (-) TimerEvent: {}
+[2.406364] (-) TimerEvent: {}
+[2.506807] (-) TimerEvent: {}
+[2.607232] (-) TimerEvent: {}
+[2.707694] (-) TimerEvent: {}
+[2.808143] (-) TimerEvent: {}
+[2.908584] (-) TimerEvent: {}
+[3.009029] (-) TimerEvent: {}
+[3.109471] (-) TimerEvent: {}
+[3.209910] (-) TimerEvent: {}
+[3.310333] (-) TimerEvent: {}
+[3.410758] (-) TimerEvent: {}
+[3.511216] (-) TimerEvent: {}
+[3.611710] (-) TimerEvent: {}
+[3.712163] (-) TimerEvent: {}
+[3.812720] (-) TimerEvent: {}
+[3.913159] (-) TimerEvent: {}
+[4.013620] (-) TimerEvent: {}
+[4.114079] (-) TimerEvent: {}
+[4.214534] (-) TimerEvent: {}
+[4.314964] (-) TimerEvent: {}
+[4.415398] (-) TimerEvent: {}
+[4.515893] (-) TimerEvent: {}
+[4.616362] (-) TimerEvent: {}
+[4.717023] (-) TimerEvent: {}
+[4.817475] (-) TimerEvent: {}
+[4.917941] (-) TimerEvent: {}
+[5.018406] (-) TimerEvent: {}
+[5.118877] (-) TimerEvent: {}
+[5.219342] (-) TimerEvent: {}
+[5.319820] (-) TimerEvent: {}
+[5.420285] (-) TimerEvent: {}
+[5.520738] (-) TimerEvent: {}
+[5.621853] (-) TimerEvent: {}
+[5.722988] (-) TimerEvent: {}
+[5.823416] (-) TimerEvent: {}
+[5.923879] (-) TimerEvent: {}
+[6.024307] (-) TimerEvent: {}
+[6.124770] (-) TimerEvent: {}
+[6.225249] (-) TimerEvent: {}
+[6.325699] (-) TimerEvent: {}
+[6.426156] (-) TimerEvent: {}
+[6.526596] (-) TimerEvent: {}
+[6.627048] (-) TimerEvent: {}
+[6.727512] (-) TimerEvent: {}
+[6.827991] (-) TimerEvent: {}
+[6.928458] (-) TimerEvent: {}
+[7.028933] (-) TimerEvent: {}
+[7.129400] (-) TimerEvent: {}
+[7.229849] (-) TimerEvent: {}
+[7.330281] (-) TimerEvent: {}
+[7.430733] (-) TimerEvent: {}
+[7.531166] (-) TimerEvent: {}
+[7.631627] (-) TimerEvent: {}
+[7.732109] (-) TimerEvent: {}
+[7.832571] (-) TimerEvent: {}
+[7.933049] (-) TimerEvent: {}
+[8.033470] (-) TimerEvent: {}
+[8.133919] (-) TimerEvent: {}
+[8.234424] (-) TimerEvent: {}
+[8.334868] (-) TimerEvent: {}
+[8.435375] (-) TimerEvent: {}
+[8.535821] (-) TimerEvent: {}
+[8.639826] (-) TimerEvent: {}
+[8.740274] (-) TimerEvent: {}
+[8.840718] (-) TimerEvent: {}
+[8.941147] (-) TimerEvent: {}
+[9.041569] (-) TimerEvent: {}
+[9.141992] (-) TimerEvent: {}
+[9.242425] (-) TimerEvent: {}
+[9.342861] (-) TimerEvent: {}
+[9.443289] (-) TimerEvent: {}
+[9.543736] (-) TimerEvent: {}
+[9.644164] (-) TimerEvent: {}
+[9.744598] (-) TimerEvent: {}
+[9.845121] (-) TimerEvent: {}
+[9.945554] (-) TimerEvent: {}
+[10.045980] (-) TimerEvent: {}
+[10.146413] (-) TimerEvent: {}
+[10.246868] (-) TimerEvent: {}
+[10.347317] (-) TimerEvent: {}
+[10.447781] (-) TimerEvent: {}
+[10.548223] (-) TimerEvent: {}
+[10.648840] (-) TimerEvent: {}
+[10.749289] (-) TimerEvent: {}
+[10.849895] (-) TimerEvent: {}
+[10.950395] (-) TimerEvent: {}
+[11.050844] (-) TimerEvent: {}
+[11.151289] (-) TimerEvent: {}
+[11.251759] (-) TimerEvent: {}
+[11.352292] (-) TimerEvent: {}
+[11.452927] (-) TimerEvent: {}
+[11.553401] (-) TimerEvent: {}
+[11.653887] (-) TimerEvent: {}
+[11.754337] (-) TimerEvent: {}
+[11.854822] (-) TimerEvent: {}
+[11.955293] (-) TimerEvent: {}
+[12.056062] (-) TimerEvent: {}
+[12.130068] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In constructor \xe2\x80\x98aruco_dectet::aruco_dectet()\xe2\x80\x99:\n'}
+[12.136350] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:70: error: no match for \xe2\x80\x98operator=\xe2\x80\x99 (operand types are \xe2\x80\x98cv::Ptr<cv::aruco::Dictionary>\xe2\x80\x99 and \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99)\n'}
+[12.137643] (grab_demo) StderrLine: {'line': b'   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[12.140026] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[12.141387] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[12.142782] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[12.144026] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[12.145452] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[12.146369] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5:\n'}
+[12.147788] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note: candidate: \xe2\x80\x98template<class Y> cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = Y; T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[12.148243] (grab_demo) StderrLine: {'line': b'  122 |     template<typename Y> inline Ptr& operator=(const Ptr<Y>& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.148445] (grab_demo) StderrLine: {'line': b'      |                                      ^~~~~~~~\n'}
+[12.148632] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note:   template argument deduction/substitution failed:\n'}
+[12.152168] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:93:70: note:   \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 is not derived from \xe2\x80\x98const cv::Ptr<_Tp>\xe2\x80\x99\n'}
+[12.152570] (grab_demo) StderrLine: {'line': b'   93 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[12.152823] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[12.153038] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[12.153200] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[12.153431] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[12.153696] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[12.154025] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:5:\n'}
+[12.154277] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:10: note: candidate: \xe2\x80\x98cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[12.160784] (-) TimerEvent: {}
+[12.160889] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.161090] (grab_demo) StderrLine: {'line': b'      |          ^~~~~~~~\n'}
+[12.161238] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:31: note:   no known conversion for argument 1 from \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 to \xe2\x80\x98const cv::Ptr<cv::aruco::Dictionary>&\xe2\x80\x99\n'}
+[12.161385] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.161514] (grab_demo) StderrLine: {'line': b'      |                    ~~~~~~~~~~~^\n'}
+[12.161641] (grab_demo) StderrLine: {'line': b'In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.161765] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp: In constructor \xe2\x80\x98charuco_dectet::charuco_dectet()\xe2\x80\x99:\n'}
+[12.161955] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:111:70: error: no match for \xe2\x80\x98operator=\xe2\x80\x99 (operand types are \xe2\x80\x98cv::Ptr<cv::aruco::Dictionary>\xe2\x80\x99 and \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99)\n'}
+[12.162222] (grab_demo) StderrLine: {'line': b'  111 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[12.162350] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[12.162473] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[12.162595] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[12.162713] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[12.162835] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[12.162952] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,\n'}
+[12.163075] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.163193] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note: candidate: \xe2\x80\x98template<class Y> cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<Y>&) [with Y = Y; T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[12.163347] (grab_demo) StderrLine: {'line': b'  122 |     template<typename Y> inline Ptr& operator=(const Ptr<Y>& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.163470] (grab_demo) StderrLine: {'line': b'      |                                      ^~~~~~~~\n'}
+[12.163588] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:122:38: note:   template argument deduction/substitution failed:\n'}
+[12.164506] (grab_demo) StderrLine: {'line': b'In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.165365] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:111:70: note:   \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 is not derived from \xe2\x80\x98const cv::Ptr<_Tp>\xe2\x80\x99\n'}
+[12.165522] (grab_demo) StderrLine: {'line': b'  111 |             dictionary = cv::aruco::getPredefinedDictionary(dict_type);\n'}
+[12.165661] (grab_demo) StderrLine: {'line': b'      |                                                                      ^\n'}
+[12.166995] (grab_demo) StderrLine: {'line': b'In file included from /usr/local/opencv410/include/opencv4/opencv2/core/cvstd.hpp:81,\n'}
+[12.167331] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core/base.hpp:58,\n'}
+[12.168302] (grab_demo) StderrLine: {'line': b'                 from /usr/local/opencv410/include/opencv4/opencv2/core.hpp:53,\n'}
+[12.168828] (grab_demo) StderrLine: {'line': b'                 from /usr/include/opencv4/opencv2/opencv.hpp:52,\n'}
+[12.169102] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:7,\n'}
+[12.169743] (grab_demo) StderrLine: {'line': b'                 from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.169903] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:10: note: candidate: \xe2\x80\x98cv::Ptr<T>& cv::Ptr<T>::operator=(const cv::Ptr<T>&) [with T = cv::aruco::Dictionary]\xe2\x80\x99\n'}
+[12.170280] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.171048] (grab_demo) StderrLine: {'line': b'      |          ^~~~~~~~\n'}
+[12.171890] (grab_demo) StderrLine: {'line': b'/usr/local/opencv410/include/opencv4/opencv2/core/cvstd_wrapper.hpp:121:31: note:   no known conversion for argument 1 from \xe2\x80\x98cv::aruco::Dictionary\xe2\x80\x99 to \xe2\x80\x98const cv::Ptr<cv::aruco::Dictionary>&\xe2\x80\x99\n'}
+[12.172560] (grab_demo) StderrLine: {'line': b'  121 |     Ptr& operator=(const Ptr& o) { std::shared_ptr<T>::operator =(o); return *this; }\n'}
+[12.172985] (grab_demo) StderrLine: {'line': b'      |                    ~~~~~~~~~~~^\n'}
+[12.173613] (grab_demo) StderrLine: {'line': b'In file included from /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1:\n'}
+[12.173785] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:119:28: error: \xe2\x80\x98class cv::aruco::CharucoBoard\xe2\x80\x99 has no member named \xe2\x80\x98draw\xe2\x80\x99\n'}
+[12.174348] (grab_demo) StderrLine: {'line': b'  119 |             charuco_board->draw(cv::Size(1080,720),board_img,10,1);\n'}
+[12.174859] (grab_demo) StderrLine: {'line': b'      |                            ^~~~\n'}
+[12.176264] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp: In member function \xe2\x80\x98void aruco_dectet::rgb_image_callback(const ConstSharedPtr&)\xe2\x80\x99:\n'}
+[12.177725] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:121:20: error: \xe2\x80\x98detectMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99; did you mean \xe2\x80\x98drawDetectedMarkers\xe2\x80\x99?\n'}
+[12.178302] (grab_demo) StderrLine: {'line': b'  121 |         cv::aruco::detectMarkers(image_rgb,dictionary,marker_corners,aruco_ids,DetectorParameters);\n'}
+[12.178844] (grab_demo) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~~\n'}
+[12.179002] (grab_demo) StderrLine: {'line': b'      |                    drawDetectedMarkers\n'}
+[12.180183] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:125:24: error: \xe2\x80\x98estimatePoseSingleMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99\n'}
+[12.181626] (grab_demo) StderrLine: {'line': b'  125 |             cv::aruco::estimatePoseSingleMarkers(marker_corners,markerLength,camera_matrix,camera_dis,rotation_matrix,pos_matrix);\n'}
+[12.182335] (grab_demo) StderrLine: {'line': b'      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[12.243339] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp: In member function \xe2\x80\x98void charuco_dectet::rgb_image_callback(const ConstSharedPtr&)\xe2\x80\x99:\n'}
+[12.243866] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:62:20: error: \xe2\x80\x98detectMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99; did you mean \xe2\x80\x98drawDetectedMarkers\xe2\x80\x99?\n'}
+[12.244046] (grab_demo) StderrLine: {'line': b'   62 |         cv::aruco::detectMarkers(image_rgb,dictionary,marker_corners,marker_ids,DetectorParameters,rejected_markers);\n'}
+[12.244197] (grab_demo) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~~\n'}
+[12.244333] (grab_demo) StderrLine: {'line': b'      |                    drawDetectedMarkers\n'}
+[12.244464] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:63:20: error: \xe2\x80\x98refineDetectedMarkers\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99; did you mean \xe2\x80\x98drawDetectedMarkers\xe2\x80\x99?\n'}
+[12.244639] (grab_demo) StderrLine: {'line': b'   63 |         cv::aruco::refineDetectedMarkers(image_rgb,charuco_board,marker_corners,marker_ids,rejected_markers,camera_matrix,camera_dis);\n'}
+[12.244828] (grab_demo) StderrLine: {'line': b'      |                    ^~~~~~~~~~~~~~~~~~~~~\n'}
+[12.244981] (grab_demo) StderrLine: {'line': b'      |                    drawDetectedMarkers\n'}
+[12.247808] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:67:54: error: \xe2\x80\x98interpolateCornersCharuco\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99\n'}
+[12.248162] (grab_demo) StderrLine: {'line': b'   67 |                     interpolatedCorners = cv::aruco::interpolateCornersCharuco(marker_corners, marker_ids, image_rgb, charuco_board, charuco_corners, charuco_ids,\n'}
+[12.248328] (grab_demo) StderrLine: {'line': b'      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[12.252096] (grab_demo) StderrLine: {'line': b'/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:72:49: error: \xe2\x80\x98estimatePoseCharucoBoard\xe2\x80\x99 is not a member of \xe2\x80\x98cv::aruco\xe2\x80\x99\n'}
+[12.252458] (grab_demo) StderrLine: {'line': b'   72 |                         valid_pose = cv::aruco::estimatePoseCharucoBoard(charuco_corners, charuco_ids, charuco_board, camera_matrix, camera_dis,\n'}
+[12.252621] (grab_demo) StderrLine: {'line': b'      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[12.260969] (-) TimerEvent: {}
+[12.361346] (-) TimerEvent: {}
+[12.461778] (-) TimerEvent: {}
+[12.562215] (-) TimerEvent: {}
+[12.662640] (-) TimerEvent: {}
+[12.763077] (-) TimerEvent: {}
+[12.863530] (-) TimerEvent: {}
+[12.963986] (-) TimerEvent: {}
+[13.064428] (-) TimerEvent: {}
+[13.164874] (-) TimerEvent: {}
+[13.265308] (-) TimerEvent: {}
+[13.365743] (-) TimerEvent: {}
+[13.466174] (-) TimerEvent: {}
+[13.566620] (-) TimerEvent: {}
+[13.667060] (-) TimerEvent: {}
+[13.767517] (-) TimerEvent: {}
+[13.867961] (-) TimerEvent: {}
+[13.968397] (-) TimerEvent: {}
+[14.070259] (-) TimerEvent: {}
+[14.170719] (-) TimerEvent: {}
+[14.271183] (-) TimerEvent: {}
+[14.371784] (-) TimerEvent: {}
+[14.472235] (-) TimerEvent: {}
+[14.572681] (-) TimerEvent: {}
+[14.673106] (-) TimerEvent: {}
+[14.773550] (-) TimerEvent: {}
+[14.873979] (-) TimerEvent: {}
+[14.974412] (-) TimerEvent: {}
+[15.074836] (-) TimerEvent: {}
+[15.175856] (-) TimerEvent: {}
+[15.276309] (-) TimerEvent: {}
+[15.376769] (-) TimerEvent: {}
+[15.477197] (-) TimerEvent: {}
+[15.577632] (-) TimerEvent: {}
+[15.678071] (-) TimerEvent: {}
+[15.778507] (-) TimerEvent: {}
+[15.878947] (-) TimerEvent: {}
+[15.979392] (-) TimerEvent: {}
+[16.079816] (-) TimerEvent: {}
+[16.180283] (-) TimerEvent: {}
+[16.280737] (-) TimerEvent: {}
+[16.381167] (-) TimerEvent: {}
+[16.481632] (-) TimerEvent: {}
+[16.584166] (-) TimerEvent: {}
+[16.684608] (-) TimerEvent: {}
+[16.785089] (-) TimerEvent: {}
+[16.885524] (-) TimerEvent: {}
+[16.985952] (-) TimerEvent: {}
+[17.086414] (-) TimerEvent: {}
+[17.186834] (-) TimerEvent: {}
+[17.287278] (-) TimerEvent: {}
+[17.387709] (-) TimerEvent: {}
+[17.488162] (-) TimerEvent: {}
+[17.588609] (-) TimerEvent: {}
+[17.689060] (-) TimerEvent: {}
+[17.789502] (-) TimerEvent: {}
+[17.890229] (-) TimerEvent: {}
+[17.990665] (-) TimerEvent: {}
+[18.091112] (-) TimerEvent: {}
+[18.191536] (-) TimerEvent: {}
+[18.292161] (-) TimerEvent: {}
+[18.392597] (-) TimerEvent: {}
+[18.493018] (-) TimerEvent: {}
+[18.593453] (-) TimerEvent: {}
+[18.693883] (-) TimerEvent: {}
+[18.795846] (-) TimerEvent: {}
+[18.896275] (-) TimerEvent: {}
+[18.996714] (-) TimerEvent: {}
+[19.097142] (-) TimerEvent: {}
+[19.197595] (-) TimerEvent: {}
+[19.298052] (-) TimerEvent: {}
+[19.398471] (-) TimerEvent: {}
+[19.499810] (-) TimerEvent: {}
+[19.608439] (-) TimerEvent: {}
+[19.708901] (-) TimerEvent: {}
+[19.809806] (-) TimerEvent: {}
+[19.910241] (-) TimerEvent: {}
+[20.010682] (-) TimerEvent: {}
+[20.111110] (-) TimerEvent: {}
+[20.211567] (-) TimerEvent: {}
+[20.312020] (-) TimerEvent: {}
+[20.412445] (-) TimerEvent: {}
+[20.512877] (-) TimerEvent: {}
+[20.613310] (-) TimerEvent: {}
+[20.713738] (-) TimerEvent: {}
+[20.814191] (-) TimerEvent: {}
+[20.914640] (-) TimerEvent: {}
+[21.015084] (-) TimerEvent: {}
+[21.115554] (-) TimerEvent: {}
+[21.216003] (-) TimerEvent: {}
+[21.316429] (-) TimerEvent: {}
+[21.417068] (-) TimerEvent: {}
+[21.518028] (-) TimerEvent: {}
+[21.618483] (-) TimerEvent: {}
+[21.719027] (-) TimerEvent: {}
+[21.819458] (-) TimerEvent: {}
+[21.919903] (-) TimerEvent: {}
+[22.020332] (-) TimerEvent: {}
+[22.120765] (-) TimerEvent: {}
+[22.221226] (-) TimerEvent: {}
+[22.322509] (-) TimerEvent: {}
+[22.423015] (-) TimerEvent: {}
+[22.523443] (-) TimerEvent: {}
+[22.623896] (-) TimerEvent: {}
+[22.724332] (-) TimerEvent: {}
+[22.824790] (-) TimerEvent: {}
+[22.925240] (-) TimerEvent: {}
+[23.025684] (-) TimerEvent: {}
+[23.126128] (-) TimerEvent: {}
+[23.226600] (-) TimerEvent: {}
+[23.327072] (-) TimerEvent: {}
+[23.427597] (-) TimerEvent: {}
+[23.528141] (-) TimerEvent: {}
+[23.628613] (-) TimerEvent: {}
+[23.729040] (-) TimerEvent: {}
+[23.829609] (-) TimerEvent: {}
+[23.930053] (-) TimerEvent: {}
+[24.030516] (-) TimerEvent: {}
+[24.130956] (-) TimerEvent: {}
+[24.231889] (-) TimerEvent: {}
+[24.332343] (-) TimerEvent: {}
+[24.432769] (-) TimerEvent: {}
+[24.533210] (-) TimerEvent: {}
+[24.633637] (-) TimerEvent: {}
+[24.735840] (-) TimerEvent: {}
+[24.836287] (-) TimerEvent: {}
+[24.936729] (-) TimerEvent: {}
+[25.037179] (-) TimerEvent: {}
+[25.137620] (-) TimerEvent: {}
+[25.238054] (-) TimerEvent: {}
+[25.338482] (-) TimerEvent: {}
+[25.438929] (-) TimerEvent: {}
+[25.539362] (-) TimerEvent: {}
+[25.639810] (-) TimerEvent: {}
+[25.740262] (-) TimerEvent: {}
+[25.840684] (-) TimerEvent: {}
+[25.941243] (-) TimerEvent: {}
+[26.041698] (-) TimerEvent: {}
+[26.142147] (-) TimerEvent: {}
+[26.242596] (-) TimerEvent: {}
+[26.343125] (-) TimerEvent: {}
+[26.443716] (-) TimerEvent: {}
+[26.544944] (-) TimerEvent: {}
+[26.645481] (-) TimerEvent: {}
+[26.745925] (-) TimerEvent: {}
+[26.846346] (-) TimerEvent: {}
+[26.946770] (-) TimerEvent: {}
+[27.047221] (-) TimerEvent: {}
+[27.147724] (-) TimerEvent: {}
+[27.248154] (-) TimerEvent: {}
+[27.348600] (-) TimerEvent: {}
+[27.449054] (-) TimerEvent: {}
+[27.549500] (-) TimerEvent: {}
+[27.650025] (-) TimerEvent: {}
+[27.750479] (-) TimerEvent: {}
+[27.851084] (-) TimerEvent: {}
+[27.951688] (-) TimerEvent: {}
+[28.052158] (-) TimerEvent: {}
+[28.152594] (-) TimerEvent: {}
+[28.253059] (-) TimerEvent: {}
+[28.353489] (-) TimerEvent: {}
+[28.453944] (-) TimerEvent: {}
+[28.554543] (-) TimerEvent: {}
+[28.654987] (-) TimerEvent: {}
+[28.755429] (-) TimerEvent: {}
+[28.855878] (-) TimerEvent: {}
+[28.956618] (-) TimerEvent: {}
+[29.057513] (-) TimerEvent: {}
+[29.158143] (-) TimerEvent: {}
+[29.258624] (-) TimerEvent: {}
+[29.359178] (-) TimerEvent: {}
+[29.459932] (-) TimerEvent: {}
+[29.560451] (-) TimerEvent: {}
+[29.662499] (-) TimerEvent: {}
+[29.763171] (-) TimerEvent: {}
+[29.863615] (-) TimerEvent: {}
+[29.964075] (-) TimerEvent: {}
+[30.064520] (-) TimerEvent: {}
+[30.165319] (-) TimerEvent: {}
+[30.266071] (-) TimerEvent: {}
+[30.366956] (-) TimerEvent: {}
+[30.467872] (-) TimerEvent: {}
+[30.568374] (-) TimerEvent: {}
+[30.668826] (-) TimerEvent: {}
+[30.769277] (-) TimerEvent: {}
+[30.869768] (-) TimerEvent: {}
+[30.970365] (-) TimerEvent: {}
+[31.070824] (-) TimerEvent: {}
+[31.171255] (-) TimerEvent: {}
+[31.271730] (-) TimerEvent: {}
+[31.372131] (-) TimerEvent: {}
+[31.472560] (-) TimerEvent: {}
+[31.572965] (-) TimerEvent: {}
+[31.673401] (-) TimerEvent: {}
+[31.682986] (grab_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76\xef\xbc\x9aCMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[31.692159] (grab_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:606\xef\xbc\x9aCMakeFiles/charuco_dectet_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[31.693541] (grab_demo) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[31.726587] (grab_demo) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76\xef\xbc\x9aCMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[31.729415] (grab_demo) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:684\xef\xbc\x9aCMakeFiles/aruco_dectet.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[31.732479] (grab_demo) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[31.773667] (-) TimerEvent: {}
+[31.807127] (grab_demo) CommandEnded: {'returncode': 2}
+[31.873752] (-) TimerEvent: {}
+[31.893018] (grab_demo) JobEnded: {'identifier': 'grab_demo', 'rc': 2}
+[31.906020] (-) EventReactorShutdown: {}

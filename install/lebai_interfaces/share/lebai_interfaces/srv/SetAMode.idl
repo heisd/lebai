@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from lebai_interfaces/srv/SetAMode.srv
+// generated code does not contain a copyright notice
+
+
+module lebai_interfaces {
+  module srv {
+    struct SetAMode_Request {
+      uint16 pin;
+
+      uint8 mode;
+    };
+    struct SetAMode_Response {
+      boolean code;
+    };
+  };
+};

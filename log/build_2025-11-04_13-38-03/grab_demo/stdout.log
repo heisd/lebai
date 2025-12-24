@@ -1,0 +1,39 @@
+[35m[1mConsolidate compiler generated dependencies of target charuco_dectet_node[0m
+[  2%] Built target grab_demo__cpp
+[  8%] Built target grab_demo__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target aruco_dectet[0m
+[  8%] Built target ament_cmake_python_copy_grab_demo
+[ 10%] [32mBuilding CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/hand_eye.dir/src/hand_eye.cpp.o[0m
+[ 17%] Built target camera_info_node
+[ 21%] Built target hsv_range
+[ 23%] [32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o[0m
+[ 29%] Built target grab_demo__rosidl_typesupport_cpp
+[ 36%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 42%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 48%] Built target grab_demo__rosidl_typesupport_c
+[ 55%] Built target grab_demo__rosidl_typesupport_introspection_c
+[35m[1mConsolidate compiler generated dependencies of target grab_service_node[0m
+[ 61%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target start_grab[0m
+[ 65%] Built target grab_service_node
+[ 70%] Built target start_grab
+[35m[1mConsolidate compiler generated dependencies of target nav_grab[0m
+[ 74%] Built target nav_grab
+[ 74%] Built target grab_demo
+[ 76%] Built target grab_demo__py
+[35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_generator_py[0m
+[ 80%] Built target grab_demo__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_introspection_c__pyext[0m
+[ 85%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[ 89%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_c__pyext[0m
+[ 93%] Built target grab_demo__rosidl_typesupport_c__pyext
+running egg_info
+writing grab_demo.egg-info/PKG-INFO
+writing dependency_links to grab_demo.egg-info/dependency_links.txt
+writing top-level names to grab_demo.egg-info/top_level.txt
+reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[ 93%] Built target ament_cmake_python_build_grab_demo_egg

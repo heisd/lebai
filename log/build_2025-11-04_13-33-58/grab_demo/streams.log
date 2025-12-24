@@ -1,0 +1,151 @@
+[0.029s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo
+[0.061s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.397s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.472s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.477s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.487s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.508s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.535s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.598s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.604s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.847s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.938s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[1.040s] -- Found cv_bridge: 3.2.1 (/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/cv_bridge/share/cv_bridge/cmake)
+[1.065s] -- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)
+[1.065s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.206s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.212s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.214s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.217s] -- Found nav2_msgs: 1.1.18 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.291s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.316s] -- Found lebai_interfaces: 0.0.1 (/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake)
+[1.541s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.713s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[2.068s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.234s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.298s] -- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.383s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.654s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[2.941s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.026s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[3.092s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[3.693s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.573s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.904s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.975s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[4.993s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[5.082s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[5.083s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.083s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[5.083s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[5.143s] -- Found PythonExtra: .so  
+[5.450s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.565s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.568s] -- Configured cppcheck include dirs: /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include
+[5.568s] -- Configured cppcheck exclude dirs and/or files: 
+[5.571s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.574s] -- Added test 'lint_cmake' to check CMake code style
+[5.577s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.581s] -- Added test 'uncrustify' to check C / C++ code style
+[5.581s] -- Configured uncrustify additional arguments: 
+[5.584s] -- Added test 'xmllint' to check XML markup files
+[5.594s] -- Configuring done
+[5.877s] -- Generating done
+[5.963s] -- Build files have been written to: /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo
+[6.018s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo -DCMAKE_INSTALL_PREFIX=/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo
+[6.024s] Invoking command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6
+[6.153s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_generator_c[0m
+[6.155s] [35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[6.168s] [35m[1mConsolidate compiler generated dependencies of target hand_eye[0m
+[6.172s] [35m[1mConsolidate compiler generated dependencies of target charuco_dectet_node[0m
+[6.191s] [  2%] Built target grab_demo__cpp
+[6.204s] [  4%] Built target ament_cmake_python_copy_grab_demo
+[6.206s] [  8%] Built target grab_demo__rosidl_generator_c
+[6.232s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_cpp[0m
+[6.233s] [35m[1mConsolidate compiler generated dependencies of target aruco_dectet[0m
+[6.240s] [35m[1mConsolidate compiler generated dependencies of target camera_info_node[0m
+[6.262s] [ 17%] Built target grab_demo__rosidl_typesupport_cpp
+[6.262s] [ 17%] [32mBuilding CXX object CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o[0m
+[6.283s] [ 21%] Built target camera_info_node
+[6.289s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_c[0m
+[6.294s] [ 23%] [32m[1mLinking CXX executable hsv_range[0m
+[6.305s] [ 25%] [32mBuilding CXX object CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o[0m
+[6.323s] [ 27%] [32m[1mLinking CXX executable hand_eye[0m
+[6.325s] [ 34%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[6.343s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_cpp[0m
+[6.374s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_introspection_c[0m
+[6.433s] [ 40%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[6.460s] [ 46%] Built target grab_demo__rosidl_typesupport_introspection_c
+[6.500s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_c[0m
+[6.539s] [35m[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_introspection_cpp[0m
+[6.555s] [ 53%] Built target grab_demo__rosidl_typesupport_c
+[6.592s] [ 59%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[6.777s] [ 61%] [32mBuilding CXX object CMakeFiles/grab_service_node.dir/src/grab_service_node.cpp.o[0m
+[7.504s] running egg_info
+[7.506s] writing grab_demo.egg-info/PKG-INFO
+[7.508s] writing dependency_links to grab_demo.egg-info/dependency_links.txt
+[7.508s] writing top-level names to grab_demo.egg-info/top_level.txt
+[7.515s] reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+[7.532s] writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[7.684s] [ 61%] Built target ament_cmake_python_build_grab_demo_egg
+[7.812s] [ 63%] [32mBuilding CXX object CMakeFiles/start_grab.dir/src/start_grab.cpp.o[0m
+[7.877s] [ 65%] Built target hsv_range
+[7.929s] [ 68%] Built target hand_eye
+[7.946s] [ 70%] [32mBuilding CXX object CMakeFiles/nav_grab.dir/src/nav_grab.cpp.o[0m
+[7.984s] [ 70%] Built target grab_demo
+[8.037s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.164s] [ 72%] Built target grab_demo__py
+[9.344s] [ 74%] [32mBuilding C object CMakeFiles/grab_demo__rosidl_generator_py.dir/rosidl_generator_py/grab_demo/srv/_grab_object_s.c.o[0m
+[9.974s] [ 76%] [32m[1mLinking C shared library rosidl_generator_py/grab_demo/libgrab_demo__rosidl_generator_py.so[0m
+[10.254s] [ 76%] Built target grab_demo__rosidl_generator_py
+[10.473s] [ 78%] [32mBuilding C object CMakeFiles/grab_demo__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/grab_demo/_grab_demo_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.353s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/grab_demo/grab_demo_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[11.659s] [ 80%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[11.832s] [ 82%] [32mBuilding C object CMakeFiles/grab_demo__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/grab_demo/_grab_demo_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[12.901s] [ 85%] [32m[1mLinking C shared library rosidl_generator_py/grab_demo/grab_demo_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[13.152s] [ 85%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[13.373s] [ 87%] [32mBuilding C object CMakeFiles/grab_demo__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/grab_demo/_grab_demo_s.ep.rosidl_typesupport_c.c.o[0m
+[14.466s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/grab_demo/grab_demo_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[14.780s] [ 89%] Built target grab_demo__rosidl_typesupport_c__pyext
+[18.096s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/nav_grab.cpp:[m[K In member function ‘[01m[Kvoid Nav_grab::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[18.103s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/nav_grab.cpp:75:107:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[18.104s]    75 |     void feedback_callback(ClientGoalHandle::SharedPtr,[01;35m[Kconst std::shared_ptr<const Nav2_client::Feedback> feedback[m[K)
+[18.104s]       |                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[21.750s] In file included from [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/charuco_dectet_node.cpp:1[m[K:
+[21.753s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:[m[K In constructor ‘[01m[Kcharuco_dectet::charuco_dectet()[m[K’:
+[21.753s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:66:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::DetectorParameters[m[K’
+[21.754s]    66 |             DetectorParameters=cv::aruco::DetectorParameters::[01;31m[Kcreate[m[K();
+[21.754s]       |                                                               [01;31m[K^~~~~~[m[K
+[21.792s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:88:70:[m[K [01;31m[Kerror: [m[K‘[01m[KPREDEFINED_DICTIONARY_NAME[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+[21.793s]    88 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::[01;31m[KPREDEFINED_DICTIONARY_NAME[m[K(dictionary_id));
+[21.793s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.793s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:89:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::CharucoBoard[m[K’
+[21.794s]    89 |             charuco_board=cv::aruco::CharucoBoard::[01;31m[Kcreate[m[K(squaresX,squaresY,squareLength,markerLength,dictionary);
+[21.794s]       |                                                    [01;31m[K^~~~~~[m[K
+[21.816s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include/grab_demo/charuco_dectet_node.hpp:95:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass cv::aruco::CharucoBoard[m[K’ has no member named ‘[01m[Kdraw[m[K’
+[21.817s]    95 |             charuco_board->[01;31m[Kdraw[m[K(cv::Size(1080,720),board_img,10,1);
+[21.817s]       |                            [01;31m[K^~~~[m[K
+[22.221s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:[m[K In constructor ‘[01m[Karuco_dectet::aruco_dectet()[m[K’:
+[22.221s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:49:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kcv::aruco::DetectorParameters[m[K’
+[22.221s]    49 |             DetectorParameters=cv::aruco::DetectorParameters::[01;31m[Kcreate[m[K();
+[22.221s]       |                                                               [01;31m[K^~~~~~[m[K
+[22.339s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/aruco_dectet.cpp:70:70:[m[K [01;31m[Kerror: [m[K‘[01m[KPREDEFINED_DICTIONARY_NAME[m[K’ is not a member of ‘[01m[Kcv::aruco[m[K’
+[22.339s]    70 |             dictionary=cv::aruco::getPredefinedDictionary(cv::aruco::[01;31m[KPREDEFINED_DICTIONARY_NAME[m[K(dictionary_id));
+[22.340s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[28.504s] [ 91%] [32m[1mLinking CXX executable nav_grab[0m
+[29.004s] [ 91%] Built target nav_grab
+[55.069s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:[m[K In member function ‘[01m[Kvoid obj_grab::start_grab(std::shared_ptr<grab_demo::srv::GrabObject_Request_<std::allocator<void> > >, std::shared_ptr<grab_demo::srv::GrabObject_Response_<std::allocator<void> > >)[m[K’:
+[55.074s] [01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:49:144:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kres[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[55.075s]    49 | void obj_grab::start_grab(const std::shared_ptr<grab_demo::srv::GrabObject::Request> req,[01;35m[Kstd::shared_ptr<grab_demo::srv::GrabObject::Response> res[m[K)
+[55.075s]       |                                                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[61.970s] gmake[2]: *** [CMakeFiles/aruco_dectet.dir/build.make:76：CMakeFiles/aruco_dectet.dir/src/aruco_dectet.cpp.o] 错误 1
+[61.972s] gmake[1]: *** [CMakeFiles/Makefile2:684：CMakeFiles/aruco_dectet.dir/all] 错误 2
+[61.972s] gmake[1]: *** 正在等待未完成的任务....
+[63.066s] gmake[2]: *** [CMakeFiles/charuco_dectet_node.dir/build.make:76：CMakeFiles/charuco_dectet_node.dir/src/charuco_dectet_node.cpp.o] 错误 1
+[63.067s] gmake[1]: *** [CMakeFiles/Makefile2:606：CMakeFiles/charuco_dectet_node.dir/all] 错误 2
+[72.750s] [ 93%] [32m[1mLinking CXX executable start_grab[0m
+[73.554s] [ 93%] Built target start_grab
+[76.446s] [ 95%] [32m[1mLinking CXX executable grab_service_node[0m
+[77.156s] [ 95%] Built target grab_service_node
+[77.162s] gmake: *** [Makefile:146：all] 错误 2
+[77.199s] Invoked command in '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver:/home/dxf/WHEELTEC_S300Pro_mini/install/wheeltec_robot_keyboard:/home/dxf/WHEELTEC_S300Pro_mini/install/simple_follower_ros2:/home/dxf/WHEELTEC_S300Pro_mini/install/ollama_ros_chat:/home/dxf/WHEELTEC_S300Pro_mini/install/nav2_waypoint_cycle:/home/dxf/WHEELTEC_S300Pro_mini/install/auto_recharge_ros2:/opt/ros/humble /usr/bin/cmake --build /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo -- -j6 -l6

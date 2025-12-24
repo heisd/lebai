@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target fk_demo[0m
+[35m[1mConsolidate compiler generated dependencies of target ik_demo[0m
+[ 50%] Built target fk_demo
+[100%] Built target ik_demo
+-- Install configuration: "Release"
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/lib/arm_demo/fk_demo
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/lib/arm_demo/ik_demo
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/launch
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/launch/ik_demo.launch.py
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/launch/fk_demo.launch.py
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/ament_index/resource_index/package_run_dependencies/arm_demo
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/ament_index/resource_index/parent_prefix_path/arm_demo
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/ament_prefix_path.sh
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/path.sh
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/environment/path.dsv
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.bash
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.sh
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.zsh
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/local_setup.dsv
+-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/package.dsv
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/ament_index/resource_index/packages/arm_demo
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/cmake/arm_demoConfig.cmake
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/cmake/arm_demoConfig-version.cmake
+-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/arm_demo/share/arm_demo/package.xml

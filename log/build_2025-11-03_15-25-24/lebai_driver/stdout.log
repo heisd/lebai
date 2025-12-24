@@ -1,0 +1,24 @@
+running egg_info
+writing ../../../build/lebai_driver/lebai_driver.egg-info/PKG-INFO
+writing dependency_links to ../../../build/lebai_driver/lebai_driver.egg-info/dependency_links.txt
+writing entry points to ../../../build/lebai_driver/lebai_driver.egg-info/entry_points.txt
+writing top-level names to ../../../build/lebai_driver/lebai_driver.egg-info/top_level.txt
+reading manifest file '../../../build/lebai_driver/lebai_driver.egg-info/SOURCES.txt'
+writing manifest file '../../../build/lebai_driver/lebai_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+copying lebai_driver/urdf_helper.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver
+running install
+running install_lib
+copying /home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/build/lib/lebai_driver/urdf_helper.py -> /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver
+byte-compiling /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver/urdf_helper.py to urdf_helper.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver-0.0.1-py3.10.egg-info' (and everything under it)
+Copying ../../../build/lebai_driver/lebai_driver.egg-info to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/python3.10/site-packages/lebai_driver-0.0.1-py3.10.egg-info
+running install_scripts
+Installing io_service script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+Installing motion script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+Installing robot_state script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+Installing system_service script to /home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_driver/lib/lebai_driver
+writing list of installed files to '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/lebai_driver/install.log'

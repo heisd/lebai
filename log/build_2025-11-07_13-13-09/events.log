@@ -1,0 +1,2193 @@
+[0.000000] (-) TimerEvent: {}
+[0.000812] (-) JobUnselected: {'identifier': 'arm_demo'}
+[0.000916] (-) JobUnselected: {'identifier': 'lebai_driver'}
+[0.001411] (-) JobUnselected: {'identifier': 'lebai_interfaces'}
+[0.001646] (-) JobUnselected: {'identifier': 'lebai_lm3_moveit_config'}
+[0.001740] (-) JobUnselected: {'identifier': 'lebai_lm3_support'}
+[0.001820] (-) JobUnselected: {'identifier': 'lebai_resources'}
+[0.002056] (-) JobUnselected: {'identifier': 'lebai_tutorials'}
+[0.002155] (grab_demo) JobQueued: {'identifier': 'grab_demo', 'dependencies': OrderedDict()}
+[0.002244] (grab_demo) JobStarted: {'identifier': 'grab_demo'}
+[0.029319] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'cmake'}
+[0.032956] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'build'}
+[0.033209] (grab_demo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', '--', '-j6', '-l6'], 'cwd': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.66 49474 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/local/opencv410/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17'), ('TERM_PROGRAM_VERSION', '2.0.54'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c9aa9842-36f1-4de8-9fce-800e871a08a5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-fc986a6b3c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'), ('SSH_CONNECTION', '192.168.0.66 49474 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/opencv410::/opt/ros/humble')]), 'shell': False}
+[0.098141] (-) TimerEvent: {}
+[0.198902] (-) TimerEvent: {}
+[0.239163] (grab_demo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299058] (-) TimerEvent: {}
+[0.400176] (-) TimerEvent: {}
+[0.501226] (-) TimerEvent: {}
+[0.578858] (grab_demo) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.601429] (-) TimerEvent: {}
+[0.672719] (grab_demo) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.679106] (grab_demo) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.697931] (grab_demo) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.701641] (-) TimerEvent: {}
+[0.727280] (grab_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.764935] (grab_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801862] (-) TimerEvent: {}
+[0.850776] (grab_demo) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.854603] (grab_demo) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.902039] (-) TimerEvent: {}
+[1.003759] (-) TimerEvent: {}
+[1.104598] (-) TimerEvent: {}
+[1.106962] (grab_demo) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.204780] (-) TimerEvent: {}
+[1.226617] (grab_demo) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.304967] (-) TimerEvent: {}
+[1.342441] (grab_demo) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/home/dxf/WHEELTEC_S300Pro_mini_ros2_arm_src_2025_9_15/install/cv_bridge/share/cv_bridge/cmake)\n'}
+[1.378329] (grab_demo) StdoutLine: {'line': b'-- Found moveit_common: 2.5.9 (/opt/ros/humble/share/moveit_common/cmake)\n'}
+[1.380149] (grab_demo) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.405151] (-) TimerEvent: {}
+[1.505860] (-) TimerEvent: {}
+[1.563989] (grab_demo) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.572647] (grab_demo) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.575567] (grab_demo) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.579274] (grab_demo) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.606045] (-) TimerEvent: {}
+[1.669238] (grab_demo) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.684902] (grab_demo) StdoutLine: {'line': b'-- Found lebai_interfaces: 0.0.1 (/home/dxf/wheeltec_lebai_humble_2024_7_17/install/lebai_interfaces/share/lebai_interfaces/cmake)\n'}
+[1.706224] (-) TimerEvent: {}
+[1.806968] (-) TimerEvent: {}
+[1.862384] (grab_demo) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.907175] (-) TimerEvent: {}
+[1.912550] (grab_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[2.007382] (-) TimerEvent: {}
+[2.108255] (-) TimerEvent: {}
+[2.181123] (grab_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.208456] (-) TimerEvent: {}
+[2.237357] (grab_demo) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[2.257217] (grab_demo) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.306412] (grab_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[2.308573] (-) TimerEvent: {}
+[2.388772] (grab_demo) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[2.408782] (-) TimerEvent: {}
+[2.509505] (-) TimerEvent: {}
+[2.529117] (grab_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[2.600402] (grab_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[2.609694] (-) TimerEvent: {}
+[2.645359] (grab_demo) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[2.709896] (-) TimerEvent: {}
+[2.810627] (-) TimerEvent: {}
+[2.911291] (-) TimerEvent: {}
+[3.011990] (-) TimerEvent: {}
+[3.112822] (-) TimerEvent: {}
+[3.206144] (grab_demo) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.212986] (-) TimerEvent: {}
+[3.313682] (-) TimerEvent: {}
+[3.414423] (-) TimerEvent: {}
+[3.515130] (-) TimerEvent: {}
+[3.616400] (-) TimerEvent: {}
+[3.717264] (-) TimerEvent: {}
+[3.818156] (-) TimerEvent: {}
+[3.919078] (-) TimerEvent: {}
+[4.020020] (-) TimerEvent: {}
+[4.036838] (grab_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.120214] (-) TimerEvent: {}
+[4.221133] (-) TimerEvent: {}
+[4.321846] (-) TimerEvent: {}
+[4.349425] (grab_demo) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.422031] (-) TimerEvent: {}
+[4.427233] (grab_demo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.496554] (grab_demo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.497270] (grab_demo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.497595] (grab_demo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[4.522209] (-) TimerEvent: {}
+[4.586932] (grab_demo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.622388] (-) TimerEvent: {}
+[4.627882] (grab_demo) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.631338] (grab_demo) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/include\n'}
+[4.631761] (grab_demo) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.632673] (grab_demo) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.633979] (grab_demo) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.635048] (grab_demo) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.637620] (grab_demo) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.637942] (grab_demo) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.638875] (grab_demo) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.644659] (grab_demo) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.722545] (-) TimerEvent: {}
+[4.823143] (-) TimerEvent: {}
+[4.923761] (-) TimerEvent: {}
+[5.006023] (grab_demo) StdoutLine: {'line': b'-- Generating done\n'}
+[5.024000] (-) TimerEvent: {}
+[5.105317] (grab_demo) StdoutLine: {'line': b'-- Build files have been written to: /home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo\n'}
+[5.124164] (-) TimerEvent: {}
+[5.222620] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_generator_c\x1b[0m\n'}
+[5.224267] (-) TimerEvent: {}
+[5.229583] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hsv_range\x1b[0m\n'}
+[5.230096] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target charuco_dectet_node\x1b[0m\n'}
+[5.263746] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hand_eye\x1b[0m\n'}
+[5.324446] (-) TimerEvent: {}
+[5.408932] (grab_demo) StdoutLine: {'line': b'[  2%] Built target grab_demo__cpp\n'}
+[5.422628] (grab_demo) StdoutLine: {'line': b'[  8%] Built target grab_demo__rosidl_generator_c\n'}
+[5.424499] (grab_demo) StdoutLine: {'line': b'[ 12%] Built target hsv_range\n'}
+[5.424953] (-) TimerEvent: {}
+[5.454795] (grab_demo) StdoutLine: {'line': b'[ 17%] Built target charuco_dectet_node\n'}
+[5.477980] (grab_demo) StdoutLine: {'line': b'[ 17%] Built target ament_cmake_python_copy_grab_demo\n'}
+[5.498896] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target aruco_dectet\x1b[0m\n'}
+[5.511573] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_info_node\x1b[0m\n'}
+[5.525145] (-) TimerEvent: {}
+[5.545815] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[5.592837] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.596159] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_cpp\x1b[0m\n'}
+[5.625320] (-) TimerEvent: {}
+[5.644563] (grab_demo) StdoutLine: {'line': b'[ 21%] Built target camera_info_node\n'}
+[5.652878] (grab_demo) StdoutLine: {'line': b'[ 25%] Built target aruco_dectet\n'}
+[5.664197] (grab_demo) StdoutLine: {'line': b'[ 31%] Built target grab_demo__rosidl_typesupport_fastrtps_c\n'}
+[5.699818] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[5.700397] (grab_demo) StdoutLine: {'line': b'[ 38%] Built target grab_demo__rosidl_typesupport_cpp\n'}
+[5.711305] (grab_demo) StdoutLine: {'line': b'[ 44%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp\n'}
+[5.725500] (-) TimerEvent: {}
+[5.760880] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_c\x1b[0m\n'}
+[5.761436] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.769819] (grab_demo) StdoutLine: {'line': b'[ 51%] Built target grab_demo__rosidl_typesupport_introspection_c\n'}
+[5.822915] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_service_node\x1b[0m\n'}
+[5.826332] (-) TimerEvent: {}
+[5.850455] (grab_demo) StdoutLine: {'line': b'[ 55%] Built target hand_eye\n'}
+[5.877602] (grab_demo) StdoutLine: {'line': b'[ 61%] Built target grab_demo__rosidl_typesupport_c\n'}
+[5.911533] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target start_grab\x1b[0m\n'}
+[5.926576] (-) TimerEvent: {}
+[5.966749] (grab_demo) StdoutLine: {'line': b'[ 68%] Built target grab_demo__rosidl_typesupport_introspection_cpp\n'}
+[6.000903] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nav_grab\x1b[0m\n'}
+[6.026766] (-) TimerEvent: {}
+[6.127596] (-) TimerEvent: {}
+[6.228728] (-) TimerEvent: {}
+[6.288897] (grab_demo) StdoutLine: {'line': b'[ 68%] Built target grab_demo\n'}
+[6.328958] (-) TimerEvent: {}
+[6.341625] (grab_demo) StdoutLine: {'line': b'[ 72%] Built target nav_grab\n'}
+[6.360245] (grab_demo) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/start_grab.dir/src/start_grab.cpp.o\x1b[0m\n'}
+[6.363915] (grab_demo) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/grab_service_node.dir/src/grab_service_node.cpp.o\x1b[0m\n'}
+[6.429241] (-) TimerEvent: {}
+[6.503754] (grab_demo) StdoutLine: {'line': b'[ 78%] Built target grab_demo__py\n'}
+[6.529389] (-) TimerEvent: {}
+[6.583491] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_generator_py\x1b[0m\n'}
+[6.629573] (-) TimerEvent: {}
+[6.684164] (grab_demo) StdoutLine: {'line': b'[ 82%] Built target grab_demo__rosidl_generator_py\n'}
+[6.732830] (-) TimerEvent: {}
+[6.740048] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[6.759745] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[6.789262] (grab_demo) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target grab_demo__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[6.811557] (grab_demo) StdoutLine: {'line': b'[ 87%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext\n'}
+[6.826410] (grab_demo) StdoutLine: {'line': b'[ 91%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.832986] (-) TimerEvent: {}
+[6.852855] (grab_demo) StdoutLine: {'line': b'[ 95%] Built target grab_demo__rosidl_typesupport_c__pyext\n'}
+[6.933166] (-) TimerEvent: {}
+[7.033875] (-) TimerEvent: {}
+[7.134573] (-) TimerEvent: {}
+[7.236786] (-) TimerEvent: {}
+[7.320074] (grab_demo) StdoutLine: {'line': b'running egg_info\n'}
+[7.322758] (grab_demo) StdoutLine: {'line': b'writing grab_demo.egg-info/PKG-INFO\n'}
+[7.324015] (grab_demo) StdoutLine: {'line': b'writing dependency_links to grab_demo.egg-info/dependency_links.txt\n'}
+[7.326708] (grab_demo) StdoutLine: {'line': b'writing top-level names to grab_demo.egg-info/top_level.txt\n'}
+[7.333442] (grab_demo) StdoutLine: {'line': b"reading manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[7.335304] (grab_demo) StdoutLine: {'line': b"writing manifest file 'grab_demo.egg-info/SOURCES.txt'\n"}
+[7.336868] (-) TimerEvent: {}
+[7.438822] (-) TimerEvent: {}
+[7.488283] (grab_demo) StdoutLine: {'line': b'[ 95%] Built target ament_cmake_python_build_grab_demo_egg\n'}
+[7.539015] (-) TimerEvent: {}
+[7.639842] (-) TimerEvent: {}
+[7.740615] (-) TimerEvent: {}
+[7.841387] (-) TimerEvent: {}
+[7.942697] (-) TimerEvent: {}
+[8.043416] (-) TimerEvent: {}
+[8.144120] (-) TimerEvent: {}
+[8.244838] (-) TimerEvent: {}
+[8.345552] (-) TimerEvent: {}
+[8.446329] (-) TimerEvent: {}
+[8.547074] (-) TimerEvent: {}
+[8.647927] (-) TimerEvent: {}
+[8.748616] (-) TimerEvent: {}
+[8.849301] (-) TimerEvent: {}
+[8.950048] (-) TimerEvent: {}
+[9.050819] (-) TimerEvent: {}
+[9.151554] (-) TimerEvent: {}
+[9.252325] (-) TimerEvent: {}
+[9.353049] (-) TimerEvent: {}
+[9.453773] (-) TimerEvent: {}
+[9.554567] (-) TimerEvent: {}
+[9.655288] (-) TimerEvent: {}
+[9.756026] (-) TimerEvent: {}
+[9.858894] (-) TimerEvent: {}
+[9.959657] (-) TimerEvent: {}
+[10.060389] (-) TimerEvent: {}
+[10.162501] (-) TimerEvent: {}
+[10.263298] (-) TimerEvent: {}
+[10.364010] (-) TimerEvent: {}
+[10.465036] (-) TimerEvent: {}
+[10.565874] (-) TimerEvent: {}
+[10.667648] (-) TimerEvent: {}
+[10.768337] (-) TimerEvent: {}
+[10.869023] (-) TimerEvent: {}
+[10.970619] (-) TimerEvent: {}
+[11.071407] (-) TimerEvent: {}
+[11.172095] (-) TimerEvent: {}
+[11.272784] (-) TimerEvent: {}
+[11.373886] (-) TimerEvent: {}
+[11.475055] (-) TimerEvent: {}
+[11.576138] (-) TimerEvent: {}
+[11.676821] (-) TimerEvent: {}
+[11.777513] (-) TimerEvent: {}
+[11.878259] (-) TimerEvent: {}
+[11.978955] (-) TimerEvent: {}
+[12.079719] (-) TimerEvent: {}
+[12.180520] (-) TimerEvent: {}
+[12.281197] (-) TimerEvent: {}
+[12.381887] (-) TimerEvent: {}
+[12.482709] (-) TimerEvent: {}
+[12.583433] (-) TimerEvent: {}
+[12.684202] (-) TimerEvent: {}
+[12.785656] (-) TimerEvent: {}
+[12.887081] (-) TimerEvent: {}
+[12.987780] (-) TimerEvent: {}
+[13.088454] (-) TimerEvent: {}
+[13.189137] (-) TimerEvent: {}
+[13.289849] (-) TimerEvent: {}
+[13.390632] (-) TimerEvent: {}
+[13.493079] (-) TimerEvent: {}
+[13.593926] (-) TimerEvent: {}
+[13.694640] (-) TimerEvent: {}
+[13.795405] (-) TimerEvent: {}
+[13.896148] (-) TimerEvent: {}
+[13.996906] (-) TimerEvent: {}
+[14.097700] (-) TimerEvent: {}
+[14.198593] (-) TimerEvent: {}
+[14.299381] (-) TimerEvent: {}
+[14.400154] (-) TimerEvent: {}
+[14.500870] (-) TimerEvent: {}
+[14.601864] (-) TimerEvent: {}
+[14.702635] (-) TimerEvent: {}
+[14.803789] (-) TimerEvent: {}
+[14.904802] (-) TimerEvent: {}
+[15.005522] (-) TimerEvent: {}
+[15.106335] (-) TimerEvent: {}
+[15.207204] (-) TimerEvent: {}
+[15.308087] (-) TimerEvent: {}
+[15.408826] (-) TimerEvent: {}
+[15.509595] (-) TimerEvent: {}
+[15.610328] (-) TimerEvent: {}
+[15.711066] (-) TimerEvent: {}
+[15.812123] (-) TimerEvent: {}
+[15.913187] (-) TimerEvent: {}
+[16.014348] (-) TimerEvent: {}
+[16.115027] (-) TimerEvent: {}
+[16.218146] (-) TimerEvent: {}
+[16.318849] (-) TimerEvent: {}
+[16.419567] (-) TimerEvent: {}
+[16.520403] (-) TimerEvent: {}
+[16.621783] (-) TimerEvent: {}
+[16.723874] (-) TimerEvent: {}
+[16.824634] (-) TimerEvent: {}
+[16.925326] (-) TimerEvent: {}
+[17.026049] (-) TimerEvent: {}
+[17.126817] (-) TimerEvent: {}
+[17.227701] (-) TimerEvent: {}
+[17.328421] (-) TimerEvent: {}
+[17.429165] (-) TimerEvent: {}
+[17.532335] (-) TimerEvent: {}
+[17.633555] (-) TimerEvent: {}
+[17.734303] (-) TimerEvent: {}
+[17.835418] (-) TimerEvent: {}
+[17.936125] (-) TimerEvent: {}
+[18.036879] (-) TimerEvent: {}
+[18.137642] (-) TimerEvent: {}
+[18.238740] (-) TimerEvent: {}
+[18.339536] (-) TimerEvent: {}
+[18.440904] (-) TimerEvent: {}
+[18.541712] (-) TimerEvent: {}
+[18.642465] (-) TimerEvent: {}
+[18.743204] (-) TimerEvent: {}
+[18.843965] (-) TimerEvent: {}
+[18.944738] (-) TimerEvent: {}
+[19.045604] (-) TimerEvent: {}
+[19.147274] (-) TimerEvent: {}
+[19.248739] (-) TimerEvent: {}
+[19.350041] (-) TimerEvent: {}
+[19.451193] (-) TimerEvent: {}
+[19.551994] (-) TimerEvent: {}
+[19.653651] (-) TimerEvent: {}
+[19.755024] (-) TimerEvent: {}
+[19.855784] (-) TimerEvent: {}
+[19.957396] (-) TimerEvent: {}
+[20.058229] (-) TimerEvent: {}
+[20.159399] (-) TimerEvent: {}
+[20.261586] (-) TimerEvent: {}
+[20.362793] (-) TimerEvent: {}
+[20.463567] (-) TimerEvent: {}
+[20.564266] (-) TimerEvent: {}
+[20.665101] (-) TimerEvent: {}
+[20.765763] (-) TimerEvent: {}
+[20.866512] (-) TimerEvent: {}
+[20.967311] (-) TimerEvent: {}
+[21.068021] (-) TimerEvent: {}
+[21.171043] (-) TimerEvent: {}
+[21.272250] (-) TimerEvent: {}
+[21.373047] (-) TimerEvent: {}
+[21.473781] (-) TimerEvent: {}
+[21.574526] (-) TimerEvent: {}
+[21.675243] (-) TimerEvent: {}
+[21.775958] (-) TimerEvent: {}
+[21.876645] (-) TimerEvent: {}
+[21.977374] (-) TimerEvent: {}
+[22.078432] (-) TimerEvent: {}
+[22.179125] (-) TimerEvent: {}
+[22.279795] (-) TimerEvent: {}
+[22.380438] (-) TimerEvent: {}
+[22.481122] (-) TimerEvent: {}
+[22.581850] (-) TimerEvent: {}
+[22.682677] (-) TimerEvent: {}
+[22.783352] (-) TimerEvent: {}
+[22.884012] (-) TimerEvent: {}
+[22.984677] (-) TimerEvent: {}
+[23.085341] (-) TimerEvent: {}
+[23.186019] (-) TimerEvent: {}
+[23.286766] (-) TimerEvent: {}
+[23.387419] (-) TimerEvent: {}
+[23.488116] (-) TimerEvent: {}
+[23.588942] (-) TimerEvent: {}
+[23.689675] (-) TimerEvent: {}
+[23.790432] (-) TimerEvent: {}
+[23.891190] (-) TimerEvent: {}
+[23.991907] (-) TimerEvent: {}
+[24.092644] (-) TimerEvent: {}
+[24.198560] (-) TimerEvent: {}
+[24.301023] (-) TimerEvent: {}
+[24.402435] (-) TimerEvent: {}
+[24.504821] (-) TimerEvent: {}
+[24.606904] (-) TimerEvent: {}
+[24.708984] (-) TimerEvent: {}
+[24.810267] (-) TimerEvent: {}
+[24.911424] (-) TimerEvent: {}
+[25.012944] (-) TimerEvent: {}
+[25.113794] (-) TimerEvent: {}
+[25.214924] (-) TimerEvent: {}
+[25.315763] (-) TimerEvent: {}
+[25.416911] (-) TimerEvent: {}
+[25.517789] (-) TimerEvent: {}
+[25.618742] (-) TimerEvent: {}
+[25.719876] (-) TimerEvent: {}
+[25.820757] (-) TimerEvent: {}
+[25.921655] (-) TimerEvent: {}
+[26.022520] (-) TimerEvent: {}
+[26.123398] (-) TimerEvent: {}
+[26.224353] (-) TimerEvent: {}
+[26.325259] (-) TimerEvent: {}
+[26.425998] (-) TimerEvent: {}
+[26.526818] (-) TimerEvent: {}
+[26.627908] (-) TimerEvent: {}
+[26.728684] (-) TimerEvent: {}
+[26.830609] (-) TimerEvent: {}
+[26.931346] (-) TimerEvent: {}
+[27.032095] (-) TimerEvent: {}
+[27.132853] (-) TimerEvent: {}
+[27.233572] (-) TimerEvent: {}
+[27.334313] (-) TimerEvent: {}
+[27.434997] (-) TimerEvent: {}
+[27.535710] (-) TimerEvent: {}
+[27.636493] (-) TimerEvent: {}
+[27.737335] (-) TimerEvent: {}
+[27.838415] (-) TimerEvent: {}
+[27.939152] (-) TimerEvent: {}
+[28.039867] (-) TimerEvent: {}
+[28.140605] (-) TimerEvent: {}
+[28.241390] (-) TimerEvent: {}
+[28.342190] (-) TimerEvent: {}
+[28.443123] (-) TimerEvent: {}
+[28.544282] (-) TimerEvent: {}
+[28.645174] (-) TimerEvent: {}
+[28.746314] (-) TimerEvent: {}
+[28.847082] (-) TimerEvent: {}
+[28.948059] (-) TimerEvent: {}
+[29.049123] (-) TimerEvent: {}
+[29.149858] (-) TimerEvent: {}
+[29.251123] (-) TimerEvent: {}
+[29.352196] (-) TimerEvent: {}
+[29.453359] (-) TimerEvent: {}
+[29.554117] (-) TimerEvent: {}
+[29.654951] (-) TimerEvent: {}
+[29.755910] (-) TimerEvent: {}
+[29.857157] (-) TimerEvent: {}
+[29.957960] (-) TimerEvent: {}
+[30.066522] (-) TimerEvent: {}
+[30.167200] (-) TimerEvent: {}
+[30.267899] (-) TimerEvent: {}
+[30.368668] (-) TimerEvent: {}
+[30.469618] (-) TimerEvent: {}
+[30.570970] (-) TimerEvent: {}
+[30.671638] (-) TimerEvent: {}
+[30.772270] (-) TimerEvent: {}
+[30.872982] (-) TimerEvent: {}
+[30.974893] (-) TimerEvent: {}
+[31.075865] (-) TimerEvent: {}
+[31.176570] (-) TimerEvent: {}
+[31.277369] (-) TimerEvent: {}
+[31.378071] (-) TimerEvent: {}
+[31.478805] (-) TimerEvent: {}
+[31.579555] (-) TimerEvent: {}
+[31.680905] (-) TimerEvent: {}
+[31.782448] (-) TimerEvent: {}
+[31.883198] (-) TimerEvent: {}
+[31.984052] (-) TimerEvent: {}
+[32.084832] (-) TimerEvent: {}
+[32.185680] (-) TimerEvent: {}
+[32.287004] (-) TimerEvent: {}
+[32.387685] (-) TimerEvent: {}
+[32.488366] (-) TimerEvent: {}
+[32.589435] (-) TimerEvent: {}
+[32.690190] (-) TimerEvent: {}
+[32.791250] (-) TimerEvent: {}
+[32.892139] (-) TimerEvent: {}
+[32.992816] (-) TimerEvent: {}
+[33.093475] (-) TimerEvent: {}
+[33.194181] (-) TimerEvent: {}
+[33.294897] (-) TimerEvent: {}
+[33.395571] (-) TimerEvent: {}
+[33.496260] (-) TimerEvent: {}
+[33.596926] (-) TimerEvent: {}
+[33.697598] (-) TimerEvent: {}
+[33.798532] (-) TimerEvent: {}
+[33.899267] (-) TimerEvent: {}
+[33.999951] (-) TimerEvent: {}
+[34.100663] (-) TimerEvent: {}
+[34.201368] (-) TimerEvent: {}
+[34.302089] (-) TimerEvent: {}
+[34.402903] (-) TimerEvent: {}
+[34.503593] (-) TimerEvent: {}
+[34.604396] (-) TimerEvent: {}
+[34.705281] (-) TimerEvent: {}
+[34.806214] (-) TimerEvent: {}
+[34.907693] (-) TimerEvent: {}
+[35.008421] (-) TimerEvent: {}
+[35.109119] (-) TimerEvent: {}
+[35.209886] (-) TimerEvent: {}
+[35.310641] (-) TimerEvent: {}
+[35.411382] (-) TimerEvent: {}
+[35.512103] (-) TimerEvent: {}
+[35.612821] (-) TimerEvent: {}
+[35.713572] (-) TimerEvent: {}
+[35.821461] (-) TimerEvent: {}
+[35.922342] (-) TimerEvent: {}
+[36.023035] (-) TimerEvent: {}
+[36.129832] (-) TimerEvent: {}
+[36.230806] (-) TimerEvent: {}
+[36.331587] (-) TimerEvent: {}
+[36.432346] (-) TimerEvent: {}
+[36.533074] (-) TimerEvent: {}
+[36.633778] (-) TimerEvent: {}
+[36.735018] (-) TimerEvent: {}
+[36.839706] (-) TimerEvent: {}
+[36.943272] (-) TimerEvent: {}
+[37.043977] (-) TimerEvent: {}
+[37.144764] (-) TimerEvent: {}
+[37.245511] (-) TimerEvent: {}
+[37.346238] (-) TimerEvent: {}
+[37.446989] (-) TimerEvent: {}
+[37.547705] (-) TimerEvent: {}
+[37.648456] (-) TimerEvent: {}
+[37.749195] (-) TimerEvent: {}
+[37.849922] (-) TimerEvent: {}
+[37.950662] (-) TimerEvent: {}
+[38.051549] (-) TimerEvent: {}
+[38.152267] (-) TimerEvent: {}
+[38.252999] (-) TimerEvent: {}
+[38.353808] (-) TimerEvent: {}
+[38.454577] (-) TimerEvent: {}
+[38.555317] (-) TimerEvent: {}
+[38.656057] (-) TimerEvent: {}
+[38.756815] (-) TimerEvent: {}
+[38.857620] (-) TimerEvent: {}
+[38.958827] (-) TimerEvent: {}
+[39.059785] (-) TimerEvent: {}
+[39.161143] (-) TimerEvent: {}
+[39.261936] (-) TimerEvent: {}
+[39.363208] (-) TimerEvent: {}
+[39.463987] (-) TimerEvent: {}
+[39.565975] (-) TimerEvent: {}
+[39.666884] (-) TimerEvent: {}
+[39.767543] (-) TimerEvent: {}
+[39.868343] (-) TimerEvent: {}
+[39.969273] (-) TimerEvent: {}
+[40.070026] (-) TimerEvent: {}
+[40.170730] (-) TimerEvent: {}
+[40.271435] (-) TimerEvent: {}
+[40.372147] (-) TimerEvent: {}
+[40.472794] (-) TimerEvent: {}
+[40.573450] (-) TimerEvent: {}
+[40.674561] (-) TimerEvent: {}
+[40.775258] (-) TimerEvent: {}
+[40.875919] (-) TimerEvent: {}
+[40.976608] (-) TimerEvent: {}
+[41.080922] (-) TimerEvent: {}
+[41.181665] (-) TimerEvent: {}
+[41.282406] (-) TimerEvent: {}
+[41.383800] (-) TimerEvent: {}
+[41.484597] (-) TimerEvent: {}
+[41.585358] (-) TimerEvent: {}
+[41.687508] (-) TimerEvent: {}
+[41.788884] (-) TimerEvent: {}
+[41.889682] (-) TimerEvent: {}
+[41.990527] (-) TimerEvent: {}
+[42.092759] (-) TimerEvent: {}
+[42.195682] (-) TimerEvent: {}
+[42.296691] (-) TimerEvent: {}
+[42.397478] (-) TimerEvent: {}
+[42.498233] (-) TimerEvent: {}
+[42.599096] (-) TimerEvent: {}
+[42.699894] (-) TimerEvent: {}
+[42.800695] (-) TimerEvent: {}
+[42.902626] (-) TimerEvent: {}
+[43.003340] (-) TimerEvent: {}
+[43.104061] (-) TimerEvent: {}
+[43.204763] (-) TimerEvent: {}
+[43.305494] (-) TimerEvent: {}
+[43.406229] (-) TimerEvent: {}
+[43.506985] (-) TimerEvent: {}
+[43.607718] (-) TimerEvent: {}
+[43.708399] (-) TimerEvent: {}
+[43.809162] (-) TimerEvent: {}
+[43.909899] (-) TimerEvent: {}
+[44.010645] (-) TimerEvent: {}
+[44.111378] (-) TimerEvent: {}
+[44.212158] (-) TimerEvent: {}
+[44.312888] (-) TimerEvent: {}
+[44.413609] (-) TimerEvent: {}
+[44.514353] (-) TimerEvent: {}
+[44.615611] (-) TimerEvent: {}
+[44.716336] (-) TimerEvent: {}
+[44.817688] (-) TimerEvent: {}
+[44.918391] (-) TimerEvent: {}
+[45.019789] (-) TimerEvent: {}
+[45.120721] (-) TimerEvent: {}
+[45.221517] (-) TimerEvent: {}
+[45.322220] (-) TimerEvent: {}
+[45.423223] (-) TimerEvent: {}
+[45.524297] (-) TimerEvent: {}
+[45.624959] (-) TimerEvent: {}
+[45.725646] (-) TimerEvent: {}
+[45.826388] (-) TimerEvent: {}
+[45.927756] (-) TimerEvent: {}
+[46.028881] (-) TimerEvent: {}
+[46.129574] (-) TimerEvent: {}
+[46.230301] (-) TimerEvent: {}
+[46.331009] (-) TimerEvent: {}
+[46.431723] (-) TimerEvent: {}
+[46.532461] (-) TimerEvent: {}
+[46.633169] (-) TimerEvent: {}
+[46.734342] (-) TimerEvent: {}
+[46.835171] (-) TimerEvent: {}
+[46.936093] (-) TimerEvent: {}
+[47.036917] (-) TimerEvent: {}
+[47.137805] (-) TimerEvent: {}
+[47.238657] (-) TimerEvent: {}
+[47.339362] (-) TimerEvent: {}
+[47.440080] (-) TimerEvent: {}
+[47.542888] (-) TimerEvent: {}
+[47.643620] (-) TimerEvent: {}
+[47.744390] (-) TimerEvent: {}
+[47.845131] (-) TimerEvent: {}
+[47.945826] (-) TimerEvent: {}
+[48.046691] (-) TimerEvent: {}
+[48.147458] (-) TimerEvent: {}
+[48.248221] (-) TimerEvent: {}
+[48.349039] (-) TimerEvent: {}
+[48.449780] (-) TimerEvent: {}
+[48.550579] (-) TimerEvent: {}
+[48.651308] (-) TimerEvent: {}
+[48.752192] (-) TimerEvent: {}
+[48.853196] (-) TimerEvent: {}
+[48.954058] (-) TimerEvent: {}
+[49.054797] (-) TimerEvent: {}
+[49.155564] (-) TimerEvent: {}
+[49.256318] (-) TimerEvent: {}
+[49.357020] (-) TimerEvent: {}
+[49.457752] (-) TimerEvent: {}
+[49.558461] (-) TimerEvent: {}
+[49.659158] (-) TimerEvent: {}
+[49.759867] (-) TimerEvent: {}
+[49.866437] (-) TimerEvent: {}
+[49.949625] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid obj_grab::start_grab(std::shared_ptr<grab_demo::srv::GrabObject_Request_<std::allocator<void> > >, std::shared_ptr<grab_demo::srv::GrabObject_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[49.970125] (-) TimerEvent: {}
+[49.970997] (grab_demo) StderrLine: {'line': b'\x1b[01m\x1b[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/grab_service_node.cpp:49:144:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kres\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[49.972190] (grab_demo) StderrLine: {'line': b'   49 | void obj_grab::start_grab(const std::shared_ptr<grab_demo::srv::GrabObject::Request> req,\x1b[01;35m\x1b[Kstd::shared_ptr<grab_demo::srv::GrabObject::Response> res\x1b[m\x1b[K)\n'}
+[49.974152] (grab_demo) StderrLine: {'line': b'      |                                                                                          \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[50.070459] (-) TimerEvent: {}
+[50.173629] (-) TimerEvent: {}
+[50.274635] (-) TimerEvent: {}
+[50.375624] (-) TimerEvent: {}
+[50.476707] (-) TimerEvent: {}
+[50.578578] (-) TimerEvent: {}
+[50.679280] (-) TimerEvent: {}
+[50.779947] (-) TimerEvent: {}
+[50.880637] (-) TimerEvent: {}
+[50.981339] (-) TimerEvent: {}
+[51.082055] (-) TimerEvent: {}
+[51.182962] (-) TimerEvent: {}
+[51.283616] (-) TimerEvent: {}
+[51.384256] (-) TimerEvent: {}
+[51.484936] (-) TimerEvent: {}
+[51.585643] (-) TimerEvent: {}
+[51.686342] (-) TimerEvent: {}
+[51.787015] (-) TimerEvent: {}
+[51.887673] (-) TimerEvent: {}
+[51.988347] (-) TimerEvent: {}
+[52.089021] (-) TimerEvent: {}
+[52.190478] (-) TimerEvent: {}
+[52.291117] (-) TimerEvent: {}
+[52.393517] (-) TimerEvent: {}
+[52.494204] (-) TimerEvent: {}
+[52.594887] (-) TimerEvent: {}
+[52.695566] (-) TimerEvent: {}
+[52.796235] (-) TimerEvent: {}
+[52.897066] (-) TimerEvent: {}
+[52.997829] (-) TimerEvent: {}
+[53.098551] (-) TimerEvent: {}
+[53.199603] (-) TimerEvent: {}
+[53.300316] (-) TimerEvent: {}
+[53.401034] (-) TimerEvent: {}
+[53.501821] (-) TimerEvent: {}
+[53.602561] (-) TimerEvent: {}
+[53.703267] (-) TimerEvent: {}
+[53.803947] (-) TimerEvent: {}
+[53.904658] (-) TimerEvent: {}
+[54.005396] (-) TimerEvent: {}
+[54.106127] (-) TimerEvent: {}
+[54.206959] (-) TimerEvent: {}
+[54.307712] (-) TimerEvent: {}
+[54.408405] (-) TimerEvent: {}
+[54.509083] (-) TimerEvent: {}
+[54.609832] (-) TimerEvent: {}
+[54.710883] (-) TimerEvent: {}
+[54.811576] (-) TimerEvent: {}
+[54.912293] (-) TimerEvent: {}
+[55.013208] (-) TimerEvent: {}
+[55.114235] (-) TimerEvent: {}
+[55.214954] (-) TimerEvent: {}
+[55.315877] (-) TimerEvent: {}
+[55.416601] (-) TimerEvent: {}
+[55.517311] (-) TimerEvent: {}
+[55.618020] (-) TimerEvent: {}
+[55.718720] (-) TimerEvent: {}
+[55.819638] (-) TimerEvent: {}
+[55.920550] (-) TimerEvent: {}
+[56.021502] (-) TimerEvent: {}
+[56.122260] (-) TimerEvent: {}
+[56.222999] (-) TimerEvent: {}
+[56.323742] (-) TimerEvent: {}
+[56.424450] (-) TimerEvent: {}
+[56.525168] (-) TimerEvent: {}
+[56.625909] (-) TimerEvent: {}
+[56.726650] (-) TimerEvent: {}
+[56.827407] (-) TimerEvent: {}
+[56.928172] (-) TimerEvent: {}
+[57.028926] (-) TimerEvent: {}
+[57.129681] (-) TimerEvent: {}
+[57.230503] (-) TimerEvent: {}
+[57.331244] (-) TimerEvent: {}
+[57.431959] (-) TimerEvent: {}
+[57.532671] (-) TimerEvent: {}
+[57.633504] (-) TimerEvent: {}
+[57.734372] (-) TimerEvent: {}
+[57.835169] (-) TimerEvent: {}
+[57.935920] (-) TimerEvent: {}
+[58.037052] (-) TimerEvent: {}
+[58.138484] (-) TimerEvent: {}
+[58.239406] (-) TimerEvent: {}
+[58.340377] (-) TimerEvent: {}
+[58.441184] (-) TimerEvent: {}
+[58.542034] (-) TimerEvent: {}
+[58.642962] (-) TimerEvent: {}
+[58.743935] (-) TimerEvent: {}
+[58.844970] (-) TimerEvent: {}
+[58.945923] (-) TimerEvent: {}
+[59.046985] (-) TimerEvent: {}
+[59.147942] (-) TimerEvent: {}
+[59.248962] (-) TimerEvent: {}
+[59.350009] (-) TimerEvent: {}
+[59.450827] (-) TimerEvent: {}
+[59.551732] (-) TimerEvent: {}
+[59.652751] (-) TimerEvent: {}
+[59.753687] (-) TimerEvent: {}
+[59.854941] (-) TimerEvent: {}
+[59.956062] (-) TimerEvent: {}
+[60.056826] (-) TimerEvent: {}
+[60.161155] (-) TimerEvent: {}
+[60.262363] (-) TimerEvent: {}
+[60.363589] (-) TimerEvent: {}
+[60.464696] (-) TimerEvent: {}
+[60.565821] (-) TimerEvent: {}
+[60.667239] (-) TimerEvent: {}
+[60.768444] (-) TimerEvent: {}
+[60.869131] (-) TimerEvent: {}
+[60.970871] (-) TimerEvent: {}
+[61.071586] (-) TimerEvent: {}
+[61.172249] (-) TimerEvent: {}
+[61.272893] (-) TimerEvent: {}
+[61.373560] (-) TimerEvent: {}
+[61.474224] (-) TimerEvent: {}
+[61.574951] (-) TimerEvent: {}
+[61.675641] (-) TimerEvent: {}
+[61.776366] (-) TimerEvent: {}
+[61.877091] (-) TimerEvent: {}
+[61.978059] (-) TimerEvent: {}
+[62.079438] (-) TimerEvent: {}
+[62.180168] (-) TimerEvent: {}
+[62.282514] (-) TimerEvent: {}
+[62.383256] (-) TimerEvent: {}
+[62.483953] (-) TimerEvent: {}
+[62.585417] (-) TimerEvent: {}
+[62.686315] (-) TimerEvent: {}
+[62.787065] (-) TimerEvent: {}
+[62.888008] (-) TimerEvent: {}
+[62.988790] (-) TimerEvent: {}
+[63.092231] (-) TimerEvent: {}
+[63.193131] (-) TimerEvent: {}
+[63.293792] (-) TimerEvent: {}
+[63.395135] (-) TimerEvent: {}
+[63.496285] (-) TimerEvent: {}
+[63.597150] (-) TimerEvent: {}
+[63.698357] (-) TimerEvent: {}
+[63.799495] (-) TimerEvent: {}
+[63.900773] (-) TimerEvent: {}
+[64.001726] (-) TimerEvent: {}
+[64.105295] (-) TimerEvent: {}
+[64.206062] (-) TimerEvent: {}
+[64.307524] (-) TimerEvent: {}
+[64.408262] (-) TimerEvent: {}
+[64.509052] (-) TimerEvent: {}
+[64.609806] (-) TimerEvent: {}
+[64.710586] (-) TimerEvent: {}
+[64.811419] (-) TimerEvent: {}
+[64.912160] (-) TimerEvent: {}
+[65.012883] (-) TimerEvent: {}
+[65.113622] (-) TimerEvent: {}
+[65.214533] (-) TimerEvent: {}
+[65.315204] (-) TimerEvent: {}
+[65.415867] (-) TimerEvent: {}
+[65.516795] (-) TimerEvent: {}
+[65.617480] (-) TimerEvent: {}
+[65.718882] (-) TimerEvent: {}
+[65.820098] (-) TimerEvent: {}
+[65.920787] (-) TimerEvent: {}
+[66.021463] (-) TimerEvent: {}
+[66.122128] (-) TimerEvent: {}
+[66.222809] (-) TimerEvent: {}
+[66.323488] (-) TimerEvent: {}
+[66.424982] (-) TimerEvent: {}
+[66.526356] (-) TimerEvent: {}
+[66.627124] (-) TimerEvent: {}
+[66.727998] (-) TimerEvent: {}
+[66.828786] (-) TimerEvent: {}
+[66.929471] (-) TimerEvent: {}
+[67.030452] (-) TimerEvent: {}
+[67.131249] (-) TimerEvent: {}
+[67.232902] (-) TimerEvent: {}
+[67.333628] (-) TimerEvent: {}
+[67.434576] (-) TimerEvent: {}
+[67.535372] (-) TimerEvent: {}
+[67.636188] (-) TimerEvent: {}
+[67.737043] (-) TimerEvent: {}
+[67.837823] (-) TimerEvent: {}
+[67.938807] (-) TimerEvent: {}
+[68.039597] (-) TimerEvent: {}
+[68.140556] (-) TimerEvent: {}
+[68.241415] (-) TimerEvent: {}
+[68.342180] (-) TimerEvent: {}
+[68.442927] (-) TimerEvent: {}
+[68.543649] (-) TimerEvent: {}
+[68.644406] (-) TimerEvent: {}
+[68.745132] (-) TimerEvent: {}
+[68.845849] (-) TimerEvent: {}
+[68.946822] (-) TimerEvent: {}
+[69.047520] (-) TimerEvent: {}
+[69.148259] (-) TimerEvent: {}
+[69.249038] (-) TimerEvent: {}
+[69.349857] (-) TimerEvent: {}
+[69.450627] (-) TimerEvent: {}
+[69.551350] (-) TimerEvent: {}
+[69.652091] (-) TimerEvent: {}
+[69.754464] (-) TimerEvent: {}
+[69.855509] (-) TimerEvent: {}
+[69.956361] (-) TimerEvent: {}
+[70.057552] (-) TimerEvent: {}
+[70.158450] (-) TimerEvent: {}
+[70.259371] (-) TimerEvent: {}
+[70.360197] (-) TimerEvent: {}
+[70.461091] (-) TimerEvent: {}
+[70.561873] (-) TimerEvent: {}
+[70.662667] (-) TimerEvent: {}
+[70.763509] (-) TimerEvent: {}
+[70.864682] (-) TimerEvent: {}
+[70.965372] (-) TimerEvent: {}
+[71.066741] (-) TimerEvent: {}
+[71.167436] (-) TimerEvent: {}
+[71.268357] (-) TimerEvent: {}
+[71.369474] (-) TimerEvent: {}
+[71.470903] (-) TimerEvent: {}
+[71.571760] (-) TimerEvent: {}
+[71.672580] (-) TimerEvent: {}
+[71.773392] (-) TimerEvent: {}
+[71.874298] (-) TimerEvent: {}
+[71.975911] (-) TimerEvent: {}
+[72.076828] (-) TimerEvent: {}
+[72.177686] (-) TimerEvent: {}
+[72.278402] (-) TimerEvent: {}
+[72.379117] (-) TimerEvent: {}
+[72.479975] (-) TimerEvent: {}
+[72.580843] (-) TimerEvent: {}
+[72.681679] (-) TimerEvent: {}
+[72.782402] (-) TimerEvent: {}
+[72.883089] (-) TimerEvent: {}
+[72.984379] (-) TimerEvent: {}
+[73.085057] (-) TimerEvent: {}
+[73.185765] (-) TimerEvent: {}
+[73.286832] (-) TimerEvent: {}
+[73.387541] (-) TimerEvent: {}
+[73.488274] (-) TimerEvent: {}
+[73.589504] (-) TimerEvent: {}
+[73.690264] (-) TimerEvent: {}
+[73.791013] (-) TimerEvent: {}
+[73.891895] (-) TimerEvent: {}
+[73.992615] (-) TimerEvent: {}
+[74.093398] (-) TimerEvent: {}
+[74.194207] (-) TimerEvent: {}
+[74.295208] (-) TimerEvent: {}
+[74.396030] (-) TimerEvent: {}
+[74.496904] (-) TimerEvent: {}
+[74.597583] (-) TimerEvent: {}
+[74.698303] (-) TimerEvent: {}
+[74.799019] (-) TimerEvent: {}
+[74.899677] (-) TimerEvent: {}
+[75.000350] (-) TimerEvent: {}
+[75.101017] (-) TimerEvent: {}
+[75.201728] (-) TimerEvent: {}
+[75.302440] (-) TimerEvent: {}
+[75.403181] (-) TimerEvent: {}
+[75.503942] (-) TimerEvent: {}
+[75.604644] (-) TimerEvent: {}
+[75.705350] (-) TimerEvent: {}
+[75.806052] (-) TimerEvent: {}
+[75.906811] (-) TimerEvent: {}
+[76.007508] (-) TimerEvent: {}
+[76.108203] (-) TimerEvent: {}
+[76.208944] (-) TimerEvent: {}
+[76.309794] (-) TimerEvent: {}
+[76.410719] (-) TimerEvent: {}
+[76.511674] (-) TimerEvent: {}
+[76.612820] (-) TimerEvent: {}
+[76.713606] (-) TimerEvent: {}
+[76.814425] (-) TimerEvent: {}
+[76.915421] (-) TimerEvent: {}
+[77.016120] (-) TimerEvent: {}
+[77.116827] (-) TimerEvent: {}
+[77.218191] (-) TimerEvent: {}
+[77.319656] (-) TimerEvent: {}
+[77.420369] (-) TimerEvent: {}
+[77.521097] (-) TimerEvent: {}
+[77.621791] (-) TimerEvent: {}
+[77.722492] (-) TimerEvent: {}
+[77.823185] (-) TimerEvent: {}
+[77.923967] (-) TimerEvent: {}
+[78.024739] (-) TimerEvent: {}
+[78.125587] (-) TimerEvent: {}
+[78.226383] (-) TimerEvent: {}
+[78.327095] (-) TimerEvent: {}
+[78.427841] (-) TimerEvent: {}
+[78.528616] (-) TimerEvent: {}
+[78.629524] (-) TimerEvent: {}
+[78.730293] (-) TimerEvent: {}
+[78.831021] (-) TimerEvent: {}
+[78.931742] (-) TimerEvent: {}
+[79.032444] (-) TimerEvent: {}
+[79.133199] (-) TimerEvent: {}
+[79.233999] (-) TimerEvent: {}
+[79.334768] (-) TimerEvent: {}
+[79.435474] (-) TimerEvent: {}
+[79.536208] (-) TimerEvent: {}
+[79.637254] (-) TimerEvent: {}
+[79.738002] (-) TimerEvent: {}
+[79.838760] (-) TimerEvent: {}
+[79.939493] (-) TimerEvent: {}
+[80.040243] (-) TimerEvent: {}
+[80.141017] (-) TimerEvent: {}
+[80.242020] (-) TimerEvent: {}
+[80.342841] (-) TimerEvent: {}
+[80.443690] (-) TimerEvent: {}
+[80.544453] (-) TimerEvent: {}
+[80.646103] (-) TimerEvent: {}
+[80.746887] (-) TimerEvent: {}
+[80.850673] (-) TimerEvent: {}
+[80.951588] (-) TimerEvent: {}
+[81.052489] (-) TimerEvent: {}
+[81.153288] (-) TimerEvent: {}
+[81.254071] (-) TimerEvent: {}
+[81.354949] (-) TimerEvent: {}
+[81.455682] (-) TimerEvent: {}
+[81.556412] (-) TimerEvent: {}
+[81.657131] (-) TimerEvent: {}
+[81.757871] (-) TimerEvent: {}
+[81.858612] (-) TimerEvent: {}
+[81.959454] (-) TimerEvent: {}
+[82.060199] (-) TimerEvent: {}
+[82.161092] (-) TimerEvent: {}
+[82.261881] (-) TimerEvent: {}
+[82.362962] (-) TimerEvent: {}
+[82.463674] (-) TimerEvent: {}
+[82.564720] (-) TimerEvent: {}
+[82.665456] (-) TimerEvent: {}
+[82.766208] (-) TimerEvent: {}
+[82.867155] (-) TimerEvent: {}
+[82.968139] (-) TimerEvent: {}
+[83.068971] (-) TimerEvent: {}
+[83.169982] (-) TimerEvent: {}
+[83.270905] (-) TimerEvent: {}
+[83.371645] (-) TimerEvent: {}
+[83.472397] (-) TimerEvent: {}
+[83.573063] (-) TimerEvent: {}
+[83.673813] (-) TimerEvent: {}
+[83.774558] (-) TimerEvent: {}
+[83.875273] (-) TimerEvent: {}
+[83.976331] (-) TimerEvent: {}
+[84.076999] (-) TimerEvent: {}
+[84.177766] (-) TimerEvent: {}
+[84.279362] (-) TimerEvent: {}
+[84.380018] (-) TimerEvent: {}
+[84.481059] (-) TimerEvent: {}
+[84.582237] (-) TimerEvent: {}
+[84.687034] (-) TimerEvent: {}
+[84.790462] (-) TimerEvent: {}
+[84.895384] (-) TimerEvent: {}
+[84.998556] (-) TimerEvent: {}
+[85.103367] (-) TimerEvent: {}
+[85.224858] (-) TimerEvent: {}
+[85.326765] (-) TimerEvent: {}
+[85.427508] (-) TimerEvent: {}
+[85.530424] (-) TimerEvent: {}
+[85.631135] (-) TimerEvent: {}
+[85.737945] (-) TimerEvent: {}
+[85.840711] (-) TimerEvent: {}
+[85.941670] (-) TimerEvent: {}
+[86.042856] (-) TimerEvent: {}
+[86.148610] (-) TimerEvent: {}
+[86.250705] (-) TimerEvent: {}
+[86.351351] (-) TimerEvent: {}
+[86.452048] (-) TimerEvent: {}
+[86.552751] (-) TimerEvent: {}
+[86.653420] (-) TimerEvent: {}
+[86.754222] (-) TimerEvent: {}
+[86.855537] (-) TimerEvent: {}
+[86.957231] (-) TimerEvent: {}
+[87.058318] (-) TimerEvent: {}
+[87.158971] (-) TimerEvent: {}
+[87.263732] (-) TimerEvent: {}
+[87.364766] (-) TimerEvent: {}
+[87.465684] (-) TimerEvent: {}
+[87.566671] (-) TimerEvent: {}
+[87.667682] (-) TimerEvent: {}
+[87.768349] (-) TimerEvent: {}
+[87.869035] (-) TimerEvent: {}
+[87.969748] (-) TimerEvent: {}
+[88.070547] (-) TimerEvent: {}
+[88.171563] (-) TimerEvent: {}
+[88.272268] (-) TimerEvent: {}
+[88.373054] (-) TimerEvent: {}
+[88.473795] (-) TimerEvent: {}
+[88.574540] (-) TimerEvent: {}
+[88.675255] (-) TimerEvent: {}
+[88.775964] (-) TimerEvent: {}
+[88.876646] (-) TimerEvent: {}
+[88.977428] (-) TimerEvent: {}
+[89.078117] (-) TimerEvent: {}
+[89.178856] (-) TimerEvent: {}
+[89.279570] (-) TimerEvent: {}
+[89.380265] (-) TimerEvent: {}
+[89.481477] (-) TimerEvent: {}
+[89.582203] (-) TimerEvent: {}
+[89.683003] (-) TimerEvent: {}
+[89.783885] (-) TimerEvent: {}
+[89.884699] (-) TimerEvent: {}
+[89.985451] (-) TimerEvent: {}
+[90.086188] (-) TimerEvent: {}
+[90.186881] (-) TimerEvent: {}
+[90.287573] (-) TimerEvent: {}
+[90.388324] (-) TimerEvent: {}
+[90.489589] (-) TimerEvent: {}
+[90.590256] (-) TimerEvent: {}
+[90.690982] (-) TimerEvent: {}
+[90.791693] (-) TimerEvent: {}
+[90.892787] (-) TimerEvent: {}
+[90.993564] (-) TimerEvent: {}
+[91.094243] (-) TimerEvent: {}
+[91.195000] (-) TimerEvent: {}
+[91.295773] (-) TimerEvent: {}
+[91.396909] (-) TimerEvent: {}
+[91.497661] (-) TimerEvent: {}
+[91.598528] (-) TimerEvent: {}
+[91.699609] (-) TimerEvent: {}
+[91.801690] (-) TimerEvent: {}
+[91.902576] (-) TimerEvent: {}
+[92.003310] (-) TimerEvent: {}
+[92.104114] (-) TimerEvent: {}
+[92.204905] (-) TimerEvent: {}
+[92.305659] (-) TimerEvent: {}
+[92.406470] (-) TimerEvent: {}
+[92.507206] (-) TimerEvent: {}
+[92.607997] (-) TimerEvent: {}
+[92.708697] (-) TimerEvent: {}
+[92.809669] (-) TimerEvent: {}
+[92.910432] (-) TimerEvent: {}
+[93.011234] (-) TimerEvent: {}
+[93.112014] (-) TimerEvent: {}
+[93.212869] (-) TimerEvent: {}
+[93.317578] (-) TimerEvent: {}
+[93.418527] (-) TimerEvent: {}
+[93.519258] (-) TimerEvent: {}
+[93.620047] (-) TimerEvent: {}
+[93.720949] (-) TimerEvent: {}
+[93.821800] (-) TimerEvent: {}
+[93.922560] (-) TimerEvent: {}
+[94.023529] (-) TimerEvent: {}
+[94.124368] (-) TimerEvent: {}
+[94.225103] (-) TimerEvent: {}
+[94.325834] (-) TimerEvent: {}
+[94.426571] (-) TimerEvent: {}
+[94.527297] (-) TimerEvent: {}
+[94.628056] (-) TimerEvent: {}
+[94.728827] (-) TimerEvent: {}
+[94.829552] (-) TimerEvent: {}
+[94.930258] (-) TimerEvent: {}
+[95.031044] (-) TimerEvent: {}
+[95.131772] (-) TimerEvent: {}
+[95.232469] (-) TimerEvent: {}
+[95.333167] (-) TimerEvent: {}
+[95.433892] (-) TimerEvent: {}
+[95.534626] (-) TimerEvent: {}
+[95.635370] (-) TimerEvent: {}
+[95.736158] (-) TimerEvent: {}
+[95.836958] (-) TimerEvent: {}
+[95.937668] (-) TimerEvent: {}
+[96.039312] (-) TimerEvent: {}
+[96.140010] (-) TimerEvent: {}
+[96.240737] (-) TimerEvent: {}
+[96.341486] (-) TimerEvent: {}
+[96.442246] (-) TimerEvent: {}
+[96.543023] (-) TimerEvent: {}
+[96.643706] (-) TimerEvent: {}
+[96.744408] (-) TimerEvent: {}
+[96.845132] (-) TimerEvent: {}
+[96.948080] (-) TimerEvent: {}
+[97.049461] (-) TimerEvent: {}
+[97.150158] (-) TimerEvent: {}
+[97.250893] (-) TimerEvent: {}
+[97.351581] (-) TimerEvent: {}
+[97.452798] (-) TimerEvent: {}
+[97.553986] (-) TimerEvent: {}
+[97.654713] (-) TimerEvent: {}
+[97.755486] (-) TimerEvent: {}
+[97.856270] (-) TimerEvent: {}
+[97.957016] (-) TimerEvent: {}
+[98.057769] (-) TimerEvent: {}
+[98.158536] (-) TimerEvent: {}
+[98.259825] (-) TimerEvent: {}
+[98.361100] (-) TimerEvent: {}
+[98.461978] (-) TimerEvent: {}
+[98.563088] (-) TimerEvent: {}
+[98.663824] (-) TimerEvent: {}
+[98.766836] (-) TimerEvent: {}
+[98.869289] (-) TimerEvent: {}
+[98.970139] (-) TimerEvent: {}
+[99.071119] (-) TimerEvent: {}
+[99.172163] (-) TimerEvent: {}
+[99.272925] (-) TimerEvent: {}
+[99.373762] (-) TimerEvent: {}
+[99.474495] (-) TimerEvent: {}
+[99.575664] (-) TimerEvent: {}
+[99.676923] (-) TimerEvent: {}
+[99.777897] (-) TimerEvent: {}
+[99.878607] (-) TimerEvent: {}
+[99.979249] (-) TimerEvent: {}
+[100.079916] (-) TimerEvent: {}
+[100.180577] (-) TimerEvent: {}
+[100.281304] (-) TimerEvent: {}
+[100.382048] (-) TimerEvent: {}
+[100.486061] (-) TimerEvent: {}
+[100.586772] (-) TimerEvent: {}
+[100.694448] (-) TimerEvent: {}
+[100.795127] (-) TimerEvent: {}
+[100.896418] (-) TimerEvent: {}
+[100.997181] (-) TimerEvent: {}
+[101.098097] (-) TimerEvent: {}
+[101.199085] (-) TimerEvent: {}
+[101.299778] (-) TimerEvent: {}
+[101.400578] (-) TimerEvent: {}
+[101.501377] (-) TimerEvent: {}
+[101.602113] (-) TimerEvent: {}
+[101.702913] (-) TimerEvent: {}
+[101.803635] (-) TimerEvent: {}
+[101.904395] (-) TimerEvent: {}
+[102.005166] (-) TimerEvent: {}
+[102.105877] (-) TimerEvent: {}
+[102.206603] (-) TimerEvent: {}
+[102.307341] (-) TimerEvent: {}
+[102.408076] (-) TimerEvent: {}
+[102.508779] (-) TimerEvent: {}
+[102.609475] (-) TimerEvent: {}
+[102.710233] (-) TimerEvent: {}
+[102.811093] (-) TimerEvent: {}
+[102.911839] (-) TimerEvent: {}
+[103.012532] (-) TimerEvent: {}
+[103.113323] (-) TimerEvent: {}
+[103.214136] (-) TimerEvent: {}
+[103.314843] (-) TimerEvent: {}
+[103.415557] (-) TimerEvent: {}
+[103.516457] (-) TimerEvent: {}
+[103.617621] (-) TimerEvent: {}
+[103.718570] (-) TimerEvent: {}
+[103.819481] (-) TimerEvent: {}
+[103.920363] (-) TimerEvent: {}
+[104.021080] (-) TimerEvent: {}
+[104.121836] (-) TimerEvent: {}
+[104.222573] (-) TimerEvent: {}
+[104.323329] (-) TimerEvent: {}
+[104.424124] (-) TimerEvent: {}
+[104.525044] (-) TimerEvent: {}
+[104.625762] (-) TimerEvent: {}
+[104.726413] (-) TimerEvent: {}
+[104.827099] (-) TimerEvent: {}
+[104.927944] (-) TimerEvent: {}
+[105.029390] (-) TimerEvent: {}
+[105.130249] (-) TimerEvent: {}
+[105.230980] (-) TimerEvent: {}
+[105.332355] (-) TimerEvent: {}
+[105.433078] (-) TimerEvent: {}
+[105.533825] (-) TimerEvent: {}
+[105.634574] (-) TimerEvent: {}
+[105.735293] (-) TimerEvent: {}
+[105.835994] (-) TimerEvent: {}
+[105.940978] (-) TimerEvent: {}
+[106.041765] (-) TimerEvent: {}
+[106.142561] (-) TimerEvent: {}
+[106.243654] (-) TimerEvent: {}
+[106.344825] (-) TimerEvent: {}
+[106.445864] (-) TimerEvent: {}
+[106.546941] (-) TimerEvent: {}
+[106.648160] (-) TimerEvent: {}
+[106.749255] (-) TimerEvent: {}
+[106.850078] (-) TimerEvent: {}
+[106.950873] (-) TimerEvent: {}
+[107.051852] (-) TimerEvent: {}
+[107.152811] (-) TimerEvent: {}
+[107.253619] (-) TimerEvent: {}
+[107.354413] (-) TimerEvent: {}
+[107.455647] (-) TimerEvent: {}
+[107.556743] (-) TimerEvent: {}
+[107.657830] (-) TimerEvent: {}
+[107.758619] (-) TimerEvent: {}
+[107.859384] (-) TimerEvent: {}
+[107.960231] (-) TimerEvent: {}
+[108.060963] (-) TimerEvent: {}
+[108.161686] (-) TimerEvent: {}
+[108.262440] (-) TimerEvent: {}
+[108.363269] (-) TimerEvent: {}
+[108.464012] (-) TimerEvent: {}
+[108.564930] (-) TimerEvent: {}
+[108.665658] (-) TimerEvent: {}
+[108.766668] (-) TimerEvent: {}
+[108.867370] (-) TimerEvent: {}
+[108.968508] (-) TimerEvent: {}
+[109.069220] (-) TimerEvent: {}
+[109.169899] (-) TimerEvent: {}
+[109.270552] (-) TimerEvent: {}
+[109.371243] (-) TimerEvent: {}
+[109.471896] (-) TimerEvent: {}
+[109.573433] (-) TimerEvent: {}
+[109.674314] (-) TimerEvent: {}
+[109.775227] (-) TimerEvent: {}
+[109.875900] (-) TimerEvent: {}
+[109.976880] (-) TimerEvent: {}
+[110.078421] (-) TimerEvent: {}
+[110.179102] (-) TimerEvent: {}
+[110.279837] (-) TimerEvent: {}
+[110.380489] (-) TimerEvent: {}
+[110.481162] (-) TimerEvent: {}
+[110.581833] (-) TimerEvent: {}
+[110.682764] (-) TimerEvent: {}
+[110.783539] (-) TimerEvent: {}
+[110.884215] (-) TimerEvent: {}
+[110.984900] (-) TimerEvent: {}
+[111.085554] (-) TimerEvent: {}
+[111.186722] (-) TimerEvent: {}
+[111.287366] (-) TimerEvent: {}
+[111.387998] (-) TimerEvent: {}
+[111.488665] (-) TimerEvent: {}
+[111.589294] (-) TimerEvent: {}
+[111.689957] (-) TimerEvent: {}
+[111.790706] (-) TimerEvent: {}
+[111.891369] (-) TimerEvent: {}
+[111.992318] (-) TimerEvent: {}
+[112.092965] (-) TimerEvent: {}
+[112.193641] (-) TimerEvent: {}
+[112.294369] (-) TimerEvent: {}
+[112.395046] (-) TimerEvent: {}
+[112.495723] (-) TimerEvent: {}
+[112.596418] (-) TimerEvent: {}
+[112.697336] (-) TimerEvent: {}
+[112.798083] (-) TimerEvent: {}
+[112.899369] (-) TimerEvent: {}
+[113.000300] (-) TimerEvent: {}
+[113.101156] (-) TimerEvent: {}
+[113.202197] (-) TimerEvent: {}
+[113.303475] (-) TimerEvent: {}
+[113.408344] (-) TimerEvent: {}
+[113.509704] (-) TimerEvent: {}
+[113.610549] (-) TimerEvent: {}
+[113.711273] (-) TimerEvent: {}
+[113.812417] (-) TimerEvent: {}
+[113.913217] (-) TimerEvent: {}
+[114.013969] (-) TimerEvent: {}
+[114.114692] (-) TimerEvent: {}
+[114.215433] (-) TimerEvent: {}
+[114.316110] (-) TimerEvent: {}
+[114.417179] (-) TimerEvent: {}
+[114.518269] (-) TimerEvent: {}
+[114.619160] (-) TimerEvent: {}
+[114.719929] (-) TimerEvent: {}
+[114.820597] (-) TimerEvent: {}
+[114.921294] (-) TimerEvent: {}
+[115.022068] (-) TimerEvent: {}
+[115.122827] (-) TimerEvent: {}
+[115.223554] (-) TimerEvent: {}
+[115.324243] (-) TimerEvent: {}
+[115.424930] (-) TimerEvent: {}
+[115.525696] (-) TimerEvent: {}
+[115.626441] (-) TimerEvent: {}
+[115.727191] (-) TimerEvent: {}
+[115.828245] (-) TimerEvent: {}
+[115.928953] (-) TimerEvent: {}
+[116.029703] (-) TimerEvent: {}
+[116.134186] (-) TimerEvent: {}
+[116.234904] (-) TimerEvent: {}
+[116.335717] (-) TimerEvent: {}
+[116.438628] (-) TimerEvent: {}
+[116.539613] (-) TimerEvent: {}
+[116.640354] (-) TimerEvent: {}
+[116.741106] (-) TimerEvent: {}
+[116.841797] (-) TimerEvent: {}
+[116.942563] (-) TimerEvent: {}
+[117.043334] (-) TimerEvent: {}
+[117.144620] (-) TimerEvent: {}
+[117.245327] (-) TimerEvent: {}
+[117.346026] (-) TimerEvent: {}
+[117.446775] (-) TimerEvent: {}
+[117.547528] (-) TimerEvent: {}
+[117.648292] (-) TimerEvent: {}
+[117.749084] (-) TimerEvent: {}
+[117.849867] (-) TimerEvent: {}
+[117.950710] (-) TimerEvent: {}
+[118.051505] (-) TimerEvent: {}
+[118.152216] (-) TimerEvent: {}
+[118.253004] (-) TimerEvent: {}
+[118.353932] (-) TimerEvent: {}
+[118.454746] (-) TimerEvent: {}
+[118.555502] (-) TimerEvent: {}
+[118.656406] (-) TimerEvent: {}
+[118.757218] (-) TimerEvent: {}
+[118.858043] (-) TimerEvent: {}
+[118.958785] (-) TimerEvent: {}
+[119.059682] (-) TimerEvent: {}
+[119.160374] (-) TimerEvent: {}
+[119.261300] (-) TimerEvent: {}
+[119.362268] (-) TimerEvent: {}
+[119.463242] (-) TimerEvent: {}
+[119.563933] (-) TimerEvent: {}
+[119.664776] (-) TimerEvent: {}
+[119.767462] (-) TimerEvent: {}
+[119.868923] (-) TimerEvent: {}
+[119.970906] (-) TimerEvent: {}
+[120.078434] (-) TimerEvent: {}
+[120.179445] (-) TimerEvent: {}
+[120.280716] (-) TimerEvent: {}
+[120.381762] (-) TimerEvent: {}
+[120.482912] (-) TimerEvent: {}
+[120.583613] (-) TimerEvent: {}
+[120.684351] (-) TimerEvent: {}
+[120.785061] (-) TimerEvent: {}
+[120.885767] (-) TimerEvent: {}
+[120.986455] (-) TimerEvent: {}
+[121.089537] (-) TimerEvent: {}
+[121.190789] (-) TimerEvent: {}
+[121.291452] (-) TimerEvent: {}
+[121.392196] (-) TimerEvent: {}
+[121.496861] (-) TimerEvent: {}
+[121.597610] (-) TimerEvent: {}
+[121.698429] (-) TimerEvent: {}
+[121.799158] (-) TimerEvent: {}
+[121.901284] (-) TimerEvent: {}
+[122.001962] (-) TimerEvent: {}
+[122.102656] (-) TimerEvent: {}
+[122.203413] (-) TimerEvent: {}
+[122.304663] (-) TimerEvent: {}
+[122.405425] (-) TimerEvent: {}
+[122.506102] (-) TimerEvent: {}
+[122.606961] (-) TimerEvent: {}
+[122.707744] (-) TimerEvent: {}
+[122.808521] (-) TimerEvent: {}
+[122.909250] (-) TimerEvent: {}
+[123.010008] (-) TimerEvent: {}
+[123.110835] (-) TimerEvent: {}
+[123.211651] (-) TimerEvent: {}
+[123.312407] (-) TimerEvent: {}
+[123.413183] (-) TimerEvent: {}
+[123.514045] (-) TimerEvent: {}
+[123.614897] (-) TimerEvent: {}
+[123.716548] (-) TimerEvent: {}
+[123.818460] (-) TimerEvent: {}
+[123.919329] (-) TimerEvent: {}
+[124.020011] (-) TimerEvent: {}
+[124.120665] (-) TimerEvent: {}
+[124.221390] (-) TimerEvent: {}
+[124.322086] (-) TimerEvent: {}
+[124.422775] (-) TimerEvent: {}
+[124.523434] (-) TimerEvent: {}
+[124.624129] (-) TimerEvent: {}
+[124.724850] (-) TimerEvent: {}
+[124.825563] (-) TimerEvent: {}
+[124.926355] (-) TimerEvent: {}
+[125.027100] (-) TimerEvent: {}
+[125.127737] (-) TimerEvent: {}
+[125.228778] (-) TimerEvent: {}
+[125.329514] (-) TimerEvent: {}
+[125.430926] (-) TimerEvent: {}
+[125.531688] (-) TimerEvent: {}
+[125.632574] (-) TimerEvent: {}
+[125.733483] (-) TimerEvent: {}
+[125.834713] (-) TimerEvent: {}
+[125.935734] (-) TimerEvent: {}
+[126.036831] (-) TimerEvent: {}
+[126.137712] (-) TimerEvent: {}
+[126.239450] (-) TimerEvent: {}
+[126.340918] (-) TimerEvent: {}
+[126.441964] (-) TimerEvent: {}
+[126.543012] (-) TimerEvent: {}
+[126.643804] (-) TimerEvent: {}
+[126.745343] (-) TimerEvent: {}
+[126.846180] (-) TimerEvent: {}
+[126.947055] (-) TimerEvent: {}
+[127.047799] (-) TimerEvent: {}
+[127.148600] (-) TimerEvent: {}
+[127.252353] (-) TimerEvent: {}
+[127.353361] (-) TimerEvent: {}
+[127.454069] (-) TimerEvent: {}
+[127.554807] (-) TimerEvent: {}
+[127.655758] (-) TimerEvent: {}
+[127.756614] (-) TimerEvent: {}
+[127.857633] (-) TimerEvent: {}
+[127.958755] (-) TimerEvent: {}
+[128.059652] (-) TimerEvent: {}
+[128.160604] (-) TimerEvent: {}
+[128.261912] (-) TimerEvent: {}
+[128.362661] (-) TimerEvent: {}
+[128.463394] (-) TimerEvent: {}
+[128.564243] (-) TimerEvent: {}
+[128.665018] (-) TimerEvent: {}
+[128.765744] (-) TimerEvent: {}
+[128.866703] (-) TimerEvent: {}
+[128.967794] (-) TimerEvent: {}
+[129.068479] (-) TimerEvent: {}
+[129.169529] (-) TimerEvent: {}
+[129.270236] (-) TimerEvent: {}
+[129.370931] (-) TimerEvent: {}
+[129.471691] (-) TimerEvent: {}
+[129.572357] (-) TimerEvent: {}
+[129.673042] (-) TimerEvent: {}
+[129.773792] (-) TimerEvent: {}
+[129.874583] (-) TimerEvent: {}
+[129.975455] (-) TimerEvent: {}
+[130.076505] (-) TimerEvent: {}
+[130.177686] (-) TimerEvent: {}
+[130.278403] (-) TimerEvent: {}
+[130.379330] (-) TimerEvent: {}
+[130.480122] (-) TimerEvent: {}
+[130.581053] (-) TimerEvent: {}
+[130.682008] (-) TimerEvent: {}
+[130.783074] (-) TimerEvent: {}
+[130.884355] (-) TimerEvent: {}
+[130.985274] (-) TimerEvent: {}
+[131.086081] (-) TimerEvent: {}
+[131.186897] (-) TimerEvent: {}
+[131.288263] (-) TimerEvent: {}
+[131.389266] (-) TimerEvent: {}
+[131.489965] (-) TimerEvent: {}
+[131.590706] (-) TimerEvent: {}
+[131.691551] (-) TimerEvent: {}
+[131.792631] (-) TimerEvent: {}
+[131.893566] (-) TimerEvent: {}
+[131.994481] (-) TimerEvent: {}
+[132.095243] (-) TimerEvent: {}
+[132.195972] (-) TimerEvent: {}
+[132.296726] (-) TimerEvent: {}
+[132.397416] (-) TimerEvent: {}
+[132.498123] (-) TimerEvent: {}
+[132.598954] (-) TimerEvent: {}
+[132.700608] (-) TimerEvent: {}
+[132.801684] (-) TimerEvent: {}
+[132.902668] (-) TimerEvent: {}
+[133.003656] (-) TimerEvent: {}
+[133.104810] (-) TimerEvent: {}
+[133.205809] (-) TimerEvent: {}
+[133.306572] (-) TimerEvent: {}
+[133.407279] (-) TimerEvent: {}
+[133.508069] (-) TimerEvent: {}
+[133.608817] (-) TimerEvent: {}
+[133.709532] (-) TimerEvent: {}
+[133.810211] (-) TimerEvent: {}
+[133.910895] (-) TimerEvent: {}
+[134.011585] (-) TimerEvent: {}
+[134.112321] (-) TimerEvent: {}
+[134.213126] (-) TimerEvent: {}
+[134.313885] (-) TimerEvent: {}
+[134.414642] (-) TimerEvent: {}
+[134.515330] (-) TimerEvent: {}
+[134.616061] (-) TimerEvent: {}
+[134.716811] (-) TimerEvent: {}
+[134.817556] (-) TimerEvent: {}
+[134.918396] (-) TimerEvent: {}
+[135.019178] (-) TimerEvent: {}
+[135.119943] (-) TimerEvent: {}
+[135.220626] (-) TimerEvent: {}
+[135.321371] (-) TimerEvent: {}
+[135.422071] (-) TimerEvent: {}
+[135.522944] (-) TimerEvent: {}
+[135.624214] (-) TimerEvent: {}
+[135.725589] (-) TimerEvent: {}
+[135.826719] (-) TimerEvent: {}
+[135.929542] (-) TimerEvent: {}
+[136.030359] (-) TimerEvent: {}
+[136.131033] (-) TimerEvent: {}
+[136.231761] (-) TimerEvent: {}
+[136.332492] (-) TimerEvent: {}
+[136.433231] (-) TimerEvent: {}
+[136.534251] (-) TimerEvent: {}
+[136.635270] (-) TimerEvent: {}
+[136.736004] (-) TimerEvent: {}
+[136.837041] (-) TimerEvent: {}
+[136.938455] (-) TimerEvent: {}
+[137.039324] (-) TimerEvent: {}
+[137.140172] (-) TimerEvent: {}
+[137.240886] (-) TimerEvent: {}
+[137.341646] (-) TimerEvent: {}
+[137.442583] (-) TimerEvent: {}
+[137.543354] (-) TimerEvent: {}
+[137.644146] (-) TimerEvent: {}
+[137.744976] (-) TimerEvent: {}
+[137.845913] (-) TimerEvent: {}
+[137.946817] (-) TimerEvent: {}
+[138.047580] (-) TimerEvent: {}
+[138.148531] (-) TimerEvent: {}
+[138.249275] (-) TimerEvent: {}
+[138.350030] (-) TimerEvent: {}
+[138.450824] (-) TimerEvent: {}
+[138.551560] (-) TimerEvent: {}
+[138.652336] (-) TimerEvent: {}
+[138.753063] (-) TimerEvent: {}
+[138.853781] (-) TimerEvent: {}
+[138.954440] (-) TimerEvent: {}
+[139.055444] (-) TimerEvent: {}
+[139.156384] (-) TimerEvent: {}
+[139.257194] (-) TimerEvent: {}
+[139.357936] (-) TimerEvent: {}
+[139.459140] (-) TimerEvent: {}
+[139.559915] (-) TimerEvent: {}
+[139.660696] (-) TimerEvent: {}
+[139.761575] (-) TimerEvent: {}
+[139.862336] (-) TimerEvent: {}
+[139.963044] (-) TimerEvent: {}
+[140.063729] (-) TimerEvent: {}
+[140.164375] (-) TimerEvent: {}
+[140.265248] (-) TimerEvent: {}
+[140.365943] (-) TimerEvent: {}
+[140.467272] (-) TimerEvent: {}
+[140.568813] (-) TimerEvent: {}
+[140.669611] (-) TimerEvent: {}
+[140.770351] (-) TimerEvent: {}
+[140.872154] (-) TimerEvent: {}
+[140.972836] (-) TimerEvent: {}
+[141.073528] (-) TimerEvent: {}
+[141.174332] (-) TimerEvent: {}
+[141.275215] (-) TimerEvent: {}
+[141.376048] (-) TimerEvent: {}
+[141.477533] (-) TimerEvent: {}
+[141.578325] (-) TimerEvent: {}
+[141.679059] (-) TimerEvent: {}
+[141.779791] (-) TimerEvent: {}
+[141.880540] (-) TimerEvent: {}
+[141.981205] (-) TimerEvent: {}
+[142.081882] (-) TimerEvent: {}
+[142.182988] (-) TimerEvent: {}
+[142.283923] (-) TimerEvent: {}
+[142.385023] (-) TimerEvent: {}
+[142.485934] (-) TimerEvent: {}
+[142.586996] (-) TimerEvent: {}
+[142.687656] (-) TimerEvent: {}
+[142.788375] (-) TimerEvent: {}
+[142.889057] (-) TimerEvent: {}
+[142.989738] (-) TimerEvent: {}
+[143.090423] (-) TimerEvent: {}
+[143.191112] (-) TimerEvent: {}
+[143.291763] (-) TimerEvent: {}
+[143.392438] (-) TimerEvent: {}
+[143.493572] (-) TimerEvent: {}
+[143.594238] (-) TimerEvent: {}
+[143.694947] (-) TimerEvent: {}
+[143.795647] (-) TimerEvent: {}
+[143.896453] (-) TimerEvent: {}
+[143.997425] (-) TimerEvent: {}
+[144.098267] (-) TimerEvent: {}
+[144.200059] (-) TimerEvent: {}
+[144.300849] (-) TimerEvent: {}
+[144.401598] (-) TimerEvent: {}
+[144.502760] (-) TimerEvent: {}
+[144.603484] (-) TimerEvent: {}
+[144.704395] (-) TimerEvent: {}
+[144.805229] (-) TimerEvent: {}
+[144.905942] (-) TimerEvent: {}
+[145.006737] (-) TimerEvent: {}
+[145.107876] (-) TimerEvent: {}
+[145.208581] (-) TimerEvent: {}
+[145.309407] (-) TimerEvent: {}
+[145.410162] (-) TimerEvent: {}
+[145.510906] (-) TimerEvent: {}
+[145.611877] (-) TimerEvent: {}
+[145.712574] (-) TimerEvent: {}
+[145.813521] (-) TimerEvent: {}
+[145.914319] (-) TimerEvent: {}
+[146.015236] (-) TimerEvent: {}
+[146.116111] (-) TimerEvent: {}
+[146.216794] (-) TimerEvent: {}
+[146.317456] (-) TimerEvent: {}
+[146.418319] (-) TimerEvent: {}
+[146.519629] (-) TimerEvent: {}
+[146.620603] (-) TimerEvent: {}
+[146.721356] (-) TimerEvent: {}
+[146.826423] (-) TimerEvent: {}
+[146.928830] (-) TimerEvent: {}
+[147.029518] (-) TimerEvent: {}
+[147.131139] (-) TimerEvent: {}
+[147.232270] (-) TimerEvent: {}
+[147.333869] (-) TimerEvent: {}
+[147.438496] (-) TimerEvent: {}
+[147.539207] (-) TimerEvent: {}
+[147.640394] (-) TimerEvent: {}
+[147.741577] (-) TimerEvent: {}
+[147.843015] (-) TimerEvent: {}
+[147.950486] (-) TimerEvent: {}
+[148.052113] (-) TimerEvent: {}
+[148.152839] (-) TimerEvent: {}
+[148.253627] (-) TimerEvent: {}
+[148.354414] (-) TimerEvent: {}
+[148.455395] (-) TimerEvent: {}
+[148.556421] (-) TimerEvent: {}
+[148.657619] (-) TimerEvent: {}
+[148.758838] (-) TimerEvent: {}
+[148.859867] (-) TimerEvent: {}
+[148.960770] (-) TimerEvent: {}
+[149.061504] (-) TimerEvent: {}
+[149.162415] (-) TimerEvent: {}
+[149.264456] (-) TimerEvent: {}
+[149.366034] (-) TimerEvent: {}
+[149.466811] (-) TimerEvent: {}
+[149.567572] (-) TimerEvent: {}
+[149.668714] (-) TimerEvent: {}
+[149.769778] (-) TimerEvent: {}
+[149.870840] (-) TimerEvent: {}
+[149.971876] (-) TimerEvent: {}
+[150.072591] (-) TimerEvent: {}
+[150.173227] (-) TimerEvent: {}
+[150.278989] (-) TimerEvent: {}
+[150.385037] (-) TimerEvent: {}
+[150.486067] (-) TimerEvent: {}
+[150.587459] (-) TimerEvent: {}
+[150.688122] (-) TimerEvent: {}
+[150.788820] (-) TimerEvent: {}
+[150.889444] (-) TimerEvent: {}
+[150.990169] (-) TimerEvent: {}
+[151.090974] (-) TimerEvent: {}
+[151.193185] (-) TimerEvent: {}
+[151.293912] (-) TimerEvent: {}
+[151.394691] (-) TimerEvent: {}
+[151.495422] (-) TimerEvent: {}
+[151.596195] (-) TimerEvent: {}
+[151.696910] (-) TimerEvent: {}
+[151.797952] (-) TimerEvent: {}
+[151.898938] (-) TimerEvent: {}
+[151.999637] (-) TimerEvent: {}
+[152.100353] (-) TimerEvent: {}
+[152.201209] (-) TimerEvent: {}
+[152.301988] (-) TimerEvent: {}
+[152.402776] (-) TimerEvent: {}
+[152.503590] (-) TimerEvent: {}
+[152.604319] (-) TimerEvent: {}
+[152.705100] (-) TimerEvent: {}
+[152.805773] (-) TimerEvent: {}
+[152.906430] (-) TimerEvent: {}
+[153.007397] (-) TimerEvent: {}
+[153.108122] (-) TimerEvent: {}
+[153.208930] (-) TimerEvent: {}
+[153.309674] (-) TimerEvent: {}
+[153.410419] (-) TimerEvent: {}
+[153.511188] (-) TimerEvent: {}
+[153.611977] (-) TimerEvent: {}
+[153.712709] (-) TimerEvent: {}
+[153.813412] (-) TimerEvent: {}
+[153.914076] (-) TimerEvent: {}
+[154.014779] (-) TimerEvent: {}
+[154.115565] (-) TimerEvent: {}
+[154.216232] (-) TimerEvent: {}
+[154.316917] (-) TimerEvent: {}
+[154.417587] (-) TimerEvent: {}
+[154.518307] (-) TimerEvent: {}
+[154.618966] (-) TimerEvent: {}
+[154.719650] (-) TimerEvent: {}
+[154.820321] (-) TimerEvent: {}
+[154.921045] (-) TimerEvent: {}
+[155.030461] (-) TimerEvent: {}
+[155.131168] (-) TimerEvent: {}
+[155.231846] (-) TimerEvent: {}
+[155.332520] (-) TimerEvent: {}
+[155.433238] (-) TimerEvent: {}
+[155.534000] (-) TimerEvent: {}
+[155.634727] (-) TimerEvent: {}
+[155.735468] (-) TimerEvent: {}
+[155.836174] (-) TimerEvent: {}
+[155.936897] (-) TimerEvent: {}
+[156.037682] (-) TimerEvent: {}
+[156.138436] (-) TimerEvent: {}
+[156.239374] (-) TimerEvent: {}
+[156.340121] (-) TimerEvent: {}
+[156.440853] (-) TimerEvent: {}
+[156.542087] (-) TimerEvent: {}
+[156.642839] (-) TimerEvent: {}
+[156.743737] (-) TimerEvent: {}
+[156.844532] (-) TimerEvent: {}
+[156.945252] (-) TimerEvent: {}
+[157.045949] (-) TimerEvent: {}
+[157.146630] (-) TimerEvent: {}
+[157.247330] (-) TimerEvent: {}
+[157.348049] (-) TimerEvent: {}
+[157.448765] (-) TimerEvent: {}
+[157.549484] (-) TimerEvent: {}
+[157.650179] (-) TimerEvent: {}
+[157.750948] (-) TimerEvent: {}
+[157.851621] (-) TimerEvent: {}
+[157.955619] (-) TimerEvent: {}
+[158.056343] (-) TimerEvent: {}
+[158.157283] (-) TimerEvent: {}
+[158.258290] (-) TimerEvent: {}
+[158.359302] (-) TimerEvent: {}
+[158.460080] (-) TimerEvent: {}
+[158.561190] (-) TimerEvent: {}
+[158.661909] (-) TimerEvent: {}
+[158.764778] (-) TimerEvent: {}
+[158.865465] (-) TimerEvent: {}
+[158.966189] (-) TimerEvent: {}
+[159.066942] (-) TimerEvent: {}
+[159.167613] (-) TimerEvent: {}
+[159.268308] (-) TimerEvent: {}
+[159.369015] (-) TimerEvent: {}
+[159.469704] (-) TimerEvent: {}
+[159.570428] (-) TimerEvent: {}
+[159.671118] (-) TimerEvent: {}
+[159.771780] (-) TimerEvent: {}
+[159.872521] (-) TimerEvent: {}
+[159.973202] (-) TimerEvent: {}
+[160.073936] (-) TimerEvent: {}
+[160.174903] (-) TimerEvent: {}
+[160.275685] (-) TimerEvent: {}
+[160.376370] (-) TimerEvent: {}
+[160.477126] (-) TimerEvent: {}
+[160.577785] (-) TimerEvent: {}
+[160.678675] (-) TimerEvent: {}
+[160.779332] (-) TimerEvent: {}
+[160.880016] (-) TimerEvent: {}
+[160.980743] (-) TimerEvent: {}
+[161.081439] (-) TimerEvent: {}
+[161.182383] (-) TimerEvent: {}
+[161.283565] (-) TimerEvent: {}
+[161.384513] (-) TimerEvent: {}
+[161.485760] (-) TimerEvent: {}
+[161.587788] (-) TimerEvent: {}
+[161.688574] (-) TimerEvent: {}
+[161.789371] (-) TimerEvent: {}
+[161.890700] (-) TimerEvent: {}
+[161.992116] (-) TimerEvent: {}
+[162.093485] (-) TimerEvent: {}
+[162.194217] (-) TimerEvent: {}
+[162.295275] (-) TimerEvent: {}
+[162.396364] (-) TimerEvent: {}
+[162.497077] (-) TimerEvent: {}
+[162.597843] (-) TimerEvent: {}
+[162.698634] (-) TimerEvent: {}
+[162.799764] (-) TimerEvent: {}
+[162.900500] (-) TimerEvent: {}
+[163.001218] (-) TimerEvent: {}
+[163.101890] (-) TimerEvent: {}
+[163.202640] (-) TimerEvent: {}
+[163.303352] (-) TimerEvent: {}
+[163.404033] (-) TimerEvent: {}
+[163.504737] (-) TimerEvent: {}
+[163.605422] (-) TimerEvent: {}
+[163.706171] (-) TimerEvent: {}
+[163.807054] (-) TimerEvent: {}
+[163.907854] (-) TimerEvent: {}
+[164.008537] (-) TimerEvent: {}
+[164.109227] (-) TimerEvent: {}
+[164.209991] (-) TimerEvent: {}
+[164.310845] (-) TimerEvent: {}
+[164.411632] (-) TimerEvent: {}
+[164.512665] (-) TimerEvent: {}
+[164.613782] (-) TimerEvent: {}
+[164.714677] (-) TimerEvent: {}
+[164.815388] (-) TimerEvent: {}
+[164.916116] (-) TimerEvent: {}
+[165.016914] (-) TimerEvent: {}
+[165.117620] (-) TimerEvent: {}
+[165.218332] (-) TimerEvent: {}
+[165.319019] (-) TimerEvent: {}
+[165.419729] (-) TimerEvent: {}
+[165.520465] (-) TimerEvent: {}
+[165.621453] (-) TimerEvent: {}
+[165.722210] (-) TimerEvent: {}
+[165.822888] (-) TimerEvent: {}
+[165.923591] (-) TimerEvent: {}
+[166.024327] (-) TimerEvent: {}
+[166.124974] (-) TimerEvent: {}
+[166.225901] (-) TimerEvent: {}
+[166.326678] (-) TimerEvent: {}
+[166.427508] (-) TimerEvent: {}
+[166.528308] (-) TimerEvent: {}
+[166.629101] (-) TimerEvent: {}
+[166.729806] (-) TimerEvent: {}
+[166.830584] (-) TimerEvent: {}
+[166.931688] (-) TimerEvent: {}
+[167.032472] (-) TimerEvent: {}
+[167.133194] (-) TimerEvent: {}
+[167.233954] (-) TimerEvent: {}
+[167.334712] (-) TimerEvent: {}
+[167.435456] (-) TimerEvent: {}
+[167.536298] (-) TimerEvent: {}
+[167.637153] (-) TimerEvent: {}
+[167.737951] (-) TimerEvent: {}
+[167.838694] (-) TimerEvent: {}
+[167.939443] (-) TimerEvent: {}
+[168.040177] (-) TimerEvent: {}
+[168.140933] (-) TimerEvent: {}
+[168.241693] (-) TimerEvent: {}
+[168.342470] (-) TimerEvent: {}
+[168.443277] (-) TimerEvent: {}
+[168.544042] (-) TimerEvent: {}
+[168.644748] (-) TimerEvent: {}
+[168.745503] (-) TimerEvent: {}
+[168.846218] (-) TimerEvent: {}
+[168.946961] (-) TimerEvent: {}
+[169.047658] (-) TimerEvent: {}
+[169.148345] (-) TimerEvent: {}
+[169.249046] (-) TimerEvent: {}
+[169.350031] (-) TimerEvent: {}
+[169.450748] (-) TimerEvent: {}
+[169.551454] (-) TimerEvent: {}
+[169.652131] (-) TimerEvent: {}
+[169.753712] (-) TimerEvent: {}
+[169.854668] (-) TimerEvent: {}
+[169.955423] (-) TimerEvent: {}
+[170.056128] (-) TimerEvent: {}
+[170.156935] (-) TimerEvent: {}
+[170.257739] (-) TimerEvent: {}
+[170.358621] (-) TimerEvent: {}
+[170.459466] (-) TimerEvent: {}
+[170.560212] (-) TimerEvent: {}
+[170.660977] (-) TimerEvent: {}
+[170.761711] (-) TimerEvent: {}
+[170.871865] (-) TimerEvent: {}
+[170.972552] (-) TimerEvent: {}
+[171.073221] (-) TimerEvent: {}
+[171.174439] (-) TimerEvent: {}
+[171.275090] (-) TimerEvent: {}
+[171.375735] (-) TimerEvent: {}
+[171.476683] (-) TimerEvent: {}
+[171.577323] (-) TimerEvent: {}
+[171.677989] (-) TimerEvent: {}
+[171.778688] (-) TimerEvent: {}
+[171.879380] (-) TimerEvent: {}
+[171.980074] (-) TimerEvent: {}
+[172.081044] (-) TimerEvent: {}
+[172.181707] (-) TimerEvent: {}
+[172.282424] (-) TimerEvent: {}
+[172.383086] (-) TimerEvent: {}
+[172.483786] (-) TimerEvent: {}
+[172.584659] (-) TimerEvent: {}
+[172.685359] (-) TimerEvent: {}
+[172.786040] (-) TimerEvent: {}
+[172.886776] (-) TimerEvent: {}
+[172.987463] (-) TimerEvent: {}
+[173.088149] (-) TimerEvent: {}
+[173.188880] (-) TimerEvent: {}
+[173.290194] (-) TimerEvent: {}
+[173.390972] (-) TimerEvent: {}
+[173.491962] (-) TimerEvent: {}
+[173.592607] (-) TimerEvent: {}
+[173.693353] (-) TimerEvent: {}
+[173.794422] (-) TimerEvent: {}
+[173.895302] (-) TimerEvent: {}
+[173.996436] (-) TimerEvent: {}
+[174.097544] (-) TimerEvent: {}
+[174.199043] (-) TimerEvent: {}
+[174.300463] (-) TimerEvent: {}
+[174.401355] (-) TimerEvent: {}
+[174.502087] (-) TimerEvent: {}
+[174.602859] (-) TimerEvent: {}
+[174.704219] (-) TimerEvent: {}
+[174.804961] (-) TimerEvent: {}
+[174.905686] (-) TimerEvent: {}
+[175.006564] (-) TimerEvent: {}
+[175.107302] (-) TimerEvent: {}
+[175.208325] (-) TimerEvent: {}
+[175.309005] (-) TimerEvent: {}
+[175.409750] (-) TimerEvent: {}
+[175.510463] (-) TimerEvent: {}
+[175.611181] (-) TimerEvent: {}
+[175.711895] (-) TimerEvent: {}
+[175.812647] (-) TimerEvent: {}
+[175.913425] (-) TimerEvent: {}
+[176.014155] (-) TimerEvent: {}
+[176.114981] (-) TimerEvent: {}
+[176.216366] (-) TimerEvent: {}
+[176.318188] (-) TimerEvent: {}
+[176.418917] (-) TimerEvent: {}
+[176.519579] (-) TimerEvent: {}
+[176.620257] (-) TimerEvent: {}
+[176.721683] (-) TimerEvent: {}
+[176.822401] (-) TimerEvent: {}
+[176.923123] (-) TimerEvent: {}
+[177.024079] (-) TimerEvent: {}
+[177.125021] (-) TimerEvent: {}
+[177.225999] (-) TimerEvent: {}
+[177.326864] (-) TimerEvent: {}
+[177.427660] (-) TimerEvent: {}
+[177.528370] (-) TimerEvent: {}
+[177.629120] (-) TimerEvent: {}
+[177.729842] (-) TimerEvent: {}
+[177.830586] (-) TimerEvent: {}
+[177.931305] (-) TimerEvent: {}
+[178.032092] (-) TimerEvent: {}
+[178.132939] (-) TimerEvent: {}
+[178.233931] (-) TimerEvent: {}
+[178.335434] (-) TimerEvent: {}
+[178.436448] (-) TimerEvent: {}
+[178.537306] (-) TimerEvent: {}
+[178.638703] (-) TimerEvent: {}
+[178.739519] (-) TimerEvent: {}
+[178.840460] (-) TimerEvent: {}
+[178.941359] (-) TimerEvent: {}
+[179.042081] (-) TimerEvent: {}
+[179.142918] (-) TimerEvent: {}
+[179.243604] (-) TimerEvent: {}
+[179.344404] (-) TimerEvent: {}
+[179.445555] (-) TimerEvent: {}
+[179.546769] (-) TimerEvent: {}
+[179.647616] (-) TimerEvent: {}
+[179.748448] (-) TimerEvent: {}
+[179.850783] (-) TimerEvent: {}
+[179.951571] (-) TimerEvent: {}
+[180.052356] (-) TimerEvent: {}
+[180.153136] (-) TimerEvent: {}
+[180.253866] (-) TimerEvent: {}
+[180.354600] (-) TimerEvent: {}
+[180.455278] (-) TimerEvent: {}
+[180.555956] (-) TimerEvent: {}
+[180.656699] (-) TimerEvent: {}
+[180.757411] (-) TimerEvent: {}
+[180.858081] (-) TimerEvent: {}
+[180.958777] (-) TimerEvent: {}
+[181.059486] (-) TimerEvent: {}
+[181.160885] (-) TimerEvent: {}
+[181.262126] (-) TimerEvent: {}
+[181.362912] (-) TimerEvent: {}
+[181.463697] (-) TimerEvent: {}
+[181.564817] (-) TimerEvent: {}
+[181.665560] (-) TimerEvent: {}
+[181.766344] (-) TimerEvent: {}
+[181.867004] (-) TimerEvent: {}
+[181.967729] (-) TimerEvent: {}
+[182.068348] (-) TimerEvent: {}
+[182.169016] (-) TimerEvent: {}
+[182.269658] (-) TimerEvent: {}
+[182.370447] (-) TimerEvent: {}
+[182.471150] (-) TimerEvent: {}
+[182.571846] (-) TimerEvent: {}
+[182.674434] (-) TimerEvent: {}
+[182.775374] (-) TimerEvent: {}
+[182.876204] (-) TimerEvent: {}
+[182.978429] (-) TimerEvent: {}
+[183.080228] (-) TimerEvent: {}
+[183.180917] (-) TimerEvent: {}
+[183.281683] (-) TimerEvent: {}
+[183.383011] (-) TimerEvent: {}
+[183.483878] (-) TimerEvent: {}
+[183.591264] (grab_demo) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable start_grab\x1b[0m\n'}
+[183.607304] (-) TimerEvent: {}
+[183.708232] (-) TimerEvent: {}
+[183.809360] (-) TimerEvent: {}
+[183.910391] (-) TimerEvent: {}
+[184.011186] (-) TimerEvent: {}
+[184.112057] (-) TimerEvent: {}
+[184.212875] (-) TimerEvent: {}
+[184.313829] (-) TimerEvent: {}
+[184.415796] (-) TimerEvent: {}
+[184.516989] (-) TimerEvent: {}
+[184.617708] (-) TimerEvent: {}
+[184.718393] (-) TimerEvent: {}
+[184.767752] (grab_demo) StdoutLine: {'line': b'[ 97%] Built target start_grab\n'}
+[184.818597] (-) TimerEvent: {}
+[184.919427] (-) TimerEvent: {}
+[185.020252] (-) TimerEvent: {}
+[185.121174] (-) TimerEvent: {}
+[185.222068] (-) TimerEvent: {}
+[185.323020] (-) TimerEvent: {}
+[185.424037] (-) TimerEvent: {}
+[185.524968] (-) TimerEvent: {}
+[185.625831] (-) TimerEvent: {}
+[185.726956] (-) TimerEvent: {}
+[185.827890] (-) TimerEvent: {}
+[185.928966] (-) TimerEvent: {}
+[186.030156] (-) TimerEvent: {}
+[186.131564] (-) TimerEvent: {}
+[186.232345] (-) TimerEvent: {}
+[186.333144] (-) TimerEvent: {}
+[186.434226] (-) TimerEvent: {}
+[186.535323] (-) TimerEvent: {}
+[186.636107] (-) TimerEvent: {}
+[186.736971] (-) TimerEvent: {}
+[186.837806] (-) TimerEvent: {}
+[186.939113] (-) TimerEvent: {}
+[187.039915] (-) TimerEvent: {}
+[187.140796] (-) TimerEvent: {}
+[187.241616] (-) TimerEvent: {}
+[187.342713] (-) TimerEvent: {}
+[187.443626] (-) TimerEvent: {}
+[187.544465] (-) TimerEvent: {}
+[187.645235] (-) TimerEvent: {}
+[187.746653] (-) TimerEvent: {}
+[187.847434] (-) TimerEvent: {}
+[187.948161] (-) TimerEvent: {}
+[188.048839] (-) TimerEvent: {}
+[188.149526] (-) TimerEvent: {}
+[188.250344] (-) TimerEvent: {}
+[188.351086] (-) TimerEvent: {}
+[188.451870] (-) TimerEvent: {}
+[188.552690] (-) TimerEvent: {}
+[188.653520] (-) TimerEvent: {}
+[188.754398] (-) TimerEvent: {}
+[188.855303] (-) TimerEvent: {}
+[188.956567] (-) TimerEvent: {}
+[189.057386] (-) TimerEvent: {}
+[189.158238] (-) TimerEvent: {}
+[189.259622] (-) TimerEvent: {}
+[189.360471] (-) TimerEvent: {}
+[189.461454] (-) TimerEvent: {}
+[189.562223] (-) TimerEvent: {}
+[189.662969] (-) TimerEvent: {}
+[189.763661] (-) TimerEvent: {}
+[189.864334] (-) TimerEvent: {}
+[189.965103] (-) TimerEvent: {}
+[190.065817] (-) TimerEvent: {}
+[190.166678] (-) TimerEvent: {}
+[190.267406] (-) TimerEvent: {}
+[190.368615] (-) TimerEvent: {}
+[190.469438] (-) TimerEvent: {}
+[190.570263] (-) TimerEvent: {}
+[190.671120] (-) TimerEvent: {}
+[190.771877] (-) TimerEvent: {}
+[190.872605] (-) TimerEvent: {}
+[190.973285] (-) TimerEvent: {}
+[191.074033] (-) TimerEvent: {}
+[191.174758] (-) TimerEvent: {}
+[191.275457] (-) TimerEvent: {}
+[191.376251] (-) TimerEvent: {}
+[191.477026] (-) TimerEvent: {}
+[191.577764] (-) TimerEvent: {}
+[191.678411] (-) TimerEvent: {}
+[191.779112] (-) TimerEvent: {}
+[191.879935] (-) TimerEvent: {}
+[191.980740] (-) TimerEvent: {}
+[192.081541] (-) TimerEvent: {}
+[192.182581] (-) TimerEvent: {}
+[192.283736] (-) TimerEvent: {}
+[192.384435] (-) TimerEvent: {}
+[192.485220] (-) TimerEvent: {}
+[192.531585] (grab_demo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable grab_service_node\x1b[0m\n'}
+[192.585389] (-) TimerEvent: {}
+[192.686092] (-) TimerEvent: {}
+[192.786887] (-) TimerEvent: {}
+[192.887696] (-) TimerEvent: {}
+[192.988521] (-) TimerEvent: {}
+[193.089380] (-) TimerEvent: {}
+[193.190580] (-) TimerEvent: {}
+[193.291585] (-) TimerEvent: {}
+[193.392419] (-) TimerEvent: {}
+[193.494201] (-) TimerEvent: {}
+[193.595047] (-) TimerEvent: {}
+[193.695919] (-) TimerEvent: {}
+[193.765582] (grab_demo) StdoutLine: {'line': b'[100%] Built target grab_service_node\n'}
+[193.796107] (-) TimerEvent: {}
+[193.896598] (grab_demo) CommandEnded: {'returncode': 0}
+[193.958204] (-) TimerEvent: {}
+[193.979067] (grab_demo) JobProgress: {'identifier': 'grab_demo', 'progress': 'install'}
+[194.051844] (grab_demo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'], 'cwd': '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'dxf'), ('SSH_CLIENT', '192.168.0.66 49474 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/local/opencv410/lib:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('BROWSER', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dxf'), ('OLDPWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17'), ('TERM_PROGRAM_VERSION', '2.0.54'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-c9aa9842-36f1-4de8-9fce-800e871a08a5.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/node'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dxf'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/opencv410/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '9'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/bin/remote-cli:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/dxf/.cursor-server/bin/7a31bffd467aa2d9adfda69076eb924e9062cb20/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', ''), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-fc986a6b3c.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('OpenCV_DIR', '/usr/local/opencv410/lib/cmake/opencv4'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/dxf/wheeltec_lebai_humble_2024_7_17/build/grab_demo'), ('SSH_CONNECTION', '192.168.0.66 49474 192.168.0.100 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/opencv410::/opt/ros/humble')]), 'shell': False}
+[194.063406] (-) TimerEvent: {}
+[194.080337] (grab_demo) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[194.084890] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/rosidl_interfaces/grab_demo\n'}
+[194.085964] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[194.086926] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[194.087396] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_generator_c__visibility_control.h\n'}
+[194.087618] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[194.087861] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/grab_object.h\n'}
+[194.088038] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[194.088468] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__struct.h\n'}
+[194.088678] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.h\n'}
+[194.088833] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__functions.c\n'}
+[194.088982] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__functions.h\n'}
+[194.089805] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/library_path.sh\n'}
+[194.090112] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/library_path.dsv\n'}
+[194.092711] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_generator_c.so\n'}
+[194.093220] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[194.093498] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[194.093785] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[194.094125] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[194.094962] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[194.095291] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_fastrtps_c.h\n'}
+[194.095598] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_fastrtps_c.so\n'}
+[194.096130] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[194.096494] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[194.096992] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[194.097287] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[194.098489] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[194.098676] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__traits.hpp\n'}
+[194.098885] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.hpp\n'}
+[194.099042] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__builder.hpp\n'}
+[194.101989] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__struct.hpp\n'}
+[194.102297] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/grab_object.hpp\n'}
+[194.102498] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[194.102715] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[194.102870] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[194.103354] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[194.103610] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[194.103843] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/dds_fastrtps\n'}
+[194.104099] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[194.104303] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_fastrtps_cpp.so\n'}
+[194.104493] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[194.104884] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg\n'}
+[194.105041] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[194.105250] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[194.105410] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[194.105574] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.c\n'}
+[194.105714] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_introspection_c.h\n'}
+[194.105854] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_introspection_c.so\n'}
+[194.106119] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_c.so\n'}
+[194.106611] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo\n'}
+[194.106980] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv\n'}
+[194.107834] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail\n'}
+[194.108007] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__rosidl_typesupport_introspection_cpp.hpp\n'}
+[194.108158] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/include/grab_demo/grab_demo/srv/detail/grab_object__type_support.cpp\n'}
+[194.109837] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_introspection_cpp.so\n'}
+[194.112551] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_typesupport_cpp.so\n'}
+[194.113096] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/pythonpath.sh\n'}
+[194.113306] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/pythonpath.dsv\n'}
+[194.122666] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info\n'}
+[194.123017] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[194.123230] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[194.123392] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[194.123542] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[194.123687] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo\n'}
+[194.123829] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/libgrab_demo__rosidl_generator_py.so\n'}
+[194.123968] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_c.c\n'}
+[194.124135] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/__init__.py\n'}
+[194.124274] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[194.124412] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/_grab_demo_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[194.124546] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[194.124696] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[194.124836] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv\n'}
+[194.124971] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/__init__.py\n'}
+[194.125104] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/_grab_object.py\n'}
+[194.125237] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv/_grab_object_s.c\n'}
+[194.125370] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[194.163582] (-) TimerEvent: {}
+[194.249642] (grab_demo) StdoutLine: {'line': b"Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo'...\n"}
+[194.250681] (grab_demo) StdoutLine: {'line': b"Compiling '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/__init__.py'...\n"}
+[194.250909] (grab_demo) StdoutLine: {'line': b"Listing '/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/srv'...\n"}
+[194.263791] (-) TimerEvent: {}
+[194.269039] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[194.271101] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[194.273809] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/local/lib/python3.10/dist-packages/grab_demo/grab_demo_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[194.274849] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/libgrab_demo__rosidl_generator_py.so\n'}
+[194.277540] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject.idl\n'}
+[194.279950] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject.srv\n'}
+[194.281183] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject_Request.msg\n'}
+[194.281671] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/srv/GrabObject_Response.msg\n'}
+[194.283665] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/charuco_dectet_node\n'}
+[194.286419] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hand_eye\n'}
+[194.288793] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/hsv_range\n'}
+[194.290202] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/aruco_dectet\n'}
+[194.292577] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/grab_service_node\n'}
+[194.338962] (grab_demo) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/grab_service_node" to ""\n'}
+[194.340622] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/start_grab\n'}
+[194.363930] (-) TimerEvent: {}
+[194.367337] (grab_demo) StdoutLine: {'line': b'-- Set runtime path of "/home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/start_grab" to ""\n'}
+[194.368937] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/camera_info_node\n'}
+[194.371183] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/lib/grab_demo/nav_grab\n'}
+[194.371671] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch\n'}
+[194.372315] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/start_grab.launch.py\n'}
+[194.372602] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/hand_eye.launch.py\n'}
+[194.372783] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/color_grab.launch.py\n'}
+[194.372956] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/launch/aruco_grab.launch.py\n'}
+[194.373167] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/package_run_dependencies/grab_demo\n'}
+[194.374369] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/parent_prefix_path/grab_demo\n'}
+[194.376321] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/ament_prefix_path.sh\n'}
+[194.376629] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/ament_prefix_path.dsv\n'}
+[194.377018] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/path.sh\n'}
+[194.377266] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/environment/path.dsv\n'}
+[194.377712] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.bash\n'}
+[194.377985] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.sh\n'}
+[194.378215] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.zsh\n'}
+[194.378442] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/local_setup.dsv\n'}
+[194.381823] (grab_demo) StdoutLine: {'line': b'-- Installing: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/package.dsv\n'}
+[194.383316] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/ament_index/resource_index/packages/grab_demo\n'}
+[194.384762] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cExport.cmake\n'}
+[194.385052] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cExport-debug.cmake\n'}
+[194.385588] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[194.385849] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cExport-debug.cmake\n'}
+[194.386513] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_cppExport.cmake\n'}
+[194.387206] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[194.387800] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_typesupport_fastrtps_cppExport-debug.cmake\n'}
+[194.388335] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cExport.cmake\n'}
+[194.388509] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cExport-debug.cmake\n'}
+[194.389087] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cExport.cmake\n'}
+[194.389339] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cExport-debug.cmake\n'}
+[194.390060] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[194.390525] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_introspection_cppExport-debug.cmake\n'}
+[194.391074] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cppExport.cmake\n'}
+[194.391393] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demo__rosidl_typesupport_cppExport-debug.cmake\n'}
+[194.391854] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_pyExport.cmake\n'}
+[194.392169] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/export_grab_demo__rosidl_generator_pyExport-debug.cmake\n'}
+[194.392342] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake-extras.cmake\n'}
+[194.392604] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[194.393101] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[194.393366] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[194.393577] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[194.393790] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[194.394018] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[194.394237] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demoConfig.cmake\n'}
+[194.395033] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/cmake/grab_demoConfig-version.cmake\n'}
+[194.395226] (grab_demo) StdoutLine: {'line': b'-- Up-to-date: /home/dxf/wheeltec_lebai_humble_2024_7_17/install/grab_demo/share/grab_demo/package.xml\n'}
+[194.410414] (grab_demo) CommandEnded: {'returncode': 0}
+[194.467961] (-) TimerEvent: {}
+[194.570101] (-) TimerEvent: {}
+[194.575841] (grab_demo) JobEnded: {'identifier': 'grab_demo', 'rc': 0}
+[194.587911] (-) EventReactorShutdown: {}

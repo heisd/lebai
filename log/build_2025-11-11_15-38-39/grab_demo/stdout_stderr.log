@@ -1,0 +1,59 @@
+[35m[1mConsolidate compiler generated dependencies of target hsv_range[0m
+[  2%] Built target grab_demo__cpp
+[  2%] Built target ament_cmake_python_copy_grab_demo
+[  8%] Built target grab_demo__rosidl_generator_c
+[ 10%] [32mBuilding CXX object CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o[0m
+[ 17%] Built target charuco_dectet_node
+[ 21%] Built target grab_demo__rosidl_typesupport_cpp
+[ 25%] Built target camera_info_node
+[ 29%] Built target aruco_dectet
+[ 34%] Built target hand_eye
+[ 40%] Built target grab_demo__rosidl_typesupport_fastrtps_c
+[ 46%] Built target grab_demo__rosidl_typesupport_fastrtps_cpp
+[ 53%] Built target grab_demo__rosidl_typesupport_introspection_c
+[ 59%] Built target grab_demo__rosidl_typesupport_c
+[ 65%] Built target grab_demo__rosidl_typesupport_introspection_cpp
+[ 70%] Built target nav_grab
+[ 74%] Built target grab_service_node
+[ 78%] Built target start_grab
+[ 78%] Built target grab_demo
+[ 80%] Built target grab_demo__py
+[ 85%] Built target grab_demo__rosidl_generator_py
+[ 93%] Built target grab_demo__rosidl_typesupport_introspection_c__pyext
+[ 93%] Built target grab_demo__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target grab_demo__rosidl_typesupport_c__pyext
+running egg_info
+writing grab_demo.egg-info/PKG-INFO
+writing dependency_links to grab_demo.egg-info/dependency_links.txt
+writing top-level names to grab_demo.egg-info/top_level.txt
+reading manifest file 'grab_demo.egg-info/SOURCES.txt'
+writing manifest file 'grab_demo.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_grab_demo_egg
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In constructor ‘[01m[KImageProcessor::ImageProcessor()[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:32:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage[m[K’ was not declared in this scope
+   32 |     cv::cvtColor([01;31m[Kimage[m[K,hsv,cv::COLOR_BGR2HSV);
+      |                  [01;31m[K^~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:32:24:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv[m[K’ was not declared in this scope
+   32 |     cv::cvtColor(image,[01;31m[Khsv[m[K,cv::COLOR_BGR2HSV);
+      |                        [01;31m[K^~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::imageCallback(const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:129:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kdis[m[K’ was not declared in this scope; did you mean ‘[01m[Kdiv[m[K’?
+  129 |           [01;31m[Kdis[m[K = (cv_depth_ptr->image.at<ushort>(newpos.y, newpos.x)) / 1000.0;
+      |           [01;31m[K^~~[m[K
+      |           [32m[Kdiv[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:145:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+  145 |             [01;31m[Kz[m[K+=z_offset;
+      |             [01;31m[K^[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::updateDebugInfo(double, double, double, cv::Point, double, double, double)[m[K’:
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:171:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  171 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, [01;35m[Kdouble x_offset[m[K,double y_offset,double z_offset )
+      |                                                                           [01;35m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:171:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  171 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, double x_offset,[01;35m[Kdouble y_offset[m[K,double z_offset )
+      |                                                                                           [01;35m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/dxf/wheeltec_lebai_humble_2024_7_17/src/grab_demo/src/hsv_range.cpp:171:114:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kz_offset[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  171 |   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, double x_offset,double y_offset,[01;35m[Kdouble z_offset[m[K )
+      |                                                                                                           [01;35m[K~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hsv_range.dir/build.make:76：CMakeFiles/hsv_range.dir/src/hsv_range.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:658：CMakeFiles/hsv_range.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
