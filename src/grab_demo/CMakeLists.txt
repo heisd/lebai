@@ -42,7 +42,7 @@ find_package(moveit_ros_planning_interface REQUIRED)
 find_package(moveit_core REQUIRED)
 
 include_directories(include)
-
+# 在cmake里面通过这个话来让我们的.hpp文件生成
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GrabObject.srv"
 )

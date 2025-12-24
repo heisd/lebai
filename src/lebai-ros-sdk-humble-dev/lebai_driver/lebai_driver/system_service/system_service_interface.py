@@ -7,6 +7,8 @@ from rclpy.parameter import Parameter
 
 class SystemServiceInterface(Node):
     def __init__(self):
+        # 初始化参数的处理
+        # ip 地址的处理
         super().__init__('system_service')
         self.declare_parameter("robot_ip_address", "")
         if not self.has_parameter('robot_ip_address'):

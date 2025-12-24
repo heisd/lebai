@@ -1,4 +1,6 @@
 #include "rclcpp/rclcpp.hpp"
+// 为啥在./install目录下生成，在./src目录下没有呀？
+// 通过colcon这种构建方式可以把你写的.srv文件转换为通过rosidl工具来转换为.hpp文件
 #include "grab_demo/srv/grab_object.hpp"
 #include <tf2_ros/transform_listener.h>
 #include <tf2_ros/buffer.h>

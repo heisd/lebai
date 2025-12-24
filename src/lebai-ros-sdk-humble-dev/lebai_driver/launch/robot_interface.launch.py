@@ -16,7 +16,7 @@ def generate_launch_description():
                                             description='mount gripper on the end')
     # launch.actions.substitutions.
     has_gripper = LaunchConfiguration('has_gripper')
-    robot_ip_arg = DeclareLaunchArgument(name='robot_ip',
+    robot_ip_arg = DeclareLaunchArgument(name='robot_ip',default_value='192.168.0.50',
                                          description='Robot ip address to connect.')
     robot_ip = LaunchConfiguration('robot_ip')
 
