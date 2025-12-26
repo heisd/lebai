@@ -106,7 +106,7 @@ def generate_launch_description():
                 # 相机话题配置 - 根据实际相机驱动调整
                 'rgb_topic': '/camera_arm/color/image_raw',
                 'depth_topic': '/camera_arm/aligned_depth_to_color/image_raw',  # 使用对齐的深度图
-                'camera_info_topic': '/camera_arm/color/camera_info',  # 从相机直接读取内参
+                'camera_info_topic': '/gemini_info',  # 使用 camera_info_node 发布的话题
                 # TF 坐标系配置
                 'tf_frame_id': 'camera_arm_color_optical_frame',
                 'tf_child_frame_id': 'detected_object',

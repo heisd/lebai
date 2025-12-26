@@ -74,170 +74,180 @@ public:
 private:
   void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& rgb_msg, const sensor_msgs::msg::Image::ConstSharedPtr& depth_msg)
   {
-    if(camera_info)
+    // 转换ROS图像消息为OpenCV格式
+    cv_bridge::CvImagePtr cv_rgb_ptr;
+    try
     {
-      // 转换ROS图像消息为OpenCV格式
-      cv_bridge::CvImagePtr cv_rgb_ptr;
-      try
-      {
-        cv_rgb_ptr = cv_bridge::toCvCopy(rgb_msg, sensor_msgs::image_encodings::BGR8);
-      }
-      catch (cv_bridge::Exception& e)
-      {
-        RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
-        return;
-      }
+      cv_rgb_ptr = cv_bridge::toCvCopy(rgb_msg, sensor_msgs::image_encodings::BGR8);
+    }
+    catch (cv_bridge::Exception& e)
+    {
+      RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+      return;
+    }
 
-      cv_bridge::CvImagePtr cv_depth_ptr;
-      try
+    cv_bridge::CvImagePtr cv_depth_ptr;
+    try
+    {
+      cv_depth_ptr = cv_bridge::toCvCopy(depth_msg, sensor_msgs::image_encodings::TYPE_16UC1);
+    }
+    catch (cv_bridge::Exception& e)
+    {
+      RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+      return;
+    }
+
+    // 检查并记录分辨率，只在分辨率变化时输出一次
+    if (cv_rgb_ptr->image.cols != rgb_width_ || cv_rgb_ptr->image.rows != rgb_height_ ||
+        cv_depth_ptr->image.cols != depth_width_ || cv_depth_ptr->image.rows != depth_height_)
+    {
+      rgb_width_ = cv_rgb_ptr->image.cols;
+      rgb_height_ = cv_rgb_ptr->image.rows;
+      depth_width_ = cv_depth_ptr->image.cols;
+      depth_height_ = cv_depth_ptr->image.rows;
+
+      RCLCPP_INFO(this->get_logger(), "RGB image size: %dx%d", rgb_width_, rgb_height_);
+      RCLCPP_INFO(this->get_logger(), "Depth image size: %dx%d", depth_width_, depth_height_);
+
+      if (rgb_width_ != depth_width_ || rgb_height_ != depth_height_)
       {
-        cv_depth_ptr = cv_bridge::toCvCopy(depth_msg, sensor_msgs::image_encodings::TYPE_16UC1);
+        RCLCPP_WARN(this->get_logger(),
+          "WARNING: RGB and Depth image sizes do not match! "
+          "Use aligned_depth_to_color topic for accurate 3D positioning.");
       }
-      catch (cv_bridge::Exception& e)
+    }
+
+    // 如果相机内参尚未加载，显示原始图像并提示等待
+    if (!camera_info)
+    {
+      cv::Mat display_img = cv_rgb_ptr->image.clone();
+      cv::putText(display_img, "Waiting for camera info...", cv::Point(10, 30),
+                  cv::FONT_HERSHEY_SIMPLEX, 0.8, cv::Scalar(0, 0, 255), 2);
+      cv::imshow("RGB Image", display_img);
+      cv::waitKey(1);
+      RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
+        "Waiting for camera info on topic...");
+      return;
+    }
+
+    // 图像处理
+    cv::Mat hsv_image_raw;
+    cv::cvtColor(cv_rgb_ptr->image, hsv_image_raw, cv::COLOR_BGR2HSV);
+    cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3,3));
+
+    // 设置颜色阈值
+    cv::Scalar lower(hue_min_, saturation_min_, value_min_);
+    cv::Scalar upper(hue_max_, saturation_max_, value_max_);
+
+    // 对HSV图像应用颜色阈值
+    cv::Mat threshold_image;
+    cv::inRange(hsv_image_raw, lower, upper, threshold_image);
+
+    cv::Mat hsv_image_erode, hsv_image_dilate;
+    cv::erode(threshold_image, hsv_image_erode, kernel);
+    cv::dilate(hsv_image_erode, hsv_image_dilate, kernel);
+
+    // 显示结果图像
+    cv::imshow("RGB Image", hsv_image_dilate);
+
+    // 寻找轮廓
+    std::vector<std::vector<cv::Point>> contours;
+    cv::findContours(hsv_image_dilate, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
+
+    // 寻找面积最大的物体
+    std::sort(contours.begin(), contours.end(), [](const std::vector<cv::Point>& c1, const std::vector<cv::Point>& c2)
+    {
+      return cv::contourArea(c1) > cv::contourArea(c2);
+    });
+
+    if(!contours.empty())
+    {
+      std::vector<cv::Point> contour = contours[0];
+      cv::Moments moments = cv::moments(contour);
+
+      // 检查是否除零
+      if(moments.m00 > 0)
       {
-        RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
-        return;
-      }
+        cv::Point newpos(moments.m10 / moments.m00, moments.m01 / moments.m00);
 
-      // 检查并记录分辨率，只在分辨率变化时输出一次
-      if (cv_rgb_ptr->image.cols != rgb_width_ || cv_rgb_ptr->image.rows != rgb_height_ ||
-          cv_depth_ptr->image.cols != depth_width_ || cv_depth_ptr->image.rows != depth_height_)
-      {
-        rgb_width_ = cv_rgb_ptr->image.cols;
-        rgb_height_ = cv_rgb_ptr->image.rows;
-        depth_width_ = cv_depth_ptr->image.cols;
-        depth_height_ = cv_depth_ptr->image.rows;
+        // 确保像素坐标在深度图范围内
+        int depth_x = newpos.x;
+        int depth_y = newpos.y;
 
-        RCLCPP_INFO(this->get_logger(), "RGB image size: %dx%d", rgb_width_, rgb_height_);
-        RCLCPP_INFO(this->get_logger(), "Depth image size: %dx%d", depth_width_, depth_height_);
-
+        // 如果 RGB 和深度分辨率不同，进行坐标缩放
         if (rgb_width_ != depth_width_ || rgb_height_ != depth_height_)
         {
-          RCLCPP_WARN(this->get_logger(),
-            "WARNING: RGB and Depth image sizes do not match! "
-            "Use aligned_depth_to_color topic for accurate 3D positioning.");
+          depth_x = static_cast<int>(newpos.x * depth_width_ / rgb_width_);
+          depth_y = static_cast<int>(newpos.y * depth_height_ / rgb_height_);
         }
-      }
 
-      // 图像处理
-      cv::Mat hsv_image_raw;
-      cv::cvtColor(cv_rgb_ptr->image, hsv_image_raw, cv::COLOR_BGR2HSV);
-      cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3,3));
-      
-      // 设置颜色阈值
-      cv::Scalar lower(hue_min_, saturation_min_, value_min_);
-      cv::Scalar upper(hue_max_, saturation_max_, value_max_);
-      
-      // 对HSV图像应用颜色阈值
-      cv::Mat threshold_image;
-      cv::inRange(hsv_image_raw, lower, upper, threshold_image);
-      
-      cv::Mat hsv_image_erode, hsv_image_dilate;
-      cv::erode(threshold_image, hsv_image_erode, kernel);
-      cv::dilate(hsv_image_erode, hsv_image_dilate, kernel);
-      
-      // 显示结果图像
-      cv::imshow("RGB Image", hsv_image_dilate);
-      
-      // 寻找轮廓
-      std::vector<std::vector<cv::Point>> contours;
-      cv::findContours(hsv_image_dilate, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
-      
-      // 寻找面积最大的物体
-      std::sort(contours.begin(), contours.end(), [](const std::vector<cv::Point>& c1, const std::vector<cv::Point>& c2)
-      {
-        return cv::contourArea(c1) > cv::contourArea(c2);
-      });
-      
-      if(!contours.empty())
-      {
-        std::vector<cv::Point> contour = contours[0];
-        cv::Moments moments = cv::moments(contour);
-        
-        // 检查是否除零
-        if(moments.m00 > 0)
+        // 边界检查
+        depth_x = std::max(0, std::min(depth_x, depth_width_ - 1));
+        depth_y = std::max(0, std::min(depth_y, depth_height_ - 1));
+
+        // 获取深度值，使用小区域的中值滤波来提高稳定性
+        double dis = 0.0;
+        std::vector<ushort> depth_values;
+        int window_size = 3;  // 3x3 窗口
+        for (int dy = -window_size/2; dy <= window_size/2; dy++)
         {
-          cv::Point newpos(moments.m10 / moments.m00, moments.m01 / moments.m00);
-
-          // 确保像素坐标在深度图范围内
-          int depth_x = newpos.x;
-          int depth_y = newpos.y;
-
-          // 如果 RGB 和深度分辨率不同，进行坐标缩放
-          if (rgb_width_ != depth_width_ || rgb_height_ != depth_height_)
+          for (int dx = -window_size/2; dx <= window_size/2; dx++)
           {
-            depth_x = static_cast<int>(newpos.x * depth_width_ / rgb_width_);
-            depth_y = static_cast<int>(newpos.y * depth_height_ / rgb_height_);
-          }
-
-          // 边界检查
-          depth_x = std::max(0, std::min(depth_x, depth_width_ - 1));
-          depth_y = std::max(0, std::min(depth_y, depth_height_ - 1));
-
-          // 获取深度值，使用小区域的中值滤波来提高稳定性
-          double dis = 0.0;
-          std::vector<ushort> depth_values;
-          int window_size = 3;  // 3x3 窗口
-          for (int dy = -window_size/2; dy <= window_size/2; dy++)
-          {
-            for (int dx = -window_size/2; dx <= window_size/2; dx++)
-            {
-              int px = std::max(0, std::min(depth_x + dx, depth_width_ - 1));
-              int py = std::max(0, std::min(depth_y + dy, depth_height_ - 1));
-              ushort d = cv_depth_ptr->image.at<ushort>(py, px);
-              if (d > 0) depth_values.push_back(d);
-            }
-          }
-
-          if (!depth_values.empty())
-          {
-            std::sort(depth_values.begin(), depth_values.end());
-            dis = depth_values[depth_values.size() / 2] / 1000.0;  // 取中值
-          }
-
-          // 有效的深度范围检查（典型深度相机工作范围：0.2m - 5m）
-          if(dis > 0.15 && dis < 5.0)
-          {
-            // 通过相机内参将像素坐标转换成物体相对相机的三维坐标
-            double x = (newpos.x - camera_matrix.at<double>(0,2)) / camera_matrix.at<double>(0,0) * dis;
-            double y = (newpos.y - camera_matrix.at<double>(1,2)) / camera_matrix.at<double>(1,1) * dis;
-
-            // 应用x方向偏差调整（转换为米）
-            double x_offset = x_offset_cm_ / 100.0;
-            x += x_offset;
-            double y_offset = y_offset_cm_ / 100.0;
-            y += y_offset;
-            double z_offset = z_offset_cm_ / 100.0;
-            dis += z_offset;
-
-            // 发布TF变换，使用可配置的坐标系名称
-            geometry_msgs::msg::TransformStamped obg_msg;
-            obg_msg.transform.translation.x = x;
-            obg_msg.transform.translation.y = y;
-            obg_msg.transform.translation.z = dis;
-            obg_msg.header.stamp = this->now();
-            obg_msg.header.frame_id = tf_frame_id_;
-            obg_msg.child_frame_id = tf_child_frame_id_;
-            obg_msg.transform.rotation.x = 0.0;
-            obg_msg.transform.rotation.y = 0.0;
-            obg_msg.transform.rotation.z = 0.0;
-            obg_msg.transform.rotation.w = 1.0;
-
-            tf_pub->sendTransform(obg_msg);
-            RCLCPP_INFO(this->get_logger(), "Dis: %.3f, X: %.3f, Y: %.3f", dis, x, y);
-
-            // 更新调试信息
-            updateDebugInfo(x, y, dis, newpos, x_offset, y_offset, z_offset);
-          }
-          else if (dis > 0)
-          {
-            RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
-              "Depth value %.3f out of valid range (0.15-5.0m)", dis);
+            int px = std::max(0, std::min(depth_x + dx, depth_width_ - 1));
+            int py = std::max(0, std::min(depth_y + dy, depth_height_ - 1));
+            ushort d = cv_depth_ptr->image.at<ushort>(py, px);
+            if (d > 0) depth_values.push_back(d);
           }
         }
+
+        if (!depth_values.empty())
+        {
+          std::sort(depth_values.begin(), depth_values.end());
+          dis = depth_values[depth_values.size() / 2] / 1000.0;  // 取中值
+        }
+
+        // 有效的深度范围检查（典型深度相机工作范围：0.2m - 5m）
+        if(dis > 0.15 && dis < 5.0)
+        {
+          // 通过相机内参将像素坐标转换成物体相对相机的三维坐标
+          double x = (newpos.x - camera_matrix.at<double>(0,2)) / camera_matrix.at<double>(0,0) * dis;
+          double y = (newpos.y - camera_matrix.at<double>(1,2)) / camera_matrix.at<double>(1,1) * dis;
+
+          // 应用x方向偏差调整（转换为米）
+          double x_offset = x_offset_cm_ / 100.0;
+          x += x_offset;
+          double y_offset = y_offset_cm_ / 100.0;
+          y += y_offset;
+          double z_offset = z_offset_cm_ / 100.0;
+          dis += z_offset;
+
+          // 发布TF变换，使用可配置的坐标系名称
+          geometry_msgs::msg::TransformStamped obg_msg;
+          obg_msg.transform.translation.x = x;
+          obg_msg.transform.translation.y = y;
+          obg_msg.transform.translation.z = dis;
+          obg_msg.header.stamp = this->now();
+          obg_msg.header.frame_id = tf_frame_id_;
+          obg_msg.child_frame_id = tf_child_frame_id_;
+          obg_msg.transform.rotation.x = 0.0;
+          obg_msg.transform.rotation.y = 0.0;
+          obg_msg.transform.rotation.z = 0.0;
+          obg_msg.transform.rotation.w = 1.0;
+
+          tf_pub->sendTransform(obg_msg);
+          RCLCPP_INFO(this->get_logger(), "Dis: %.3f, X: %.3f, Y: %.3f", dis, x, y);
+
+          // 更新调试信息
+          updateDebugInfo(x, y, dis, newpos, x_offset, y_offset, z_offset);
+        }
+        else if (dis > 0)
+        {
+          RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 2000,
+            "Depth value %.3f out of valid range (0.15-5.0m)", dis);
+        }
       }
-      cv::waitKey(1);
     }
+    cv::waitKey(1);
   }
 
   void updateDebugInfo(double x, double y, double z, cv::Point pixel_pos, double x_offset, double y_offset, double z_offset)
