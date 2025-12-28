@@ -129,16 +129,38 @@ def generate_launch_description():
             name="grab_service_n",
             parameters=[robot_description_semantic]
         )
+
+    # 自动抓取控制器节点
+    auto_grab_controller=Node(
+            package="grab_demo",
+            executable="auto_grab_controller",
+            name="auto_grab_controller",
+            parameters=[{
+                'target_frame': 'detected_object',    # 检测到的物体 TF 名称
+                'base_frame': 'base_link',            # 机器人基座坐标系
+                'stability_threshold': 0.01,          # 位置稳定阈值（米）
+                'stability_frames': 10,               # 需要稳定的帧数
+                'detection_rate': 10.0,               # 检测频率（Hz）
+                'wait_after_grab': 3.0,               # 抓取后等待时间（秒）
+                'auto_start': True,                   # 自动开始抓取
+            }],
+            output='screen'
+        )
+
     # 延迟15秒后启动抓取服务节点，确保其他节点先初始化完成
-    delay_task = TimerAction(period=15.0, actions=[grab_service])
+    delay_grab_service = TimerAction(period=15.0, actions=[grab_service])
+
+    # 延迟20秒后启动自动抓取控制器，确保抓取服务已就绪
+    delay_auto_grab = TimerAction(period=20.0, actions=[auto_grab_controller])
 
 
     return LaunchDescription([
-            camera_launch,#启动相机
-            camera_info,#相机内参发布
-            lebai_lm3,#启动机械臂
-            color_dectet,#颜色识别节点
-            delay_task,
+            camera_launch,        # 启动相机
+            camera_info,          # 相机内参发布
+            lebai_lm3,            # 启动机械臂
+            color_dectet,         # 颜色识别节点
+            delay_grab_service,   # 延迟启动抓取服务
+            delay_auto_grab,      # 延迟启动自动抓取控制器
     ])
 
     
