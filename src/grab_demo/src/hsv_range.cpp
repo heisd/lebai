@@ -48,8 +48,15 @@ public:
     tf_pub = std::make_shared<tf2_ros::TransformBroadcaster>(this);
 
     // 创建窗口和滑动条
-    cv::namedWindow("RGB Image");
-    cv::namedWindow("Debug Info");
+    RCLCPP_INFO(this->get_logger(), "正在创建 OpenCV 窗口...");
+    try {
+      cv::namedWindow("RGB Image", cv::WINDOW_AUTOSIZE);
+      cv::namedWindow("Debug Info", cv::WINDOW_AUTOSIZE);
+      RCLCPP_INFO(this->get_logger(), "OpenCV 窗口创建成功");
+    } catch (cv::Exception& e) {
+      RCLCPP_ERROR(this->get_logger(), "OpenCV 窗口创建失败: %s", e.what());
+      RCLCPP_ERROR(this->get_logger(), "请检查 DISPLAY 环境变量和 X11 显示");
+    }
 
     cv::createTrackbar("Hue Min", "RGB Image", &hue_min_, 255);
     cv::createTrackbar("Hue Max", "RGB Image", &hue_max_, 255);
@@ -74,6 +81,14 @@ public:
 private:
   void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& rgb_msg, const sensor_msgs::msg::Image::ConstSharedPtr& depth_msg)
   {
+    // 添加调试信息：每 30 帧打印一次，避免刷屏
+    static int frame_count = 0;
+    frame_count++;
+    if (frame_count % 30 == 0) {
+      RCLCPP_INFO(this->get_logger(), "接收到图像帧 #%d, camera_info=%s",
+                  frame_count, camera_info ? "已加载" : "未加载");
+    }
+
     if(camera_info)
     {
       // 转换ROS图像消息为OpenCV格式
@@ -81,6 +96,10 @@ private:
       try
       {
         cv_rgb_ptr = cv_bridge::toCvCopy(rgb_msg, sensor_msgs::image_encodings::BGR8);
+        if (frame_count % 30 == 0) {
+          RCLCPP_INFO(this->get_logger(), "RGB图像转换成功，尺寸: %dx%d",
+                      cv_rgb_ptr->image.cols, cv_rgb_ptr->image.rows);
+        }
       }
       catch (cv_bridge::Exception& e)
       {
@@ -136,11 +155,16 @@ private:
       cv::erode(threshold_image, hsv_image_erode, kernel);
       cv::dilate(hsv_image_erode, hsv_image_dilate, kernel);
 
-      // 在原始图像上绘制检测结果的预览
+      // 创建显示图像副本
       cv::Mat display_image = cv_rgb_ptr->image.clone();
 
       // 显示二值化结果（HSV 阈值）
-      cv::imshow("HSV Threshold", hsv_image_dilate);
+      try {
+        cv::imshow("HSV Threshold", hsv_image_dilate);
+      } catch (cv::Exception& e) {
+        RCLCPP_ERROR_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
+                              "无法显示 HSV Threshold 窗口: %s", e.what());
+      }
 
       // 寻找轮廓
       std::vector<std::vector<cv::Point>> contours;
@@ -248,8 +272,21 @@ private:
       }
 
       // 显示带标记的 RGB 图像（在所有绘制完成后）
-      cv::imshow("RGB Image", display_image);
+      try {
+        cv::imshow("RGB Image", display_image);
+      } catch (cv::Exception& e) {
+        RCLCPP_ERROR_THROTTLE(this->get_logger(), *this->get_clock(), 5000,
+                              "无法显示 RGB Image 窗口: %s", e.what());
+      }
       cv::waitKey(1);
+    }
+    else {
+      // camera_info 还未加载时的提示
+      static bool warned = false;
+      if (!warned) {
+        RCLCPP_WARN(this->get_logger(), "等待相机内参加载...");
+        warned = true;
+      }
     }
   }
 
