@@ -190,6 +190,13 @@ install(TARGETS camera_info_node
 
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
+
+# ── YOLO 检测节点（Python）────────────────────────────────────────────────────
+install(PROGRAMS
+  scripts/yolo_detect_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME yolo_detect_node
+)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

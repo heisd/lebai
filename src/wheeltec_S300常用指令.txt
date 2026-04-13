@@ -29,7 +29,11 @@ rqt_graph
 7. 颜色识别夹取
    ros2 launch grab_demo color_grab.launch.py
    ros2 run grab_demo start_grab color_link
+8. YOLO 识别抓取
+   ros2 launch
 
+
+   
 
 指定功能包编译：
 colcon build --packages-select "功能包名"
