@@ -15,13 +15,14 @@
   <depend>rclcpp</depend>
   <depend>sensor_msgs</depend>
 
-  <!-- YOLO 检测节点依赖 -->
+  <!-- YOLO / KCF 检测节点依赖 -->
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
   <depend>tf2_ros</depend>
   <depend>cv_bridge</depend>
   <depend>image_transport</depend>
   <depend>message_filters</depend>
+  <depend>std_srvs</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

@@ -45,6 +45,7 @@ include_directories(include)
 # 在cmake里面通过这个话来让我们的.hpp文件生成
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GrabObject.srv"
+  "srv/InitTracker.srv"
 )
 ament_export_dependencies(rosidl_default_runtime)
 
@@ -196,6 +197,13 @@ install(PROGRAMS
   scripts/yolo_detect_node.py
   DESTINATION lib/${PROJECT_NAME}
   RENAME yolo_detect_node
+)
+
+# ── KCF / CSRT / MOSSE 跟踪节点（Python）─────────────────────────────────────
+install(PROGRAMS
+  scripts/kcf_tracker_node.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME kcf_tracker_node
 )
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
