@@ -20,6 +20,8 @@ KCF / CSRT / MOSSE 单目标跟踪节点
   - 输出 ID 稳定（YOLO 每帧重新检测会让同类物体的 TF 名混淆）。
 """
 
+import threading
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image, CameraInfo
@@ -106,8 +108,12 @@ class KcfTrackerNode(Node):
         self.label    = "kcf_track"       # TF child_frame_id
         self.lost_count = 0
         self.last_rgb = None              # 最近一帧 BGR，鼠标框选时用
+        self.latest_vis = None            # 最近一帧带标注的可视化图，GUI 主线程读取
         self.fx = self.fy = self.cx = self.cy = None
         self.camera_info_ready = False
+        # 保护 tracker / label / lost_count / last_rgb / latest_vis
+        # rclpy 后台 spin 线程（image_cb / 服务）和 GUI 主线程都会改它们
+        self._state_lock = threading.RLock()
 
         # ── ROS 接口 ──────────────────────────────────────────────────────────
         self.result_pub = self.create_publisher(Image, result_topic, 10)
@@ -151,7 +157,10 @@ class KcfTrackerNode(Node):
 
     # ── 服务：初始化跟踪器 ────────────────────────────────────────────────────
     def _init_srv_cb(self, req: InitTracker.Request, resp: InitTracker.Response):
-        if self.last_rgb is None:
+        # 在锁内只取快照，不在锁内做可能耗时的 tracker.init()
+        with self._state_lock:
+            snapshot = None if self.last_rgb is None else self.last_rgb.copy()
+        if snapshot is None:
             resp.success = False
             resp.message = "尚未收到任何 RGB 图像，无法初始化跟踪器"
             return resp
@@ -160,42 +169,49 @@ class KcfTrackerNode(Node):
             resp.message = f"非法 ROI 尺寸 w={req.width} h={req.height}"
             return resp
 
-        h, w = self.last_rgb.shape[:2]
+        h, w = snapshot.shape[:2]
         x = max(0, min(req.x, w - 1))
         y = max(0, min(req.y, h - 1))
         ww = max(1, min(req.width,  w - x))
         hh = max(1, min(req.height, h - y))
 
         try:
-            self.tracker = _create_tracker(self.tracker_type)
-            self.tracker.init(self.last_rgb, (x, y, ww, hh))
+            new_tracker = _create_tracker(self.tracker_type)
+            new_tracker.init(snapshot, (x, y, ww, hh))
         except Exception as e:
-            self.tracker = None
             resp.success = False
             resp.message = f"跟踪器初始化失败: {e}"
             self.get_logger().error(resp.message)
             return resp
 
-        self.label = (req.label.strip() or "kcf_track")
-        if not self.label.startswith("kcf_"):
-            self.label = f"kcf_{self.label}"
-        self.lost_count = 0
+        new_label = (req.label.strip() or "kcf_track")
+        if not new_label.startswith("kcf_"):
+            new_label = f"kcf_{new_label}"
+
+        with self._state_lock:
+            self.tracker = new_tracker
+            self.label = new_label
+            self.lost_count = 0
 
         resp.success = True
-        resp.message = f"跟踪器已初始化: bbox=({x},{y},{ww},{hh}) tf=`{self.label}`"
+        resp.message = f"跟踪器已初始化: bbox=({x},{y},{ww},{hh}) tf=`{new_label}`"
         self.get_logger().info(resp.message)
         return resp
 
     # ── 服务：重置 ────────────────────────────────────────────────────────────
     def _reset_srv_cb(self, _req, resp: Trigger.Response):
-        self.tracker = None
-        self.lost_count = 0
+        with self._state_lock:
+            self.tracker = None
+            self.lost_count = 0
         resp.success = True
         resp.message = "跟踪器已重置"
         self.get_logger().info(resp.message)
         return resp
 
     # ── 主回调：每帧更新跟踪 ──────────────────────────────────────────────────
+    # 注意：本回调里**不能**调用任何 cv2 GUI 函数（imshow/waitKey/selectROI/...）。
+    # 所有 GUI 必须留在主线程的 _gui_loop()，否则按下 's' 调用 selectROI 时会
+    # 阻塞 rclpy 后台 spin 线程，导致 image_cb / 服务全部停摆。
     def _image_cb(self, rgb_msg: Image, depth_msg: Image):
         try:
             rgb     = self.bridge.imgmsg_to_cv2(rgb_msg, "bgr8")
@@ -206,7 +222,6 @@ class KcfTrackerNode(Node):
         if depth_m is None:
             return
 
-        self.last_rgb = rgb  # 给鼠标框选 / init 服务用
         vis = rgb.copy()
 
         # RGB 与深度图分辨率不一致时按比例兜底（推荐在驱动里开 align_depth_to_color）
@@ -221,9 +236,18 @@ class KcfTrackerNode(Node):
         sx = w_dep / float(w_rgb)
         sy = h_dep / float(h_rgb)
 
-        if self.tracker is not None:
-            ok, bbox = self.tracker.update(rgb)
-            if ok:
+        # 在锁内取一份当前 tracker 引用，update 在锁外做避免长时间持锁；
+        # 但 tracker.update / tracker.init 必须串行，所以仍包在锁里。
+        # 此函数里没有阻塞 IO，持锁时间是 ms 级，可接受。
+        with self._state_lock:
+            tracker = self.tracker
+            label   = self.label
+            if tracker is not None:
+                ok, bbox = tracker.update(rgb)
+            else:
+                ok, bbox = False, None
+
+            if tracker is not None and ok:
                 self.lost_count = 0
                 x, y, w, h = [int(v) for v in bbox]
                 cx_px = x + w // 2
@@ -233,7 +257,7 @@ class KcfTrackerNode(Node):
                     pos = self._pixel_to_3d(cx_px, cy_px, depth_m, sx, sy)
                     if pos is not None:
                         X, Y, Z = pos
-                        self._publish_tf(self.label, X, Y, Z, rgb_msg.header.stamp)
+                        self._publish_tf(label, X, Y, Z, rgb_msg.header.stamp)
                         cv2.putText(
                             vis, f"({X:.3f},{Y:.3f},{Z:.3f})m",
                             (x, min(y + h + 18, rgb.shape[0] - 1)),
@@ -247,9 +271,9 @@ class KcfTrackerNode(Node):
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
 
                 cv2.rectangle(vis, (x, y), (x + w, y + h), (0, 255, 0), 2)
-                cv2.putText(vis, self.label, (x, max(y - 8, 0)),
+                cv2.putText(vis, label, (x, max(y - 8, 0)),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 1)
-            else:
+            elif tracker is not None and not ok:
                 self.lost_count += 1
                 cv2.putText(vis, f"LOST ({self.lost_count}/{self.max_lost})",
                             (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7,
@@ -257,25 +281,21 @@ class KcfTrackerNode(Node):
                 if self.lost_count >= self.max_lost:
                     self.get_logger().warn("连续丢失太多帧，跟踪器已停用，请重新 init")
                     self.tracker = None
-        else:
-            cv2.putText(vis, f"no tracker | call /{self.get_name()}/init or press 's'",
-                        (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.55,
-                        (200, 200, 200), 2)
+            else:
+                cv2.putText(vis,
+                            f"no tracker | call /{self.get_name()}/init or press 's'",
+                            (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.55,
+                            (200, 200, 200), 2)
+
+            # 给鼠标框选 / GUI 主线程用
+            self.last_rgb = rgb
+            self.latest_vis = vis
 
         # 发布可视化结果（即使不开窗口也发，方便 rqt_image_view 看）
         try:
             self.result_pub.publish(self.bridge.cv2_to_imgmsg(vis, "bgr8"))
         except Exception as e:
             self.get_logger().error(f"发布可视化失败: {e}")
-
-        if self.show_window:
-            cv2.imshow("KCF Tracker", vis)
-            key = cv2.waitKey(1) & 0xFF
-            if key == ord('s'):
-                self._mouse_select_roi()
-            elif key == ord('r'):
-                self.tracker = None
-                self.get_logger().info("按下 r，跟踪器已重置")
 
     # ── 工具：像素 + 深度 → 相机系 3D 点 ─────────────────────────────────────
     # u, v 是 RGB 像素坐标；depth_m 已解码为米；
@@ -316,40 +336,88 @@ class KcfTrackerNode(Node):
         t.transform.rotation.w = 1.0
         self.tf_pub.sendTransform(t)
 
-    # ── 鼠标框选：按 's' 触发，使用 cv2.selectROI（阻塞，但只阻塞 GUI 线程）──
-    def _mouse_select_roi(self):
-        if self.last_rgb is None:
+    # ── GUI 主线程：拉取最近一帧 vis，imshow + waitKey + 按键处理 ─────────────
+    # 这里调用的所有 cv2 函数（包括 selectROI 这个阻塞调用）都在主线程上发生，
+    # 不会阻塞 rclpy 后台 spin 线程上的 image_cb / init / reset 服务。
+    def _gui_loop(self, stop_event: threading.Event):
+        cv2.namedWindow("KCF Tracker", cv2.WINDOW_NORMAL)
+        while not stop_event.is_set() and rclpy.ok():
+            with self._state_lock:
+                vis = None if self.latest_vis is None else self.latest_vis  # 引用即可
+            if vis is not None:
+                cv2.imshow("KCF Tracker", vis)
+            key = cv2.waitKey(30) & 0xFF
+            if key == ord('s'):
+                self._gui_handle_select_key()      # selectROI 在这里阻塞，OK
+            elif key == ord('r'):
+                with self._state_lock:
+                    self.tracker = None
+                    self.lost_count = 0
+                self.get_logger().info("按下 r，跟踪器已重置")
+            elif key == ord('q') or key == 27:     # 'q' / ESC 关窗退出
+                stop_event.set()
+                break
+        cv2.destroyAllWindows()
+
+    # ── 主线程：按下 's' 后的 selectROI 流程 ──────────────────────────────────
+    # 之前这段写在 _image_cb 里，会把 rclpy 后台线程卡住到用户拖完框为止。
+    # 现在它跑在主线程，rclpy spin 线程继续畅通，image_cb / 服务都不受影响。
+    def _gui_handle_select_key(self):
+        with self._state_lock:
+            snapshot = None if self.last_rgb is None else self.last_rgb.copy()
+        if snapshot is None:
             self.get_logger().warn("还没有图像，无法框选")
             return
-        roi = cv2.selectROI("KCF Tracker", self.last_rgb,
+        roi = cv2.selectROI("KCF Tracker", snapshot,
                             fromCenter=False, showCrosshair=True)
         x, y, w, h = [int(v) for v in roi]
         if w <= 0 or h <= 0:
             self.get_logger().info("取消了框选")
             return
         try:
-            self.tracker = _create_tracker(self.tracker_type)
-            self.tracker.init(self.last_rgb, (x, y, w, h))
+            new_tracker = _create_tracker(self.tracker_type)
+            new_tracker.init(snapshot, (x, y, w, h))
+        except Exception as e:
+            self.get_logger().error(f"跟踪器初始化失败: {e}")
+            return
+        with self._state_lock:
+            self.tracker = new_tracker
             self.label = "kcf_track"
             self.lost_count = 0
-            self.get_logger().info(f"鼠标框选完成: bbox=({x},{y},{w},{h})")
-        except Exception as e:
-            self.tracker = None
-            self.get_logger().error(f"跟踪器初始化失败: {e}")
+        self.get_logger().info(f"鼠标框选完成: bbox=({x},{y},{w},{h})")
 
 
 def main(args=None):
     rclpy.init(args=args)
     node = KcfTrackerNode()
+
+    if not node.show_window:
+        # 无 GUI 模式：直接前台 spin，selectROI 不会被触发，不存在阻塞问题。
+        try:
+            rclpy.spin(node)
+        except KeyboardInterrupt:
+            pass
+        finally:
+            node.destroy_node()
+            rclpy.shutdown()
+        return
+
+    # 有 GUI 模式：rclpy.spin 放后台线程，GUI 在主线程跑。
+    # selectROI 只阻塞主线程，回调 / 服务继续被 spin 线程处理。
+    stop_event = threading.Event()
+    spin_thread = threading.Thread(
+        target=rclpy.spin, args=(node,), daemon=True
+    )
+    spin_thread.start()
     try:
-        rclpy.spin(node)
+        node._gui_loop(stop_event)
     except KeyboardInterrupt:
         pass
     finally:
-        if node.show_window:
-            cv2.destroyAllWindows()
+        stop_event.set()
+        rclpy.shutdown()                 # 让后台 spin 线程退出
+        spin_thread.join(timeout=2.0)    # 等它真的退出再销毁 node
         node.destroy_node()
-        rclpy.shutdown()
 
 
 if __name__ == "__main__":
