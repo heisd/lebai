@@ -18,6 +18,7 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(image_transport REQUIRED)
@@ -205,6 +206,10 @@ install(PROGRAMS
   DESTINATION lib/${PROJECT_NAME}
   RENAME kcf_tracker_node
 )
+
+# ── 共享 Python 工具包（深度解码等，被 YOLO / KCF 等节点 import）──────────────
+# 注意：包名不能用 grab_demo，会和 rosidl 生成的 srv 绑定冲突
+ament_python_install_package(grab_demo_utils)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

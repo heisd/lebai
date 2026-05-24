@@ -33,6 +33,7 @@ from cv_bridge import CvBridge
 import message_filters
 
 from grab_demo.srv import InitTracker
+from grab_demo_utils.depth_utils import decode_depth_to_meters
 
 
 # ── OpenCV 兼容性：不同版本里 KCF/CSRT/MOSSE 的位置不一样 ──────────────────────
@@ -194,26 +195,11 @@ class KcfTrackerNode(Node):
         self.get_logger().info(resp.message)
         return resp
 
-    # ── 工具：把深度图安全地解码成"米"为单位的 float32 数组 ──────────────────
-    # 兼容 16UC1（毫米，Astra/Gemini 类）和 32FC1（米，RealSense/Azure 类）
-    def _decode_depth_to_meters(self, depth_msg: Image):
-        enc = depth_msg.encoding
-        if enc == "16UC1" or enc == "mono16":
-            raw = self.bridge.imgmsg_to_cv2(depth_msg, "16UC1")
-            return raw.astype(np.float32) / 1000.0
-        if enc.startswith("32FC1"):
-            return self.bridge.imgmsg_to_cv2(depth_msg, "32FC1").astype(np.float32)
-        self.get_logger().error(
-            f"不支持的深度图编码: '{enc}'（仅支持 16UC1/mono16/32FC1）",
-            throttle_duration_sec=5.0,
-        )
-        return None
-
     # ── 主回调：每帧更新跟踪 ──────────────────────────────────────────────────
     def _image_cb(self, rgb_msg: Image, depth_msg: Image):
         try:
             rgb     = self.bridge.imgmsg_to_cv2(rgb_msg, "bgr8")
-            depth_m = self._decode_depth_to_meters(depth_msg)
+            depth_m = decode_depth_to_meters(depth_msg, self.bridge, self.get_logger())
         except Exception as e:
             self.get_logger().error(f"图像转换失败: {e}")
             return
