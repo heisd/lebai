@@ -66,8 +66,9 @@ class YoloDetectNode(Node):
         self.conf_thr = self.get_parameter("confidence").value
         self.cam_frame = self.get_parameter("camera_frame").value
         classes_str   = self.get_parameter("target_classes").value
-        self.depth_min = self.get_parameter("depth_min_mm").value
-        self.depth_max = self.get_parameter("depth_max_mm").value
+        # 内部统一用"米"作为深度单位，参数名沿用 _mm 兼容旧 launch
+        self.depth_min_m = self.get_parameter("depth_min_mm").value / 1000.0
+        self.depth_max_m = self.get_parameter("depth_max_mm").value / 1000.0
         self.x_off = self.get_parameter("x_offset").value
         self.y_off = self.get_parameter("y_offset").value
         self.z_off = self.get_parameter("z_offset").value
@@ -132,6 +133,21 @@ class YoloDetectNode(Node):
             f"cx={self.cx:.1f}, cy={self.cy:.1f}"
         )
 
+    # ── 工具：把深度图安全地解码成"米"为单位的 float32 数组 ──────────────────
+    # 兼容 16UC1（毫米，Astra/Gemini 类）和 32FC1（米，RealSense/Azure 类）
+    def _decode_depth_to_meters(self, depth_msg: Image):
+        enc = depth_msg.encoding
+        if enc == "16UC1" or enc == "mono16":
+            raw = self.bridge.imgmsg_to_cv2(depth_msg, "16UC1")
+            return raw.astype(np.float32) / 1000.0
+        if enc.startswith("32FC1"):
+            return self.bridge.imgmsg_to_cv2(depth_msg, "32FC1").astype(np.float32)
+        self.get_logger().error(
+            f"不支持的深度图编码: '{enc}'（仅支持 16UC1/mono16/32FC1）",
+            throttle_duration_sec=5.0,
+        )
+        return None
+
     # ── 回调：同步 RGB + 深度 ─────────────────────────────────────────────────
 
     def _image_cb(self, rgb_msg: Image, depth_msg: Image):
@@ -141,94 +157,123 @@ class YoloDetectNode(Node):
 
         # 转换图像格式
         try:
-            rgb   = self.bridge.imgmsg_to_cv2(rgb_msg,   "bgr8")
-            depth = self.bridge.imgmsg_to_cv2(depth_msg, "16UC1")  # 单位：mm
+            rgb     = self.bridge.imgmsg_to_cv2(rgb_msg, "bgr8")
+            depth_m = self._decode_depth_to_meters(depth_msg)
         except Exception as e:
             self.get_logger().error(f"图像转换失败: {e}")
             return
+        if depth_m is None:
+            return
 
-        h, w = rgb.shape[:2]
+        h_rgb, w_rgb = rgb.shape[:2]
+        h_dep, w_dep = depth_m.shape[:2]
+
+        # RGB 与深度图分辨率不一致时，把 RGB 像素坐标按比例缩放到深度图坐标。
+        # 真正稳妥的做法是在相机驱动里开 align_depth_to_color，这里只是兜底。
+        if (h_rgb, w_rgb) != (h_dep, w_dep):
+            self.get_logger().warn(
+                f"RGB({w_rgb}x{h_rgb}) 与深度({w_dep}x{h_dep}) 分辨率不一致，"
+                f"建议在相机驱动开启 align_depth_to_color；这里按比例兜底缩放。",
+                throttle_duration_sec=10.0,
+            )
+        sx = w_dep / float(w_rgb)
+        sy = h_dep / float(h_rgb)
 
         # ── YOLO 推理 ─────────────────────────────────────────────────────────
         results = self.model(rgb, conf=self.conf_thr, verbose=False)
 
-        vis_img = rgb.copy()
-        detected_names = []
-
+        # ── 收集所有检测，先按置信度排序再按类内顺序赋稳定索引 ──────────────
+        # TF 名称形如 yolo_<class>_<i>，i=0 总是该类置信度最高的实例，
+        # 这样多个同类物体不会再相互覆盖。
+        detections = []
         for result in results:
             boxes = result.boxes
             if boxes is None:
                 continue
-
             for box in boxes:
                 cls_id   = int(box.cls[0])
                 cls_name = self.model.names[cls_id]
                 conf_val = float(box.conf[0])
-
-                # 如果设置了目标类别过滤
                 if self.target_classes and cls_name not in self.target_classes:
                     continue
-
-                # 边界框像素坐标
                 x1, y1, x2, y2 = map(int, box.xyxy[0])
-                cx_px = (x1 + x2) // 2
-                cy_px = (y1 + y2) // 2
+                detections.append({
+                    "cls_id":   cls_id,
+                    "cls_name": cls_name,
+                    "conf":     conf_val,
+                    "bbox":     (x1, y1, x2, y2),
+                })
 
-                # ── 获取深度值（在中心区域取中位数，更稳健）─────────────────
-                pad = 5
-                roi_x1 = max(0, cx_px - pad)
-                roi_x2 = min(w, cx_px + pad)
-                roi_y1 = max(0, cy_px - pad)
-                roi_y2 = min(h, cy_px + pad)
-                depth_roi = depth[roi_y1:roi_y2, roi_x1:roi_x2].astype(np.float32)
+        detections.sort(key=lambda d: -d["conf"])
+        class_counter = {}
+        for det in detections:
+            i = class_counter.get(det["cls_name"], 0)
+            det["tf_name"] = f"yolo_{det['cls_name']}_{i}"
+            class_counter[det["cls_name"]] = i + 1
 
-                # 过滤无效深度值
-                valid_mask = (depth_roi > self.depth_min) & (depth_roi < self.depth_max)
-                if not np.any(valid_mask):
-                    self.get_logger().warn(
-                        f"[{cls_name}] 无有效深度值（ROI 内均为 0 或超出范围）",
-                        throttle_duration_sec=2.0
-                    )
-                    continue
+        vis_img = rgb.copy()
+        detected_names = []
 
-                depth_mm = float(np.median(depth_roi[valid_mask]))
-                depth_m  = depth_mm / 1000.0
+        for det in detections:
+            cls_id   = det["cls_id"]
+            cls_name = det["cls_name"]
+            conf_val = det["conf"]
+            x1, y1, x2, y2 = det["bbox"]
+            tf_frame = det["tf_name"]
 
-                # ── 像素坐标 → 相机坐标系 3D 点 ──────────────────────────────
-                # 针孔相机模型: X = (u - cx) * Z / fx
-                X = (cx_px - self.cx) * depth_m / self.fx + self.x_off
-                Y = (cy_px - self.cy) * depth_m / self.fy + self.y_off
-                Z = depth_m + self.z_off
+            cx_px = (x1 + x2) // 2
+            cy_px = (y1 + y2) // 2
 
-                # ── 发布 TF ───────────────────────────────────────────────────
-                # TF 帧名：yolo_<类名>  例：yolo_cup, yolo_bottle
-                tf_frame = f"yolo_{cls_name}"
-                self._publish_tf(tf_frame, X, Y, Z, rgb_msg.header.stamp)
+            # RGB 像素坐标 → 深度图坐标
+            u_d = int(cx_px * sx)
+            v_d = int(cy_px * sy)
 
-                detected_names.append(cls_name)
+            # 中心 ROI 取中位数，抗噪
+            pad = 5
+            rx1 = max(0, u_d - pad)
+            rx2 = min(w_dep, u_d + pad)
+            ry1 = max(0, v_d - pad)
+            ry2 = min(h_dep, v_d + pad)
+            if rx2 <= rx1 or ry2 <= ry1:
+                continue
+            depth_roi = depth_m[ry1:ry2, rx1:rx2]
 
-                # ── 可视化 ────────────────────────────────────────────────────
-                color = self._class_color(cls_id)
-                cv2.rectangle(vis_img, (x1, y1), (x2, y2), color, 2)
-                label = f"{cls_name} {conf_val:.2f} | Z={depth_m:.3f}m"
-                cv2.putText(
-                    vis_img, label, (x1, max(y1 - 8, 0)),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.55, color, 2
+            valid = (depth_roi > self.depth_min_m) & (depth_roi < self.depth_max_m)
+            if not np.any(valid):
+                self.get_logger().warn(
+                    f"[{tf_frame}] 无有效深度值（ROI 内均为 0 或超出范围）",
+                    throttle_duration_sec=2.0,
                 )
-                # 标记中心点
-                cv2.circle(vis_img, (cx_px, cy_px), 4, (0, 0, 255), -1)
-                # 显示 3D 坐标
-                coord_text = f"({X:.3f}, {Y:.3f}, {Z:.3f})m"
-                cv2.putText(
-                    vis_img, coord_text, (x1, min(y2 + 18, h - 1)),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 1
-                )
+                continue
+
+            z_m = float(np.median(depth_roi[valid]))
+
+            # 反投影：用 RGB 像素坐标 + RGB 相机内参，结果在 color_optical_frame
+            X = (cx_px - self.cx) * z_m / self.fx + self.x_off
+            Y = (cy_px - self.cy) * z_m / self.fy + self.y_off
+            Z = z_m + self.z_off
+
+            self._publish_tf(tf_frame, X, Y, Z, rgb_msg.header.stamp)
+            detected_names.append(cls_name)
+
+            # ── 可视化 ────────────────────────────────────────────────────
+            color = self._class_color(cls_id)
+            cv2.rectangle(vis_img, (x1, y1), (x2, y2), color, 2)
+            label = f"{tf_frame} {conf_val:.2f} | Z={z_m:.3f}m"
+            cv2.putText(
+                vis_img, label, (x1, max(y1 - 8, 0)),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.55, color, 2
+            )
+            cv2.circle(vis_img, (cx_px, cy_px), 4, (0, 0, 255), -1)
+            coord_text = f"({X:.3f}, {Y:.3f}, {Z:.3f})m"
+            cv2.putText(
+                vis_img, coord_text, (x1, min(y2 + 18, h_rgb - 1)),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 1
+            )
 
         # ── 发布可视化图像 ────────────────────────────────────────────────────
         try:
-            self.result_pub.publish(
-                self.bridge.cv2_to_imgmsg(vis_img, "bgr8")
-            )
+            self.result_pub.publish(self.bridge.cv2_to_imgmsg(vis_img, "bgr8"))
         except Exception as e:
             self.get_logger().error(f"发布可视化图像失败: {e}")
 
@@ -261,9 +306,9 @@ class YoloDetectNode(Node):
 
     @staticmethod
     def _class_color(cls_id: int):
-        """根据类别 ID 生成固定颜色"""
-        np.random.seed(cls_id)
-        return tuple(int(c) for c in np.random.randint(50, 220, 3))
+        """根据类别 ID 生成固定颜色（不能用 np.random.seed，那会污染全局随机状态）"""
+        rng = np.random.RandomState(cls_id)
+        return tuple(int(c) for c in rng.randint(50, 220, 3))
 
 
 def main(args=None):
