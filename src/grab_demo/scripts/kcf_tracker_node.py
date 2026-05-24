@@ -9,7 +9,7 @@ KCF / CSRT / MOSSE 单目标跟踪节点
   - grab_service_node 直接用 obj_link="kcf_track" 即可抓取被跟踪物体。
 
 两种初始化方式（可同时使用）：
-  1) 服务初始化（程序化）：调用 /kcf_tracker/init (grab_demo/srv/InitTracker)
+  1) 服务初始化（程序化）：调用 /kcf_tracker_node/init (grab_demo/srv/InitTracker)
      —— 适合 YOLO/HSV 先检测一次，再把 bbox 交给 KCF 持续跟踪。
   2) 鼠标框选（交互式）：在弹出的 "KCF Tracker" 窗口里按 's' 进入选框模式，
      拖动鼠标框出目标后回车确认。按 'r' 重置跟踪。
@@ -131,7 +131,7 @@ class KcfTrackerNode(Node):
             f"  RGB:    {rgb_topic}\n"
             f"  Depth:  {depth_topic}\n"
             f"  相机系: {self.cam_frame}\n"
-            f"  初始化方式: 服务 /kcf_tracker/init"
+            f"  初始化方式: 服务 /{self.get_name()}/init"
             f"{' 或 OpenCV 窗口按 s 框选' if self.show_window else ''}"
         )
 
@@ -242,7 +242,7 @@ class KcfTrackerNode(Node):
                     self.get_logger().warn("连续丢失太多帧，跟踪器已停用，请重新 init")
                     self.tracker = None
         else:
-            cv2.putText(vis, "no tracker | call /kcf_tracker/init or press 's'",
+            cv2.putText(vis, f"no tracker | call /{self.get_name()}/init or press 's'",
                         (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.55,
                         (200, 200, 200), 2)
 
