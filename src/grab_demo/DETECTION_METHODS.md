@@ -1,7 +1,7 @@
 # 物体识别 / 抓取目标定位方法总览
 
 `grab_demo` 里所有的"识别 → 抓取"流水线本质上都干一件事：
-**把图像里找到的物体，发布成一个 TF（例如 `kcf_track`、`yolo_cup`、`color_link`），
+**把图像里找到的物体，发布成一个 TF（例如 `kcf_track`、`yolo_cup_0`、`color_link`），
 然后 `grab_service_node` 用 `obj_link=<这个 TF 名>` 让机械臂去抓。**
 
 所以**写新检测节点 = 写一个"发 TF 的视觉节点"**，输入接口（话题）和输出接口（TF）保持一致，
@@ -16,7 +16,7 @@
 | **HSV 颜色** | `hsv_range` | `color_link` | `color_grab.launch.py` | 颜色单一、背景干净的小物体 |
 | **ChArUco 棋盘** | `charuco_dectet_node` | （手眼标定专用） | `hand_eye.launch.py` | 相机外参 / 手眼标定 |
 | **ArUco 标记** | `aruco_dectet` | ArUco ID 对应 TF | `aruco_grab.launch.py` | 贴了 ArUco 码的物体 |
-| **YOLO（深度学习）** | `yolo_detect_node` | `yolo_<类名>` | `yolo_grab.launch.py` | 任意常见物体（COCO 80 类，或自训） |
+| **YOLO（深度学习）** | `yolo_detect_node` | `yolo_<类名>_<i>` | `yolo_grab.launch.py` | 任意常见物体（COCO 80 类，或自训） |
 | **KCF/CSRT/MOSSE 跟踪** | `kcf_tracker_node` | `kcf_track` 或 `kcf_<label>` | `kcf_grab.launch.py` | 已知初始位置后持续跟踪一个物体 |
 
 > YOLO 节点已经实现：`src/grab_demo/scripts/yolo_detect_node.py`（282 行），所以本次新增的是 **KCF**。
@@ -40,14 +40,20 @@ ros2 launch grab_demo yolo_grab.launch.py model_path:=/home/user/my_model.pt
 ```
 
 输出：
-- TF：`yolo_<class>`（如 `yolo_cup`）
+- TF：`yolo_<class>_<i>`（如 `yolo_cup_0`、`yolo_cup_1`），
+  **`i=0` 永远是该类置信度最高的那一个实例**（按帧内置信度降序赋号）。
+  这样同一画面里有多个杯子时它们不会再相互覆盖。
 - 可视化话题：`/yolo_result_image`（用 `rqt_image_view` 看）
 - 检测到的类别列表：`/yolo_detected_objects` (`std_msgs/String`)
 
-用法（让机械臂去抓杯子）：
+用法（让机械臂去抓最自信的那个杯子）：
 ```bash
-ros2 service call /grab_service GrabObject "{obj_link: 'yolo_cup'}"
+ros2 service call /grab_service GrabObject "{obj_link: 'yolo_cup_0'}"
 ```
+
+> ⚠️ TF 名后缀的索引 `_0/_1/_2...` 是**当前这一帧**的排序结果，
+> 当物体进出画面时同一个物理物体的索引会变。
+> 如果需要"持续跟住某一个杯子"，请用下面 YOLO + KCF 组合方案。
 
 ---
 
@@ -94,7 +100,8 @@ ros2 service call /kcf_tracker_node/reset std_srvs/srv/Trigger {}
 让 YOLO 检测一次拿到 bbox → 立刻交给 KCF 持续跟踪 → 抓取期间用跟踪而不是重检测，
 这样可以避免：
 - YOLO 在物体被夹爪挡住时检测失败导致 TF 跳变；
-- 同类多目标时 YOLO 每帧的"yolo_cup"指代谁不稳定。
+- 同类多目标时 YOLO 每帧的 `yolo_cup_0/1/2` 排序可能在物体进出画面时跳变，
+  KCF 一旦锁定就只跟一个，不会再因排序变化跳。
 
 伪代码（写一个协调脚本即可）：
 ```python

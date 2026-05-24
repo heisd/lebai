@@ -5,10 +5,12 @@ YOLO 目标检测节点
   1. 订阅 RGB + 深度图像
   2. 使用 YOLOv8 检测物体
   3. 用深度值 + 相机内参计算物体的 3D 坐标（相机系）
-  4. 发布 TF 变换: camera_color_optical_frame -> yolo_<类名>
+  4. 发布 TF 变换: camera_color_optical_frame -> yolo_<类名>_<i>
+     （i 按当前帧内同类置信度降序赋号，i=0 是最自信的实例，
+      避免同类多目标互相覆盖 TF）
   5. 发布带标注的可视化图像
 
-这样 grab_service_node 就可以直接用 obj_link = "yolo_cup" 等来抓取
+这样 grab_service_node 就可以直接用 obj_link = "yolo_cup_0" 等来抓取
 """
 
 import rclpy
