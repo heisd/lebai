@@ -1,0 +1,10 @@
+# 初始化 KCF / CSRT / MOSSE 跟踪器
+# 给定图像中的初始 ROI（像素坐标），跟踪器据此开始跟踪
+int32 x           # ROI 左上角 x（像素）
+int32 y           # ROI 左上角 y（像素）
+int32 width       # ROI 宽（像素），> 0
+int32 height      # ROI 高（像素），> 0
+string label      # 可选：跟踪目标的标签，会作为 TF child_frame 的后缀；留空使用默认 "kcf_track"
+---
+bool success
+string message
