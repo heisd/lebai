@@ -90,8 +90,9 @@ class KcfTrackerNode(Node):
         result_topic = self.get_parameter("result_image_topic").value
         self.cam_frame = self.get_parameter("camera_frame").value
         self.show_window = self.get_parameter("show_window").value
-        self.depth_min = self.get_parameter("depth_min_mm").value
-        self.depth_max = self.get_parameter("depth_max_mm").value
+        # 内部统一用"米"，参数名沿用 _mm 兼容旧 launch
+        self.depth_min_m = self.get_parameter("depth_min_mm").value / 1000.0
+        self.depth_max_m = self.get_parameter("depth_max_mm").value / 1000.0
         self.x_off = self.get_parameter("x_offset").value
         self.y_off = self.get_parameter("y_offset").value
         self.z_off = self.get_parameter("z_offset").value
@@ -193,17 +194,46 @@ class KcfTrackerNode(Node):
         self.get_logger().info(resp.message)
         return resp
 
+    # ── 工具：把深度图安全地解码成"米"为单位的 float32 数组 ──────────────────
+    # 兼容 16UC1（毫米，Astra/Gemini 类）和 32FC1（米，RealSense/Azure 类）
+    def _decode_depth_to_meters(self, depth_msg: Image):
+        enc = depth_msg.encoding
+        if enc == "16UC1" or enc == "mono16":
+            raw = self.bridge.imgmsg_to_cv2(depth_msg, "16UC1")
+            return raw.astype(np.float32) / 1000.0
+        if enc.startswith("32FC1"):
+            return self.bridge.imgmsg_to_cv2(depth_msg, "32FC1").astype(np.float32)
+        self.get_logger().error(
+            f"不支持的深度图编码: '{enc}'（仅支持 16UC1/mono16/32FC1）",
+            throttle_duration_sec=5.0,
+        )
+        return None
+
     # ── 主回调：每帧更新跟踪 ──────────────────────────────────────────────────
     def _image_cb(self, rgb_msg: Image, depth_msg: Image):
         try:
-            rgb   = self.bridge.imgmsg_to_cv2(rgb_msg,   "bgr8")
-            depth = self.bridge.imgmsg_to_cv2(depth_msg, "16UC1")
+            rgb     = self.bridge.imgmsg_to_cv2(rgb_msg, "bgr8")
+            depth_m = self._decode_depth_to_meters(depth_msg)
         except Exception as e:
             self.get_logger().error(f"图像转换失败: {e}")
+            return
+        if depth_m is None:
             return
 
         self.last_rgb = rgb  # 给鼠标框选 / init 服务用
         vis = rgb.copy()
+
+        # RGB 与深度图分辨率不一致时按比例兜底（推荐在驱动里开 align_depth_to_color）
+        h_rgb, w_rgb = rgb.shape[:2]
+        h_dep, w_dep = depth_m.shape[:2]
+        if (h_rgb, w_rgb) != (h_dep, w_dep):
+            self.get_logger().warn(
+                f"RGB({w_rgb}x{h_rgb}) 与深度({w_dep}x{h_dep}) 分辨率不一致，"
+                f"建议在相机驱动开启 align_depth_to_color；这里按比例兜底缩放。",
+                throttle_duration_sec=10.0,
+            )
+        sx = w_dep / float(w_rgb)
+        sy = h_dep / float(h_rgb)
 
         if self.tracker is not None:
             ok, bbox = self.tracker.update(rgb)
@@ -214,7 +244,7 @@ class KcfTrackerNode(Node):
                 cy_px = y + h // 2
 
                 if self.camera_info_ready:
-                    pos = self._pixel_to_3d(cx_px, cy_px, depth)
+                    pos = self._pixel_to_3d(cx_px, cy_px, depth_m, sx, sy)
                     if pos is not None:
                         X, Y, Z = pos
                         self._publish_tf(self.label, X, Y, Z, rgb_msg.header.stamp)
@@ -262,19 +292,27 @@ class KcfTrackerNode(Node):
                 self.get_logger().info("按下 r，跟踪器已重置")
 
     # ── 工具：像素 + 深度 → 相机系 3D 点 ─────────────────────────────────────
-    def _pixel_to_3d(self, u: int, v: int, depth: np.ndarray):
-        h, w = depth.shape[:2]
-        if not (0 <= u < w and 0 <= v < h):
+    # u, v 是 RGB 像素坐标；depth_m 已解码为米；
+    # sx, sy 是 RGB→深度坐标的缩放因子，分辨率一致时为 1.0。
+    # 反投影使用 RGB 像素坐标 + RGB 相机内参，输出在 color_optical_frame。
+    def _pixel_to_3d(self, u: int, v: int, depth_m: np.ndarray,
+                     sx: float = 1.0, sy: float = 1.0):
+        h_d, w_d = depth_m.shape[:2]
+        u_d = int(u * sx)
+        v_d = int(v * sy)
+        if not (0 <= u_d < w_d and 0 <= v_d < h_d):
             return None
         # 在中心点附近取中位数，抗噪
         pad = 5
-        roi = depth[max(0, v - pad):min(h, v + pad),
-                    max(0, u - pad):min(w, u + pad)].astype(np.float32)
-        valid = (roi > self.depth_min) & (roi < self.depth_max)
+        rx1, rx2 = max(0, u_d - pad), min(w_d, u_d + pad)
+        ry1, ry2 = max(0, v_d - pad), min(h_d, v_d + pad)
+        if rx2 <= rx1 or ry2 <= ry1:
+            return None
+        roi = depth_m[ry1:ry2, rx1:rx2]
+        valid = (roi > self.depth_min_m) & (roi < self.depth_max_m)
         if not np.any(valid):
             return None
-        z_mm = float(np.median(roi[valid]))
-        z = z_mm / 1000.0
+        z = float(np.median(roi[valid]))
         X = (u - self.cx) * z / self.fx + self.x_off
         Y = (v - self.cy) * z / self.fy + self.y_off
         Z = z + self.z_off
