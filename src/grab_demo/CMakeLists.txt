@@ -165,6 +165,24 @@ target_link_libraries(start_grab "${cpp_typesupport_target}")
 
 
 
+# 自动抓取控制器节点
+add_executable(auto_grab_controller src/auto_grab_controller.cpp)
+ament_target_dependencies(auto_grab_controller
+  rclcpp
+  geometry_msgs
+  tf2_geometry_msgs
+  tf2_ros
+  tf2
+)
+install(TARGETS auto_grab_controller
+  DESTINATION lib/${PROJECT_NAME})
+
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} rosidl_typesupport_cpp)
+
+target_link_libraries(auto_grab_controller "${cpp_typesupport_target}")
+
+
 
 add_executable(camera_info_node src/camera_info_node.cpp)
 ament_target_dependencies(camera_info_node
