@@ -47,7 +47,8 @@ source install/setup.bash
 整套（相机 + 机械臂 + KCF + 抓取服务）：
 
 ```bash
-ros2 launch grab_demo kcf_grab.launch.py
+ros2 launch grab_demo kcf_grab.launch.py            # 真机
+ros2 launch grab_demo kcf_grab.launch.py sim:=true  # Gazebo 仿真
 ```
 
 单独调试跟踪节点：

@@ -30,7 +30,8 @@
 整套（相机 + 机械臂 + HSV + 抓取服务）：
 
 ```bash
-ros2 launch grab_demo color_grab.launch.py
+ros2 launch grab_demo color_grab.launch.py            # 真机
+ros2 launch grab_demo color_grab.launch.py sim:=true  # Gazebo 仿真
 ```
 
 单独调试：

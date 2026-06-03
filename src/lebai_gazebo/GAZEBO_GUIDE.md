@@ -65,20 +65,33 @@ ros2 topic echo /joint_states          # 关节状态
   `lebai_lm3_moveit_config` 的 `lm3_controllers.yaml` 一致，因此 `move_group`
   可直接驱动仿真机械臂（启动 move_group 时不要再起真机 `robot_interface`）。
 
-### 一键端到端抓取（gazebo_grab.launch.py）
+### 真机/仿真一键切换（统一 sim 参数）★
 
-把 Gazebo + 相机 + MoveIt + HSV 视觉 + 抓取服务串成一条链路：
+**所有抓取 launch 都支持 `sim` 参数**，无需换文件：
 
 ```bash
-ros2 launch lebai_gazebo gazebo_grab.launch.py
+# 真机(默认 sim:=false)
+ros2 launch grab_demo color_grab.launch.py
+ros2 launch grab_demo yolo_grab.launch.py
+ros2 launch grab_demo vlm_grab.launch.py
+
+# Gazebo 仿真(同一条命令加 sim:=true)
+ros2 launch grab_demo color_grab.launch.py sim:=true
+ros2 launch grab_demo yolo_grab.launch.py  sim:=true
+ros2 launch grab_demo vlm_grab.launch.py   sim:=true
+# 真机还可指定 IP: robot_ip:=192.168.0.50
 ```
 
-它做了：
-- 复用 `gazebo.launch.py`（场景 + 机械臂 + 控制器 + 相机）；
-- `move_group`（仿真参数，`use_sim_time`，控制器 `lebai_trajectory_controller`）；
-- `world→base_link` 恒等静态 TF（grab_service 以 base_link 为参考系）；
-- HSV 视觉节点（默认红色阈值正好识别桌上的**可乐罐**，内参指向仿真相机 `/camera_arm/color/camera_info`）；
-- `grab_service_node`。
+原理：抓取 launch 把"机器人+相机+MoveIt"交给共享的 `grab_demo/launch/robot_bringup.launch.py`，
+它按 `sim` 切换来源：
+- `sim:=false`：astra 相机 + `camera_info_node` + `lm3.launch.py`(真机驱动 + MoveIt)；
+- `sim:=true`：`lebai_gazebo/gazebo.launch.py`(Gazebo+臂+相机+控制器) + `move_group`(仿真,
+  `use_sim_time`, 控制器 `lebai_trajectory_controller`) + `world→base_link` 恒等 TF。
+视觉节点的 `camera_info_topic`(仿真 `/camera_arm/color/camera_info` ↔ 真机 `/gemini_info`)
+和 `use_sim_time` 也随 `sim` 自动切换。
+
+`lebai_gazebo/gazebo_grab.launch.py` 现在只是 `color_grab.launch.py sim:=true` 的薄封装(向后兼容)。
+仿真用 HSV 时, 默认红色阈值正好识别桌上的**可乐罐**。
 
 触发抓取（识别到目标后，target_frame 已在发布）：
 

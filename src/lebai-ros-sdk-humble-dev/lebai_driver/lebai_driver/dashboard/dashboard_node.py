@@ -119,11 +119,18 @@ LAUNCH_TASKS = [
      "cmd": ["ros2", "launch", "lebai_lm3_moveit_config", "lm3.launch.py"],
      "resources": ["robot_state", "motion", "io_service", "system_service", "moveit"]},
     # ---- 仿真(Gazebo, 与真机任务资源不冲突, 仿真任务之间互斥) ----
+    # 这些就是各抓取 launch 加 sim:=true; 真机则用上面"视觉抓取"分组(sim 默认 false)。
     {"id": "sim_gazebo", "label": "Gazebo 仿真场景 + 机械臂", "group": "仿真",
      "cmd": ["ros2", "launch", "lebai_gazebo", "gazebo.launch.py"],
      "resources": ["sim"]},
-    {"id": "sim_grab", "label": "Gazebo 端到端抓取 (HSV+MoveIt)", "group": "仿真",
-     "cmd": ["ros2", "launch", "lebai_gazebo", "gazebo_grab.launch.py"],
+    {"id": "sim_hsv", "label": "Gazebo 端到端抓取 (HSV)", "group": "仿真",
+     "cmd": ["ros2", "launch", "grab_demo", "color_grab.launch.py", "sim:=true"],
+     "resources": ["sim"]},
+    {"id": "sim_yolo", "label": "Gazebo 端到端抓取 (YOLO)", "group": "仿真",
+     "cmd": ["ros2", "launch", "grab_demo", "yolo_grab.launch.py", "sim:=true"],
+     "resources": ["sim"]},
+    {"id": "sim_vlm", "label": "Gazebo 端到端抓取 (VLM)", "group": "仿真",
+     "cmd": ["ros2", "launch", "grab_demo", "vlm_grab.launch.py", "sim:=true"],
      "resources": ["sim"]},
 ]
 
@@ -753,7 +760,9 @@ INDEX_HTML = """<!DOCTYPE html>
     <div class="card">
       <h2>Gazebo 仿真说明</h2>
       <small>
-        1. 启动上面的【Gazebo 仿真场景 + 机械臂】, 会打开 Gazebo GUI, 自动加载场景(地面/桌子/可乐罐/木块/啤酒)和机械臂模型。<br/>
+        0. <b>真机/仿真一键切换</b>: 所有抓取 launch 都支持 <code>sim:=true</code>(仿真) / 默认 <code>sim:=false</code>(真机)。
+           上面的端到端任务就是各抓取 launch 加 <code>sim:=true</code>; "视觉抓取"分组里的是真机。<br/>
+        1. 启动【Gazebo 仿真场景 + 机械臂】会打开 Gazebo GUI, 自动加载场景(地面/桌子/可乐罐/木块/啤酒)和机械臂模型。<br/>
         2. 用 Gazebo GUI 左侧 <b>Insert</b> 面板可继续拖入更多标准物体(Fuel 模型库)或你自己的模型。<br/>
         3. 仿真任务与真机任务资源不冲突, 但请勿同时连真机, 以免混淆。<br/>
         4. 仿真相机发布 <code>/camera_arm/color/image_raw</code> 等话题, 可在仿真里跑视觉/VLM(相机安装位与内参需按手眼标定微调)。<br/>

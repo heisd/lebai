@@ -64,7 +64,8 @@ ros2 run grab_demo vlm_grab_node.py --ros-args \
 整套（相机 + 机械臂 + VLM + 抓取服务）：
 
 ```bash
-ros2 launch grab_demo vlm_grab.launch.py
+ros2 launch grab_demo vlm_grab.launch.py            # 真机
+ros2 launch grab_demo vlm_grab.launch.py sim:=true  # Gazebo 仿真
 ```
 
 > 启动前记得 `export` 好对应的 API Key（除非用本地无 key 的服务）。

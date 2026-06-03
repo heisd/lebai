@@ -67,7 +67,8 @@ source install/setup.bash
 整套流程（相机 + 机械臂 + YOLO 识别 + 抓取服务）：
 
 ```bash
-ros2 launch grab_demo yolo_grab.launch.py
+ros2 launch grab_demo yolo_grab.launch.py            # 真机
+ros2 launch grab_demo yolo_grab.launch.py sim:=true  # Gazebo 仿真
 ```
 
 只单独跑识别节点调试：

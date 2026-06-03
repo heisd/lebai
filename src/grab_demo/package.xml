@@ -24,6 +24,9 @@
   <exec_depend>rclpy</exec_depend>
   <exec_depend>python3-numpy</exec_depend>
   <exec_depend>python3-opencv</exec_depend>
+  <!-- 运行时 launch include 的包(真机/仿真切换) -->
+  <exec_depend>lebai_lm3_moveit_config</exec_depend>
+  <exec_depend>lebai_gazebo</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
