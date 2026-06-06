@@ -54,7 +54,7 @@ def generate_launch_description():
         ),
         Node(
             package="grab_demo",
-            executable="new_start_grab",
+            executable="start_grab",
             parameters=[
             # {'link':LaunchConfiguration('link')},#需要夹取的目标tf坐标名
             robot_description_semantic
